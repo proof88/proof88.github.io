@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>calcHash()
 : <a class="el" href="class_p_r_r_eui_text.html#a6e57bc2169186b542b51ade3fc2e5f50">PRREuiText</a>
 </li>
+<li>calculateIndex()
+: <a class="el" href="class_p_r_r_e_octree.html#ab3de0d190a0a61e2e861debfa68952a1">PRREOctree</a>
+</li>
 <li>cannibalize()
 : <a class="el" href="class_p_r_r_e_image_1_1_p_r_r_e_image_impl.html#a9b56f66fc6f0fc891a0b9f495360261c">PRREImage::PRREImageImpl</a>
 , <a class="el" href="class_p_r_r_e_mesh3_d_1_1_p_r_r_e_mesh3_d_impl.html#aa92dba53a219a6c25a17540cf1ae2972">PRREMesh3D::PRREMesh3DImpl</a>
@@ -111,15 +114,17 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 : <a class="el" href="class_p_r_r_ehw_video_discover_open_g_lbase.html#a4222207b91e38c766a36d8307d9c3737">PRREhwVideoDiscoverOpenGLbase</a>
 </li>
 <li>CheckConsistency()
-: <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a90ec3379a0924c97e6a89aeb31052f5e">PR00FsReducedRenderingEngineImpl</a>
-, <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a134ed2d0461e413c542a3d3b85fc8d41">PRRERendererHWfixedPipeImpl</a>
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a134ed2d0461e413c542a3d3b85fc8d41">PRRERendererHWfixedPipeImpl</a>
 , <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a236c2846f077a647af3110a3a1bb6825">PRRERendererSWincrementalImpl</a>
+</li>
+<li>ChildIndex
+: <a class="el" href="class_p_r_r_e_octree.html#a6c73ed9f092bd6b416f01ecec924c87a">PRREOctree</a>
 </li>
 <li>ClearColorBuffer()
 : <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a0ef24614cbe96bd662586cfe6f9c3032">PRRERendererSWincrementalImpl</a>
 </li>
-<li>ClearGLerror()
-: <a class="el" href="class_p_r_r_e_g_lsnippets.html#a2dacd21946d4822def24d33858a847ea">PRREGLsnippets</a>
+<li>ClearGLError()
+: <a class="el" href="class_p_r_r_e_g_lsnippets.html#a6b508e5b4f4d7aae337c4eadc51f7823">PRREGLsnippets</a>
 </li>
 <li>clearMode
 : <a class="el" href="class_p_r_r_e_camera_1_1_p_r_r_e_camera_impl.html#ad23dc7799a76968b3e4cfa2ae01ca87b">PRRECamera::PRRECameraImpl</a>
@@ -188,6 +193,9 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ComputeCode()
 : <a class="el" href="class_p_u_r_e_scissor.html#a2923435b07af501294d79f67b31c9704">PUREScissor</a>
 </li>
+<li>Conclude()
+: <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#a7fbab37de3c51dd9a284ac3e0d4ff064">PRRERendererHWfixedPipeImpl::CurrentStats</a>
+</li>
 <li>convertToBox()
 : <a class="el" href="class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#a80d198e88d093d3d994345357357a80c">PRREMesh3DManager::PRREMesh3DManagerImpl</a>
 </li>
@@ -239,7 +247,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="class_p_r_r_e_filed_manager_1_1_p_r_r_e_filed_manager_impl.html#a40422989d93299974e2159e1113193ac">PRREFiledManager::PRREFiledManagerImpl</a>
 , <a class="el" href="class_p_r_r_e_image_manager.html#a1f821b0b76e85a107b17bbca1056b515">PRREImageManager</a>
 , <a class="el" href="class_p_r_r_e_mesh3_d_manager.html#adc67090ea4193a8f3869832c1b82a088">PRREMesh3DManager</a>
-, <a class="el" href="class_p_r_r_e_object3_d_manager.html#a0c97c0c9e4786cfc4a691cfd73e63b85">PRREObject3DManager</a>
+, <a class="el" href="class_p_r_r_e_object3_d_manager.html#ab271414b007cf0202dbf2ef334493c76">PRREObject3DManager</a>
 , <a class="el" href="class_p_r_r_e_texture_manager.html#a1c1c7b9f6d8fc926a7aaf3acdf2e12e9">PRRETextureManager</a>
 </li>
 <li>createFromFileFail()
@@ -279,13 +287,17 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>CS_TOP
 : <a class="el" href="class_p_u_r_e_scissor.html#a624d6dc2d145460493d22e878d45fa96">PUREScissor</a>
 </li>
+<li>CurrentStats()
+: <a class="el" href="struct_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl_1_1_current_stats.html#a2cb2c753ce0ab149f91a815dee10144c">PRREObject3D::PRREObject3DImpl::CurrentStats</a>
+, <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#ab56568a5a4babbdd8d63735b549d44df">PRRERendererHWfixedPipeImpl::CurrentStats</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:37 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

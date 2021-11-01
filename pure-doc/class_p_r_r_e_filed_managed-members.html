@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -100,6 +100,8 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_filed_managed.html','');
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a85c4104273ffdbb853c2bb9b02504ae8">getManager</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a12e5e5473417337f5c003bd50e3df2f3">getName</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#ae0b7da04e395ff5c4cb619585bed841a">getUsedSystemMemory</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a4f7a16f92f916e7507351f3dc631fdf0">getUtiliser</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a1cd5426ba6996820692fcf8276895d06">getUtiliser</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a1a5ae1c4cc98867eb5088feafa454ef1">operator=</a>(const PRREFiledManaged &amp;other)</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#ada6637d3d80a2d880dfb9e60cd49e883">PRREManaged::operator=</a>(const PRREManaged &amp;other)</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a391085a829e8b6c0e235a992334fbc5c">pImpl</a></td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -109,14 +111,15 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_filed_managed.html','');
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a8a4d88d6dec10d5f5c2d67e967f48a5d">PRREManaged</a>(const PRREManaged &amp;other)</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a7044615bf5552c11e8a64cd3125d51e2">SetFilename</a>(const std::string &amp;filename)</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a18bca93dc043352c8a841e9c6dde4119">SetName</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a6c05c5610345275a53a6cbde33a2d43f">~PRREFiledManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a9b1aaf140436e07e89b1aea5827b717d">~PRREManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#ab5a6ab3e20c3c43a5ffa7877a2412846">SetUtiliser</a>(PRREManaged *pUtiliser)</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a6c05c5610345275a53a6cbde33a2d43f">~PRREFiledManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a9b1aaf140436e07e89b1aea5827b717d">~PRREManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

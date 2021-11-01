@@ -45,6 +45,7 @@ var class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl =
     [ "filtDefIsoMag", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#a1680aa327ac415b01cc28a2488a7a549", null ],
     [ "filtDefIsoMin", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#af2901052eebeaa91278beaf14ca3f78c", null ],
     [ "nAnisoFilterMax", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#a8116705cfe3ac3ece4c3b8b352a61edc", null ],
+    [ "nRunningCounter", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#a36b348aff33014aae4bf5b3baa57eb47", null ],
     [ "texComprDef", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#ac07c1c369df8644fb1a2ece09538512b", null ],
     [ "twDefS", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#a0c004ac0240b96d803d3ef72fe03239f", null ],
     [ "twDefT", "class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#a31be7e869d7fb5c79021b2bbd7633763", null ]

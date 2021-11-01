@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -165,6 +165,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c2bc4ed20bb57b4e9fd0cc96a82ddb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a4c2bc4ed20bb57b4e9fd0cc96a82ddb7">WriteList</a> () const =0</td></tr>
 <tr class="memdesc:a4c2bc4ed20bb57b4e9fd0cc96a82ddb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a4c2bc4ed20bb57b4e9fd0cc96a82ddb7" title="Invoke WriteList() of all children instances.">WriteList()</a> of all children instances.  <a href="class_p_r00_fs_reduced_rendering_engine.html#a4c2bc4ed20bb57b4e9fd0cc96a82ddb7">More...</a><br /></td></tr>
 <tr class="separator:a4c2bc4ed20bb57b4e9fd0cc96a82ddb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c185b29605deab35ba3e0cc8b5ff3b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a19c185b29605deab35ba3e0cc8b5ff3b">getAutoWriteStatsAtShutdown</a> () const =0</td></tr>
+<tr class="memdesc:a19c185b29605deab35ba3e0cc8b5ff3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if invoke of WriteStats() would happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a78373bc3fb5a84b6ff5f8db9517b65e2" title="This stops the engine.">shutdown()</a>.  <a href="class_p_r00_fs_reduced_rendering_engine.html#a19c185b29605deab35ba3e0cc8b5ff3b">More...</a><br /></td></tr>
+<tr class="separator:a19c185b29605deab35ba3e0cc8b5ff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3151f947c6db16af7971f72845c72ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#aa3151f947c6db16af7971f72845c72ee">SetAutoWriteStatsAtShutdown</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> state)=0</td></tr>
+<tr class="memdesc:aa3151f947c6db16af7971f72845c72ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if invoke of WriteStats() should happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a78373bc3fb5a84b6ff5f8db9517b65e2" title="This stops the engine.">shutdown()</a>.  <a href="class_p_r00_fs_reduced_rendering_engine.html#aa3151f947c6db16af7971f72845c72ee">More...</a><br /></td></tr>
+<tr class="separator:aa3151f947c6db16af7971f72845c72ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a990fa4fcadad444eae011b9839671649"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a990fa4fcadad444eae011b9839671649">CopyScreenToTexture</a> (<a class="el" href="class_p_r_r_e_texture.html">PRRETexture</a> &amp;tex)=0</td></tr>
 <tr class="memdesc:a990fa4fcadad444eae011b9839671649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies screen content to texture.  <a href="class_p_r00_fs_reduced_rendering_engine.html#a990fa4fcadad444eae011b9839671649">More...</a><br /></td></tr>
 <tr class="separator:a990fa4fcadad444eae011b9839671649"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +241,36 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates and gets the singleton implementation instance. </p>
 <p>Creates and gets the singleton instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00689">689</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00784">784</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a19c185b29605deab35ba3e0cc8b5ff3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c185b29605deab35ba3e0cc8b5ff3b">&#9670;&nbsp;</a></span>getAutoWriteStatsAtShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PR00FsReducedRenderingEngine::getAutoWriteStatsAtShutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if invoke of WriteStats() would happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a78373bc3fb5a84b6ff5f8db9517b65e2" title="This stops the engine.">shutdown()</a>. </p>
+
+<p>Implemented in <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a26861faa2223d4b9eb7f1c909e270b4d">PR00FsReducedRenderingEngineImpl</a>.</p>
 
 </div>
 </div>
@@ -287,7 +322,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Intentionally not virtual, so the <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#ab81a13706822f5e94ed2711aed327104" title="Returns access to console preset with logger module name as this class.">getConsole()</a> in derived class should hide this instead of overriding.</p>
 <dl class="section return"><dt>Returns</dt><dd>Console instance used by this class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00702">702</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00797">797</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +411,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Intentionally not virtual, so derived class should hide this instead of overriding. Not even private, so user can also access this from outside, for any reason like controlling log filtering per logger module name.</p>
 <dl class="section return"><dt>Returns</dt><dd>The logger module name of this class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00715">715</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00810">810</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -729,6 +764,36 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa3151f947c6db16af7971f72845c72ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3151f947c6db16af7971f72845c72ee">&#9670;&nbsp;</a></span>SetAutoWriteStatsAtShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PR00FsReducedRenderingEngine::SetAutoWriteStatsAtShutdown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if invoke of WriteStats() should happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a78373bc3fb5a84b6ff5f8db9517b65e2" title="This stops the engine.">shutdown()</a>. </p>
+
+<p>Implemented in <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#af3f9732819bd5dd68647eee34661547b">PR00FsReducedRenderingEngineImpl</a>.</p>
+
+</div>
+</div>
 <a id="a78373bc3fb5a84b6ff5f8db9517b65e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78373bc3fb5a84b6ff5f8db9517b65e2">&#9670;&nbsp;</a></span>shutdown()</h2>
 
@@ -797,7 +862,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r00_fs_reduced_rendering_engine.html">PR00FsReducedRenderingEngine</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

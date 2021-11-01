@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -225,6 +225,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a49dcdfa7a57f2b86d6194bdcc3fe6b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_ehw_video.html#a3a49dcdfa7a57f2b86d6194bdcc3fe6b">isATITruFormSupported</a> () const =0</td></tr>
 <tr class="memdesc:a3a49dcdfa7a57f2b86d6194bdcc3fe6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the ATI-specific TruForm is supported.  <a href="class_p_r_r_ehw_video.html#a3a49dcdfa7a57f2b86d6194bdcc3fe6b">More...</a><br /></td></tr>
 <tr class="separator:a3a49dcdfa7a57f2b86d6194bdcc3fe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a3ce2933c66b438c1f67a09e264a05"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_ehw_video.html#ad4a3ce2933c66b438c1f67a09e264a05">isOcclusionQuerySupported</a> () const =0</td></tr>
+<tr class="memdesc:ad4a3ce2933c66b438c1f67a09e264a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether Occlusion Query is supported.  <a href="class_p_r_r_ehw_video.html#ad4a3ce2933c66b438c1f67a09e264a05">More...</a><br /></td></tr>
+<tr class="separator:ad4a3ce2933c66b438c1f67a09e264a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a57b661be277d0b9a1a269ca267dc8d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_ehw_video.html#a9a57b661be277d0b9a1a269ca267dc8d">isBooleanOcclusionQuerySupported</a> () const =0</td></tr>
+<tr class="memdesc:a9a57b661be277d0b9a1a269ca267dc8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether Boolean Occlusion Query is supported.  <a href="class_p_r_r_ehw_video.html#a9a57b661be277d0b9a1a269ca267dc8d">More...</a><br /></td></tr>
+<tr class="separator:a9a57b661be277d0b9a1a269ca267dc8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84a6b27b691ad921ab9b4400be5084ba"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_ehw_video.html#a84a6b27b691ad921ab9b4400be5084ba">getVideocardOSName</a> () const =0</td></tr>
 <tr class="memdesc:a84a6b27b691ad921ab9b4400be5084ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Windows-based VGA name.  <a href="class_p_r_r_ehw_video.html#a84a6b27b691ad921ab9b4400be5084ba">More...</a><br /></td></tr>
 <tr class="separator:a84a6b27b691ad921ab9b4400be5084ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Gets the singleton instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_ehw_video_8cpp_source.html#l01544">1544</a> of file <a class="el" href="_p_r_r_ehw_video_8cpp_source.html">PRREhwVideo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_ehw_video_8cpp_source.html#l01564">1564</a> of file <a class="el" href="_p_r_r_ehw_video_8cpp_source.html">PRREhwVideo.cpp</a>.</p>
 
 </div>
 </div>
@@ -1148,6 +1154,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9a57b661be277d0b9a1a269ca267dc8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a57b661be277d0b9a1a269ca267dc8d">&#9670;&nbsp;</a></span>isBooleanOcclusionQuerySupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PRREhwVideo::isBooleanOcclusionQuerySupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets whether Boolean Occlusion Query is supported. </p>
+
+<p>Implemented in <a class="el" href="class_p_r_r_ehw_video_impl.html#a2febe66e037efb015842aa99fceaef49">PRREhwVideoImpl</a>.</p>
+
+</div>
+</div>
 <a id="a70f3040b5e6cbfd9ac47fd376996b138"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70f3040b5e6cbfd9ac47fd376996b138">&#9670;&nbsp;</a></span>isCompiledVertexArraySupported()</h2>
 
@@ -1438,6 +1473,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad4a3ce2933c66b438c1f67a09e264a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a3ce2933c66b438c1f67a09e264a05">&#9670;&nbsp;</a></span>isOcclusionQuerySupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PRREhwVideo::isOcclusionQuerySupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets whether Occlusion Query is supported. </p>
+
+<p>Implemented in <a class="el" href="class_p_r_r_ehw_video_impl.html#a02e1accb0fcc913adbf7d499a6c3f243">PRREhwVideoImpl</a>.</p>
+
+</div>
+</div>
 <a id="a43d223ae3fb68e87fa9ca8a9e20572bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43d223ae3fb68e87fa9ca8a9e20572bb">&#9670;&nbsp;</a></span>isRGTCSupported()</h2>
 
@@ -1654,7 +1718,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_ehw_video.html">PRREhwVideo</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

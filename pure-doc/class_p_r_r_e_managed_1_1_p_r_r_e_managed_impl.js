@@ -15,5 +15,6 @@ var class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl =
     [ "PRREManagerImpl", "class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#a77f8495ccb2f1d704d243dc0bd7ab4be", null ],
     [ "_pOwner", "class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#a3a7fa6c840a4ad1e7f4b76c4e41cc080", null ],
     [ "pParentMgr", "class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#ac0b27d547a7a9a7951395a4667f32d9d", null ],
+    [ "pUtiliser", "class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#a18ab219b001a6c73b019c6d6ddfc4777", null ],
     [ "sName", "class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#a8373f9d9d11d6fd3f9deb0e255bcb34d", null ]
 ];

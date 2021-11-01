@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -103,6 +103,10 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 <li>DEF_REDRAWALL_WNDPOSCHNG
 : <a class="el" href="class_p_r_r_e_window_impl.html#a09e3e6915dad8f9f573a5d4932c4634f">PRREWindowImpl</a>
 </li>
+<li>DefaultHints
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a7d5103cf423bbbb1502e3a263d10dfb3">PRRERendererHWfixedPipe</a>
+, <a class="el" href="class_p_r_r_e_renderer_s_wincremental.html#a596fba96195d833068356e2ee14ad51d">PRRERendererSWincremental</a>
+</li>
 <li>Deinitialize()
 : <a class="el" href="class_p_r_r_ehw_base.html#aa19d83be2de9558eb22984f7390ec7c3">PRREhwBase</a>
 , <a class="el" href="class_p_r_r_ehw_base_1_1_p_r_r_ehw_base_impl.html#ac3765d32ba903444ff60911c9b76cabb">PRREhwBase::PRREhwBaseImpl</a>
@@ -128,12 +132,16 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 : <a class="el" href="class_p_r_r_e_manager.html#a475da34514e0158260c6b625211f669d">PRREManager</a>
 , <a class="el" href="class_p_r_r_e_manager_1_1_p_r_r_e_manager_impl.html#a9153e818e458b6ff7c7d028f82723e7a">PRREManager::PRREManagerImpl</a>
 </li>
+<li>DeleteChildren()
+: <a class="el" href="class_p_r_r_e_octree.html#a90265ecf620340cd4ff588284c749856">PRREOctree</a>
+</li>
 <li>DescribeTexFormatAndSize()
 : <a class="el" href="class_p_r_r_e_texture_1_1_p_r_r_e_texture_impl.html#ae5fb231564f45ac4c64460206a911265">PRRETexture::PRRETextureImpl</a>
 </li>
 <li>Detach()
 : <a class="el" href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">PRREManager</a>
 , <a class="el" href="class_p_r_r_e_manager_1_1_p_r_r_e_manager_impl.html#a1243fa0360424d339126f3a31b5d304b">PRREManager::PRREManagerImpl</a>
+, <a class="el" href="class_p_r_r_e_object3_d_manager.html#ae3988ae531ee9c1f22349ac51b276ddc">PRREObject3DManager</a>
 </li>
 <li>DetachFrom()
 : <a class="el" href="class_p_r_r_e_managed.html#a54fd3677cf9adad98a868bb876011953">PRREManaged</a>
@@ -153,6 +161,9 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 </li>
 <li>DiscoverATIVertexArrayObjectAvailability()
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#ad32ece5adc52ae3beaf90fc348a97e8e">PRREhwVideoImpl</a>
+</li>
+<li>DiscoverBooleanHwOcclusionQueryAvailability()
+: <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__3__3.html#aa0c1236a7b172329de8e091ae8700089">PRREhwVideoDiscoverOpenGL_3_3</a>
 </li>
 <li>DiscoverCompiledVertexArraysAvailability()
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#a7ce963c14c77b364279914d331365379">PRREhwVideoImpl</a>
@@ -211,6 +222,9 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 <li>discoverGL_4_3
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#adbfaf6ee63228c06a4208ce8ad73adee">PRREhwVideoImpl</a>
 </li>
+<li>DiscoverHwOcclusionQueryAvailability()
+: <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__1__5.html#a067128b6dd535c49cf6a59faca27c0f3">PRREhwVideoDiscoverOpenGL_1_5</a>
+</li>
 <li>DiscoverMatrixStacksAvailability()
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#abb7e8c72d61dacfc3ac3ee790de1fd0f">PRREhwVideoImpl</a>
 </li>
@@ -225,9 +239,6 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 </li>
 <li>DiscoverNVVertexArrayRangeAvailability()
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#aee13b3473c941bc589f001a378b93bc5">PRREhwVideoImpl</a>
-</li>
-<li>DiscoverOpenGL_X_Y_availability()
-: <a class="el" href="class_p_r_r_ehw_video_impl.html#aed71c054dda66d40a99e55cbe2a1398b">PRREhwVideoImpl</a>
 </li>
 <li>discoverOpenGLavailability()
 : <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__1__1.html#a1f03d7947134ceb78c1577b4b89de989">PRREhwVideoDiscoverOpenGL_1_1</a>
@@ -261,7 +272,6 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 </li>
 <li>DiscoverVertexBuffersAvailability()
 : <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__1__5.html#acafd426c55b9dbac4113a8f890390d40">PRREhwVideoDiscoverOpenGL_1_5</a>
-, <a class="el" href="class_p_r_r_ehw_video_impl.html#a2ee6f0ed19916254b2ad020fb6dea8a6">PRREhwVideoImpl</a>
 </li>
 <li>DiscoverVertexRenderingAvailability()
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#a67ce4cd52d9413437e7250748b386a28">PRREhwVideoImpl</a>
@@ -277,22 +287,57 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 </li>
 <li>Draw()
 : <a class="el" href="class_p_r_r_e_i_renderable.html#ad035c63328e95057af0f70a9c747e76e">PRREIRenderable</a>
-, <a class="el" href="class_p_r_r_e_object3_d.html#ae4bac5cd9190c162d1bf7c27eaa55dc6">PRREObject3D</a>
-, <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#aa14e130a17fc9a47c53b8b27103dc238">PRREObject3D::PRREObject3DImpl</a>
 </li>
-<li>draw
-: <a class="el" href="struct_t_p_r_r_e___t_r_a_n_s_f_o_r_m_e_d___v_e_r_t_e_x.html#a3f0452a777cef1ec4eac76b3a67d3add">TPRRE_TRANSFORMED_VERTEX</a>
+<li>draw()
+: <a class="el" href="class_p_r_r_e_object3_d.html#aefb3d7faa6fd29b9aca97929072971b2">PRREObject3D</a>
+, <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a23e1508d7c055dcb5b58267f84352c44">PRREObject3D::PRREObject3DImpl</a>
+, <a class="el" href="struct_t_p_r_r_e___t_r_a_n_s_f_o_r_m_e_d___v_e_r_t_e_x.html#a3f0452a777cef1ec4eac76b3a67d3add">TPRRE_TRANSFORMED_VERTEX</a>
 </li>
 <li>Draw2DObjects()
 : <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ab9bc5ea602a7866a937c213fc1bf3bd7">PRRERendererHWfixedPipeImpl</a>
 , <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a10e6c506f1209f7f77177e973b212410">PRRERendererSWincrementalImpl</a>
 </li>
 <li>Draw3DObjects()
-: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4f3eda2390d521631a7da8c2cf9e3246">PRRERendererHWfixedPipeImpl</a>
-, <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#ab870ea87e4818ae6a9c5f9b58cb9a036">PRRERendererSWincrementalImpl</a>
+: <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#ab870ea87e4818ae6a9c5f9b58cb9a036">PRRERendererSWincrementalImpl</a>
 </li>
-<li>DrawSW()
-: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a91014f8a6dc6fb63b5507f0f391b3417">PRREObject3D::PRREObject3DImpl</a>
+<li>Draw3DObjects_Legacy()
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#abf05f2ac39067c6b41f055d1317c2b78">PRRERendererHWfixedPipeImpl</a>
+</li>
+<li>Draw3DObjects_OcclusionQuery()
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ad316f5ca16c0dc477ba22c451a04d169">PRRERendererHWfixedPipeImpl</a>
+</li>
+<li>Draw3DObjects_Ordered_Containers()
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ae6ae9b8073de3fd95b848f7ecb1a9348">PRRERendererHWfixedPipeImpl</a>
+</li>
+<li>Draw_ApplyTransformations()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#ace05c2286146aa90e86fa87a4401b0c6">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>draw_DrawSW()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#afa41e25c3c81dcaae8aa3786f774f4a7">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>Draw_FeedbackBuffer_Finish()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a8100f08de9c8cf366865ec4f806bc6f6">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>Draw_FeedbackBuffer_Start()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a3febda959322e783400038a20d17352c">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>Draw_LoadTextureIntoTMU()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a06c2e8cb3016a14b48a1214bbb94f1cc">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>Draw_LoadTexturesAndSetBlendState()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a29f0d4f0124093e1a76a894dd0b0fc0f">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>draw_OcclusionQuery_Finish()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#ad3971bcf5a5ece3d28d8d29cea4e40be">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>draw_OcclusionQuery_Start()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a0d9a06534321164cd4d01db7c3b06ada">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>Draw_PrepareGLBeforeDrawNormal()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a383c7313f1ae6fc607c074adc8f35212">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>draw_RenderBoundingBox()
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#aafeef000c6908c780bc7a2d0bf37531a">PRREObject3D::PRREObject3DImpl</a>
 </li>
 <li>dwBBitMask
 : <a class="el" href="struct_d_d_p_i_x_e_l_f_o_r_m_a_t.html#ae23f90d8be14051823644d6ec3115e76">DDPIXELFORMAT</a>
@@ -365,7 +410,7 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:37 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

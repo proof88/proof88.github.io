@@ -1,11 +1,16 @@
 var hierarchy =
 [
+    [ "CompareByZdistance", "struct_compare_by_zdistance.html", null ],
+    [ "PRREObject3D::PRREObject3DImpl::CurrentStats", "struct_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl_1_1_current_stats.html", null ],
+    [ "PRRERendererHWfixedPipeImpl::CurrentStats", "struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html", null ],
     [ "DDPIXELFORMAT", "struct_d_d_p_i_x_e_l_f_o_r_m_a_t.html", null ],
     [ "DDSCAPS2", "struct_d_d_s_c_a_p_s2.html", null ],
     [ "DDSURFACEDESC2", "struct_d_d_s_u_r_f_a_c_e_d_e_s_c2.html", null ],
+    [ "PRRERendererHWfixedPipeImpl::LastFrameStats", "class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html", null ],
     [ "PR00FsReducedRenderingEngine", "class_p_r00_fs_reduced_rendering_engine.html", [
       [ "PR00FsReducedRenderingEngineImpl", "class_p_r00_fs_reduced_rendering_engine_impl.html", null ]
     ] ],
+    [ "PRREAxisAlignedBoundingBox", "class_p_r_r_e_axis_aligned_bounding_box.html", null ],
     [ "PRRECamera::PRRECameraImpl", "class_p_r_r_e_camera_1_1_p_r_r_e_camera_impl.html", null ],
     [ "PRREColor", "class_p_r_r_e_color.html", null ],
     [ "PRREFiledManaged::PRREFiledManagedImpl", "class_p_r_r_e_filed_managed_1_1_p_r_r_e_filed_managed_impl.html", null ],
@@ -96,6 +101,9 @@ var hierarchy =
     [ "PRREMesh3DManager::PRREMesh3DManagerImpl", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html", null ],
     [ "PRREObject3D::PRREObject3DImpl", "class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html", null ],
     [ "PRREObject3DManager::PRREObject3DManagerImpl", "class_p_r_r_e_object3_d_manager_1_1_p_r_r_e_object3_d_manager_impl.html", null ],
+    [ "PRREOctree", "class_p_r_r_e_octree.html", [
+      [ "PRREBoundingVolumeHierarchy", "class_p_r_r_e_bounding_volume_hierarchy.html", null ]
+    ] ],
     [ "PRREPosUpTarget", "class_p_r_r_e_pos_up_target.html", [
       [ "PRRECamera", "class_p_r_r_e_camera.html", null ]
     ] ],

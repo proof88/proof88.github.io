@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['scaption_4010',['sCaption',['../class_p_r_r_e_window_impl.html#a66c048deffa9de3757b4faa255095ec2',1,'PRREWindowImpl']]],
-  ['screen_4011',['screen',['../class_p_r00_fs_reduced_rendering_engine_impl.html#ad4919a99fd717ff9bc9374183c83cceb',1,'PR00FsReducedRenderingEngineImpl::screen()'],['../class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4522577392f5bbd4a32fa51e0dee6bde',1,'PRRERendererHWfixedPipeImpl::screen()'],['../class_p_r_r_e_renderer_s_wincremental_impl.html#ac2c3c9b19b65a7d9cbd9b37343f085ee',1,'PRRERendererSWincrementalImpl::screen()']]],
-  ['sdefaultfont_4012',['sDefaultFont',['../class_p_r_r_eui_manager_impl.html#ae7c8f999d64f103bc7edfd35240ef08f',1,'PRREuiManagerImpl']]],
-  ['sfilename_4013',['sFilename',['../class_p_r_r_e_filed_managed_1_1_p_r_r_e_filed_managed_impl.html#a24344416a497a8986de2450391b0f182',1,'PRREFiledManaged::PRREFiledManagedImpl']]],
-  ['sfontfacename_4014',['sFontFaceName',['../class_p_r_r_eui_font_win.html#a27a15f6e6ef4dabe0d8dbe62a80bdd22',1,'PRREuiFontWin']]],
-  ['sharedsettings_4015',['sharedSettings',['../class_p_r_r_e_screen_impl.html#a0ced19e17a5bf12a381e813196158bf9',1,'PRREScreenImpl::sharedSettings()'],['../class_p_r_r_e_window_impl.html#a4fdc07bffa81cee37a64741ed8f8770b',1,'PRREWindowImpl::sharedSettings()'],['../class_p_r_r_ehw_video_impl.html#a0f42aeeafbfd281f6748277ee2599425',1,'PRREhwVideoImpl::sharedSettings()']]],
-  ['size_4016',['size',['../struct_t_p_r_r_e___r_e_c_t___f_l_o_a_t.html#af35f2a7a0a524ef8d5b367e620b16cd7',1,'TPRRE_RECT_FLOAT']]],
-  ['sname_4017',['sName',['../class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#a8373f9d9d11d6fd3f9deb0e255bcb34d',1,'PRREManaged::PRREManagedImpl']]],
-  ['ssets_4018',['ssets',['../class_p_r00_fs_reduced_rendering_engine_impl.html#ac142c549812d525b103f9be0d661993c',1,'PR00FsReducedRenderingEngineImpl']]],
-  ['stext_4019',['sText',['../class_p_r_r_eui_text.html#addf72251fa1559114e675d6c9a97f2ed',1,'PRREuiText']]],
-  ['svidfeaturesogl_4020',['sVidFeaturesOGL',['../class_p_r_r_ehw_video_discover_open_g_lbase.html#a87d12e4ad6c69b1c14f5500280ee8578',1,'PRREhwVideoDiscoverOpenGLbase::sVidFeaturesOGL()'],['../class_p_r_r_ehw_video_impl.html#a3f98f0f2fcb0459404a0bfb2fb66639a',1,'PRREhwVideoImpl::sVidFeaturesOGL()']]],
-  ['svidfeatureswgl_4021',['sVidFeaturesWGL',['../class_p_r_r_ehw_video_discover_open_g_lbase.html#a6e28f6e99fd683dfd96e7f6f096cf78a',1,'PRREhwVideoDiscoverOpenGLbase::sVidFeaturesWGL()'],['../class_p_r_r_ehw_video_impl.html#aa5486f6df2aced8f0c47de247e69d865',1,'PRREhwVideoImpl::sVidFeaturesWGL()']]],
-  ['svidnameogl_4022',['sVidNameOGL',['../class_p_r_r_ehw_video_impl.html#aa6f6a746108c4d87bcfa0364700f6cfc',1,'PRREhwVideoImpl']]],
-  ['svidnamewin_4023',['sVidNameWin',['../class_p_r_r_ehw_video_impl.html#a0bff0fa78a362d8fd64ab2b3581c5aac',1,'PRREhwVideoImpl']]],
-  ['svidvendorogl_4024',['sVidVendorOGL',['../class_p_r_r_ehw_video_impl.html#a08569f4b34a28729b92e496cd4f32e36',1,'PRREhwVideoImpl']]],
-  ['svidversionogl_4025',['sVidVersionOGL',['../class_p_r_r_ehw_video_discover_open_g_lbase.html#a041f8c67adfc64696d5a54f9c1de0f88',1,'PRREhwVideoDiscoverOpenGLbase::sVidVersionOGL()'],['../class_p_r_r_ehw_video_impl.html#a2ebc24c983cc02e9473fa5b5888da65d',1,'PRREhwVideoImpl::sVidVersionOGL()']]]
+  ['r_4412',['r',['../class_p_r_r_e_color.html#aace8d33019ba3a695b5af3787484808a',1,'PRREColor']]],
+  ['rawinput_4413',['rawInput',['../class_p_r_r_e_window_impl.html#a29f0831e86cba195cc037ed8e947e976',1,'PRREWindowImpl']]],
+  ['rawinputsize_4414',['rawInputSize',['../class_p_r_r_e_window_impl.html#aef22388ea0e7f7c3983ce17f804a3188',1,'PRREWindowImpl']]],
+  ['rc_4415',['rc',['../class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4ba9b8f54f4c982dd6b0801fc09d6f71',1,'PRRERendererHWfixedPipeImpl']]],
+  ['rectviewport_4416',['rectViewport',['../class_p_r_r_e_camera_1_1_p_r_r_e_camera_impl.html#a2a2332cf6ec1308d07a13154d33712d2',1,'PRRECamera::PRRECameraImpl']]],
+  ['rectwindowclient_4417',['rectWindowClient',['../class_p_r_r_e_window_impl.html#a35621298a3b4822b1d597cc0a010dca3',1,'PRREWindowImpl']]],
+  ['rectwindowfull_4418',['rectWindowFull',['../class_p_r_r_e_window_impl.html#ad1e8387dd698ec509f712f17c563ad76',1,'PRREWindowImpl']]],
+  ['red_4419',['red',['../struct_t_p_r_r_e___r_g_b___f_l_o_a_t.html#aa2155d3ed5f3a2a89db094d81232cf87',1,'TPRRE_RGB_FLOAT::red()'],['../struct_t_p_r_r_e___r_g_b___u_b_y_t_e.html#a0dbc7fd2a9b83a22f9da87e466566350',1,'TPRRE_RGB_UBYTE::red()'],['../struct_t_p_r_r_e___r_g_b_a___f_l_o_a_t.html#ac85c6e260496f35359cf203004a4ef58',1,'TPRRE_RGBA_FLOAT::red()'],['../struct_t_p_r_r_e___r_g_b_a___u_b_y_t_e.html#a86c75259875352d069570c2e78edf927',1,'TPRRE_RGBA_UBYTE::red()']]],
+  ['referrers_4420',['referrers',['../class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#ab8c8dc6ea32c913dcc352fdc43250c6c',1,'PRREObject3D::PRREObject3DImpl']]],
+  ['renderhints_4421',['renderHints',['../struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#a80f35e6efd051a33cab711ea9e426759',1,'PRRERendererHWfixedPipeImpl::CurrentStats::renderHints()'],['../class_p_r_r_e_renderer_s_wincremental_impl.html#a322eb9f3220b9bb62af4ff9ed352c2f3',1,'PRRERendererSWincrementalImpl::renderHints()']]],
+  ['right_4422',['RIGHT',['../class_p_r_r_e_octree.html#a75ce1a7a4f60fbb47760f36f21123313',1,'PRREOctree']]],
+  ['rotation_4423',['rotation',['../class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a9d62cfc94c164cee13b580913d93c892',1,'PRREObject3D::PRREObject3DImpl']]]
 ];

@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>b
 : <a class="el" href="class_p_r_r_e_color.html#a42cd0e34edd34f4055cdcea9a06a5c4a">PRREColor</a>
 </li>
+<li>BACK
+: <a class="el" href="class_p_r_r_e_octree.html#ad05c70bf3554f32dfee9a490447cbcc4">PRREOctree</a>
+</li>
 <li>bActive
 : <a class="el" href="class_p_r_r_e_window_impl.html#a38975e9be63043c0ba35af0921bc2981">PRREWindowImpl</a>
 </li>
@@ -126,6 +129,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>bAutoRedrawOnPosChange
 : <a class="el" href="class_p_r_r_e_window_impl.html#a2a299ab0741af60916777aaec863ad0b">PRREWindowImpl</a>
+</li>
+<li>bAutoWriteStatsAtShutdown
+: <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#aa63bdad7e341f197b6e107b8084dda2d">PR00FsReducedRenderingEngineImpl</a>
 </li>
 <li>bBorder
 : <a class="el" href="class_p_r_r_e_texture_1_1_p_r_r_e_texture_impl.html#a1ffd607e586165acbf53707efe8d1587">PRRETexture::PRRETextureImpl</a>
@@ -201,6 +207,15 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 , <a class="el" href="class_p_r_r_ehw_info_impl.html#a09e02cd395f63317f9675cad7de4abc0">PRREhwInfoImpl</a>
 , <a class="el" href="class_p_r_r_eui_manager_impl.html#ac3ad6973f777b1c671465fd6efd0e0e0">PRREuiManagerImpl</a>
 </li>
+<li>BIT_AXIS_X
+: <a class="el" href="class_p_r_r_e_octree.html#a00869d81840d871474f313f48d0edbbb">PRREOctree</a>
+</li>
+<li>BIT_AXIS_Y
+: <a class="el" href="class_p_r_r_e_octree.html#ac95a2a408dd91fba38bbf3a81b2546b3">PRREOctree</a>
+</li>
+<li>BIT_AXIS_Z
+: <a class="el" href="class_p_r_r_e_octree.html#a3343d81258f0cdbc63b94365f6731af2">PRREOctree</a>
+</li>
 <li>bItalic
 : <a class="el" href="class_p_r_r_eui_font_win.html#a290dcc33fc3ff37f3e14385fe59025dc">PRREuiFontWin</a>
 </li>
@@ -208,14 +223,13 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#af2d7ff22eb4b829867b8cd18213edecc">PRRETextureManager::PRRETextureManagerImpl</a>
 </li>
 <li>blendFactorDestination
-: <a class="el" href="struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a8cb11b29b036832f2a090729889fd78b">TPRRE_MATERIAL_LAYER</a>
+: <a class="el" href="struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a41694352cb7e4a5bbdfaa5f8ba797176">TPRRE_MATERIAL_LAYER</a>
 </li>
 <li>blendFactorSource
-: <a class="el" href="struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a1ef2db35dfddb30262537d66ad24152e">TPRRE_MATERIAL_LAYER</a>
+: <a class="el" href="struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a49e21d44866903242818a1041cf673fa">TPRRE_MATERIAL_LAYER</a>
 </li>
 <li>bLighting
-: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a8585a53dfaaf18167362de8064de4bf1">PRRERendererHWfixedPipeImpl</a>
-, <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a9e81a4478bc7ba721bfac2bf1c330813">PRRERendererSWincrementalImpl</a>
+: <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a9e81a4478bc7ba721bfac2bf1c330813">PRRERendererSWincrementalImpl</a>
 </li>
 <li>blue
 : <a class="el" href="struct_t_p_r_r_e___r_g_b___f_l_o_a_t.html#a6906ecc75fcd55fa8eb1b631a2ecfd3a">TPRRE_RGB_FLOAT</a>
@@ -232,6 +246,18 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>bMSAAlevels
 : <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__1__3.html#a06c146288dff3ede6362d41c4d9b4b9f">PRREhwVideoDiscoverOpenGL_1_3</a>
+</li>
+<li>bOccluded
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a01e90347e74d95169db64c7412a916a5">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>bOccluder
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a2ec28cb406b43a533581ce1f1a614901">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>bOcclusionQueryStarted
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a3dd96d6b27f181aadd1e92091b84b71d">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>BOTTOM
+: <a class="el" href="class_p_r_r_e_octree.html#a08f9429803f8b8230264c13584dc7386">PRREOctree</a>
 </li>
 <li>bParentInitiatedOperation
 : <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#afdaa5cc6a98e81fd04848db275cae8ef">PRREObject3D::PRREObject3DImpl</a>
@@ -279,6 +305,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>bSuppBGRAtex
 : <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__1__2.html#a8d2d953867ce4fe36409acccd4c685c3">PRREhwVideoDiscoverOpenGL_1_2</a>
 </li>
+<li>bSuppBooleanOcclusionQuery
+: <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__3__3.html#a13b12462f651ed168b2351aa985847f2">PRREhwVideoDiscoverOpenGL_3_3</a>
+</li>
 <li>bSuppCompiledVertexArrays
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#ad4be532ff398366f39d2573cbb4bac60">PRREhwVideoImpl</a>
 </li>
@@ -305,6 +334,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>bSuppNVVertexArrayRange2
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#adf29e697bba478d542ab2d7c9d4a769d">PRREhwVideoImpl</a>
+</li>
+<li>bSuppOcclusionQuery
+: <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__1__5.html#a4de2154d02b1e026706122238843a951">PRREhwVideoDiscoverOpenGL_1_5</a>
 </li>
 <li>bSuppRGTC
 : <a class="el" href="class_p_r_r_ehw_video_discover_open_g_l__3__0.html#a749c138fedfbde5ffa5ae8811084110c">PRREhwVideoDiscoverOpenGL_3_0</a>
@@ -354,7 +386,7 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:37 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

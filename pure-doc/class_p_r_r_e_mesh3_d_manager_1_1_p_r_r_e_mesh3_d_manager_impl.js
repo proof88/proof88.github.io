@@ -16,5 +16,6 @@ var class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl =
     [ "_pOwner", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#a36908d511d074e0942643051ea95027e", null ],
     [ "bInited", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#a95cd98a4e6e5bb45944e77b10ea60d5c", null ],
     [ "bMinimalIndexStorage", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#a7e2411327b3450e7d9b44bcdeeb743d4", null ],
-    [ "materialMgr", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#a0b4034cd404e54860495093476409138", null ]
+    [ "materialMgr", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#a0b4034cd404e54860495093476409138", null ],
+    [ "nRunningCounter", "class_p_r_r_e_mesh3_d_manager_1_1_p_r_r_e_mesh3_d_manager_impl.html#aff89213c08ed5cfe302c236b3dd9becc", null ]
 ];

@@ -10,8 +10,11 @@ var class_p_r_r_e_managed =
     [ "getManager", "class_p_r_r_e_managed.html#a85c4104273ffdbb853c2bb9b02504ae8", null ],
     [ "getName", "class_p_r_r_e_managed.html#a12e5e5473417337f5c003bd50e3df2f3", null ],
     [ "getUsedSystemMemory", "class_p_r_r_e_managed.html#a71739840339a8d59713e3414fe7f7fa3", null ],
+    [ "getUtiliser", "class_p_r_r_e_managed.html#a1cd5426ba6996820692fcf8276895d06", null ],
+    [ "getUtiliser", "class_p_r_r_e_managed.html#a4f7a16f92f916e7507351f3dc631fdf0", null ],
     [ "operator=", "class_p_r_r_e_managed.html#ada6637d3d80a2d880dfb9e60cd49e883", null ],
     [ "SetName", "class_p_r_r_e_managed.html#a18bca93dc043352c8a841e9c6dde4119", null ],
+    [ "SetUtiliser", "class_p_r_r_e_managed.html#ab5a6ab3e20c3c43a5ffa7877a2412846", null ],
     [ "PRREManager", "class_p_r_r_e_managed.html#a14b5b20116fcb6bf2f369a79f94660ab", null ],
     [ "PRREManagerImpl", "class_p_r_r_e_managed.html#a77f8495ccb2f1d704d243dc0bd7ab4be", null ],
     [ "pImpl", "class_p_r_r_e_managed.html#ab0bd5c90bc48c3fd71588cf062d5cf83", null ]

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ddpixelformat_2089',['DDPIXELFORMAT',['../struct_d_d_p_i_x_e_l_f_o_r_m_a_t.html',1,'']]],
-  ['ddscaps2_2090',['DDSCAPS2',['../struct_d_d_s_c_a_p_s2.html',1,'']]],
-  ['ddsurfacedesc2_2091',['DDSURFACEDESC2',['../struct_d_d_s_u_r_f_a_c_e_d_e_s_c2.html',1,'']]]
+  ['comparebyzdistance_2318',['CompareByZdistance',['../struct_compare_by_zdistance.html',1,'']]],
+  ['currentstats_2319',['CurrentStats',['../struct_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl_1_1_current_stats.html',1,'PRREObject3D::PRREObject3DImpl::CurrentStats'],['../struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html',1,'PRRERendererHWfixedPipeImpl::CurrentStats']]]
 ];

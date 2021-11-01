@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -92,7 +92,9 @@ $(document).ready(function(){initNavTree('_p_r_r_e_object3_d_manager_8h.html',''
 <div class="title">PRREObject3DManager.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_p_r_r_eall_headers_8h_source.html">../PRREallHeaders.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &quot;<a class="el" href="_p_r_r_eall_headers_8h_source.html">../PRREallHeaders.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_filed_manager_8h_source.html">../PRREFiledManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_mesh3_d_manager_8h_source.html">PRREMesh3DManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>&quot;</code><br />
@@ -126,8 +128,36 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0a26e1cd8eb2cd4a22136005792ac66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation order of 3D objects.  <a href="_p_r_r_e_object3_d_manager_8h.html#a0a26e1cd8eb2cd4a22136005792ac66b">More...</a><br /></td></tr>
 <tr class="separator:a0a26e1cd8eb2cd4a22136005792ac66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfe6af11336bd3239b03996048fab5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_r_r_e_object3_d_manager_8h.html#addfe6af11336bd3239b03996048fab5b">TPRRE_RENDER_PASS</a> { <a class="el" href="_p_r_r_e_object3_d_manager_8h.html#addfe6af11336bd3239b03996048fab5ba923e76fc9b670e570f24532eb4de39b7">PRRE_RPASS_BOUNDING_BOX_DEBUG_FOR_OCCLUSION_QUERY</a> = 0, 
+<a class="el" href="_p_r_r_e_object3_d_manager_8h.html#addfe6af11336bd3239b03996048fab5bad2e7a2d58784da2545aa79932407f5fd">PRRE_RPASS_Z_ONLY</a>, 
+<a class="el" href="_p_r_r_e_object3_d_manager_8h.html#addfe6af11336bd3239b03996048fab5ba6c0d6de497a1f3f1affea631c4e8189d">PRRE_RPASS_START_OCCLUSION_QUERY</a>, 
+<a class="el" href="_p_r_r_e_object3_d_manager_8h.html#addfe6af11336bd3239b03996048fab5bae85c28d5f8a1273ec7001c3bfcf453a6">PRRE_RPASS_NORMAL</a>
+ }</td></tr>
+<tr class="separator:addfe6af11336bd3239b03996048fab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="addfe6af11336bd3239b03996048fab5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfe6af11336bd3239b03996048fab5b">&#9670;&nbsp;</a></span>TPRRE_RENDER_PASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_p_r_r_e_object3_d_manager_8h.html#addfe6af11336bd3239b03996048fab5b">TPRRE_RENDER_PASS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="addfe6af11336bd3239b03996048fab5ba923e76fc9b670e570f24532eb4de39b7"></a>PRRE_RPASS_BOUNDING_BOX_DEBUG_FOR_OCCLUSION_QUERY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="addfe6af11336bd3239b03996048fab5bad2e7a2d58784da2545aa79932407f5fd"></a>PRRE_RPASS_Z_ONLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="addfe6af11336bd3239b03996048fab5ba6c0d6de497a1f3f1affea631c4e8189d"></a>PRRE_RPASS_START_OCCLUSION_QUERY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="addfe6af11336bd3239b03996048fab5bae85c28d5f8a1273ec7001c3bfcf453a6"></a>PRRE_RPASS_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html#l00038">38</a> of file <a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html">PRREObject3DManager.h</a>.</p>
+
+</div>
+</div>
 <a id="a0a26e1cd8eb2cd4a22136005792ac66b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a26e1cd8eb2cd4a22136005792ac66b">&#9670;&nbsp;</a></span>TPRRE_ROTATION_ORDER</h2>
 
@@ -150,7 +180,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a0a26e1cd8eb2cd4a22136005792ac66ba3784a15fe43161ab9e8055033b4b664d"></a>PRRE_ZXY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html#l00025">25</a> of file <a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html">PRREObject3DManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html#l00027">27</a> of file <a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html">PRREObject3DManager.h</a>.</p>
 
 </div>
 </div>
@@ -160,7 +190,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_49d1ebef343bdf4bee40616b97db6cc6.html">PRRE</a></li><li class="navelem"><a class="el" href="dir_5403b90358a86108724634e49241fa0a.html">include</a></li><li class="navelem"><a class="el" href="dir_aafe0f92b9f006e2e8de9e917a3aef2c.html">external</a></li><li class="navelem"><a class="el" href="dir_3288aaa2cbb217ffacd870adea1a24bb.html">Object3D</a></li><li class="navelem"><a class="el" href="_p_r_r_e_object3_d_manager_8h.html">PRREObject3DManager.h</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

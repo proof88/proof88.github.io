@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -92,9 +92,15 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_i_renderer.html',''); in
 <div class="title">PRREIRenderer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Renderer interface.  
+ <a href="class_p_r_r_e_i_renderer.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_i_renderer_8h_source.html#l00051">51</a> of file <a class="el" href="_p_r_r_e_i_renderer_8h_source.html">PRREIRenderer.h</a>.</p>
+<div class="textblock"><p>Renderer interface. </p>
+<p>Renderer classes implementing this interface must fully conform to the method specifications written in the comments.</p>
+<p>Basically a renderer class implementing this interface defines a rendering path. </p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_i_renderer_8h_source.html#l00056">56</a> of file <a class="el" href="_p_r_r_e_i_renderer_8h_source.html">PRREIRenderer.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_p_r_r_e_i_renderer_8h_source.html">PRREIRenderer.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -132,11 +138,50 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a185bc8e81fbcaef3e809eb8fa94ced77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_i_renderer.html#a185bc8e81fbcaef3e809eb8fa94ced77">RenderScene</a> ()=0</td></tr>
 <tr class="memdesc:a185bc8e81fbcaef3e809eb8fa94ced77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the scene.  <a href="class_p_r_r_e_i_renderer.html#a185bc8e81fbcaef3e809eb8fa94ced77">More...</a><br /></td></tr>
 <tr class="separator:a185bc8e81fbcaef3e809eb8fa94ced77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6513c865a3ef6118f2aa3ebd86201c7"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_i_renderer.html#ac6513c865a3ef6118f2aa3ebd86201c7">getRenderHints</a> ()=0</td></tr>
+<tr class="memdesc:ac6513c865a3ef6118f2aa3ebd86201c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current render hints.  <a href="class_p_r_r_e_i_renderer.html#ac6513c865a3ef6118f2aa3ebd86201c7">More...</a><br /></td></tr>
+<tr class="separator:ac6513c865a3ef6118f2aa3ebd86201c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd5874465866bc48ad2285fd99bf207"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_i_renderer.html#acfd5874465866bc48ad2285fd99bf207">SetRenderHints</a> (const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;hints)=0</td></tr>
+<tr class="memdesc:acfd5874465866bc48ad2285fd99bf207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current render hints.  <a href="class_p_r_r_e_i_renderer.html#acfd5874465866bc48ad2285fd99bf207">More...</a><br /></td></tr>
+<tr class="separator:acfd5874465866bc48ad2285fd99bf207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e8823bd645cc86e0d715f865c38cd2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_i_renderer.html#ac1e8823bd645cc86e0d715f865c38cd2">ResetStatistics</a> ()=0</td></tr>
+<tr class="memdesc:ac1e8823bd645cc86e0d715f865c38cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets "Current Statistics".  <a href="class_p_r_r_e_i_renderer.html#ac1e8823bd645cc86e0d715f865c38cd2">More...</a><br /></td></tr>
+<tr class="separator:ac1e8823bd645cc86e0d715f865c38cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a463e48ec5250df3a3cbaa1d5b410f2ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_i_renderer.html#a463e48ec5250df3a3cbaa1d5b410f2ca">WriteStats</a> () const =0</td></tr>
-<tr class="memdesc:a463e48ec5250df3a3cbaa1d5b410f2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes statistics to the console window.  <a href="class_p_r_r_e_i_renderer.html#a463e48ec5250df3a3cbaa1d5b410f2ca">More...</a><br /></td></tr>
+<tr class="memdesc:a463e48ec5250df3a3cbaa1d5b410f2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes "Current Statistics" and "Last Frame Statistics" to the console window.  <a href="class_p_r_r_e_i_renderer.html#a463e48ec5250df3a3cbaa1d5b410f2ca">More...</a><br /></td></tr>
 <tr class="separator:a463e48ec5250df3a3cbaa1d5b410f2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac6513c865a3ef6118f2aa3ebd86201c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6513c865a3ef6118f2aa3ebd86201c7">&#9670;&nbsp;</a></span>getRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a>&amp; PRREIRenderer::getRenderHints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get current render hints. </p>
+<p>Render hints are basically debug settings for the renderer used in rare circumstances. The available render hints are documented at each renderer implementation. </p>
+
+<p>Implemented in <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a66b5c6fa1c27e23beb8445e6b1752572">PRRERendererSWincrementalImpl</a>, and <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a79fc355f6e20025ea23767a59cbd2794">PRRERendererHWfixedPipeImpl</a>.</p>
+
+</div>
+</div>
 <a id="a5a3fe08d44a16f39e2b446aaf180b556"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a3fe08d44a16f39e2b446aaf180b556">&#9670;&nbsp;</a></span>initialize()</h2>
 
@@ -214,7 +259,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the renderer. </p>
-<p>Tries to set the given display mode.</p>
+<p>Tries to set the given display mode. Render hints are not affected.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>Client width of the window being created. If 0, the target width will be the current horizontal screen resolution. If the current horizontal screen resolution can't be queried, the target width will be 800. </td></tr>
@@ -326,6 +371,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac1e8823bd645cc86e0d715f865c38cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e8823bd645cc86e0d715f865c38cd2">&#9670;&nbsp;</a></span>ResetStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PRREIRenderer::ResetStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets "Current Statistics". </p>
+<p>The renderer might collect statistical data during its lifetime or for a shorter period, that might be shown in debug log by <a class="el" href="class_p_r_r_e_i_renderer.html#a463e48ec5250df3a3cbaa1d5b410f2ca" title="Writes &quot;Current Statistics&quot; and &quot;Last Frame Statistics&quot; to the console window.">WriteStats()</a>. In any circumstances you want to reset this data i.e. restart measurements, this function does the job. If logging is enabled, it also logs statistics. </p>
+
+<p>Implemented in <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a7715e6f77b1cbc1baf7406972e768040">PRRERendererSWincrementalImpl</a>, and <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a3fe7bca4a83a3a8e3ab9aa04ced4777b">PRRERendererHWfixedPipeImpl</a>.</p>
+
+</div>
+</div>
 <a id="a51a5232136c81f5c405b3eb6f46822dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51a5232136c81f5c405b3eb6f46822dc">&#9670;&nbsp;</a></span>SetManagers()</h2>
 
@@ -373,6 +448,37 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acfd5874465866bc48ad2285fd99bf207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd5874465866bc48ad2285fd99bf207">&#9670;&nbsp;</a></span>SetRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PRREIRenderer::SetRenderHints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set current render hints. </p>
+<p>Render hints are basically debug settings for the renderer used in rare circumstances. The available render hints are documented at each renderer implementation. </p>
+
+<p>Implemented in <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a0b9c833f5b52da68969ed8936645b290">PRRERendererSWincrementalImpl</a>, and <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a08b64874a4abb83d70f6e9c5738711dd">PRRERendererHWfixedPipeImpl</a>.</p>
+
+</div>
+</div>
 <a id="ab30880df02126c6bcfe502d134cdef79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab30880df02126c6bcfe502d134cdef79">&#9670;&nbsp;</a></span>shutdown()</h2>
 
@@ -397,7 +503,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This stops the renderer. </p>
-<p>Deletes everything created by the renderer. No effect before initialization. After shutdown, <a class="el" href="class_p_r_r_e_i_renderer.html#a5a3fe08d44a16f39e2b446aaf180b556" title="Initializes the renderer.">initialize()</a> can be called again.</p>
+<p>Deletes everything created by the renderer. No effect before initialization. After shutdown, <a class="el" href="class_p_r_r_e_i_renderer.html#a5a3fe08d44a16f39e2b446aaf180b556" title="Initializes the renderer.">initialize()</a> can be called again. Render hints are not affected.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on successful shutdown, false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a74c72745a1eb8631541409d0d56ffea4">PRRERendererSWincrementalImpl</a>, and <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ab1674c4953418176e05f6a20d1d35bf1">PRRERendererHWfixedPipeImpl</a>.</p>
@@ -427,7 +533,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Writes statistics to the console window. </p>
+<p>Writes "Current Statistics" and "Last Frame Statistics" to the console window. </p>
+<p>These are explained at <a class="el" href="debugging.html">Debugging</a>. </p>
 
 <p>Implemented in <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a57008ad81adc4cf557fe9cd9cceeebae">PRRERendererSWincrementalImpl</a>, and <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ac50e0eca0bc13cc83113194b64eb6001">PRRERendererHWfixedPipeImpl</a>.</p>
 
@@ -442,7 +549,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

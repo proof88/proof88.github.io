@@ -5,6 +5,7 @@ var dir_a88ecc9b23b1118a1ece71b2d55fc09b =
     [ "Material", "dir_18575b7f4052a9082063373cfd4e6163.html", "dir_18575b7f4052a9082063373cfd4e6163" ],
     [ "Math", "dir_dcec58621bbc743e161aebde88803156.html", "dir_dcec58621bbc743e161aebde88803156" ],
     [ "Object3D", "dir_d8e4b5c425dfc1560322a8264ea6c928.html", "dir_d8e4b5c425dfc1560322a8264ea6c928" ],
+    [ "SpatialStructures", "dir_18f8dcab3a9e90d6dfaa11b17b93f0c1.html", "dir_18f8dcab3a9e90d6dfaa11b17b93f0c1" ],
     [ "PRREbaseIncludes.h", "_p_r_r_ebase_includes_8h.html", "_p_r_r_ebase_includes_8h" ],
     [ "PRREconsts.h", "_p_r_r_econsts_8h.html", "_p_r_r_econsts_8h" ],
     [ "PRREGLextensionFuncs.h", "_p_r_r_e_g_lextension_funcs_8h.html", "_p_r_r_e_g_lextension_funcs_8h" ],

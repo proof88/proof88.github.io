@@ -11,6 +11,7 @@ var class_p_r_r_e_renderer_s_wincremental_impl =
     [ "Draw3DObjects", "class_p_r_r_e_renderer_s_wincremental_impl.html#ab870ea87e4818ae6a9c5f9b58cb9a036", null ],
     [ "FinishRendering", "class_p_r_r_e_renderer_s_wincremental_impl.html#a135b2d68bad07381d9d13f8450493a2e", null ],
     [ "GeometricStage", "class_p_r_r_e_renderer_s_wincremental_impl.html#aac3eae275b46b890520c74cd7fb21f67", null ],
+    [ "getRenderHints", "class_p_r_r_e_renderer_s_wincremental_impl.html#a66b5c6fa1c27e23beb8445e6b1752572", null ],
     [ "initialize", "class_p_r_r_e_renderer_s_wincremental_impl.html#afd0902a44efc969888075644f93f7ca5", null ],
     [ "isInitialized", "class_p_r_r_e_renderer_s_wincremental_impl.html#a9f9a9188ed14a5350717a9b2ba07e010", null ],
     [ "Line", "class_p_r_r_e_renderer_s_wincremental_impl.html#ab57b6170447e951853f17a124c418b3e", null ],
@@ -23,8 +24,10 @@ var class_p_r_r_e_renderer_s_wincremental_impl =
     [ "RenderObject", "class_p_r_r_e_renderer_s_wincremental_impl.html#ac7e97e950592b7b1114c625a1696560b", null ],
     [ "RenderScene", "class_p_r_r_e_renderer_s_wincremental_impl.html#a1ed4410ac0110231a2a0d58aeaa53b00", null ],
     [ "RenderStage", "class_p_r_r_e_renderer_s_wincremental_impl.html#a9012987bb48c207ae9b41f5b05d14cd2", null ],
+    [ "ResetStatistics", "class_p_r_r_e_renderer_s_wincremental_impl.html#a7715e6f77b1cbc1baf7406972e768040", null ],
     [ "SetManagers", "class_p_r_r_e_renderer_s_wincremental_impl.html#a0d073acbfbeb3f7601425356181a5a70", null ],
     [ "SetPixel", "class_p_r_r_e_renderer_s_wincremental_impl.html#a65becdc17d14c6cfb8713e19e40e53e2", null ],
+    [ "SetRenderHints", "class_p_r_r_e_renderer_s_wincremental_impl.html#a0b9c833f5b52da68969ed8936645b290", null ],
     [ "shutdown", "class_p_r_r_e_renderer_s_wincremental_impl.html#a74c72745a1eb8631541409d0d56ffea4", null ],
     [ "SwitchToOrtographicProjection", "class_p_r_r_e_renderer_s_wincremental_impl.html#a776e1b5104075595a7f75367a841fe9e", null ],
     [ "SwitchToPerspectiveProjection", "class_p_r_r_e_renderer_s_wincremental_impl.html#a75107cb5e9299b8705b3ddbc61500302", null ],
@@ -43,6 +46,7 @@ var class_p_r_r_e_renderer_s_wincremental_impl =
     [ "pObject3DMgr", "class_p_r_r_e_renderer_s_wincremental_impl.html#ac4caa3549eab38f98eb0084941452e0d", null ],
     [ "pUImgr", "class_p_r_r_e_renderer_s_wincremental_impl.html#aa042401826599c27ea6f66993428ad37", null ],
     [ "pZBuffer", "class_p_r_r_e_renderer_s_wincremental_impl.html#aa4e9608981dd21ab3e3b38922aee2170", null ],
+    [ "renderHints", "class_p_r_r_e_renderer_s_wincremental_impl.html#a322eb9f3220b9bb62af4ff9ed352c2f3", null ],
     [ "screen", "class_p_r_r_e_renderer_s_wincremental_impl.html#ac2c3c9b19b65a7d9cbd9b37343f085ee", null ],
     [ "wnd", "class_p_r_r_e_renderer_s_wincremental_impl.html#a0d08e05acbd101b70d529a3c894760b6", null ]
 ];

@@ -14,6 +14,7 @@ var class_p_r_r_e_manager =
     [ "getCount", "class_p_r_r_e_manager.html#af2d360fd3e19fa75d9b4018c7c1346c2", null ],
     [ "getSize", "class_p_r_r_e_manager.html#a4b14eb817b2c6072509337c18143d100", null ],
     [ "getUsedSystemMemory", "class_p_r_r_e_manager.html#a01f98068bb0e373b2e648f5b0d730089", null ],
+    [ "HandleManagedPropertyChanged", "class_p_r_r_e_manager.html#ac0ce45ea15961bc4d026e84910b2915c", null ],
     [ "hasAttached", "class_p_r_r_e_manager.html#afae57294583d6316bd185dd90359d858", null ],
     [ "isEmpty", "class_p_r_r_e_manager.html#a71e24f641e902dad2096a36317130f90", null ],
     [ "operator=", "class_p_r_r_e_manager.html#aa2521bdf0099f22de2766944d7c112c1", null ],

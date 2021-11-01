@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('architecture.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -90,48 +90,55 @@ $(document).ready(function(){initNavTree('md__d_____p_r00_f______developing____p
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md7">Geometry Stage</a><ul><li class="level2"><a href="#autotoc_md8">Vertex Specification</a></li>
-<li class="level2"><a href="#autotoc_md9">Vertex Processing</a><ul><li class="level3"><a href="#autotoc_md10">Modeling Transformation</a></li>
-<li class="level3"><a href="#autotoc_md11">View Transformation</a></li>
-<li class="level3"><a href="#autotoc_md12">Projection Transformation</a></li>
+<ul><li class="level1"><a href="#geometry_stage">Geometry Stage</a><ul><li class="level2"><a href="#vertex_spec">Vertex Specification</a></li>
+<li class="level2"><a href="#vertex_proc">Vertex Processing</a><ul><ul><li class="level4"><a href="#autotoc_md0">Modeling Transformation</a></li>
+<li class="level4"><a href="#autotoc_md1">View Transformation</a></li>
+<li class="level4"><a href="#autotoc_md2">Projection Transformation</a></li>
+</ul>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md13">Primitive (Triangle) Assembly</a><ul><li class="level3"><a href="#autotoc_md14">Clipping</a></li>
-<li class="level3"><a href="#autotoc_md15">Perspective Divide</a></li>
-<li class="level3"><a href="#autotoc_md16">Viewport Transformation</a></li>
-<li class="level3"><a href="#autotoc_md17">Face Culling</a></li>
+<li class="level2"><a href="#primitive_assembly">Primitive (Triangle) Assembly</a><ul><ul><li class="level4"><a href="#autotoc_md3">Clipping</a></li>
+<li class="level4"><a href="#autotoc_md4">Perspective Divide</a></li>
+<li class="level4"><a href="#autotoc_md5">Viewport Transformation</a></li>
+<li class="level4"><a href="#autotoc_md6">Face Culling</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="level1"><a href="#autotoc_md18">Rasterization / Rendering Stage</a><ul><li class="level2"><a href="#autotoc_md19">Triangle Setup / Scan-Line Conversion</a><ul><li class="level3"><a href="#autotoc_md20">Defining Spans</a></li>
-<li class="level3"><a href="#autotoc_md21">Shading Spans</a></li>
-</ul>
-</li>
-<li class="level2"><a href="#autotoc_md22">Fragment Processing</a></li>
-<li class="level2"><a href="#autotoc_md23">Per-Sample Processing</a><ul><li class="level3"><a href="#autotoc_md24">Pixel Ownership Test</a></li>
-<li class="level3"><a href="#autotoc_md25">Scissor Test</a></li>
-<li class="level3"><a href="#autotoc_md26">Alpha Test</a></li>
-<li class="level3"><a href="#autotoc_md27">MSAA (MultiSample AntiAliasing)</a></li>
-<li class="level3"><a href="#autotoc_md28">Stencil Test</a></li>
-<li class="level3"><a href="#autotoc_md29">Depth Test</a></li>
-<li class="level3"><a href="#autotoc_md30">Blending</a></li>
-<li class="level3"><a href="#autotoc_md31">Dithering</a></li>
-<li class="level3"><a href="#autotoc_md32">Logic Operations</a></li>
-<li class="level3"><a href="#autotoc_md33">Write Mask</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md34">Do’s and don’t’s</a></li>
+<li class="level1"><a href="#raster_stage">Rasterization / Rendering Stage</a><ul><li class="level2"><a href="#triangle_setup">Triangle Setup / Scan-Line Conversion</a><ul><ul><li class="level4"><a href="#autotoc_md7">Defining Spans</a></li>
+<li class="level4"><a href="#autotoc_md8">Shading Spans</a></li>
+</ul>
+</ul>
+</li>
+<li class="level2"><a href="#fragment_processing">Fragment Processing</a><ul><ul><li class="level4"><a href="#autotoc_md9">Early Depth/Stencil Testing</a></li>
+</ul>
+</ul>
+</li>
+<li class="level2"><a href="#sample_processing">Per-Sample Processing</a><ul><ul><li class="level4"><a href="#autotoc_md10">Pixel Ownership Test</a></li>
+<li class="level4"><a href="#autotoc_md11">Scissor Test</a></li>
+<li class="level4"><a href="#autotoc_md12">Alpha Test</a></li>
+<li class="level4"><a href="#autotoc_md13">MSAA (MultiSample AntiAliasing)</a></li>
+<li class="level4"><a href="#autotoc_md14">Stencil Test</a></li>
+<li class="level4"><a href="#autotoc_md15">Depth Test</a></li>
+<li class="level4"><a href="#autotoc_md16">Blending</a></li>
+<li class="level4"><a href="#autotoc_md17">Dithering</a></li>
+<li class="level4"><a href="#autotoc_md18">Logic Operations</a></li>
+<li class="level4"><a href="#autotoc_md19">Write Mask</a></li>
+</ul>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md20">Do’s and don’t’s</a></li>
 </ul>
 </div>
 <div class="textblock"><p>In this section, I go through the well-known 3D-rendering pipeline in general while providing PURE-specific information as well.</p>
-<p>PURE currently supports fixed function pipeline (i.e. neither vertex- nor fragment shaders) only.</p>
+<p>PURE currently supports fixed function pipeline only (i.e. neither vertex- nor fragment shaders).</p>
 <p>It is useful to note that operations in the early geometry stage of the pipeline are done <b>per vertex</b>, the rest is done <b>per primitive (triangle)</b>, and rendering operations are done <b>per pixel</b>.</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="geometry_stage"></a>
 Geometry Stage</h1>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="vertex_spec"></a>
 Vertex Specification</h2>
 <p>In this early stage, we define the vertex stream by specifying following:</p><ul>
 <li><b>vertex attributes</b> (e.g. object-space position);</li>
@@ -144,7 +151,7 @@ Vertex Specification</h2>
 </ul>
 <p>The latter has an advantage on memory consumption and performance, since same (repeating) vertex attributes can be stored only once while being referred multiple times by the same index, which also means that such vertex is transformed in Vertex Processing only once, provided there is a <em>post-T&amp;L Cache</em>.</p>
 <p>TODO: add PPP info on this.</p>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="vertex_proc"></a>
 Vertex Processing</h2>
 <p><em>Vertices</em> are transformed from object-space to clip-space with multiple matrix multiplication operations. <br  />
  Optional normals are transformed from object-space to eye-space/view-space. <br  />
@@ -157,13 +164,13 @@ Vertex Processing</h2>
 <li><a href="http://www.songho.ca/opengl/gl_transform.html">http://www.songho.ca/opengl/gl_transform.html</a>;</li>
 <li><a href="https://www.opengl.org/archives/resources/faq/technical/transformations.htm">https://www.opengl.org/archives/resources/faq/technical/transformations.htm</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md10"></a>
-Modeling Transformation</h3>
+<h4><a class="anchor" id="autotoc_md0"></a>
+Modeling Transformation</h4>
 <p>Transforming the <em>vertices</em> <b>from model-space to world-space</b>. Simple matrix multiplication.</p>
 <p><b>Model / Object Space</b>: where each model is in its own coordinate system, whose origin is some point on the model, such as the right foot of a soccer player model. Also, the model will typically have a control point or “handle”. To move the model, the 3D renderer only has to move the control point, because model space coordinates of the object remain constant relative to its control point. Additionally, by using that same “handle”, the object can be rotated.</p>
 <p><b>World Space</b>: where models are placed in the actual 3D world, in a unified world coordinate system. The OpenGL API doesn’t really have a world space.</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
-View Transformation</h3>
+<h4><a class="anchor" id="autotoc_md1"></a>
+View Transformation</h4>
 <p>Transforming the <em>vertices</em> from <b>world-space to view-space</b> (simulating a viewer/camera). Simple matrix multiplication.</p>
 <p><b>View / Eye / Camera Space</b>: in this space, the view camera is positioned by the application (through the graphics API) at some point in the 3D world coordinate system. The world space coordinate system is then transformed, such that the camera (your eye point) is now at the origin of the coordinate system, looking straight down the z-axis into the scene. Whether z values are increasing or decreasing as you move forward away from the camera into the scene is up to the programmer, but for now assume that z values are increasing as you look into the scene down the z-axis. <br  />
  Note that culling, back-face culling, and lighting operations can be done in view space.</p>
@@ -173,8 +180,8 @@ View Transformation</h3>
 <p>nVidia’s Chief Scientist Dave Kirk: “lighting is the luminance value, whereas shading is about reflectance and/or transmittance.” <br  />
  These are related to lighting, but shading calculations occur later in the pipeline after rasterization.</p>
 <p>Generate (if necessary) and transform texture coordinates.</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
-Projection Transformation</h3>
+<h4><a class="anchor" id="autotoc_md2"></a>
+Projection Transformation</h4>
 <p>Transforming the <em>vertices</em> from <b>view-space to clip-space</b>. Simple matrix multiplication: multiply by <b>projection matrix</b>. <br  />
  <b>Clip Space</b>: Similar to view space, but the frustum is now “squished” into a unit cube, with the x and y coordinates normalized to a range between –1 and 1, and z is between 0 and 1, which simplifies clipping calculations. The <b>clipping planes</b> are now orthogonal (perpendicular) to the axes of the space. <br  />
  The <b>projection matrix</b> defines the <b>viewing frustum</b> and the <b>projection mode (perspective or orthogonal)</b>. <br  />
@@ -187,20 +194,21 @@ Projection Transformation</h3>
 <li><a href="https://www.opengl.org/wiki/GluPerspective_code">https://www.opengl.org/wiki/GluPerspective_code</a></li>
 <li><a href="https://www.opengl.org/sdk/docs/man2/xhtml/gluPerspective.xml">https://www.opengl.org/sdk/docs/man2/xhtml/gluPerspective.xml</a></li>
 </ul>
-<p>In the past I managed to understood <a href="http://www.songho.ca/opengl/gl_projectionmatrix.html">Song Ho Ahn's explanation about how to define the projection matrix</a>. Based on that I also defined it on paper (in case I ever need this again), how to define it with (f,n,l,r,b,t) parameters: <br  />
+<p>In the past I managed to understood <a href="http://www.songho.ca/opengl/gl_projectionmatrix.html">Song Ho Ahn's explanation about how to define the projection matrix</a>. <br  />
+ Based on that I also defined it on paper (in case I ever need this again), how to define it with (f,n,l,r,b,t) parameters: <br  />
  <a href="projmatrix-how-01.jpg"><img src="projmatrix-how-thumb-01.jpg" alt="" class="inline" title="alt text"/>    </a> <a href="projmatrix-how-02.jpg"><img src="projmatrix-how-thumb-02.jpg" alt="" class="inline" title="alt text"/>    </a> <a href="projmatrix-how-03.jpg"><img src="projmatrix-how-thumb-03.jpg" alt="" class="inline" title="alt text"/>    </a> <a href="projmatrix-how-04.jpg"><img src="projmatrix-how-thumb-04.jpg" alt="" class="inline" title="alt text"/>    </a> <a href="projmatrix-how-05.jpg"><img src="projmatrix-how-thumb-05.jpg" alt="" class="inline" title="alt text"/>    </a> <br  />
- In the last picture it is also explained how to define (l,r,b,t) parameters from input aspectRation and fovX or fovY parameters.</p>
+ In the last picture it is also explained how to define (l,r,b,t) parameters from input aspectRatio and fovX or fovY parameters.</p>
 <p>Note: using OpenGL either right- or left-handed viewing system can be used. PURE uses left-handed coordinate system by avoiding gluPerspective(). <br  />
  See more at <a href="https://anteru.net/2011/12/27/1830/">https://anteru.net/2011/12/27/1830/</a> . <br  />
  Projection matrix tricks: <a href="http://www.terathon.com/gdc07_lengyel.pdf">http://www.terathon.com/gdc07_lengyel.pdf</a> .</p>
 <p>Related OpenGL API: gluPerspective(), gluLookAt(), glFrustum().</p>
 <p>Related PURE API: TODO.</p>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="primitive_assembly"></a>
 Primitive (Triangle) Assembly</h2>
 <p>Primitives are assembled from the <em>vertices</em> coming from the previous stage. <em>Vertices</em> are transformed from <b>clip-space to screen-space</b>.</p>
 <p>Note: some say the Clipping, Perspective Divide and Viewport Transformation are not in this stage but in a separate stage called “Vertex Post-processing”.</p>
-<h3><a class="anchor" id="autotoc_md14"></a>
-Clipping</h3>
+<h4><a class="anchor" id="autotoc_md3"></a>
+Clipping</h4>
 <p>Though the view space frustum has clipping planes, clipping is actually performed when the frustum is transformed to clip space. <br  />
  The view volume defines what the camera will see, but just as importantly, it defines what the camera won’t see, and in so doing, many models and parts of the world can be discarded, sparing both 3D chip cycles and memory bandwidth. <br  />
  The top of the frustum is called the <b>near (or front) clipping plane</b> and the back is called the <b>far (or back) clipping plane</b>. <br  />
@@ -213,8 +221,8 @@ Clipping</h3>
 </ul>
 <p>Actually not all primitives that are partially outside of the viewing volume may be clipped, check about <b>guard-band clipping</b>: <a href="https://fgiesen.wordpress.com/2011/07/05/a-trip-through-the-graphics-pipeline-2011-part-5/">https://fgiesen.wordpress.com/2011/07/05/a-trip-through-the-graphics-pipeline-2011-part-5/</a> .</p>
 <p>The clipping behavior against the Z-coordinate of the <em>vertices</em> can be modified by enabling <b>depth clamping</b>: if enabled, clip-space Z-coordinates are not clipped by the near and far planes.</p>
-<h3><a class="anchor" id="autotoc_md15"></a>
-Perspective Divide</h3>
+<h4><a class="anchor" id="autotoc_md4"></a>
+Perspective Divide</h4>
 <p>Transforming <b>clip coordinates to normalized device coordinates</b>, into [-1; 1] range by dividing clip-space (x,y,z) coordinates by clip-space w.</p>
 <p><a href="http://stackoverflow.com/questions/3255837/z-value-after-perspective-divide-is-always-less-than-1">http://stackoverflow.com/questions/3255837/z-value-after-perspective-divide-is-always-less-than-1</a></p>
 <p><img src="gl_projectionmatrix01.png" alt="" class="inline"/>   </p>
@@ -222,22 +230,22 @@ Perspective Divide</h3>
  image source: <a href="http://www.songho.ca/opengl/gl_projectionmatrix.html">http://www.songho.ca/opengl/gl_projectionmatrix.html</a></p>
 <p><img src="lengyel_viewspace_to_ndc.PNG" alt="" class="inline"/>   </p>
 <p>image source: <a href="http://www.terathon.com/gdc07_lengyel.pdf">http://www.terathon.com/gdc07_lengyel.pdf</a></p>
-<h3><a class="anchor" id="autotoc_md16"></a>
-Viewport Transformation</h3>
+<h4><a class="anchor" id="autotoc_md5"></a>
+Viewport Transformation</h4>
 <p>Transforming <b>normalized device coordinates to screen/window coordinates</b>. Depth values are transformed into [0; 1] range.</p>
 <p><b>Screen Space</b>: where the 3D image is converted into x and y 2D screen coordinates for 2D display. Note that z and w coordinates are still retained by the graphics systems for depth/Z-buffering (see Z-buffering section below) and back-face culling before the final render. Note that the conversion of the scene to pixels, called rasterization, has not yet occurred.</p>
 <p>Related OpenGL API: glViewPort(), glDepthRange().</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md17"></a>
-Face Culling</h3>
+<h4><a class="anchor" id="autotoc_md6"></a>
+Face Culling</h4>
 <p>“3D graphics is the art of cheating without getting caught.” Translated, this means that one of the art-forms in 3D graphics is to elegantly reduce visual detail in a scene so as to gain better performance, but do it in such a way that the viewer doesn’t notice the loss of quality. One quick example of this is culling.</p>
 <p>Applies to primitives with at least 3 vertices only, usually triangles. A triangle can be discarded (culled) based on its facing. This is done by the winding order of the triangle. It can be CW (clockwise) or CCW (counter-clockwise) depending how the triangle’s 3 <em>vertices</em> rotate in order around the center of the triangle.</p>
 <p>Note: face culling can be done in either view space (after view transform, checking the angle between the viewing vector and the triangle’s normal vector) or screen space (testing if triangle’s projected normal vector points away or towards the camera).</p>
 <p>Related OpenGL API: glFrontFace(), glEnable(GL_CULL_FACE), glCullFace().</p>
 <p>Related PURE API: TODO.</p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="raster_stage"></a>
 Rasterization / Rendering Stage</h1>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="triangle_setup"></a>
 Triangle Setup / Scan-Line Conversion</h2>
 <p><em>Fragments</em> are generated from the primitives in this stage.</p>
 <p>Some define the rasterization stage as including triangle setup, whereas others view triangle setup as a separate step that precedes the rasterization/rendering stage of the pipeline. Think of triangle setup as the prelude to the rasterization/rendering stage of the pipeline, because it “sets the table” for the rendering operations that will follow.</p>
@@ -246,56 +254,59 @@ Triangle Setup / Scan-Line Conversion</h2>
 <li><b>defining spans</b>: finding out which pixels are covered by the incoming triangle;</li>
 <li><b>shading spans</b>: interpolating vertex attributes across the triangle.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md20"></a>
-Defining Spans</h3>
+<h4><a class="anchor" id="autotoc_md7"></a>
+Defining Spans</h4>
 <p>Note that the explained behavior below is out-of-date and hardware in last decades do triangle setup differently but I’m still writing about the legacy behavior because it might be easier to understand.</p>
 <p>First off, the triangle setup operation computes the slope (or steepness) of a triangle edge using vertex information at each of edge’s two endpoints. Using the slope information, an algorithm can calculate x,y values to see which pixels each triangle side (line segment) touches. The process operates horizontal scan line by horizontal scan line. It determines how much the x value of the pixel touched by a given triangle side changes per scan line, and increments it by that value on each subsequent scan-line.</p>
 <p>Note that each scan line is the next incremental y coordinate in screen space. The y values of non-vertex points on the triangle edge are approximated by the algorithm, and are floating-point values that typically fall between two integer y values (scan lines). The algorithm finds the nearest y value (scan line number) to assign to y.</p>
 <p>We now have x,y values for all scan line crossing points of each line segment in a triangle. The portion of a scan line that bridges the two triangle edges is called a <b>span</b>.</p>
 <p><img src="Graphics3D_Rasterization.png" alt="" class="inline"/>   </p>
 <p>image source: <a href="https://www3.ntu.edu.sg/home/ehchua/programming/opengl/CG_BasicsTheory.html">https://www3.ntu.edu.sg/home/ehchua/programming/opengl/CG_BasicsTheory.html</a></p>
-<h3><a class="anchor" id="autotoc_md21"></a>
-Shading Spans</h3>
+<h4><a class="anchor" id="autotoc_md8"></a>
+Shading Spans</h4>
 <p>Up until this point, only <em>vertices</em> have had color and depth information, but now that the triangle edge pixels are being created, interpolated color and depth values must also be calculated for those pixels. In addition, the texture coordinates are also calculated by interpolation for use during texture mapping. More details about shading techniques in the Glossary.</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="fragment_processing"></a>
 Fragment Processing</h2>
-<p>A <em>texel</em> is generated from texture memory and it is applied to each <em>fragment</em>. Then fog calculations are applied.</p>
-<p>In case of a programmable pipeline, <em>fragment shaders</em> are processing the <em>fragments</em> generated in the previous step.</p>
-<p>Note that if <b>early depth-testing</b> is enabled, depth test can occur before this stage. <b>Early stencil-testing</b> also exists. So it may happen that <em>fragment shading</em> won’t be even done.</p>
+<h4><a class="anchor" id="autotoc_md9"></a>
+Early Depth/Stencil Testing</h4>
+<p>As an optimization, modern GPUs do the <em>depth- and stencil-testing</em> before doing any fragment processing. This way fragment processing can be rejected if depth- or stencil test fails, skipping the whole <em>fragment shading</em> process. <br  />
+ PURE renders opaque object in front-to-back order that leads to more rejected fragments, in order to achieve higher rendering speeds.</p>
+<p>If neither tests fail, a <em>texel</em> is generated from texture memory and it is applied to each <em>fragment</em>. Then fog calculations are applied. <br  />
+ In case of a programmable pipeline, <em>fragment shaders</em> are processing the <em>fragments</em> generated in the previous step.</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="sample_processing"></a>
 Per-Sample Processing</h2>
 <p>Usual operations of this final stage are depth testing, blending, etc.</p>
 <p>Details at: <a href="https://www.opengl.org/wiki/Per-Sample_Processing">https://www.opengl.org/wiki/Per-Sample_Processing</a> .</p>
-<h3><a class="anchor" id="autotoc_md24"></a>
-Pixel Ownership Test</h3>
+<h4><a class="anchor" id="autotoc_md10"></a>
+Pixel Ownership Test</h4>
 <p>This fails and <a href="#_Fragment">fragments</a> are discarded if the <a href="#_Pixel">pixels</a> covered by the <a href="#_Fragment">fragments</a> are covered by another window thus OpenGL doesn’t own these covered <a href="#_Pixel">pixels</a>.</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md25"></a>
-Scissor Test</h3>
+<h4><a class="anchor" id="autotoc_md11"></a>
+Scissor Test</h4>
 <p>Fails if the <a href="#_Fragment">fragments</a> fall outside of the scissor rectangle.</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md26"></a>
-Alpha Test</h3>
+<h4><a class="anchor" id="autotoc_md12"></a>
+Alpha Test</h4>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md27"></a>
-MSAA (MultiSample AntiAliasing)</h3>
+<h4><a class="anchor" id="autotoc_md13"></a>
+MSAA (MultiSample AntiAliasing)</h4>
 <p>This is a method to achieve FSAA (fullscreen antialiasing). More at: <a href="https://www.opengl.org/wiki/Multisampling">https://www.opengl.org/wiki/Multisampling</a> .</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md28"></a>
-Stencil Test</h3>
+<h4><a class="anchor" id="autotoc_md14"></a>
+Stencil Test</h4>
 <p>Fails if the specified stencil function fails between the source and destination stencil values. This feature is unsupported by PURE. Related: <a href="#_HyperZ_(ATi)">HyperZ</a>.</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md29"></a>
-Depth Test</h3>
+<h4><a class="anchor" id="autotoc_md15"></a>
+Depth Test</h4>
 <p>Fails if the specified depth function between the source and destination depth values fails. If depth test passes for a <a href="#_Fragment">fragment</a> then the Occlusion Query gets updated if there is an active query. Related: <a href="#_HyperZ_(ATi)">HyperZ</a>. More on depth testing and precision:</p>
 <ul>
 <li><a href="http://learnopengl.com/#!Advanced-OpenGL/Depth-testing">http://learnopengl.com/#!Advanced-OpenGL/Depth-testing</a></li>
@@ -309,24 +320,24 @@ Depth Test</h3>
 </li>
 <li><a href="http://learnopengl.com/#!Advanced-OpenGL/Depth-testing">http://learnopengl.com/#!Advanced-OpenGL/Depth-testing</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md30"></a>
-Blending</h3>
+<h4><a class="anchor" id="autotoc_md16"></a>
+Blending</h4>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md31"></a>
-Dithering</h3>
+<h4><a class="anchor" id="autotoc_md17"></a>
+Dithering</h4>
 <p>When the incoming <a href="#_Fragment">fragment</a> color can’t be stored exactly due to less precision of the output image, 2 representable colors can be used instead of the incoming color: the one from rounding up and the other from rounding down. It depends on the implementation which will be used. If dithering is enabled, the output color will be selected based on the position of the <a href="#_Fragment">fragment</a>, by varying between the 2 selectable colors. GL_DITHER</p>
 <p>Related OpenGL API: TODO.</p>
 <p>Related PURE API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md32"></a>
-Logic Operations</h3>
+<h4><a class="anchor" id="autotoc_md18"></a>
+Logic Operations</h4>
 <p>Unsupported by PURE.</p>
 <p>Related OpenGL API: TODO.</p>
-<h3><a class="anchor" id="autotoc_md33"></a>
-Write Mask</h3>
+<h4><a class="anchor" id="autotoc_md19"></a>
+Write Mask</h4>
 <p>Masking off writing to particular buffers. Unsupported by PURE.</p>
 <p>Related OpenGL API: TODO.</p>
-<h1><a class="anchor" id="autotoc_md34"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Do’s and don’t’s</h1>
 <p>“Style guides and usage books don't agree. The Chicago Manual of Style and others recommend dos and don'ts. The Associated Press and others recommend do's and don'ts. Eats, Shoots &amp; Leaves recommends do's and don't's” - <a href="http://www.quickanddirtytips.com/education/grammar/dos-and-donts">http://www.quickanddirtytips.com/education/grammar/dos-and-donts</a> </p>
 </div></div><!-- contents -->
@@ -335,7 +346,7 @@ Do’s and don’t’s</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

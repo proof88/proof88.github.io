@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_manager.html',''); initR
 <div class="textblock"><p>Ancestor class for manager classes. </p>
 <p>Copying is not available yet. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8h_source.html#l00072">72</a> of file <a class="el" href="_p_r_r_e_manager_8h_source.html">PRREManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8h_source.html#l00076">76</a> of file <a class="el" href="_p_r_r_e_manager_8h_source.html">PRREManager.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_p_r_r_e_manager_8h_source.html">PRREManager.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -161,10 +161,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afae57294583d6316bd185dd90359d858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#afae57294583d6316bd185dd90359d858">hasAttached</a> (const <a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m) const</td></tr>
 <tr class="memdesc:afae57294583d6316bd185dd90359d858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the given managed is managed by this manager.  <a href="class_p_r_r_e_manager.html#afae57294583d6316bd185dd90359d858">More...</a><br /></td></tr>
 <tr class="separator:afae57294583d6316bd185dd90359d858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d62e7fb406653a72bf34e3a863053d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a3d62e7fb406653a72bf34e3a863053d3">Attach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
+<tr class="memitem:a3d62e7fb406653a72bf34e3a863053d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a3d62e7fb406653a72bf34e3a863053d3">Attach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
 <tr class="memdesc:a3d62e7fb406653a72bf34e3a863053d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given managed to the manager, if the managed has no manager yet.  <a href="class_p_r_r_e_manager.html#a3d62e7fb406653a72bf34e3a863053d3">More...</a><br /></td></tr>
 <tr class="separator:a3d62e7fb406653a72bf34e3a863053d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa056e6f36bd5c3aadfccb89d47f87112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">Detach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
+<tr class="memitem:aa056e6f36bd5c3aadfccb89d47f87112"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">Detach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
 <tr class="memdesc:aa056e6f36bd5c3aadfccb89d47f87112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given managed from the manager, so the managed will have no manager.  <a href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">More...</a><br /></td></tr>
 <tr class="separator:aa056e6f36bd5c3aadfccb89d47f87112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475da34514e0158260c6b625211f669d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a475da34514e0158260c6b625211f669d">DeleteAttachedInstance</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
@@ -173,6 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a231c18655a1b2e1cd44d6f319e5a1f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a231c18655a1b2e1cd44d6f319e5a1f8f">DeleteAll</a> ()</td></tr>
 <tr class="memdesc:a231c18655a1b2e1cd44d6f319e5a1f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes and destructs every managed element in the manager.  <a href="class_p_r_r_e_manager.html#a231c18655a1b2e1cd44d6f319e5a1f8f">More...</a><br /></td></tr>
 <tr class="separator:a231c18655a1b2e1cd44d6f319e5a1f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ce45ea15961bc4d026e84910b2915c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#ac0ce45ea15961bc4d026e84910b2915c">HandleManagedPropertyChanged</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
+<tr class="memdesc:ac0ce45ea15961bc4d026e84910b2915c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be invoked when a managed's property got changed from a different kind of manager or managed.  <a href="class_p_r_r_e_manager.html#ac0ce45ea15961bc4d026e84910b2915c">More...</a><br /></td></tr>
+<tr class="separator:ac0ce45ea15961bc4d026e84910b2915c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01f98068bb0e373b2e648f5b0d730089"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a01f98068bb0e373b2e648f5b0d730089">getUsedSystemMemory</a> () const</td></tr>
 <tr class="memdesc:a01f98068bb0e373b2e648f5b0d730089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the amount of allocated system memory for all manageds owner by this manager.  <a href="class_p_r_r_e_manager.html#a01f98068bb0e373b2e648f5b0d730089">More...</a><br /></td></tr>
 <tr class="separator:a01f98068bb0e373b2e648f5b0d730089"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +226,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00588">588</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00637">637</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +253,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00594">594</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00643">643</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -284,7 +287,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00777">777</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00840">840</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -294,6 +297,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PRREManager::Attach </td>
@@ -303,12 +309,19 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds the given managed to the manager, if the managed has no manager yet. </p>
-<p>If m is a nullpointer, value of getLastError() will be PRRE_ERR_NULLPOINTER. If the given managed already has a manager, value of getLastError() will be PRRE_ERR_NOTMANAGEDBY. </p>
+<p>No effect if given managed already has a manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00702">702</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d_manager.html#a6048d7aa984f15c2e2316ac79c80206c">PRREObject3DManager</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00750">750</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +342,7 @@ Private Attributes</h2></td></tr>
 
 <p>Removes and destructs every managed element in the manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00732">732</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00779">779</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -350,9 +363,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Removes the given managed from the manager and destructs it. </p>
-<p>If the given managed is not found, value of getLastError() will be PRRE_ERR_NOTMANAGEDBY. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00723">723</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00770">770</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -361,6 +373,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PRREManager::Detach </td>
@@ -370,12 +385,19 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Removes the given managed from the manager, so the managed will have no manager. </p>
 <p>A managed calls this in its destructor: notifies the manager about the destruction so the manager will remove it from itself. See: protected <a class="el" href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112" title="Removes the given managed from the manager, so the managed will have no manager.">Detach()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00713">713</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d_manager.html#ae3988ae531ee9c1f22349ac51b276ddc">PRREObject3DManager</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00761">761</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +420,7 @@ Private Attributes</h2></td></tr>
 <p>Gets the pointer to the managed at the given index. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the managed at the given index (can be PGENULL in case of invalid index). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00662">662</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00711">711</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -421,7 +443,7 @@ Private Attributes</h2></td></tr>
 <p>Gets the index of the given managed. </p>
 <dl class="section return"><dt>Returns</dt><dd>Index of the given object. -1, if the given managed is not managed by this manager. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00672">672</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00721">721</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -444,7 +466,7 @@ Private Attributes</h2></td></tr>
 <p>Intentionally not virtual, so the <a class="el" href="class_p_r_r_e_manager.html#abe4bb10720e6c72de8bba0af9a4adb9f" title="Returns access to console preset with logger module name as this class.">getConsole()</a> in derived class should hide this instead of overriding.</p>
 <dl class="section return"><dt>Returns</dt><dd>Console instance used by this class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00607">607</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00656">656</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +488,7 @@ Private Attributes</h2></td></tr>
 <p>Gets the number of managed objects. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of managed objects. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00630">630</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00679">679</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +519,7 @@ Private Attributes</h2></td></tr>
 <p>Intentionally not virtual, so derived class should hide this instead of overriding. Not even private, so user can also access this from outside, for any reason like controlling log filtering per logger module name.</p>
 <dl class="section return"><dt>Returns</dt><dd>The logger module name of this class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00620">620</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00669">669</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -520,7 +542,7 @@ Private Attributes</h2></td></tr>
 <p>This doesn't tell about number of managed objects, just number of slots.</p>
 <dl class="section return"><dt>Returns</dt><dd>Number of allocated slots, a non-negative value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00652">652</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00701">701</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +573,40 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_vertex_transfer.html#a6affa2dc892748ff2d1e82d6421e0a4d">PRREVertexTransfer</a>, <a class="el" href="class_p_r_r_e_object3_d.html#ade5d7f5d9fa2a6d86c065350c59f33e3">PRREObject3D</a>, and <a class="el" href="class_p_r_r_e_mesh3_d.html#aadd8ca00f697f01316964a980b821350">PRREMesh3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00738">738</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00801">801</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac0ce45ea15961bc4d026e84910b2915c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ce45ea15961bc4d026e84910b2915c">&#9670;&nbsp;</a></span>HandleManagedPropertyChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRREManager::HandleManagedPropertyChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Should be invoked when a managed's property got changed from a different kind of manager or managed. </p>
+<p>The manager of the managed might be interested in this property change and may implement a change handling functionality by overriding this. For example: <a class="el" href="class_p_r_r_e_object3_d.html" title="3D object class.">PRREObject3D</a> has an associated <a class="el" href="class_p_r_r_e_material.html" title="Material class.">PRREMaterial</a> instance. When user changes the blending mode of the material, the <a class="el" href="class_p_r_r_e_material.html" title="Material class.">PRREMaterial</a> instance invokes the <a class="el" href="class_p_r_r_e_object3_d.html" title="3D object class.">PRREObject3D</a> instance's getManager()-&gt;<a class="el" href="class_p_r_r_e_manager.html#ac0ce45ea15961bc4d026e84910b2915c" title="Should be invoked when a managed&#39;s property got changed from a different kind of manager or managed.">HandleManagedPropertyChanged()</a> which will be actually <a class="el" href="class_p_r_r_e_object3_d_manager.html" title="3D object manager class.">PRREObject3DManager</a>'s implemented change handler, that will handle the changed blend mode of its <a class="el" href="class_p_r_r_e_object3_d.html" title="3D object class.">PRREObject3D</a> instance, e.g.: change drawing order in its list, etc. </p>
+
+<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d_manager.html#ab612df30ac8afe065e9832f3f83d1f26">PRREObject3DManager</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00792">792</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +629,7 @@ Private Attributes</h2></td></tr>
 <p>Gets whether the given managed is managed by this manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the given managed is managed by this manager, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00691">691</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00740">740</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +651,7 @@ Private Attributes</h2></td></tr>
 <p>Is the number of manageds 0? </p>
 <dl class="section return"><dt>Returns</dt><dd>True, if number of manageds is 0, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00640">640</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00689">689</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -624,7 +679,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00784">784</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00847">847</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -646,7 +701,7 @@ Private Attributes</h2></td></tr>
 
 <p>Allocates count free slots for manageds. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00681">681</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00730">730</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -677,7 +732,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_filed_manager.html#afffa971e1ecf4e20b507d3358d1e8b15">PRREFiledManager</a>, <a class="el" href="class_p_r_r_e_object3_d_manager.html#afa96a3ec870c06c7de0880b9c2c0de8a">PRREObject3DManager</a>, <a class="el" href="class_p_r_r_e_mesh3_d_manager.html#ac8fc9d8a27767b8c7e8d40ac21cf1909">PRREMesh3DManager</a>, <a class="el" href="class_p_r_r_e_texture_manager.html#ac0972e31315b4a87c29cf38d6bbca636">PRRETextureManager</a>, <a class="el" href="class_p_r_r_e_material_manager.html#a4381e8f7485c28afca146c5ec5041cc4">PRREMaterialManager</a>, and <a class="el" href="class_p_r_r_e_image_manager.html#a378da5b987dacf8ae3b5259f87ea6733">PRREImageManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00747">747</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00810">810</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -710,7 +765,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_filed_manager.html#ad50b55473f921cd49be3a4687a65c06c">PRREFiledManager</a>, <a class="el" href="class_p_r_r_e_object3_d_manager.html#a52cc1d77690945eda03f118ee6556110">PRREObject3DManager</a>, <a class="el" href="class_p_r_r_e_mesh3_d_manager.html#aba796665e5825233674d23b0c2f86c0e">PRREMesh3DManager</a>, <a class="el" href="class_p_r_r_e_texture_manager.html#ade95799897db9028f8966a74cf8fba9c">PRRETextureManager</a>, <a class="el" href="class_p_r_r_e_material_manager.html#a78ab58079bc1625ab117c185127ec800">PRREMaterialManager</a>, and <a class="el" href="class_p_r_r_e_image_manager.html#a7fe74ce0cb98d4996ca7a14fd2ab1bda">PRREImageManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00796">796</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8cpp_source.html#l00859">859</a> of file <a class="el" href="_p_r_r_e_manager_8cpp_source.html">PRREManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -735,7 +790,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8h_source.html#l00115">115</a> of file <a class="el" href="_p_r_r_e_manager_8h_source.html">PRREManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_manager_8h_source.html#l00121">121</a> of file <a class="el" href="_p_r_r_e_manager_8h_source.html">PRREManager.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +804,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_manager.html">PRREManager</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

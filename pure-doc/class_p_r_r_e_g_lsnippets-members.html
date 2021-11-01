@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -92,10 +92,12 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_g_lsnippets.html',''); i
 
 <p>This is the complete list of members for <a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a2dacd21946d4822def24d33858a847ea">ClearGLerror</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a6b508e5b4f4d7aae337c4eadc51f7823">ClearGLError</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#ae166d090c23d7805107a02b19befd0fa">errLast</a></td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a60c5f9bdb71a286f83c4a2356a1fe0c1">getGLerrorTextFromEnum</a>(GLenum err)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a3c45a861ab43c258507450fbfb619ab2">getLastSavedGLerror</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#ada90032f0ee85fc249a62b1ced1eaccb">getGLBlendFromPRREBlend</a>(TPRRE_BLENDFACTOR bf)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a6baa0413cc36869e95d0dc818983984b">getGLErrorTextFromEnum</a>(GLenum err)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a039a662941a43d087b6088617b3d75e1">getLastSavedGLError</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#afa9ab4c58df4d3dd11248e517d7f9588">getPRREBlendFromGLBlend</a>(GLenum glb)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a43e22be774d546cd1e1acc4aedca6b46">getSizeofIndexType</a>(GLenum iType)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#afde604418c6d69e7edecdddbdc45ffd9">getVertexIndex</a>(const void *arr, TPRREuint index, GLenum iType)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a26279f6efaee6438525418c1c8699616">GL_ERR_STR_INVALID_ENUM</a></td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
@@ -105,14 +107,21 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_g_lsnippets.html',''); i
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a1b17117ac9676cfd53b0ed5764aca610">GL_ERR_STR_OUT_OF_MEMORY</a></td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#af41563ed8657e0aee8cd7f04fd90209f">GL_ERR_STR_STACK_OVERFLOW</a></td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#af334de1d944efd9b4323ba99a9a1a9f1">GL_ERR_STR_STACK_UNDERFLOW</a></td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a7d6de07e0367b96eced0742dcb3051d4">isGLerrorPresent</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#aa70bc8772bf3644d8020f9cac612c138">glLoadTextureIntoTMU</a>(const PRRETexture *tex, TPRREuint iTMU, TPRREbool bSticked)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#af2cec23629b8189349539615f66b1348">glLoadTexturesAndSetBlendState</a>(const PRREMaterial *mat, TPRREbool bObjLevel1Sticked, TPRREbool bObjLevel1Blended)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a234b412d69d1b34a5e0ba35654552095">glPrepareBeforeDrawBoundingBox</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a93f0cc7b3ef183d53617ea92120c9a53">iLastTex</a></td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#ac6511a15cb79a1d85f9274f5cb82e048">Init</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a2765b255fafa654cba91ad7994392ed7">isGLErrorPresent</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#ac01a24470251a56546917acbd0c0d323">SetGLBoundingBoxRendering</a>(TPRREbool state)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a1daccb942469db911abfac3b70ab4121">setVertexIndex</a>(void *arr, TPRREuint index, TPRREuint value, GLenum iType)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html#a0b221dfe35abd249f2849363d2f6e25d">SetZPassRendering</a>(TPRREbool state)</td><td class="entry"><a class="el" href="class_p_r_r_e_g_lsnippets.html">PRREGLsnippets</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

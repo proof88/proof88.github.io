@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -87,7 +87,9 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_renderer_h_wfixed_pipe_i
 <div class="header">
   <div class="summary">
 <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl-members.html">List of all members</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a>  </div>
@@ -97,7 +99,7 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_renderer_h_wfixed_pipe_i
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00029">29</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00030">30</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for PRRERendererHWfixedPipeImpl:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,10 +109,19 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_renderer_h_wfixed_pipe_i
   <img src="class_p_r_r_e_renderer_h_wfixed_pipe_impl.png" usemap="#PRRERendererHWfixedPipeImpl_map" alt=""/>
   <map id="PRRERendererHWfixedPipeImpl_map" name="PRRERendererHWfixedPipeImpl_map">
 <area href="class_p_r_r_e_renderer_h_wfixed_pipe.html" title="Incremental fixed-function hardware renderer path." alt="PRRERendererHWfixedPipe" shape="rect" coords="0,56,191,80"/>
-<area href="class_p_r_r_e_i_renderer.html" alt="PRREIRenderer" shape="rect" coords="0,0,191,24"/>
+<area href="class_p_r_r_e_i_renderer.html" title="Renderer interface." alt="PRREIRenderer" shape="rect" coords="0,0,191,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html">CurrentStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer statistics collected until next <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#acb53d7b0862f8569516770ee359eaed1">ResetStatistics()</a>.  <a href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html">LastFrameStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last frame statistics collected until end of frame, then reset at the beginning of next frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad53b55a455293b470a1250e97359b7db"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ad53b55a455293b470a1250e97359b7db">~PRRERendererHWfixedPipeImpl</a> ()</td></tr>
@@ -131,16 +142,71 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c0627c8c345063a0814a85915586862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a7c0627c8c345063a0814a85915586862">RenderScene</a> ()</td></tr>
 <tr class="memdesc:a7c0627c8c345063a0814a85915586862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the scene.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a7c0627c8c345063a0814a85915586862">More...</a><br /></td></tr>
 <tr class="separator:a7c0627c8c345063a0814a85915586862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fc355f6e20025ea23767a59cbd2794"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a79fc355f6e20025ea23767a59cbd2794">getRenderHints</a> ()</td></tr>
+<tr class="memdesc:a79fc355f6e20025ea23767a59cbd2794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current render hints.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a79fc355f6e20025ea23767a59cbd2794">More...</a><br /></td></tr>
+<tr class="separator:a79fc355f6e20025ea23767a59cbd2794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b64874a4abb83d70f6e9c5738711dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a08b64874a4abb83d70f6e9c5738711dd">SetRenderHints</a> (const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;hints)</td></tr>
+<tr class="memdesc:a08b64874a4abb83d70f6e9c5738711dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current render hints.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a08b64874a4abb83d70f6e9c5738711dd">More...</a><br /></td></tr>
+<tr class="separator:a08b64874a4abb83d70f6e9c5738711dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe7bca4a83a3a8e3ab9aa04ced4777b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a3fe7bca4a83a3a8e3ab9aa04ced4777b">ResetStatistics</a> ()</td></tr>
+<tr class="memdesc:a3fe7bca4a83a3a8e3ab9aa04ced4777b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets "Current Statistics".  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a3fe7bca4a83a3a8e3ab9aa04ced4777b">More...</a><br /></td></tr>
+<tr class="separator:a3fe7bca4a83a3a8e3ab9aa04ced4777b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac50e0eca0bc13cc83113194b64eb6001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ac50e0eca0bc13cc83113194b64eb6001">WriteStats</a> () const</td></tr>
-<tr class="memdesc:ac50e0eca0bc13cc83113194b64eb6001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes statistics to the console window.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ac50e0eca0bc13cc83113194b64eb6001">More...</a><br /></td></tr>
+<tr class="memdesc:ac50e0eca0bc13cc83113194b64eb6001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes "Current Statistics" and "Last Frame Statistics" to the console window.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ac50e0eca0bc13cc83113194b64eb6001">More...</a><br /></td></tr>
 <tr class="separator:ac50e0eca0bc13cc83113194b64eb6001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a134ed2d0461e413c542a3d3b85fc8d41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a134ed2d0461e413c542a3d3b85fc8d41">CheckConsistency</a> () const</td></tr>
 <tr class="memdesc:a134ed2d0461e413c542a3d3b85fc8d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs an internal consistency test, just for debug.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a134ed2d0461e413c542a3d3b85fc8d41">More...</a><br /></td></tr>
 <tr class="separator:a134ed2d0461e413c542a3d3b85fc8d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23a7853d2010a89cff0246f6e22e89e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#aa23a7853d2010a89cff0246f6e22e89e">getLastFrameObjectsVisible</a> () const</td></tr>
+<tr class="memdesc:aa23a7853d2010a89cff0246f6e22e89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of objects allowed to be visible in last frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#aa23a7853d2010a89cff0246f6e22e89e">More...</a><br /></td></tr>
+<tr class="separator:aa23a7853d2010a89cff0246f6e22e89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942538556eeaed50416c011a58ea6b7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a942538556eeaed50416c011a58ea6b7b">getLastFrameOccluders</a> () const</td></tr>
+<tr class="memdesc:a942538556eeaed50416c011a58ea6b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of objects that were occluders in last frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a942538556eeaed50416c011a58ea6b7b">More...</a><br /></td></tr>
+<tr class="separator:a942538556eeaed50416c011a58ea6b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f61bf73e4c3d52f083bbdbbe14edb3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a2f61bf73e4c3d52f083bbdbbe14edb3b">getLastFrameOccludeesNonOcclusionTested</a> () const</td></tr>
+<tr class="memdesc:a2f61bf73e4c3d52f083bbdbbe14edb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of occludees that had occlusion test disabled in last frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a2f61bf73e4c3d52f083bbdbbe14edb3b">More...</a><br /></td></tr>
+<tr class="separator:a2f61bf73e4c3d52f083bbdbbe14edb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bb088c3d66cfe1d63720155a37c92c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a35bb088c3d66cfe1d63720155a37c92c">getLastFrameOccludeesOcclusionTested</a> () const</td></tr>
+<tr class="memdesc:a35bb088c3d66cfe1d63720155a37c92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of occludees that had occlusion test enabled (not necessarily ongoing) in last frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a35bb088c3d66cfe1d63720155a37c92c">More...</a><br /></td></tr>
+<tr class="separator:a35bb088c3d66cfe1d63720155a37c92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d4bce2e32ca29ff7ffad75e73380fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a04d4bce2e32ca29ff7ffad75e73380fb">getLastFrameOccludeesOcclusionTestedAndOccluded</a> () const</td></tr>
+<tr class="memdesc:a04d4bce2e32ca29ff7ffad75e73380fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of occluded occludees in last frame (only counted if occlusion test was also enabled).  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a04d4bce2e32ca29ff7ffad75e73380fb">More...</a><br /></td></tr>
+<tr class="separator:a04d4bce2e32ca29ff7ffad75e73380fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ce53fedd179fc0b9db09de7ac7566a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a43ce53fedd179fc0b9db09de7ac7566a">getLastFrameOccludeesOcclusionTestedAndNonOccluded</a> () const</td></tr>
+<tr class="memdesc:a43ce53fedd179fc0b9db09de7ac7566a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of non-occluded occludees in last frame (only counted if occlusion test was also enabled).  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a43ce53fedd179fc0b9db09de7ac7566a">More...</a><br /></td></tr>
+<tr class="separator:a43ce53fedd179fc0b9db09de7ac7566a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7d9066f12e3439ead7eabcb84b61ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ada7d9066f12e3439ead7eabcb84b61ce">getLastFrameOccludeesOcclusionTestedAndNonOccludedButNonVisibleAnyway</a> () const</td></tr>
+<tr class="memdesc:ada7d9066f12e3439ead7eabcb84b61ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of non-occluded occludees in last frame (only counted if occlusion test was also enabled but visibility was not).  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ada7d9066f12e3439ead7eabcb84b61ce">More...</a><br /></td></tr>
+<tr class="separator:ada7d9066f12e3439ead7eabcb84b61ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de4efb4713b861c57fb3395d91f8a7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a6de4efb4713b861c57fb3395d91f8a7b">getLastFrameTransferredVertices</a> () const</td></tr>
+<tr class="memdesc:a6de4efb4713b861c57fb3395d91f8a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of transferred vertices in last frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a6de4efb4713b861c57fb3395d91f8a7b">More...</a><br /></td></tr>
+<tr class="separator:a6de4efb4713b861c57fb3395d91f8a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acab8afacf04ebe258c8c5d37f075dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a9acab8afacf04ebe258c8c5d37f075dc">getLastFrameTransferredTriangles</a> () const</td></tr>
+<tr class="memdesc:a9acab8afacf04ebe258c8c5d37f075dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of transferred triangles in last frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a9acab8afacf04ebe258c8c5d37f075dc">More...</a><br /></td></tr>
+<tr class="separator:a9acab8afacf04ebe258c8c5d37f075dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_p_r_r_e_renderer_h_wfixed_pipe"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p_r_r_e_renderer_h_wfixed_pipe')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html">PRRERendererHWfixedPipe</a></td></tr>
 <tr class="memitem:a8cd3244badbc8fbd19fb7ddcddecd911 inherit pub_methods_class_p_r_r_e_renderer_h_wfixed_pipe"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a8cd3244badbc8fbd19fb7ddcddecd911">getConsole</a> () const</td></tr>
 <tr class="memdesc:a8cd3244badbc8fbd19fb7ddcddecd911 inherit pub_methods_class_p_r_r_e_renderer_h_wfixed_pipe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns access to console preset with logger module name as this class.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a8cd3244badbc8fbd19fb7ddcddecd911">More...</a><br /></td></tr>
 <tr class="separator:a8cd3244badbc8fbd19fb7ddcddecd911 inherit pub_methods_class_p_r_r_e_renderer_h_wfixed_pipe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae9596c86583be1bda942e4b70d4f5fc9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ae9596c86583be1bda942e4b70d4f5fc9">OQ_AUTO_UPDATE_OCCLUDER_STATES</a> = true</td></tr>
+<tr class="separator:ae9596c86583be1bda942e4b70d4f5fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac602959654865842ef0ae768c240213c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ac602959654865842ef0ae768c240213c">OQ_ZPASS_FOR_OCCLUDERS</a> = false</td></tr>
+<tr class="separator:ac602959654865842ef0ae768c240213c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9677cc32d3ac94adbf34b8740858a5f8"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a9677cc32d3ac94adbf34b8740858a5f8">mapRenderPaths2String</a></td></tr>
+<tr class="separator:a9677cc32d3ac94adbf34b8740858a5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf71da9cbce3d2ac1337c2b3298c7589"><td class="memItemLeft" align="right" valign="top">static std::map&lt; <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#abf71da9cbce3d2ac1337c2b3298c7589">mapOcclusionQueryMethod2String</a></td></tr>
+<tr class="separator:abf71da9cbce3d2ac1337c2b3298c7589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed594ddffb69fc96faed8a27406e58c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html">CurrentStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a5ed594ddffb69fc96faed8a27406e58c">stats</a></td></tr>
+<tr class="separator:a5ed594ddffb69fc96faed8a27406e58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc8d69a65b4331927b03082ba4de99f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html">LastFrameStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a2bc8d69a65b4331927b03082ba4de99f">lastFrameStats</a></td></tr>
+<tr class="separator:a2bc8d69a65b4331927b03082ba4de99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_p_r_r_e_renderer_h_wfixed_pipe"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_p_r_r_e_renderer_h_wfixed_pipe')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html">PRRERendererHWfixedPipe</a></td></tr>
+<tr class="memitem:a7d5103cf423bbbb1502e3a263d10dfb3 inherit pub_static_attribs_class_p_r_r_e_renderer_h_wfixed_pipe"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a7d5103cf423bbbb1502e3a263d10dfb3">DefaultHints</a></td></tr>
+<tr class="memdesc:a7d5103cf423bbbb1502e3a263d10dfb3 inherit pub_static_attribs_class_p_r_r_e_renderer_h_wfixed_pipe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default render hints for <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html" title="Incremental fixed-function hardware renderer path.">PRRERendererHWfixedPipe</a>.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a7d5103cf423bbbb1502e3a263d10dfb3">More...</a><br /></td></tr>
+<tr class="separator:a7d5103cf423bbbb1502e3a263d10dfb3 inherit pub_static_attribs_class_p_r_r_e_renderer_h_wfixed_pipe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -153,14 +219,22 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a46210f52fff65b5aa53b383b8dae762c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35b5a3656d1a8edb7cbf4d6b3562d16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html">PRRERendererHWfixedPipeImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ab35b5a3656d1a8edb7cbf4d6b3562d16">operator=</a> (const <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html">PRRERendererHWfixedPipeImpl</a> &amp;)</td></tr>
 <tr class="separator:ab35b5a3656d1a8edb7cbf4d6b3562d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a440df19cb1609833b96cac76fa65c334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a440df19cb1609833b96cac76fa65c334">myLookAt</a> (const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;pos, const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;target, const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;up) const</td></tr>
-<tr class="separator:a440df19cb1609833b96cac76fa65c334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4505661f0492ddb0546436d3121f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a5b4505661f0492ddb0546436d3121f9c">printOGLerrorBrief</a> ()</td></tr>
 <tr class="memdesc:a5b4505661f0492ddb0546436d3121f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes OpenGL error to console only if there is really an error.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a5b4505661f0492ddb0546436d3121f9c">More...</a><br /></td></tr>
 <tr class="separator:a5b4505661f0492ddb0546436d3121f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d9148ebfb66069f482de8c21953a94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a25d9148ebfb66069f482de8c21953a94">printOGLerrorFull</a> ()</td></tr>
 <tr class="memdesc:a25d9148ebfb66069f482de8c21953a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes OpenGL error to console even the error is no error.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a25d9148ebfb66069f482de8c21953a94">More...</a><br /></td></tr>
 <tr class="separator:a25d9148ebfb66069f482de8c21953a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c49649ea1d08c11cf32f9a8435042fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a5c49649ea1d08c11cf32f9a8435042fb">LogFullRenderHints</a> (const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;hints) const</td></tr>
+<tr class="memdesc:a5c49649ea1d08c11cf32f9a8435042fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs given render hints with full descriptive text.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a5c49649ea1d08c11cf32f9a8435042fb">More...</a><br /></td></tr>
+<tr class="separator:a5c49649ea1d08c11cf32f9a8435042fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1835d545f9ee5e824de4120d4cc3f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#aaf1835d545f9ee5e824de4120d4cc3f7">LogLastFrameStats</a> () const</td></tr>
+<tr class="memdesc:aaf1835d545f9ee5e824de4120d4cc3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs last frame stats.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#aaf1835d545f9ee5e824de4120d4cc3f7">More...</a><br /></td></tr>
+<tr class="separator:aaf1835d545f9ee5e824de4120d4cc3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a019141cb3db893307dad61e7437c976b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a019141cb3db893307dad61e7437c976b">LogCollectedStats</a> (<a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> i) const</td></tr>
+<tr class="separator:a019141cb3db893307dad61e7437c976b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3259812793c891b95d8bf8717c372168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a3259812793c891b95d8bf8717c372168">LogLastCollectedStats</a> () const</td></tr>
+<tr class="separator:a3259812793c891b95d8bf8717c372168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6331398a773d4d220ac38c1dbaf929e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a6331398a773d4d220ac38c1dbaf929e4">initializeOpenGL</a> (HDC dc)</td></tr>
 <tr class="memdesc:a6331398a773d4d220ac38c1dbaf929e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes OpenGL.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a6331398a773d4d220ac38c1dbaf929e4">More...</a><br /></td></tr>
 <tr class="separator:a6331398a773d4d220ac38c1dbaf929e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +256,18 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af3a02e653a9d85b19f37d4fb7315bd01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#af3a02e653a9d85b19f37d4fb7315bd01">SwitchToOrtographicProjection</a> ()</td></tr>
 <tr class="memdesc:af3a02e653a9d85b19f37d4fb7315bd01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets orthographic projection.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#af3a02e653a9d85b19f37d4fb7315bd01">More...</a><br /></td></tr>
 <tr class="separator:af3a02e653a9d85b19f37d4fb7315bd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3eda2390d521631a7da8c2cf9e3246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4f3eda2390d521631a7da8c2cf9e3246">Draw3DObjects</a> (<a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;renderer)</td></tr>
-<tr class="memdesc:a4f3eda2390d521631a7da8c2cf9e3246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws 3D objects.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4f3eda2390d521631a7da8c2cf9e3246">More...</a><br /></td></tr>
-<tr class="separator:a4f3eda2390d521631a7da8c2cf9e3246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3194af6a9560325e5933244638e7dc18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a3194af6a9560325e5933244638e7dc18">OrderObjectContainersByZdistance</a> ()</td></tr>
+<tr class="memdesc:a3194af6a9560325e5933244638e7dc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orders objects by Z-distance relative to camera view.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a3194af6a9560325e5933244638e7dc18">More...</a><br /></td></tr>
+<tr class="separator:a3194af6a9560325e5933244638e7dc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf05f2ac39067c6b41f055d1317c2b78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#abf05f2ac39067c6b41f055d1317c2b78">Draw3DObjects_Legacy</a> (<a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;renderer)</td></tr>
+<tr class="memdesc:abf05f2ac39067c6b41f055d1317c2b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws 3D objects, the legacy PR00FPS way.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#abf05f2ac39067c6b41f055d1317c2b78">More...</a><br /></td></tr>
+<tr class="separator:abf05f2ac39067c6b41f055d1317c2b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ae9b8073de3fd95b848f7ecb1a9348"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ae6ae9b8073de3fd95b848f7ecb1a9348">Draw3DObjects_Ordered_Containers</a> (<a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;renderer)</td></tr>
+<tr class="memdesc:ae6ae9b8073de3fd95b848f7ecb1a9348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws 3D objects using separate Object3D containers.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ae6ae9b8073de3fd95b848f7ecb1a9348">More...</a><br /></td></tr>
+<tr class="separator:ae6ae9b8073de3fd95b848f7ecb1a9348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad316f5ca16c0dc477ba22c451a04d169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ad316f5ca16c0dc477ba22c451a04d169">Draw3DObjects_OcclusionQuery</a> (<a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;renderer, <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> bASyncQuery)</td></tr>
+<tr class="memdesc:ad316f5ca16c0dc477ba22c451a04d169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws 3D objects with occlusion query.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ad316f5ca16c0dc477ba22c451a04d169">More...</a><br /></td></tr>
+<tr class="separator:ad316f5ca16c0dc477ba22c451a04d169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9bc5ea602a7866a937c213fc1bf3bd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ab9bc5ea602a7866a937c213fc1bf3bd7">Draw2DObjects</a> (<a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;renderer)</td></tr>
 <tr class="memdesc:ab9bc5ea602a7866a937c213fc1bf3bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws 2D objects.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ab9bc5ea602a7866a937c213fc1bf3bd7">More...</a><br /></td></tr>
 <tr class="separator:ab9bc5ea602a7866a937c213fc1bf3bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,10 +298,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a4ba9b8f54f4c982dd6b0801fc09d6f71"><td class="memItemLeft" align="right" valign="top">HGLRC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4ba9b8f54f4c982dd6b0801fc09d6f71">rc</a></td></tr>
 <tr class="memdesc:a4ba9b8f54f4c982dd6b0801fc09d6f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rendering context, initially NULL.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a4ba9b8f54f4c982dd6b0801fc09d6f71">More...</a><br /></td></tr>
 <tr class="separator:a4ba9b8f54f4c982dd6b0801fc09d6f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8585a53dfaaf18167362de8064de4bf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a8585a53dfaaf18167362de8064de4bf1">bLighting</a></td></tr>
-<tr class="separator:a8585a53dfaaf18167362de8064de4bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0245feff9d9836020abd38267c3200c"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ad0245feff9d9836020abd38267c3200c">mat4x4Identity</a> [4][4]</td></tr>
 <tr class="separator:ad0245feff9d9836020abd38267c3200c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea9ca5e55167ca3fdddbf133cd55fbe"><td class="memItemLeft" align="right" valign="top">PFL::timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#a2ea9ca5e55167ca3fdddbf133cd55fbe">timeDurationStart</a></td></tr>
+<tr class="separator:a2ea9ca5e55167ca3fdddbf133cd55fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -261,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calls <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ab1674c4953418176e05f6a20d1d35bf1" title="This stops the renderer.">shutdown()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00108">108</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00348">348</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>NULLs members only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00343">343</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00828">828</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -334,7 +417,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00356">356</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00859">859</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -362,7 +445,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00372">372</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00893">893</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +475,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets viewport size and clears buffers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00509">509</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01099">1099</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +496,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Runs an internal consistency test, just for debug. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00326">326</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00743">743</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -444,12 +527,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Draws 2D objects. </p>
 <p>Draws 2D objects (stickedToScreen and UI). </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00649">649</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01485">1485</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4f3eda2390d521631a7da8c2cf9e3246"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f3eda2390d521631a7da8c2cf9e3246">&#9670;&nbsp;</a></span>Draw3DObjects()</h2>
+<a id="abf05f2ac39067c6b41f055d1317c2b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf05f2ac39067c6b41f055d1317c2b78">&#9670;&nbsp;</a></span>Draw3DObjects_Legacy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,7 +541,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PRRERendererHWfixedPipeImpl::Draw3DObjects </td>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::Draw3DObjects_Legacy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;&#160;</td>
           <td class="paramname"><em>renderer</em></td><td>)</td>
@@ -472,10 +555,92 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Draws 3D objects. </p>
-<p>Draws 3D objects (non-stickedToScreen). </p>
+<p>Draws 3D objects, the legacy PR00FPS way. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00591">591</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01286">1286</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad316f5ca16c0dc477ba22c451a04d169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad316f5ca16c0dc477ba22c451a04d169">&#9670;&nbsp;</a></span>Draw3DObjects_OcclusionQuery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::Draw3DObjects_OcclusionQuery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td>
+          <td class="paramname"><em>bASyncQuery</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws 3D objects with occlusion query. </p>
+<p>The difference compared to <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ae6ae9b8073de3fd95b848f7ecb1a9348" title="Draws 3D objects using separate Object3D containers.">Draw3DObjects_Ordered_Containers()</a>:</p><ul>
+<li>occlusion query is started for occludees, to decide if they should be really rendered.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bASyncQuery</td><td>If true, the result of occlusion queries are not waited for in the same frame, instead they will be evaulated in a future frame whenever they are available. If false, all occlusion queries must finish in the frame, to decide if we should really render the occludee. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01375">1375</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6ae9b8073de3fd95b848f7ecb1a9348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ae9b8073de3fd95b848f7ecb1a9348">&#9670;&nbsp;</a></span>Draw3DObjects_Ordered_Containers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::Draw3DObjects_Ordered_Containers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws 3D objects using separate Object3D containers. </p>
+<p>The difference compared to <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#abf05f2ac39067c6b41f055d1317c2b78" title="Draws 3D objects, the legacy PR00FPS way.">Draw3DObjects_Legacy()</a>:</p><ul>
+<li>iterating separate Object3D containers instead of Object3DManager's base manageds container;</li>
+<li>these separate containers are ordered by Z-distance from camera, so hopefully it makes less overdraw. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01324">1324</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -504,7 +669,318 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Forces pending tasks to be finished and displays the rendered picture. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00684">684</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01516">1516</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa23a7853d2010a89cff0246f6e22e89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23a7853d2010a89cff0246f6e22e89e">&#9670;&nbsp;</a></span>getLastFrameObjectsVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameObjectsVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of objects allowed to be visible in last frame. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a0de69eb65797a73136dea989d459f889">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00754">754</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2f61bf73e4c3d52f083bbdbbe14edb3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f61bf73e4c3d52f083bbdbbe14edb3b">&#9670;&nbsp;</a></span>getLastFrameOccludeesNonOcclusionTested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameOccludeesNonOcclusionTested </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of occludees that had occlusion test disabled in last frame. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a81e29a460996678e4f7747a410132d92">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00770">770</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a35bb088c3d66cfe1d63720155a37c92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bb088c3d66cfe1d63720155a37c92c">&#9670;&nbsp;</a></span>getLastFrameOccludeesOcclusionTested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameOccludeesOcclusionTested </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of occludees that had occlusion test enabled (not necessarily ongoing) in last frame. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#afe153855c4cdcccffe294ffa6c6d1e54">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00778">778</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a43ce53fedd179fc0b9db09de7ac7566a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ce53fedd179fc0b9db09de7ac7566a">&#9670;&nbsp;</a></span>getLastFrameOccludeesOcclusionTestedAndNonOccluded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameOccludeesOcclusionTestedAndNonOccluded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of non-occluded occludees in last frame (only counted if occlusion test was also enabled). </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#ae4dce2873aec0e49a3ed8e0df6058b79">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00794">794</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ada7d9066f12e3439ead7eabcb84b61ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7d9066f12e3439ead7eabcb84b61ce">&#9670;&nbsp;</a></span>getLastFrameOccludeesOcclusionTestedAndNonOccludedButNonVisibleAnyway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameOccludeesOcclusionTestedAndNonOccludedButNonVisibleAnyway </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of non-occluded occludees in last frame (only counted if occlusion test was also enabled but visibility was not). </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a13876ef4bd724168b27bb3a9f93eb1e9">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00802">802</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04d4bce2e32ca29ff7ffad75e73380fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d4bce2e32ca29ff7ffad75e73380fb">&#9670;&nbsp;</a></span>getLastFrameOccludeesOcclusionTestedAndOccluded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameOccludeesOcclusionTestedAndOccluded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of occluded occludees in last frame (only counted if occlusion test was also enabled). </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a9b0614ac1638d088d3805eae5da4be83">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00786">786</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a942538556eeaed50416c011a58ea6b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942538556eeaed50416c011a58ea6b7b">&#9670;&nbsp;</a></span>getLastFrameOccluders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameOccluders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of objects that were occluders in last frame. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a9f7d091b14d040813a340da5df4f985c">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00762">762</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9acab8afacf04ebe258c8c5d37f075dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acab8afacf04ebe258c8c5d37f075dc">&#9670;&nbsp;</a></span>getLastFrameTransferredTriangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameTransferredTriangles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of transferred triangles in last frame. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#ae00db790d7a1ff75fc05194fa3fc8d29">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00813">813</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6de4efb4713b861c57fb3395d91f8a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de4efb4713b861c57fb3395d91f8a7b">&#9670;&nbsp;</a></span>getLastFrameTransferredVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRRERendererHWfixedPipeImpl::getLastFrameTransferredVertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of transferred vertices in last frame. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#ac784b437d0aa7631d190d42264312ccd">PRRERendererHWfixedPipe</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00808">808</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a79fc355f6e20025ea23767a59cbd2794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fc355f6e20025ea23767a59cbd2794">&#9670;&nbsp;</a></span>getRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp; PRRERendererHWfixedPipeImpl::getRenderHints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get current render hints. </p>
+<p>Render hints are basically debug settings for the renderer used in rare circumstances. The available render hints are documented at each renderer implementation. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ac6513c865a3ef6118f2aa3ebd86201c7">PRREIRenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00607">607</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -585,7 +1061,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the renderer. </p>
-<p>Tries to set the given display mode.</p>
+<p>Tries to set the given display mode. Render hints are not affected.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>Client width of the window being created. If 0, the target width will be the current horizontal screen resolution. If the current horizontal screen resolution can't be queried, the target width will be 800. </td></tr>
@@ -604,7 +1080,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a5a3fe08d44a16f39e2b446aaf180b556">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00114">114</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00354">354</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +1111,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Initializes OpenGL. </p>
 <p>Updates member rc. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00418">418</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01008">1008</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -667,12 +1143,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ab2133949f0e6f029a6ebc99b6648f685">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00270">270</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00515">515</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a440df19cb1609833b96cac76fa65c334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a440df19cb1609833b96cac76fa65c334">&#9670;&nbsp;</a></span>myLookAt()</h2>
+<a id="a019141cb3db893307dad61e7437c976b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a019141cb3db893307dad61e7437c976b">&#9670;&nbsp;</a></span>LogCollectedStats()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,27 +1157,11 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PRRERendererHWfixedPipeImpl::myLookAt </td>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::LogCollectedStats </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>up</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -710,6 +1170,94 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00978">978</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5c49649ea1d08c11cf32f9a8435042fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c49649ea1d08c11cf32f9a8435042fb">&#9670;&nbsp;</a></span>LogFullRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::LogFullRenderHints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs given render hints with full descriptive text. </p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00938">938</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3259812793c891b95d8bf8717c372168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3259812793c891b95d8bf8717c372168">&#9670;&nbsp;</a></span>LogLastCollectedStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::LogLastCollectedStats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00997">997</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf1835d545f9ee5e824de4120d4cc3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1835d545f9ee5e824de4120d4cc3f7">&#9670;&nbsp;</a></span>LogLastFrameStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::LogLastFrameStats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs last frame stats. </p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00961">961</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -737,7 +1285,46 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00383">383</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00904">904</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3194af6a9560325e5933244638e7dc18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3194af6a9560325e5933244638e7dc18">&#9670;&nbsp;</a></span>OrderObjectContainersByZdistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::OrderObjectContainersByZdistance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Orders objects by Z-distance relative to camera view. </p>
+<p>No effect if PRRE_RH_ORDERING_BY_DISTANCE_BIT is not set.</p>
+<p>This approach is based on a comment on this page: <a href="https://community.khronos.org/t/sorting-objects-by-distance-for-correct-blending/49579/3">https://community.khronos.org/t/sorting-objects-by-distance-for-correct-blending/49579/3</a> From: k_szczech - Senior Member - May 2007 "Few words about sorting:</p><ul>
+<li>Do not compute distance - compute dot product along camera’s Z axis - not only faster but also more accurate (z-buffer is not “spherical”).</li>
+<li>After you have sorted by Z component you can perform additional sort. Instead of comparing Z coordinates of polygon’s center, compare two polygons by testing if one is on the clock wise or counter clock wise side of another. You can even use bubble sort this time since most polyons are in proper order anyway.</li>
+<li>Some polygons can be merged into groups that never occlude each other. Imagine car windows - if you first draw all windows from the inside and then all windows from the outside then you get corret result. So instead of sorting all polygons you only have 2 groups which additionally are in constant relation with each other."</li>
+</ul>
+<p>For more about transparent object rendering:</p><ul>
+<li><a href="https://stackoverflow.com/questions/37780345/opengl-how-to-create-order-independent-transparency/37783085#37783085">https://stackoverflow.com/questions/37780345/opengl-how-to-create-order-independent-transparency/37783085#37783085</a></li>
+<li><a href="https://github.com/PixelClear/Order-Independent-Trasparency">https://github.com/PixelClear/Order-Independent-Trasparency</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01237">1237</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +1353,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Writes OpenGL error to console only if there is really an error. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00392">392</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00913">913</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +1382,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Writes OpenGL error to console even the error is no error. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00403">403</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00924">924</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -828,7 +1415,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe.html#a0d79fd50bbd2ae6e38467aa337780ead">PRRERendererHWfixedPipe</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00287">287</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00532">532</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -860,7 +1447,39 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a185bc8e81fbcaef3e809eb8fa94ced77">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00293">293</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00538">538</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fe7bca4a83a3a8e3ab9aa04ced4777b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe7bca4a83a3a8e3ab9aa04ced4777b">&#9670;&nbsp;</a></span>ResetStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::ResetStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets "Current Statistics". </p>
+<p>The renderer might collect statistical data during its lifetime or for a shorter period, that might be shown in debug log by <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#ac50e0eca0bc13cc83113194b64eb6001" title="Writes &quot;Current Statistics&quot; and &quot;Last Frame Statistics&quot; to the console window.">WriteStats()</a>. In any circumstances you want to reset this data i.e. restart measurements, this function does the job. If logging is enabled, it also logs statistics. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ac1e8823bd645cc86e0d715f865c38cd2">PRREIRenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00687">687</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -889,7 +1508,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets some basic things in OpenGL. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00481">481</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01071">1071</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -938,7 +1557,40 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a51a5232136c81f5c405b3eb6f46822dc">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00276">276</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00521">521</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a08b64874a4abb83d70f6e9c5738711dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b64874a4abb83d70f6e9c5738711dd">&#9670;&nbsp;</a></span>SetRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererHWfixedPipeImpl::SetRenderHints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set current render hints. </p>
+<p>Render hints are basically debug settings for the renderer used in rare circumstances. The available render hints are documented at each renderer implementation. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#acfd5874465866bc48ad2285fd99bf207">PRREIRenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00613">613</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -966,12 +1618,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This stops the renderer. </p>
-<p>Deletes everything created by the renderer. No effect before initialization. After shutdown, <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#afa91b59ee15ff64184ee172aa0bd89a2" title="Initializes the renderer.">initialize()</a> can be called again.</p>
+<p>Deletes everything created by the renderer. No effect before initialization. After shutdown, <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html#afa91b59ee15ff64184ee172aa0bd89a2" title="Initializes the renderer.">initialize()</a> can be called again. Render hints are not affected.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on successful shutdown, false otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ab30880df02126c6bcfe502d134cdef79">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00244">244</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00488">488</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1653,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Shuts down OpenGL. </p>
 <p>Updates member rc. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00453">453</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01043">1043</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1682,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets orthographic projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00570">570</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01167">1167</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1711,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets perspective projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00538">538</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l01135">1135</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1086,11 +1738,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Writes statistics to the console window. </p>
+<p>Writes "Current Statistics" and "Last Frame Statistics" to the console window. </p>
+<p>These are explained at <a class="el" href="debugging.html">Debugging</a>. </p>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a463e48ec5250df3a3cbaa1d5b410f2ca">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00316">316</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00715">715</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1115,35 +1768,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00097">97</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00175">175</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8585a53dfaaf18167362de8064de4bf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8585a53dfaaf18167362de8064de4bf1">&#9670;&nbsp;</a></span>bLighting</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PRRERendererHWfixedPipeImpl::bLighting</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00064">64</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
-
-</div>
-</div>
 <a id="aa475e2e0f1a47eb01f977bc45eab3b35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa475e2e0f1a47eb01f977bc45eab3b35">&#9670;&nbsp;</a></span>hwInfo</h2>
 
@@ -1166,7 +1795,79 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hardware infos, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00057">57</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00130">130</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2bc8d69a65b4331927b03082ba4de99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc8d69a65b4331927b03082ba4de99f">&#9670;&nbsp;</a></span>lastFrameStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html">PRRERendererHWfixedPipeImpl::LastFrameStats</a> PRRERendererHWfixedPipeImpl::lastFrameStats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00087">87</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf71da9cbce3d2ac1337c2b3298c7589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf71da9cbce3d2ac1337c2b3298c7589">&#9670;&nbsp;</a></span>mapOcclusionQueryMethod2String</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>, std::string &gt; PRRERendererHWfixedPipeImpl::mapOcclusionQueryMethod2String</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00085">85</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9677cc32d3ac94adbf34b8740858a5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9677cc32d3ac94adbf34b8740858a5f8">&#9670;&nbsp;</a></span>mapRenderPaths2String</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>, std::string &gt; PRRERendererHWfixedPipeImpl::mapRenderPaths2String</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00084">84</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1891,55 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00065">65</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00137">137</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae9596c86583be1bda942e4b70d4f5fc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9596c86583be1bda942e4b70d4f5fc9">&#9670;&nbsp;</a></span>OQ_AUTO_UPDATE_OCCLUDER_STATES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PRRERendererHWfixedPipeImpl::OQ_AUTO_UPDATE_OCCLUDER_STATES = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00081">81</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac602959654865842ef0ae768c240213c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac602959654865842ef0ae768c240213c">&#9670;&nbsp;</a></span>OQ_ZPASS_FOR_OCCLUDERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PRRERendererHWfixedPipeImpl::OQ_ZPASS_FOR_OCCLUDERS = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00082">82</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1965,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Camera, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00060">60</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00133">133</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1991,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ObjectManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00059">59</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00132">132</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +2017,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>UI manager, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00061">61</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00134">134</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1295,7 +2044,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Rendering context, initially NULL. </p>
 <p>Determines whether the renderer is initialized or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00063">63</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00136">136</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +2070,55 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Our screen, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00058">58</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00131">131</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ed594ddffb69fc96faed8a27406e58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed594ddffb69fc96faed8a27406e58c">&#9670;&nbsp;</a></span>stats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html">PRRERendererHWfixedPipeImpl::CurrentStats</a> &gt; PRRERendererHWfixedPipeImpl::stats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00086">86</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ea9ca5e55167ca3fdddbf133cd55fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea9ca5e55167ca3fdddbf133cd55fbe">&#9670;&nbsp;</a></span>timeDurationStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFL::timeval PRRERendererHWfixedPipeImpl::timeDurationStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00138">138</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +2144,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Our window, where we draw to, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00056">56</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html#l00129">129</a> of file <a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp_source.html">PRRERendererHWfixedPipe.cpp</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +2157,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html">PRRERendererHWfixedPipeImpl</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

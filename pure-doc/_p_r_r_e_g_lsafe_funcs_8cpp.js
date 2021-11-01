@@ -9,6 +9,7 @@ var _p_r_r_e_g_lsafe_funcs_8cpp =
     [ "pglFeedbackBuffer", "_p_r_r_e_g_lsafe_funcs_8cpp.html#a7b7c46907193dcc966265007149ccd90", null ],
     [ "pglGenBuffersARB", "_p_r_r_e_g_lsafe_funcs_8cpp.html#a0e74273f51bf37bc5502c920617ebcc3", null ],
     [ "pglGenLists", "_p_r_r_e_g_lsafe_funcs_8cpp.html#ae880f35c66f7cdb711c18c46eaf56991", null ],
+    [ "pglGenQueries", "_p_r_r_e_g_lsafe_funcs_8cpp.html#a6c345ea57da960c41a07accb6b0507df", null ],
     [ "pglGenTextures", "_p_r_r_e_g_lsafe_funcs_8cpp.html#a956a0859de4376e5bbb2860794b44983", null ],
     [ "pglGetTexParameterfv", "_p_r_r_e_g_lsafe_funcs_8cpp.html#aef9e1b9e70c27e6225d98e397245d295", null ],
     [ "pglGetTexParameteriv", "_p_r_r_e_g_lsafe_funcs_8cpp.html#a9135086e0d989e84cdcaea623bdbf049", null ],

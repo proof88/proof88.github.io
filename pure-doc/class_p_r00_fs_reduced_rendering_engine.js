@@ -1,6 +1,7 @@
 var class_p_r00_fs_reduced_rendering_engine =
 [
     [ "CopyScreenToTexture", "class_p_r00_fs_reduced_rendering_engine.html#a990fa4fcadad444eae011b9839671649", null ],
+    [ "getAutoWriteStatsAtShutdown", "class_p_r00_fs_reduced_rendering_engine.html#a19c185b29605deab35ba3e0cc8b5ff3b", null ],
     [ "getCamera", "class_p_r00_fs_reduced_rendering_engine.html#a66de6fcc5c547f5ff511ba1513fd4636", null ],
     [ "getConsole", "class_p_r00_fs_reduced_rendering_engine.html#ab81a13706822f5e94ed2711aed327104", null ],
     [ "getHardwareInfo", "class_p_r00_fs_reduced_rendering_engine.html#ae19c3541a5b5aade148be40f7c39e962", null ],
@@ -15,6 +16,7 @@ var class_p_r00_fs_reduced_rendering_engine =
     [ "getWindow", "class_p_r00_fs_reduced_rendering_engine.html#a7ef524ae2dd542bcc1ee72c3f7053a76", null ],
     [ "initialize", "class_p_r00_fs_reduced_rendering_engine.html#a8aa24ca347b8e9c71d436fa24e5e3306", null ],
     [ "isInitialized", "class_p_r00_fs_reduced_rendering_engine.html#a915c7b749824184dd9fe1aa31679466b", null ],
+    [ "SetAutoWriteStatsAtShutdown", "class_p_r00_fs_reduced_rendering_engine.html#aa3151f947c6db16af7971f72845c72ee", null ],
     [ "shutdown", "class_p_r00_fs_reduced_rendering_engine.html#a78373bc3fb5a84b6ff5f8db9517b65e2", null ],
     [ "WriteList", "class_p_r00_fs_reduced_rendering_engine.html#a4c2bc4ed20bb57b4e9fd0cc96a82ddb7", null ]
 ];

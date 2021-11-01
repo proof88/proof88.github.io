@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -363,7 +363,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00509">509</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00517">517</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Cross product of the 2 vectors. Zero when the 2 vectors are parallel or antiparallel to each other, or one of the vectors is nullvector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00274">274</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00282">282</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -444,15 +444,19 @@ Private Attributes</h2></td></tr>
 
 <p>Dot product. </p>
 <p>The dot product between two unit vectors is the cosine of the angle between those two vectors. So it is useful to tell if 2 vectors are looking into same or similar direction, or opposite direction, etc.</p>
+<p>It is also useful when we need to sort objects in front-to-back or back-to-front order relative to camera position, because we can calculate the scalar projection of vector 'a' on vector 'b' if we have the dot product of vector 'a' and a unit vector in the direction of vector 'b':</p><ul>
+<li>vector 'a' can be calculated by subtracting camera position vector from object position vector;</li>
+<li>vector 'b' can be calculated by subtracting camera position vector from camera target vector, its normalized form then will be a unit vector in the direction of where camera is looking at. Then the only task to do is to sort based on the calculated scalar projections.</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vec</td><td>The other vector used for the calculation with this vector.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Dot product of the 2 vectors. -1 if they look into exactly same direction, 0 when the 2 vectors are perpendicular to each other, -1 if they look into opposite direction. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Dot product of the 2 vectors. 1 if they look into exactly same direction, 0 when the 2 vectors are perpendicular to each other, -1 if they look into opposite direction. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00258">258</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00266">266</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -629,7 +633,7 @@ Private Attributes</h2></td></tr>
 
 <p>Not equals to operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00298">298</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00306">306</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +661,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00417">417</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00425">425</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +689,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00438">438</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00446">446</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -708,7 +712,7 @@ Private Attributes</h2></td></tr>
 <p>Dot product operator. </p>
 <p>See details at <a class="el" href="class_p_r_r_e_vector.html#ada553fcaa688f54cab0002ca505b4752" title="Dot product.">getDotProduct()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00382">382</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00390">390</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -730,7 +734,7 @@ Private Attributes</h2></td></tr>
 
 <p>Multiplication by scalar operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00359">359</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00367">367</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -753,7 +757,7 @@ Private Attributes</h2></td></tr>
 <p>Multiplication assignment operator. </p>
 <p>Multiplication assignmennt operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00369">369</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00377">377</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -775,7 +779,7 @@ Private Attributes</h2></td></tr>
 
 <p>Addition operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00317">317</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00325">325</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -797,7 +801,7 @@ Private Attributes</h2></td></tr>
 
 <p>Addition assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00326">326</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00334">334</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +823,7 @@ Private Attributes</h2></td></tr>
 
 <p>Subtraction operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00338">338</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00346">346</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -841,7 +845,7 @@ Private Attributes</h2></td></tr>
 
 <p>Subtraction assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00347">347</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00355">355</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -863,7 +867,7 @@ Private Attributes</h2></td></tr>
 
 <p>Assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00307">307</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00315">315</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -885,7 +889,7 @@ Private Attributes</h2></td></tr>
 
 <p>Equals to operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00285">285</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00293">293</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -913,7 +917,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00459">459</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00467">467</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -941,7 +945,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00470">470</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00478">478</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -964,7 +968,7 @@ Private Attributes</h2></td></tr>
 <p>Cross product operator. </p>
 <p>See details at <a class="el" href="class_p_r_r_e_vector.html#adf16778cc3f023a917cda1c68920c83a" title="Cross product.">getCrossProduct()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00392">392</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00400">400</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -986,7 +990,7 @@ Private Attributes</h2></td></tr>
 
 <p>Cross product assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00401">401</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vector_8cpp_source.html#l00409">409</a> of file <a class="el" href="_p_r_r_e_vector_8cpp_source.html">PRREVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1223,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_vector.html">PRREVector</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:37 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

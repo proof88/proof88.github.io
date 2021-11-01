@@ -10,5 +10,6 @@ var class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl =
     [ "PRREMaterialManager", "class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a60d70271a4b41bf7017618467e43740c", null ],
     [ "_pOwner", "class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#abeabf27662efe6c40f05d9c4578f7330", null ],
     [ "bInited", "class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a2ff8f72bb5def0a84d990da64b2dc7af", null ],
-    [ "nMaxLayers", "class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a056aa533f2f9a7bc7873e99d53238dab", null ]
+    [ "nMaxLayers", "class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a056aa533f2f9a7bc7873e99d53238dab", null ],
+    [ "nRunningCounter", "class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a37a47c9d54f379920df39d8ad8038c66", null ]
 ];

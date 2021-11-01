@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -109,6 +109,8 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_image.html',''); initRes
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a0bff957f6f67d91a8ea720d305d8f5a1">getPixels</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a53d7de2532ac57301bdecfbf8c256cbc">getPixelsSize</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a910c62fceeca808ff68946d9a1ffe3d3">getUsedSystemMemory</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a4f7a16f92f916e7507351f3dc631fdf0">getUtiliser</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a1cd5426ba6996820692fcf8276895d06">getUtiliser</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a2d459e99ba4a1a0933a822b5a9e3f3e2">getWidth</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a70775da3f925f12726ee983a10460bdf">isChanged</a>() const</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_image.html#adaa5c1b268ff90636ce393ead2b43719">operator=</a>(const PRREImage &amp;)</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -128,15 +130,16 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_image.html',''); initRes
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a7fe876c83c3d06c0fe2c1f2f7875ed52">setPixel</a>(TPRREuint x, TPRREuint y, TPRREubyte r, TPRREubyte g, TPRREubyte b, TPRREubyte a=0)</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_image.html#adcad03e7fe232b2a89c2b271874a7ade">setPixel</a>(TPRREuint x, TPRREuint y, PRREColor clr)</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_p_r_r_e_image.html#ad321639c7f183f5bc8c40792067df7cd">setPixelComponentOrder</a>(TPRRE_PIXEL_COMPONENT_ORDER corder)</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a6c05c5610345275a53a6cbde33a2d43f">~PRREFiledManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a6c9cea11562ee2c729b8e598084f4275">~PRREImage</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a9b1aaf140436e07e89b1aea5827b717d">~PRREManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#ab5a6ab3e20c3c43a5ffa7877a2412846">SetUtiliser</a>(PRREManaged *pUtiliser)</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html#a6c05c5610345275a53a6cbde33a2d43f">~PRREFiledManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_filed_managed.html">PRREFiledManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_p_r_r_e_image.html#a6c9cea11562ee2c729b8e598084f4275">~PRREImage</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_image.html">PRREImage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_p_r_r_e_managed.html#a9b1aaf140436e07e89b1aea5827b717d">~PRREManaged</a>()</td><td class="entry"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

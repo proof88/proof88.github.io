@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('glossary.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -90,199 +90,203 @@ $(document).ready(function(){initNavTree('md__d_____p_r00_f______developing____p
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md36">Scene</a></li>
-<li class="level1"><a href="#autotoc_md37">Rendering</a></li>
-<li class="level1"><a href="#autotoc_md38">Pipeline</a></li>
-<li class="level1"><a href="#autotoc_md39">Graphics / Rendering Pipeline</a></li>
-<li class="level1"><a href="#autotoc_md40">Pixel</a></li>
-<li class="level1"><a href="#autotoc_md41">Vertex</a></li>
-<li class="level1"><a href="#autotoc_md42">Primitive / Face</a></li>
-<li class="level1"><a href="#autotoc_md43">Mesh</a></li>
-<li class="level1"><a href="#autotoc_md44">Vertex Shader</a></li>
-<li class="level1"><a href="#autotoc_md45">Pixel / Fragment Shader</a></li>
-<li class="level1"><a href="#autotoc_md46">Vertex Pipeline / Processor</a></li>
-<li class="level1"><a href="#autotoc_md47">Vertex Processing / Shader Unit</a></li>
-<li class="level1"><a href="#autotoc_md48">Pixel / Fragment Processor / Pipeline</a></li>
-<li class="level1"><a href="#autotoc_md49">Fragment Processing / Shader Unit</a></li>
-<li class="level1"><a href="#autotoc_md50">Unified Shader</a></li>
-<li class="level1"><a href="#autotoc_md51">Fragment</a></li>
-<li class="level1"><a href="#autotoc_md52">Raster Pipeline / ROP / Z-pipe</a></li>
-<li class="level1"><a href="#autotoc_md53">Raster Operation Unit</a></li>
-<li class="level1"><a href="#autotoc_md54">Fragment Crossbar</a></li>
-<li class="level1"><a href="#autotoc_md55">Texel</a></li>
-<li class="level1"><a href="#autotoc_md56">Texture</a></li>
-<li class="level1"><a href="#autotoc_md57">Texture Unit</a></li>
-<li class="level1"><a href="#autotoc_md58">Texture Filtering</a></li>
-<li class="level1"><a href="#autotoc_md59">Isotropic Filtering</a></li>
-<li class="level1"><a href="#autotoc_md60">Anisotropic Filtering</a></li>
-<li class="level1"><a href="#autotoc_md61">MIP mapping</a></li>
-<li class="level1"><a href="#autotoc_md62">Multitexturing</a></li>
-<li class="level1"><a href="#autotoc_md63">Aliasing</a></li>
-<li class="level1"><a href="#autotoc_md64">Antialiasing, AA</a></li>
-<li class="level1"><a href="#autotoc_md65">Multisample Antialiasing, MSAA</a><ul><li class="level2"><a href="#autotoc_md66">Quincunx Antialiasing (nVidia)</a></li>
-<li class="level2"><a href="#autotoc_md67">AccuView Antialiasing (nVidia)</a></li>
-<li class="level2"><a href="#autotoc_md68">Transparency Antialiasing (nVidia)</a></li>
-<li class="level2"><a href="#autotoc_md69">Coverage Sampling Antialiasing, CSAA (nVidia)</a></li>
+<ul><ul><li class="level2"><a href="#autotoc_md22">Scene</a></li>
+<li class="level2"><a href="#autotoc_md23">Rendering</a></li>
+<li class="level2"><a href="#autotoc_md24">Pipeline</a></li>
+<li class="level2"><a href="#autotoc_md25">Graphics / Rendering Pipeline</a></li>
+<li class="level2"><a href="#autotoc_md26">Pixel</a></li>
+<li class="level2"><a href="#autotoc_md27">Vertex</a></li>
+<li class="level2"><a href="#autotoc_md28">Primitive / Face</a></li>
+<li class="level2"><a href="#autotoc_md29">Mesh</a></li>
+<li class="level2"><a href="#autotoc_md30">Vertex Shader</a></li>
+<li class="level2"><a href="#autotoc_md31">Pixel / Fragment Shader</a></li>
+<li class="level2"><a href="#autotoc_md32">Vertex Pipeline / Processor</a></li>
+<li class="level2"><a href="#autotoc_md33">Vertex Processing / Shader Unit</a></li>
+<li class="level2"><a href="#autotoc_md34">Pixel / Fragment Processor / Pipeline</a></li>
+<li class="level2"><a href="#autotoc_md35">Fragment Processing / Shader Unit</a></li>
+<li class="level2"><a href="#autotoc_md36">Unified Shader</a></li>
+<li class="level2"><a href="#autotoc_md37">Fragment</a></li>
+<li class="level2"><a href="#autotoc_md38">Raster Pipeline / ROP / Z-pipe</a></li>
+<li class="level2"><a href="#autotoc_md39">Raster Operation Unit</a></li>
+<li class="level2"><a href="#autotoc_md40">Fragment Crossbar</a></li>
+<li class="level2"><a href="#autotoc_md41">Texel</a></li>
+<li class="level2"><a href="#autotoc_md42">Texture</a></li>
+<li class="level2"><a href="#autotoc_md43">Texture Unit</a></li>
+<li class="level2"><a href="#autotoc_md44">Texture Filtering</a></li>
+<li class="level2"><a href="#autotoc_md45">Isotropic Filtering</a></li>
+<li class="level2"><a href="#autotoc_md46">Anisotropic Filtering</a></li>
+<li class="level2"><a href="#autotoc_md47">MIP mapping</a></li>
+<li class="level2"><a href="#autotoc_md48">Multitexturing</a></li>
+<li class="level2"><a href="#autotoc_md49">Aliasing</a></li>
+<li class="level2"><a href="#autotoc_md50">Antialiasing, AA</a></li>
+<li class="level2"><a href="#autotoc_md51">Multisample Antialiasing, MSAA</a><ul><li class="level3"><a href="#autotoc_md52">Quincunx Antialiasing (nVidia)</a></li>
+<li class="level3"><a href="#autotoc_md53">AccuView Antialiasing (nVidia)</a></li>
+<li class="level3"><a href="#autotoc_md54">Transparency Antialiasing (nVidia)</a></li>
+<li class="level3"><a href="#autotoc_md55">Coverage Sampling Antialiasing, CSAA (nVidia)</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md70">Supersampled Antialiasing, SSAA</a></li>
-<li class="level1"><a href="#autotoc_md71">Shading</a><ul><li class="level2"><a href="#autotoc_md72">Flat Shading</a></li>
-<li class="level2"><a href="#autotoc_md73">Gouraud Shading</a></li>
-<li class="level2"><a href="#autotoc_md74">Phong Shading</a></li>
-<li class="level2"><a href="#autotoc_md75">Dot-product texture blending, DOT3</a></li>
+<li class="level2"><a href="#autotoc_md56">Supersampled Antialiasing, SSAA</a></li>
+<li class="level2"><a href="#autotoc_md57">Shading</a><ul><li class="level3"><a href="#autotoc_md58">Flat Shading</a></li>
+<li class="level3"><a href="#autotoc_md59">Gouraud Shading</a></li>
+<li class="level3"><a href="#autotoc_md60">Phong Shading</a></li>
+<li class="level3"><a href="#autotoc_md61">Dot-product texture blending, DOT3</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md76">Rendering Pipeline Architecture</a></li>
-<li class="level1"><a href="#autotoc_md77">HW T&amp;L - Hardware Transformation and Lighting</a><ul><li class="level2"><a href="#autotoc_md78">Pre-Transform (pre-T&amp;L) Cache</a></li>
-<li class="level2"><a href="#autotoc_md79">Post-Transform (post-T&amp;L) Cache</a></li>
+<li class="level2"><a href="#autotoc_md62">Rendering Pipeline Architecture</a></li>
+<li class="level2"><a href="#autotoc_md63">HW T&amp;L - Hardware Transformation and Lighting</a><ul><li class="level3"><a href="#autotoc_md64">Pre-Transform (pre-T&amp;L) Cache</a></li>
+<li class="level3"><a href="#autotoc_md65">Post-Transform (post-T&amp;L) Cache</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md80">AGP Fast Writes</a></li>
-<li class="level1"><a href="#autotoc_md81">HyperZ (ATi)</a><ul><li class="level2"><a href="#autotoc_md82">Hierarchical Z, HiZ</a></li>
-<li class="level2"><a href="#autotoc_md83">Z Compression</a></li>
-<li class="level2"><a href="#autotoc_md84">Fast Z Clear</a></li>
+<li class="level2"><a href="#autotoc_md66">Culling</a></li>
+<li class="level2"><a href="#autotoc_md67">Hidden Surface Removal</a></li>
+<li class="level2"><a href="#autotoc_md68">Depth Sorting</a></li>
+<li class="level2"><a href="#autotoc_md69">AGP Fast Writes</a></li>
+<li class="level2"><a href="#autotoc_md70">HyperZ (ATi)</a><ul><li class="level3"><a href="#autotoc_md71">Hierarchical Z, HiZ</a></li>
+<li class="level3"><a href="#autotoc_md72">Z Compression</a></li>
+<li class="level3"><a href="#autotoc_md73">Fast Z Clear</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md85">Lightspeed Memory Architecture, LMA (nVidia)</a></li>
-<li class="level1"><a href="#autotoc_md86">Nvidia Shading Rasterizer, NSR (nVidia)</a></li>
-<li class="level1"><a href="#autotoc_md87">Render to Vertex Buffer, R2VB</a></li>
-<li class="level1"><a href="#autotoc_md88">High Dynamic Range Rendering, HDR</a></li>
-<li class="level1"><a href="#autotoc_md89">Shadow Buffers (nVidia)</a></li>
-<li class="level1"><a href="#autotoc_md90">UltraShadow (nVidia)</a></li>
-<li class="level1"><a href="#autotoc_md91">UltraShadow II (nVidia)</a></li>
+<li class="level2"><a href="#autotoc_md74">Lightspeed Memory Architecture, LMA (nVidia)</a></li>
+<li class="level2"><a href="#autotoc_md75">Nvidia Shading Rasterizer, NSR (nVidia)</a></li>
+<li class="level2"><a href="#autotoc_md76">Render to Vertex Buffer, R2VB</a></li>
+<li class="level2"><a href="#autotoc_md77">High Dynamic Range Rendering, HDR</a></li>
+<li class="level2"><a href="#autotoc_md78">Shadow Buffers (nVidia)</a></li>
+<li class="level2"><a href="#autotoc_md79">UltraShadow (nVidia)</a></li>
+<li class="level2"><a href="#autotoc_md80">UltraShadow II (nVidia)</a></li>
+</ul>
 </ul>
 </div>
 <div class="textblock"><p>Intentionally not in alphabetical order.</p>
-<h1><a class="anchor" id="autotoc_md36"></a>
-Scene</h1>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Scene</h2>
 <p>A virtual 2- or 3-dimensional place or space where things happen, e.g. <a href="https://www.youtube.com/watch?v=6y7o3RNgWR8">CJ is chasing some vagos on a train in Los Santos</a>.</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
-Rendering</h1>
+<h2><a class="anchor" id="autotoc_md23"></a>
+Rendering</h2>
 <p>Generating an image of a 2- or 3-dimensional scene.</p>
-<h1><a class="anchor" id="autotoc_md38"></a>
-Pipeline</h1>
+<h2><a class="anchor" id="autotoc_md24"></a>
+Pipeline</h2>
 <p>Sequence of processing tasks arranged so that the output of each task is the input of the next task.</p>
-<h1><a class="anchor" id="autotoc_md39"></a>
-Graphics / Rendering Pipeline</h1>
+<h2><a class="anchor" id="autotoc_md25"></a>
+Graphics / Rendering Pipeline</h2>
 <p>Software and/or hardware implementation of a <a href="#_Pipeline">pipeline</a> where the input is a bunch of scene data and the output is an image of the <a href="#_Scene">scene</a> as a result of the consecutive <a href="#_Rendering">rendering</a> tasks. <br  />
  More details in <a href="#_Rendering_Pipeline_Architecture">Rendering Pipeline Architecture</a>.</p>
-<h1><a class="anchor" id="autotoc_md40"></a>
-Pixel</h1>
+<h2><a class="anchor" id="autotoc_md26"></a>
+Pixel</h2>
 <p>Smallest element of an image. Color and position, usually in screen-space. An image having size 800x600 pixels means it has 800x600 individual pixels, organized into 800 columns and 600 rows where each pixel has its unique color and position.</p>
-<h1><a class="anchor" id="autotoc_md41"></a>
-Vertex</h1>
+<h2><a class="anchor" id="autotoc_md27"></a>
+Vertex</h2>
 <p>Smallest element of a 2D or 3D object. A vertex has many attributes such as color, position, texture coordinates, etc.</p>
-<h1><a class="anchor" id="autotoc_md42"></a>
-Primitive / Face</h1>
+<h2><a class="anchor" id="autotoc_md28"></a>
+Primitive / Face</h2>
 <p>2D or 3D shape made of very limited number of vertices. The most common primitive is a triangle, made of 3 vertices. <br  />
  It's worth noting that 3D modeler software use this same term for primitive meshes (e.g. cube, sphere) but in 3D graphics programming we don't.</p>
-<h1><a class="anchor" id="autotoc_md43"></a>
-Mesh</h1>
+<h2><a class="anchor" id="autotoc_md29"></a>
+Mesh</h2>
 <p>Multiple primitives build up a mesh. A 3D mesh usually consists of hundreds or thousands of triangle primitives.</p>
 <p><img src="Vertex-Primitive-and-Mesh-Representation.png" alt="" class="inline"/>   </p>
 <p>image source: <a href="https://www.researchgate.net/publication/265310715_A_Generic_Framework_for_Implementing_Real-Time_Stereo_Matching_Algorithms_on_the_Graphics_Processing_Unit">Sammy Rogmans: A Generic Framework for Implementing Real-Time Stereo Matching Algorithms on the Graphics Processing Unit</a></p>
-<h1><a class="anchor" id="autotoc_md44"></a>
-Vertex Shader</h1>
+<h2><a class="anchor" id="autotoc_md30"></a>
+Vertex Shader</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md45"></a>
-Pixel / Fragment Shader</h1>
+<h2><a class="anchor" id="autotoc_md31"></a>
+Pixel / Fragment Shader</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md46"></a>
-Vertex Pipeline / Processor</h1>
+<h2><a class="anchor" id="autotoc_md32"></a>
+Vertex Pipeline / Processor</h2>
 <p>Execution unit. Executes <a href="#_Vertex_Shader">vertex shader</a> instructions. 1 pipeline processes 1 vertex.</p>
-<h1><a class="anchor" id="autotoc_md47"></a>
-Vertex Processing / Shader Unit</h1>
+<h2><a class="anchor" id="autotoc_md33"></a>
+Vertex Processing / Shader Unit</h2>
 <p>SIMD principle. Contains multiple <a href="#_Vertex_Pipeline_/">vertex processors</a>.</p>
-<h1><a class="anchor" id="autotoc_md48"></a>
-Pixel / Fragment Processor / Pipeline</h1>
+<h2><a class="anchor" id="autotoc_md34"></a>
+Pixel / Fragment Processor / Pipeline</h2>
 <p>Execution unit. Executes <a href="#_Pixel_/_Fragment_1">pixel / fragment shader</a> instructions. 1 pipeline processes 1 <a href="#_Fragment">fragment</a>.</p>
-<h1><a class="anchor" id="autotoc_md49"></a>
-Fragment Processing / Shader Unit</h1>
+<h2><a class="anchor" id="autotoc_md35"></a>
+Fragment Processing / Shader Unit</h2>
 <p>SIMD principle. Contains multiple <a href="#_Pixel_/_Fragment">fragment processors</a>.</p>
-<h1><a class="anchor" id="autotoc_md50"></a>
-Unified Shader</h1>
+<h2><a class="anchor" id="autotoc_md36"></a>
+Unified Shader</h2>
 <p>TODO. Since Geforce 8xxx / Radeon HD2xxx series.</p>
-<h1><a class="anchor" id="autotoc_md51"></a>
-Fragment</h1>
+<h2><a class="anchor" id="autotoc_md37"></a>
+Fragment</h2>
 <p>A screen-space position and some other data like output of a vertex shader (e.g. color, depth). There will be at least one fragment produced for every frame buffer pixel area covered by the primitive being rasterized.</p>
-<h1><a class="anchor" id="autotoc_md52"></a>
-Raster Pipeline / ROP / Z-pipe</h1>
+<h2><a class="anchor" id="autotoc_md38"></a>
+Raster Pipeline / ROP / Z-pipe</h2>
 <p>Execution unit. Executes scissor test, alpha test, stencil test, depth test and blending.</p>
-<h1><a class="anchor" id="autotoc_md53"></a>
-Raster Operation Unit</h1>
+<h2><a class="anchor" id="autotoc_md39"></a>
+Raster Operation Unit</h2>
 <p>Contains multiple <a href="#_Raster_Pipeline_/">raster pipelines</a>.</p>
-<h1><a class="anchor" id="autotoc_md54"></a>
-Fragment Crossbar</h1>
+<h2><a class="anchor" id="autotoc_md40"></a>
+Fragment Crossbar</h2>
 <p>Routes the <a href="#_Fragment">fragments</a> coming from the <a href="#_Pixel_/_Fragment">fragment pipelines</a> to the <a href="#_Raster_Pipeline_/">ROPs</a> (this is needed as the number of <a href="#_Pixel_/_Fragment">fragment pipelines</a> is not equal to the number of <a href="#_Raster_Pipeline_/">ROPs</a>).</p>
-<h1><a class="anchor" id="autotoc_md55"></a>
-Texel</h1>
+<h2><a class="anchor" id="autotoc_md41"></a>
+Texel</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md56"></a>
-Texture</h1>
+<h2><a class="anchor" id="autotoc_md42"></a>
+Texture</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md57"></a>
-Texture Unit</h1>
+<h2><a class="anchor" id="autotoc_md43"></a>
+Texture Unit</h2>
 <p>TODO. The number of texture units defines the maximum number of <a href="#_Texture">textures</a> accessed at the same time by the same <a href="#_Pixel_/_Fragment_1">fragment shader</a>. <b>Texture access</b> is aka <b>texture lookup</b> aka <b>texture fetching</b>.</p>
-<h1><a class="anchor" id="autotoc_md58"></a>
-Texture Filtering</h1>
+<h2><a class="anchor" id="autotoc_md44"></a>
+Texture Filtering</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md59"></a>
-Isotropic Filtering</h1>
+<h2><a class="anchor" id="autotoc_md45"></a>
+Isotropic Filtering</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md60"></a>
-Anisotropic Filtering</h1>
+<h2><a class="anchor" id="autotoc_md46"></a>
+Anisotropic Filtering</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md61"></a>
-MIP mapping</h1>
+<h2><a class="anchor" id="autotoc_md47"></a>
+MIP mapping</h2>
 <p><img src="Cratemiplevels.jpg" alt="" class="inline"/>   </p>
-<h1><a class="anchor" id="autotoc_md62"></a>
-Multitexturing</h1>
+<h2><a class="anchor" id="autotoc_md48"></a>
+Multitexturing</h2>
 <p><img src="scrnshot_multitexture.jpg" alt="" class="inline"/>   </p>
-<h1><a class="anchor" id="autotoc_md63"></a>
-Aliasing</h1>
+<h2><a class="anchor" id="autotoc_md49"></a>
+Aliasing</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md64"></a>
-Antialiasing, AA</h1>
+<h2><a class="anchor" id="autotoc_md50"></a>
+Antialiasing, AA</h2>
 <p>TODO.</p>
-<h1><a class="anchor" id="autotoc_md65"></a>
-Multisample Antialiasing, MSAA</h1>
+<h2><a class="anchor" id="autotoc_md51"></a>
+Multisample Antialiasing, MSAA</h2>
 <p>TODO. The render output units super-sample only the Z buffers and stencil buffers, and using that information get greater geometry detail needed to determine if a pixel covers more than one polygonal object. This saves the pixel/fragment shader from having to render multiple fragments for pixels where the same object covers all of the same sub-pixels in a pixel. This method fails with texture maps which have varying transparency (e.g. a texture map that represents a chain link fence).</p>
-<h2><a class="anchor" id="autotoc_md66"></a>
-Quincunx Antialiasing (nVidia)</h2>
+<h3><a class="anchor" id="autotoc_md52"></a>
+Quincunx Antialiasing (nVidia)</h3>
 <p>TODO. A blur filter that shifts the rendered image a half-pixel up and a half-pixel left in order to create sub-pixels which are then averaged together in a diagonal cross pattern, destroying both jagged edges but also some overall image detail.</p>
 <p>Since Geforce 3.</p>
-<h2><a class="anchor" id="autotoc_md67"></a>
-AccuView Antialiasing (nVidia)</h2>
+<h3><a class="anchor" id="autotoc_md53"></a>
+AccuView Antialiasing (nVidia)</h3>
 <p>TODO. 4XS. Since Geforce 4.</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
-Transparency Antialiasing (nVidia)</h2>
+<h3><a class="anchor" id="autotoc_md54"></a>
+Transparency Antialiasing (nVidia)</h3>
 <p>TODO. Since Geforce 7.</p>
-<h2><a class="anchor" id="autotoc_md69"></a>
-Coverage Sampling Antialiasing, CSAA (nVidia)</h2>
+<h3><a class="anchor" id="autotoc_md55"></a>
+Coverage Sampling Antialiasing, CSAA (nVidia)</h3>
 <p>TODO. Since Geforce 8.</p>
 <p><a href="http://www.nvidia.com/object/coverage-sampled-aa.html">http://www.nvidia.com/object/coverage-sampled-aa.html</a></p>
-<h1><a class="anchor" id="autotoc_md70"></a>
-Supersampled Antialiasing, SSAA</h1>
+<h2><a class="anchor" id="autotoc_md56"></a>
+Supersampled Antialiasing, SSAA</h2>
 <p>Render the scene large size internally then scale the result down to the output resolution. Slower than <a href="#_MultiSample_Antialiasing,_MSAA">MSAA</a>.</p>
-<h1><a class="anchor" id="autotoc_md71"></a>
-Shading</h1>
+<h2><a class="anchor" id="autotoc_md57"></a>
+Shading</h2>
 <p>Shading is one of those terms that sometimes seems like a semantic football, as noted earlier, Dave Kirk, Chief Scientist at nVidia describes it this way: “Lighting is the luminance value, whereas shading is about reflectance or transmittance.” The three most common shading methods are: flat, Gouraud, and Phong, operate per triangle, per vertex, and per pixel, respectively.</p>
 <p><img src="common-shading-methods.jpg" alt="" class="inline"/>   </p>
 <p>image source: <a href="https://www.quora.com/What-is-an-explanation-of-the-Gouraud-shading-and-phong-shading-models-in-simple-form">https://www.quora.com/What-is-an-explanation-of-the-Gouraud-shading-and-phong-shading-models-in-simple-form</a></p>
-<h2><a class="anchor" id="autotoc_md72"></a>
-Flat Shading</h2>
+<h3><a class="anchor" id="autotoc_md58"></a>
+Flat Shading</h3>
 <p>The simplest of the three models, here the renderer takes the color values from a triangle’s three vertices (assuming triangles as primitive), and averages those values (or in the case of Direct3D, picks an arbitrary one of the three). The average value is then used to shade the entire triangle. This method is very inexpensive in terms of computations, but this method’s visual cost is that individual triangles are clearly visible, and it disrupts the illusion of creating a single surface out of multiple triangles. (Lathrop, O., The Way Computer Graphics Works, Wiley Computer Publishing, New York, 1997)</p>
-<h2><a class="anchor" id="autotoc_md73"></a>
-Gouraud Shading</h2>
+<h3><a class="anchor" id="autotoc_md59"></a>
+Gouraud Shading</h3>
 <p>Named after its inventor, Henri Gouraud who developed this technique in 1971 (yes, 1971). It is by far the most common type of shading used in consumer 3D graphics hardware, primarily because of its higher visual quality versus its still-modest computational demands. This technique takes the lighting values at each of a triangle’s three vertices, then interpolates those values across the surface of the triangle. Gouraud shading actually first interpolates between vertices and assigns values along triangle edges, then it interpolates across the scan line based on the interpolated edge crossing values. One of the main advantages to Gouraud is that it smoothes out triangle edges on mesh surfaces, giving objects a more realistic appearance. The disadvantage to Gouraud is that its overall effect suffers on lower triangle-count models, because with fewer vertices, shading detail (specifically peaks and valleys in the intensity) is lost. Additionally, Gouraud shading sometimes loses highlight detail, and fails to capture spotlight effects, and sometimes produces what’s called Mach banding (that looks like stripes at the edges of the triangles).</p>
-<h2><a class="anchor" id="autotoc_md74"></a>
-Phong Shading</h2>
+<h3><a class="anchor" id="autotoc_md60"></a>
+Phong Shading</h3>
 <p>Also named after its inventor, Phong Biu-Tuong, who published a paper on this technique in 1975. This technique uses shading normals, which are different from geometric normals. Phong shading uses these shading normals, which are stored at each vertex, to interpolate the shading normal at each pixel in the triangle. Unlike a surface normal that is perpendicular to a triangle’s surface, a shading normal (also called a vertex normal) actually is an average of the surface normals of its surrounding triangles. Phong shading essentially performs Gouraud lighting at each pixel (instead of at just the three vertices). And similar to the Gouraud shading method of interpolating, Phong shading first interpolates normals along triangle edges, and then interpolates normals across all pixels in a scan line based on the interpolated edge values.</p>
-<h2><a class="anchor" id="autotoc_md75"></a>
-Dot-product texture blending, DOT3</h2>
+<h3><a class="anchor" id="autotoc_md61"></a>
+Dot-product texture blending, DOT3</h3>
 <p>Debuted in the DirectX 6 version of Direct3D. A prelude to programmable shaders, this technique gains the benefit of higher resolution per-pixel lighting without introducing the overhead of interpolating across an entire triangle. This approach is somewhat similar to Phong shading, but rather than calculating interpolated shading normals for every pixel on the fly, DOT3 instead uses a normal map that contains “canned” per-pixel normal information. Think of a normal map as a kind of texture map. Using this normal map, the renderer can do a lookup of the normals to then calculate the lighting value per pixel. Once the lighting value has been calculated, it is recombined with the original texel color value using a modulate (multiply) operation to produce the final lit, colored, textured pixel. Essentially, DOT3 combines the efficiencies of light maps, wherein you gain an advantage having expensive-to-calculate information “pre-baked” into a normal map rather than having to calculate them on the fly, with the more realistic lighting effect of Phong shading.</p>
-<h1><a class="anchor" id="autotoc_md76"></a>
-Rendering Pipeline Architecture</h1>
+<h2><a class="anchor" id="autotoc_md62"></a>
+Rendering Pipeline Architecture</h2>
 <p>Describing the usual steps in a rendering pipeline that produces a rendered image of a 3D object, with the help of the picture below:</p>
 <p><img src="stage3d.PNG" alt="" class="inline"/>   </p>
 <p>image source: <a href="http://www.adobe.com/devnet/flashplayer/articles/how-stage3d-works.html">http://www.adobe.com/devnet/flashplayer/articles/how-stage3d-works.html</a></p>
@@ -293,66 +297,84 @@ Rendering Pipeline Architecture</h1>
 <p><img src="pipeline_3d_w570.jpg" alt="" class="inline"/>   </p>
 <p>image source: <a href="http://www.ozone3d.net/tutorials/gpu_sm3_dx9_3d_pipeline_p02.php">http://www.ozone3d.net/tutorials/gpu_sm3_dx9_3d_pipeline_p02.php</a> <br  />
  Note: as seen in the picture, <a href="#_Rasterization_1">Rasterizer</a> is not equal to <a href="#_Raster_Operation_Unit">Raster Operation Unit</a>.</p>
-<h1><a class="anchor" id="autotoc_md77"></a>
-HW T&amp;L - Hardware Transformation and Lighting</h1>
+<h2><a class="anchor" id="autotoc_md63"></a>
+HW T&amp;L - Hardware Transformation and Lighting</h2>
 <p>Moving the <em>vertex</em> transformation and lighting calculations from SW (CPU) to HW (GPU).</p>
 <p>Since Geforce 256.</p>
 <p>PURE implicitly benefits of this thanks to the vendors’ OpenGL implementation.</p>
 <p><img src="tandl.png" alt="" class="inline"/>   </p>
 <p>image source: <a href="http://www.anandtech.com/show/391/5">http://www.anandtech.com/show/391/5</a></p>
-<h2><a class="anchor" id="autotoc_md78"></a>
-Pre-Transform (pre-T&amp;L) Cache</h2>
+<h3><a class="anchor" id="autotoc_md64"></a>
+Pre-Transform (pre-T&amp;L) Cache</h3>
 <p>Stores the untransformed <a href="#_Vertex">vertices</a>. Optimizations regarding this part of the cache are simply sorting the <a href="#_Vertex">vertices</a> in order of appearance. Typically extremely large, being able to hold ~64k <a href="#_Vertex">vertices</a> on a Geforce 3 and up.</p>
-<h2><a class="anchor" id="autotoc_md79"></a>
-Post-Transform (post-T&amp;L) Cache</h2>
+<h3><a class="anchor" id="autotoc_md65"></a>
+Post-Transform (post-T&amp;L) Cache</h3>
 <p>This is a GPU FIFO buffer containing data of <a href="#_Vertex">vertices</a> that have passed through this stage but not yet converted into <a href="#_Primitive">primitive</a>. Can be used with indexed rendering only (element arrays). 2 <a href="#_Vertex">vertices</a> are considered equal if their index is the same within the same drawing command. If so, the processing of the current <a href="#_Vertex">vertex</a> is skipped in this stage and the output of the appropriate previously-processed <a href="#_Vertex">vertex</a> data is added to the output stream. Varies in size from effectively 10 (actual 16) <a href="#_Vertex">vertices</a> on GeForce 256, GeForce 2, and GeForce 4 MX chipsets to effectively 18 (actual 24) on GeForce 3 and GeForce 4 Ti chipsets.</p>
 <p>AMD Tootle is recommended for optimizing 3D-models: <a href="http://developer.amd.com/tools-and-sdks/archive/legacy-cpu-gpu-tools/amd-tootle/">http://developer.amd.com/tools-and-sdks/archive/legacy-cpu-gpu-tools/amd-tootle/</a></p>
 <p>There is some other vertex cache optimization: <a href="http://home.comcast.net/~tom_forsyth/papers/fast_vert_cache_opt.html">http://home.comcast.net/~tom_forsyth/papers/fast_vert_cache_opt.html</a></p>
 <p><a href="https://www.opengl.org/wiki/Post_Transform_Cache">https://www.opengl.org/wiki/Post_Transform_Cache</a></p>
 <p><a href="http://www.opentk.com/doc/advanced/vertex-cache-optimization">http://www.opentk.com/doc/advanced/vertex-cache-optimization</a></p>
-<h1><a class="anchor" id="autotoc_md80"></a>
-AGP Fast Writes</h1>
+<h2><a class="anchor" id="autotoc_md66"></a>
+Culling</h2>
+<p>Removing hidden objects from rendering. This means we can determine hidden objects somehow and skip rendering them since they wouldn't make any change to the final rendered image anyway. Examples: Occlusion Culling, View Frustum Culling. More on this in <a class="el" href="visibility.html">Visibility Optimizations</a>.</p>
+<h2><a class="anchor" id="autotoc_md67"></a>
+Hidden Surface Removal</h2>
+<p>Same as <a href="#Culling">Culling</a>.</p>
+<h2><a class="anchor" id="autotoc_md68"></a>
+Depth Sorting</h2>
+<p>PURE renders <b>opaque objects front-to-back</b> and <b>transparent objects back-to-front</b>. <br  />
+ This sorting brings multiple advantages:</p><ul>
+<li>transparent objects overlapping in the rendered image will be shown correctly even when they write the depth buffer;</li>
+<li>rendering speed is expected to increase when opaque objects closer to camera are rendered first than opaque objects far from the camera. This is explained at <a class="el" href="visibility.html#depth_buffering">Depth Buffering</a>.</li>
+</ul>
+<p>PURE sorts only objects, and not their polygons. This means the order won't be correct at polygon level but the aim of the sort is to have a <b>rough</b> order relative to camera. <br  />
+ The sort is NOT based on the world-space distances of objects relative to camera, but rather the distances on the Z-axis of the camera. This brings 2 advantages:</p><ul>
+<li>faster than world-space distance sorting since it would include sqrt() calculations with every object, whereas with the Z-axis distance we have just dotproduct calculations with every object;</li>
+<li>more accurate since we actually want to do depth sorting: ordering with world-space distances would order the objects "spherically" relative to camera, but since the Z values in the Z-buffer are also NOT "spherical" compared to camera Z, we end up with the proper order of objects relative to camera view. <b>Some sample calculations with both methods can be checked in <a href="PURE-Object-Distance-Sorting.xlsx">PURE-Object-Distance-Sorting.xlsx.</a></b></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md69"></a>
+AGP Fast Writes</h2>
 <p>A method of allowing the CPU to send data directly to the AGP bus without having to use main system memory. Speeds up AGP reads. Doesn’t have effect on AGP writes.</p>
 <p>Since Geforce 256.</p>
 <p>PURE implicitly benefits if current HW and SW supports Fast Writes.</p>
-<h1><a class="anchor" id="autotoc_md81"></a>
-HyperZ (ATi)</h1>
+<h2><a class="anchor" id="autotoc_md70"></a>
+HyperZ (ATi)</h2>
 <p>Z- and Stencil Buffer optimization techniques. See the 3 techniques below.</p>
 <p>Since Radeon R100 (7xxx series).</p>
 <p>TODO: add how PURE benefits.</p>
-<h2><a class="anchor" id="autotoc_md82"></a>
-Hierarchical Z, HiZ</h2>
+<h3><a class="anchor" id="autotoc_md71"></a>
+Hierarchical Z, HiZ</h3>
 <p>We manage 8x8 blocks of <a href="#_Pixel">pixels</a> (tiles) and store the maximum (LESS, LEQUAL) or minimum (GREATER, GEQUAL) Z-value for each tile. During <a href="#_Rasterization_1">triangle rasterization</a>, we calculate the minimum/maximum Z-value for each triangle. First we compare this value to the tile’s maximum/minimum Z-value: if the triangle’s minimum/maximum Z-value is greater/less than the tile’s maximum/minimum Z-value, it means the triangle is not visible at all and can be early rejected (<b>Early Z Reject</b>). This is much faster than comparing the triangle’s Z-values to the stored values in the depth buffer.</p>
 <p>Before the HD2xxx series, this information was stored in on-chip memory. Since the HD2xxx series, it is stored in off-chip memory.</p>
 <p>Since the HD2xxx series, HiZ is applied on the stencil buffer as well.</p>
-<h2><a class="anchor" id="autotoc_md83"></a>
-Z Compression</h2>
+<h3><a class="anchor" id="autotoc_md72"></a>
+Z Compression</h3>
 <p>If a tile contains very few number (1-2) of triangles, instead of storing all Z-values in that tile, store the plane equation for that triangle(s). So this is a lossless compression. Does not reduce the amount of memory that is required to store the depth buffer. It only saves bandwidth. It will still need to allocate the full buffer to handle all potential uncompressed states.</p>
-<h2><a class="anchor" id="autotoc_md84"></a>
-Fast Z Clear</h2>
+<h3><a class="anchor" id="autotoc_md73"></a>
+Fast Z Clear</h3>
 <p>Benefit of Z Compression. Instead of writing the depth clear value across the entire depth buffer, we just reset the state of all tiles to “cleared” (by storing the plane equation for a constant Z=1 triangle).</p>
-<h1><a class="anchor" id="autotoc_md85"></a>
-Lightspeed Memory Architecture, LMA (nVidia)</h1>
+<h2><a class="anchor" id="autotoc_md74"></a>
+Lightspeed Memory Architecture, LMA (nVidia)</h2>
 <p>Memory bandwidth optimizations including similar features as <a href="#_HyperZ_(ATi)">HyperZ</a>. <b>Z-Occlusion Culling</b> ~ <a href="#_Hierarchical_Z,_HiZ">HiZ</a>. <b>Occlusion query</b>: determining if the geometry to be rendered will be visible by using a bounding box occlusion test first.</p>
 <p>Since Geforce 3.</p>
-<h1><a class="anchor" id="autotoc_md86"></a>
-Nvidia Shading Rasterizer, NSR (nVidia)</h1>
+<h2><a class="anchor" id="autotoc_md75"></a>
+Nvidia Shading Rasterizer, NSR (nVidia)</h2>
 <p>TODO. Programmable pixel pipeline. Since Geforce 2.</p>
-<h1><a class="anchor" id="autotoc_md87"></a>
-Render to Vertex Buffer, R2VB</h1>
+<h2><a class="anchor" id="autotoc_md76"></a>
+Render to Vertex Buffer, R2VB</h2>
 <p>TODO. Since Radeon X1xxx series.</p>
-<h1><a class="anchor" id="autotoc_md88"></a>
-High Dynamic Range Rendering, HDR</h1>
+<h2><a class="anchor" id="autotoc_md77"></a>
+High Dynamic Range Rendering, HDR</h2>
 <p>TODO. Since Geforce 6xxx series.</p>
-<h1><a class="anchor" id="autotoc_md89"></a>
-Shadow Buffers (nVidia)</h1>
+<h2><a class="anchor" id="autotoc_md78"></a>
+Shadow Buffers (nVidia)</h2>
 <p>TODO. Since Geforce 3.</p>
-<h1><a class="anchor" id="autotoc_md90"></a>
-UltraShadow (nVidia)</h1>
+<h2><a class="anchor" id="autotoc_md79"></a>
+UltraShadow (nVidia)</h2>
 <p>TODO. Since Geforce FX57xx series.</p>
 <p><a href="http://www.tomshardware.com/reviews/nvidia-geforcefx-5900-ultra,630-4.html">http://www.tomshardware.com/reviews/nvidia-geforcefx-5900-ultra,630-4.html</a></p>
-<h1><a class="anchor" id="autotoc_md91"></a>
-UltraShadow II (nVidia)</h1>
+<h2><a class="anchor" id="autotoc_md80"></a>
+UltraShadow II (nVidia)</h2>
 <p>TODO. Since Geforce 6xxx series. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -360,7 +382,7 @@ UltraShadow II (nVidia)</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

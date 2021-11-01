@@ -8,5 +8,6 @@ var class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl =
     [ "loadBMPfail", "class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl.html#ad140ca3376f4e4953dff7df3c70f7be2", null ],
     [ "operator=", "class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl.html#ace7366bcac6e26f47d95309d5c791b31", null ],
     [ "PRREImageManager", "class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl.html#a74bda456236e9f765e999093c201ad42", null ],
-    [ "_pOwner", "class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl.html#a9c6268ce3a2ceefc3760571a7152a267", null ]
+    [ "_pOwner", "class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl.html#a9c6268ce3a2ceefc3760571a7152a267", null ],
+    [ "nRunningCounter", "class_p_r_r_e_image_manager_1_1_p_r_r_e_image_manager_impl.html#a6e471abedeb93a7bebb207b3e1dafeca", null ]
 ];

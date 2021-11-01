@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -90,7 +90,6 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_material_manager_1_1_p_r
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">PRREMaterialManager::PRREMaterialManagerImpl Class Reference</div>  </div>
@@ -128,15 +127,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2ff8f72bb5def0a84d990da64b2dc7af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a2ff8f72bb5def0a84d990da64b2dc7af">bInited</a></td></tr>
 <tr class="memdesc:a2ff8f72bb5def0a84d990da64b2dc7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if successfully inited, false if not functional.  <a href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a2ff8f72bb5def0a84d990da64b2dc7af">More...</a><br /></td></tr>
 <tr class="separator:a2ff8f72bb5def0a84d990da64b2dc7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a47c9d54f379920df39d8ad8038c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a37a47c9d54f379920df39d8ad8038c66">nRunningCounter</a></td></tr>
+<tr class="memdesc:a37a47c9d54f379920df39d8ad8038c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always increased when creating a new Material instance.  <a href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a37a47c9d54f379920df39d8ad8038c66">More...</a><br /></td></tr>
+<tr class="separator:a37a47c9d54f379920df39d8ad8038c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056aa533f2f9a7bc7873e99d53238dab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a056aa533f2f9a7bc7873e99d53238dab">nMaxLayers</a></td></tr>
 <tr class="memdesc:a056aa533f2f9a7bc7873e99d53238dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of layers per material based on number of TMUs.  <a href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a056aa533f2f9a7bc7873e99d53238dab">More...</a><br /></td></tr>
 <tr class="separator:a056aa533f2f9a7bc7873e99d53238dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a37a47c9d54f379920df39d8ad8038c66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a37a47c9d54f379920df39d8ad8038c66">nRunningCounter</a> = 0</td></tr>
-<tr class="memdesc:a37a47c9d54f379920df39d8ad8038c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always increased when creating a new Material instance.  <a href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a37a47c9d54f379920df39d8ad8038c66">More...</a><br /></td></tr>
-<tr class="separator:a37a47c9d54f379920df39d8ad8038c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -167,7 +163,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00062">62</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00060">60</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -194,7 +190,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00093">93</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00088">88</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +224,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00102">102</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00097">97</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +252,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00114">114</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00110">110</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +272,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00078">78</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00076">76</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +291,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00072">72</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00070">70</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -323,7 +319,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00120">120</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00116">116</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +344,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00054">54</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00052">52</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +371,7 @@ Friends</h2></td></tr>
 
 <p>The owner public object who creates this pimpl object. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00041">41</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00038">38</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +397,7 @@ Friends</h2></td></tr>
 
 <p>True if successfully inited, false if not functional. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00043">43</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00040">40</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +423,7 @@ Friends</h2></td></tr>
 
 <p>Max number of layers per material based on number of TMUs. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00044">44</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00042">42</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -441,19 +437,19 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRREMaterialManager::PRREMaterialManagerImpl::nRunningCounter = 0</td>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRREMaterialManager::PRREMaterialManagerImpl::nRunningCounter</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Always increased when creating a new Material instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00039">39</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html#l00041">41</a> of file <a class="el" href="_p_r_r_e_material_manager_8cpp_source.html">PRREMaterialManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +462,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_material_manager.html">PRREMaterialManager</a></li><li class="navelem"><a class="el" href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html">PRREMaterialManagerImpl</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

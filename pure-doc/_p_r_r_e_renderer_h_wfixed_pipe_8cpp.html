@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('_p_r_r_e_renderer_h_wfixed_pipe_8cpp.h
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_p_r_r_ebase_includes_8h_source.html">PRREbaseIncludes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8h_source.html">../../include/external/Render/PRRERendererHWfixedPipe.h</a>&quot;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_vector_8h_source.html">../../include/external/Math/PRREVector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_transform_matrix_8h_source.html">../../include/external/Math/PRRETransformMatrix.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_r_r_e_object3_d_manager_8h_source.html">../../include/external/Object3D/PRREObject3DManager.h</a>&quot;</code><br />
@@ -107,6 +108,14 @@ $(document).ready(function(){initNavTree('_p_r_r_e_renderer_h_wfixed_pipe_8cpp.h
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl.html">PRRERendererHWfixedPipeImpl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html">PRRERendererHWfixedPipeImpl::CurrentStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer statistics collected until next <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#acb53d7b0862f8569516770ee359eaed1">ResetStatistics()</a>.  <a href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html">PRRERendererHWfixedPipeImpl::LastFrameStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last frame statistics collected until end of frame, then reset at the beginning of next frame.  <a href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_compare_by_zdistance.html">CompareByZdistance</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -114,7 +123,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_49d1ebef343bdf4bee40616b97db6cc6.html">PRRE</a></li><li class="navelem"><a class="el" href="dir_f89dcabc31bf0522fcd4fc20c7c72ef0.html">source</a></li><li class="navelem"><a class="el" href="dir_46ae38d9de2adb3636bab9657cdd2437.html">Render</a></li><li class="navelem"><a class="el" href="_p_r_r_e_renderer_h_wfixed_pipe_8cpp.html">PRRERendererHWfixedPipe.cpp</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

@@ -6,6 +6,7 @@ var dir_f89dcabc31bf0522fcd4fc20c7c72ef0 =
     [ "Math", "dir_6f39e1dcd387db26007123c175714a9b.html", "dir_6f39e1dcd387db26007123c175714a9b" ],
     [ "Object3D", "dir_560f07280f6fed52df6a68efedd5aaa2.html", "dir_560f07280f6fed52df6a68efedd5aaa2" ],
     [ "Render", "dir_46ae38d9de2adb3636bab9657cdd2437.html", "dir_46ae38d9de2adb3636bab9657cdd2437" ],
+    [ "SpatialStructures", "dir_b7821361a726377df36d65af1c34ff85.html", "dir_b7821361a726377df36d65af1c34ff85" ],
     [ "PR00FsReducedRenderingEngine.cpp", "_p_r00_fs_reduced_rendering_engine_8cpp.html", [
       [ "PR00FsReducedRenderingEngineImpl", "class_p_r00_fs_reduced_rendering_engine_impl.html", "class_p_r00_fs_reduced_rendering_engine_impl" ]
     ] ],

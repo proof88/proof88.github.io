@@ -38,5 +38,5 @@ var class_p_r_r_eui_manager_impl =
     [ "mTexts", "class_p_r_r_eui_manager_impl.html#a8cbe28112d57aac2684b422243fefabb", null ],
     [ "nDefaultFontSize", "class_p_r_r_eui_manager_impl.html#a2666e2febaf1f1f9c1f06b917e170cec", null ],
     [ "sDefaultFont", "class_p_r_r_eui_manager_impl.html#ae7c8f999d64f103bc7edfd35240ef08f", null ],
-    [ "vFonts", "class_p_r_r_eui_manager_impl.html#a1582156fb872a8bc172fe5aeaf462019", null ]
+    [ "vFonts", "class_p_r_r_eui_manager_impl.html#a6aa7ad5ab3040aa56a23db567d585a26", null ]
 ];

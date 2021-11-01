@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -126,6 +126,9 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <li>nColorsVBO
 : <a class="el" href="class_p_r_r_e_vertex_transfer_1_1_p_r_r_e_vertex_transfer_impl.html#a9289303b4e517588bebb7e52db35c922">PRREVertexTransfer::PRREVertexTransferImpl</a>
 </li>
+<li>nCurrentDepth
+: <a class="el" href="class_p_r_r_e_octree.html#a303b454ba9ec1a71e480671f46950cd6">PRREOctree</a>
+</li>
 <li>nDefaultFontSize
 : <a class="el" href="class_p_r_r_eui_manager_impl.html#a2666e2febaf1f1f9c1f06b917e170cec">PRREuiManagerImpl</a>
 </li>
@@ -136,11 +139,32 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <li>nDispList
 : <a class="el" href="class_p_r_r_e_vertex_transfer_1_1_p_r_r_e_vertex_transfer_impl.html#ad56e26caf221e6d0baa712d8bb19986b">PRREVertexTransfer::PRREVertexTransferImpl</a>
 </li>
+<li>NEAREST_TO_FAREST
+: <a class="el" href="struct_compare_by_zdistance.html#a158f9874e3c370134f825f0614ca0feca86ff9d5f7445f45b07bfff960cfe1c1e">CompareByZdistance</a>
+</li>
 <li>nFaces_h
 : <a class="el" href="class_p_r_r_e_mesh3_d_1_1_p_r_r_e_mesh3_d_impl.html#a917e2601dbc974ed99aeee9dd621fb0b">PRREMesh3D::PRREMesh3DImpl</a>
 </li>
 <li>nFbBuffer_h
 : <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#aa709917d6017bea965b89fbeafd9a422">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>nFramesWaitedForOcclusionTestResult
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a1ced189ccaf065dc52f3bea6e38a7b43">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>nFramesWaitedForOcclusionTestResultGlobalMax
+: <a class="el" href="struct_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl_1_1_current_stats.html#a92fb066a089885c92e11fc7994725ed7">PRREObject3D::PRREObject3DImpl::CurrentStats</a>
+</li>
+<li>nFramesWaitedForOcclusionTestResultGlobalMin
+: <a class="el" href="struct_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl_1_1_current_stats.html#a2f57d0ed217496ac976cd3fe52b84a41">PRREObject3D::PRREObject3DImpl::CurrentStats</a>
+</li>
+<li>nFramesWaitedForOcclusionTestResultMax
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a69561fb54b6f83f8eb99bf46caaf23e6">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>nFramesWaitedForOcclusionTestResultMin
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a0309f8e7b929b0e8466ff3c3035420aa">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>nFramesWithoutOcclusionTest
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a98c8d426495fefe696e1c8a3c4b861d0">PRREObject3D::PRREObject3DImpl</a>
 </li>
 <li>nFSAAlevel
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#aaab95ed45f4353eefd5648c0ef10d0cf">PRREhwVideoImpl</a>
@@ -167,6 +191,39 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <li>nInternalNum
 : <a class="el" href="class_p_r_r_e_texture_1_1_p_r_r_e_texture_impl.html#aefd848e9fe7dd873c31feb734a8e7fac">PRRETexture::PRRETextureImpl</a>
 </li>
+<li>nLastFrameObjectsNonOccluded
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a4eab332033674a0c9829fcf831998e96">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameObjectsNonOccludedButNotVisible
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a9f3d625c4ea058814de49f0ee23e1d6e">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameObjectsNonOcclusionTested
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a2dd907873254ae7236d382befb055459">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameObjectsOccluded
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a778312cb3542bd5a6e080a6e23343ffb">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameObjectsOccluders
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#ab31db655c46d920222042cabcc9c835c">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameObjectsOcclusionTested
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#ac817b7260d5ee114bd1c409ef0476212">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameObjectsVisible
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a4cec6f73875297a3f0a5a9fa891b11a2">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameTriangles
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a62e523fb48edcf85df2e6c10b894764f">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastFrameVertices
+: <a class="el" href="class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a97327fecb4951901eda5ae39d4a5925c">PRRERendererHWfixedPipeImpl::LastFrameStats</a>
+</li>
+<li>nLastTransferredTriangles
+: <a class="el" href="class_p_r_r_e_vertex_transfer_1_1_p_r_r_e_vertex_transfer_impl.html#a534586305b466568edd7762b31c78b29">PRREVertexTransfer::PRREVertexTransferImpl</a>
+</li>
+<li>nLastTransferredVertices
+: <a class="el" href="class_p_r_r_e_vertex_transfer_1_1_p_r_r_e_vertex_transfer_impl.html#a661347d28b1c676162265d8d2d1cc60a">PRREVertexTransfer::PRREVertexTransferImpl</a>
+</li>
 <li>nManagedAllocated
 : <a class="el" href="class_p_r_r_e_manager_1_1_p_r_r_e_manager_impl.html#a5f47b53ac09be1036648340002f062a6">PRREManager::PRREManagerImpl</a>
 </li>
@@ -176,8 +233,14 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <li>nManagedsTotal
 : <a class="el" href="class_p_r_r_e_managed_1_1_p_r_r_e_managed_impl.html#a0e19e1e1c3d02d0f1e9d9c75fc1cd8a3">PRREManaged::PRREManagedImpl</a>
 </li>
+<li>nMaxDepth
+: <a class="el" href="class_p_r_r_e_octree.html#aa21eb62af18d60e02909b717049438a5">PRREOctree</a>
+</li>
 <li>nMaxLayers
 : <a class="el" href="class_p_r_r_e_material_manager_1_1_p_r_r_e_material_manager_impl.html#a056aa533f2f9a7bc7873e99d53238dab">PRREMaterialManager::PRREMaterialManagerImpl</a>
+</li>
+<li>nMaxOccluderCount
+: <a class="el" href="class_p_r_r_e_object3_d_manager_1_1_p_r_r_e_object3_d_manager_impl.html#afe0a9a83ef2ab8124a7fe21186ed20ab">PRREObject3DManager::PRREObject3DManagerImpl</a>
 </li>
 <li>nMaxVertexIndex
 : <a class="el" href="class_p_r_r_e_mesh3_d_1_1_p_r_r_e_mesh3_d_impl.html#ad883718e81e1478a47d6097ee4afc33e">PRREMesh3D::PRREMesh3DImpl</a>
@@ -194,11 +257,23 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <li>nNormalsVBO
 : <a class="el" href="class_p_r_r_e_vertex_transfer_1_1_p_r_r_e_vertex_transfer_impl.html#a7823d9a537e7340bc2195cfebb38e26c">PRREVertexTransfer::PRREVertexTransferImpl</a>
 </li>
+<li>nOcclusionQuery
+: <a class="el" href="class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a6b70f3bd96ade9b0bfaa29ed19082abd">PRREObject3D::PRREObject3DImpl</a>
+</li>
+<li>NodeType
+: <a class="el" href="class_p_r_r_e_octree.html#aa2719e011581c73a4075085be6aba573">PRREOctree</a>
+</li>
+<li>nodeType
+: <a class="el" href="class_p_r_r_e_octree.html#ad88ff70a1be3cea1d576307ec581c922">PRREOctree</a>
+</li>
 <li>Normalize()
 : <a class="el" href="class_p_r_r_e_vector.html#a7e72327fd9f1e03d3d2cd6826439861d">PRREVector</a>
 </li>
 <li>nRefreshRate
 : <a class="el" href="class_p_r_r_e_screen_impl.html#a8d67476311b2b72136fa5f84cddda703">PRREScreenImpl</a>
+</li>
+<li>nRenderedFrames
+: <a class="el" href="struct_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_current_stats.html#adc8ef355b856a1e1833d2b1f4fb4fc77">PRRERendererHWfixedPipeImpl::CurrentStats</a>
 </li>
 <li>nResX
 : <a class="el" href="class_p_r_r_ehw_video_impl.html#aafdb597dabaaed9bd02e51eec85dae81">PRREhwVideoImpl</a>
@@ -269,7 +344,7 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:37 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

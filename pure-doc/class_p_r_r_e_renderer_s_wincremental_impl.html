@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_renderer_s_wincremental_
   <map id="PRRERendererSWincrementalImpl_map" name="PRRERendererSWincrementalImpl_map">
 <area href="class_p_r_r_e_renderer_s_wincremental.html" title="Incremental software renderer path." alt="PRRERendererSWincremental" shape="rect" coords="0,56,203,80"/>
 <area href="class_p_r_r_e_i_incremental_render_pipeline.html" title="Incremental renderer pipeline interface." alt="PRREIIncrementalRenderPipeline" shape="rect" coords="213,56,416,80"/>
-<area href="class_p_r_r_e_i_renderer.html" alt="PRREIRenderer" shape="rect" coords="0,0,203,24"/>
+<area href="class_p_r_r_e_i_renderer.html" title="Renderer interface." alt="PRREIRenderer" shape="rect" coords="0,0,203,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -135,8 +135,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ed4410ac0110231a2a0d58aeaa53b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a1ed4410ac0110231a2a0d58aeaa53b00">RenderScene</a> ()</td></tr>
 <tr class="memdesc:a1ed4410ac0110231a2a0d58aeaa53b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the scene.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a1ed4410ac0110231a2a0d58aeaa53b00">More...</a><br /></td></tr>
 <tr class="separator:a1ed4410ac0110231a2a0d58aeaa53b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b5c6fa1c27e23beb8445e6b1752572"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a66b5c6fa1c27e23beb8445e6b1752572">getRenderHints</a> ()</td></tr>
+<tr class="memdesc:a66b5c6fa1c27e23beb8445e6b1752572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current render hints.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a66b5c6fa1c27e23beb8445e6b1752572">More...</a><br /></td></tr>
+<tr class="separator:a66b5c6fa1c27e23beb8445e6b1752572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9c833f5b52da68969ed8936645b290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a0b9c833f5b52da68969ed8936645b290">SetRenderHints</a> (const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;hints)</td></tr>
+<tr class="memdesc:a0b9c833f5b52da68969ed8936645b290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current render hints.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a0b9c833f5b52da68969ed8936645b290">More...</a><br /></td></tr>
+<tr class="separator:a0b9c833f5b52da68969ed8936645b290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7715e6f77b1cbc1baf7406972e768040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a7715e6f77b1cbc1baf7406972e768040">ResetStatistics</a> ()</td></tr>
+<tr class="memdesc:a7715e6f77b1cbc1baf7406972e768040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets "Current Statistics".  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a7715e6f77b1cbc1baf7406972e768040">More...</a><br /></td></tr>
+<tr class="separator:a7715e6f77b1cbc1baf7406972e768040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57008ad81adc4cf557fe9cd9cceeebae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a57008ad81adc4cf557fe9cd9cceeebae">WriteStats</a> () const</td></tr>
-<tr class="memdesc:a57008ad81adc4cf557fe9cd9cceeebae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes statistics to the console window.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a57008ad81adc4cf557fe9cd9cceeebae">More...</a><br /></td></tr>
+<tr class="memdesc:a57008ad81adc4cf557fe9cd9cceeebae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes "Current Statistics" and "Last Frame Statistics" to the console window.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a57008ad81adc4cf557fe9cd9cceeebae">More...</a><br /></td></tr>
 <tr class="separator:a57008ad81adc4cf557fe9cd9cceeebae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a236c2846f077a647af3110a3a1bb6825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a236c2846f077a647af3110a3a1bb6825">CheckConsistency</a> () const</td></tr>
 <tr class="memdesc:a236c2846f077a647af3110a3a1bb6825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs an internal consistency test, just for debug.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a236c2846f077a647af3110a3a1bb6825">More...</a><br /></td></tr>
@@ -209,6 +218,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a322eb9f3220b9bb62af4ff9ed352c2f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a322eb9f3220b9bb62af4ff9ed352c2f3">renderHints</a></td></tr>
+<tr class="memdesc:a322eb9f3220b9bb62af4ff9ed352c2f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render hints.  <a href="class_p_r_r_e_renderer_s_wincremental_impl.html#a322eb9f3220b9bb62af4ff9ed352c2f3">More...</a><br /></td></tr>
+<tr class="separator:a322eb9f3220b9bb62af4ff9ed352c2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05841896eaf45ecd17a4e2ce93fb3748"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a05841896eaf45ecd17a4e2ce93fb3748">bInited</a></td></tr>
 <tr class="separator:a05841896eaf45ecd17a4e2ce93fb3748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d08e05acbd101b70d529a3c894760b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_p_r_r_e_window.html">PRREWindow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a0d08e05acbd101b70d529a3c894760b6">wnd</a></td></tr>
@@ -261,6 +273,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa49e6413b0909e4c9711ca25075cdda5 inherit pub_static_methods_class_p_r_r_e_renderer_s_wincremental"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental.html#aa49e6413b0909e4c9711ca25075cdda5">getLoggerModuleName</a> ()</td></tr>
 <tr class="memdesc:aa49e6413b0909e4c9711ca25075cdda5 inherit pub_static_methods_class_p_r_r_e_renderer_s_wincremental"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the logger module name of this class.  <a href="class_p_r_r_e_renderer_s_wincremental.html#aa49e6413b0909e4c9711ca25075cdda5">More...</a><br /></td></tr>
 <tr class="separator:aa49e6413b0909e4c9711ca25075cdda5 inherit pub_static_methods_class_p_r_r_e_renderer_s_wincremental"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_p_r_r_e_renderer_s_wincremental"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_p_r_r_e_renderer_s_wincremental')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_p_r_r_e_renderer_s_wincremental.html">PRRERendererSWincremental</a></td></tr>
+<tr class="memitem:a596fba96195d833068356e2ee14ad51d inherit pub_static_attribs_class_p_r_r_e_renderer_s_wincremental"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_renderer_s_wincremental.html#a596fba96195d833068356e2ee14ad51d">DefaultHints</a> = 0</td></tr>
+<tr class="memdesc:a596fba96195d833068356e2ee14ad51d inherit pub_static_attribs_class_p_r_r_e_renderer_s_wincremental"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default render hints for <a class="el" href="class_p_r_r_e_renderer_s_wincremental.html" title="Incremental software renderer path.">PRRERendererSWincremental</a>.  <a href="class_p_r_r_e_renderer_s_wincremental.html#a596fba96195d833068356e2ee14ad51d">More...</a><br /></td></tr>
+<tr class="separator:a596fba96195d833068356e2ee14ad51d inherit pub_static_attribs_class_p_r_r_e_renderer_s_wincremental"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad208ef4313fb1f7a5b2dbfa32b97465c"></a>
@@ -288,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calls <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a74c72745a1eb8631541409d0d56ffea4" title="This stops the renderer.">shutdown()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00180">180</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00186">186</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>NULLs members only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00409">409</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00432">432</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00425">425</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00449">449</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -389,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00444">444</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00469">469</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -419,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets viewport size and clears buffers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00840">840</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00866">866</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +456,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Runs an internal consistency test, just for debug. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00392">392</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00415">415</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -467,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00808">808</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00834">834</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -496,7 +512,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Draws 2D objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00955">955</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00981">981</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -525,7 +541,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Draws 3D objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00869">869</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00895">895</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +570,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Forces pending tasks to be finished and displays the rendered picture. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00972">972</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00998">998</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -681,7 +697,39 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_incremental_render_pipeline.html#a996a8b5425ccfb13617f599f40ca0e56">PRREIIncrementalRenderPipeline</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00644">644</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00670">670</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66b5c6fa1c27e23beb8445e6b1752572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b5c6fa1c27e23beb8445e6b1752572">&#9670;&nbsp;</a></span>getRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp; PRRERendererSWincrementalImpl::getRenderHints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get current render hints. </p>
+<p>Render hints are basically debug settings for the renderer used in rare circumstances. The available render hints are documented at each renderer implementation. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ac6513c865a3ef6118f2aa3ebd86201c7">PRREIRenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00388">388</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -765,7 +813,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_renderer_s_wincremental.html#a35bafcf56232658b0f45fa03cb1f2d20">PRRERendererSWincremental</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00189">189</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00195">195</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -797,7 +845,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ab2133949f0e6f029a6ebc99b6648f685">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00343">343</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00349">349</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -877,7 +925,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00687">687</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00713">713</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -905,7 +953,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00459">459</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00485">485</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -995,7 +1043,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Transform the rest to screen coordinates.</p>
 <p>Transformation is: Clip -&gt; NDC -&gt; Screen coordinate systems. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00561">561</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00587">587</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1193,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_renderer_s_wincremental.html#a17823dd5a56209a3dd7c55bb06cb38d4">PRRERendererSWincremental</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00360">360</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00366">366</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1177,7 +1225,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a185bc8e81fbcaef3e809eb8fa94ced77">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00366">366</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00372">372</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1292,39 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_incremental_render_pipeline.html#a582b4ebf7651f41b391005181da7ada5">PRREIIncrementalRenderPipeline</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00749">749</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00775">775</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7715e6f77b1cbc1baf7406972e768040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7715e6f77b1cbc1baf7406972e768040">&#9670;&nbsp;</a></span>ResetStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererSWincrementalImpl::ResetStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets "Current Statistics". </p>
+<p>The renderer might collect statistical data during its lifetime or for a shorter period, that might be shown in debug log by <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#a57008ad81adc4cf557fe9cd9cceeebae" title="Writes &quot;Current Statistics&quot; and &quot;Last Frame Statistics&quot; to the console window.">WriteStats()</a>. In any circumstances you want to reset this data i.e. restart measurements, this function does the job. If logging is enabled, it also logs statistics. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ac1e8823bd645cc86e0d715f865c38cd2">PRREIRenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00400">400</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1373,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a51a5232136c81f5c405b3eb6f46822dc">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00349">349</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00355">355</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1361,7 +1441,40 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00668">668</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00694">694</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b9c833f5b52da68969ed8936645b290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9c833f5b52da68969ed8936645b290">&#9670;&nbsp;</a></span>SetRenderHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRRERendererSWincrementalImpl::SetRenderHints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set current render hints. </p>
+<p>Render hints are basically debug settings for the renderer used in rare circumstances. The available render hints are documented at each renderer implementation. </p>
+
+<p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#acfd5874465866bc48ad2285fd99bf207">PRREIRenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00394">394</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1389,12 +1502,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This stops the renderer. </p>
-<p>Deletes everything created by the renderer. No effect before initialization. After shutdown, <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#afd0902a44efc969888075644f93f7ca5" title="Documentation is at public PRRERendererSWincremental class definition.">initialize()</a> can be called again.</p>
+<p>Deletes everything created by the renderer. No effect before initialization. After shutdown, <a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html#afd0902a44efc969888075644f93f7ca5" title="Documentation is at public PRRERendererSWincremental class definition.">initialize()</a> can be called again. Render hints are not affected.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on successful shutdown, false otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#ab30880df02126c6bcfe502d134cdef79">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00315">315</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00321">321</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1536,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets orthographic projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00859">859</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00885">885</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1452,7 +1565,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets perspective projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00849">849</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00875">875</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1592,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00960">960</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00986">986</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1589,7 +1702,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>Transformation is: Model -&gt; World -&gt; View -&gt; Clip coordinate systems. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00480">480</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00506">506</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1616,11 +1729,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Writes statistics to the console window. </p>
+<p>Writes "Current Statistics" and "Last Frame Statistics" to the console window. </p>
+<p>These are explained at <a class="el" href="debugging.html">Debugging</a>. </p>
 
 <p>Implements <a class="el" href="class_p_r_r_e_i_renderer.html#a463e48ec5250df3a3cbaa1d5b410f2ca">PRREIRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00382">382</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00405">405</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1645,7 +1759,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00169">169</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00175">175</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1786,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Attributes of Color Buffer DIB. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00072">72</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00078">78</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1696,7 +1810,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00061">61</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00067">67</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1720,7 +1834,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00069">69</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00075">75</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1746,7 +1860,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Memory Device Context for Color Buffer, compatible with wnd's DC. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00071">71</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00077">77</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1772,7 +1886,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Handle to Color Buffer DIB. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00073">73</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00079">79</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1798,7 +1912,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hardware infos, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00063">63</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00069">69</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1824,7 +1938,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Camera, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00066">66</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00072">72</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1850,7 +1964,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Color buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00074">74</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00080">80</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1876,7 +1990,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ObjectManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00065">65</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00071">71</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1902,7 +2016,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>UI manager, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00067">67</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00073">73</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1928,7 +2042,33 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Depth buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00075">75</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00081">81</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a322eb9f3220b9bb62af4ff9ed352c2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322eb9f3220b9bb62af4ff9ed352c2f3">&#9670;&nbsp;</a></span>renderHints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_e_i_renderer_8h.html#a4fbd1dda2cea0ed0c3846997037dc67f">TPRRE_RENDER_HINT</a> PRRERendererSWincrementalImpl::renderHints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render hints. </p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00066">66</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +2094,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Our screen, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00064">64</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00070">70</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1980,7 +2120,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Our window, where we draw to, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00062">62</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html#l00068">68</a> of file <a class="el" href="_p_r_r_e_renderer_s_wincremental_8cpp_source.html">PRRERendererSWincremental.cpp</a>.</p>
 
 </div>
 </div>
@@ -1993,7 +2133,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_renderer_s_wincremental_impl.html">PRRERendererSWincrementalImpl</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:36 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

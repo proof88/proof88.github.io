@@ -25,115 +25,49 @@
 var NAVTREE =
 [
   [ "PURE API", "index.html", [
-    [ "Introduction", "index.html", [
-      [ "Motivation", "index.html#autotoc_md93", null ],
-      [ "Copy & Paste", "index.html#autotoc_md94", null ],
-      [ "Sources", "index.html#autotoc_md95", null ]
+    [ "Introduction", "index.html#autotoc_md81", [
+      [ "Motivation", "index.html#autotoc_md82", null ],
+      [ "Copy & Paste", "index.html#autotoc_md83", null ],
+      [ "Sources", "index.html#autotoc_md84", null ]
     ] ],
-    [ "Engine Usage", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html", [
-      [ "Initialization", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html#autotoc_md1", null ],
-      [ "Loading Resources", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html#autotoc_md2", null ],
-      [ "Rendering", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html#autotoc_md3", null ],
-      [ "Shutdown", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html#autotoc_md4", null ],
-      [ "Samples", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html#autotoc_md5", null ]
+    [ "Engine Usage", "usage.html", [
+      [ "Coordinate System", "usage.html#coordsystem", null ],
+      [ "Initialization", "usage.html#initialization", null ],
+      [ "Loading Resources", "usage.html#loading", null ],
+      [ "Rendering", "usage.html#rendering", null ],
+      [ "Shutdown", "usage.html#shutdown", null ],
+      [ "Samples", "usage.html#samples", null ]
     ] ],
-    [ "Rendering Architecture & Pipeline", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html", [
-      [ "Geometry Stage", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md7", [
-        [ "Vertex Specification", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md8", null ],
-        [ "Vertex Processing", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md9", [
-          [ "Modeling Transformation", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md10", null ],
-          [ "View Transformation", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md11", null ],
-          [ "Projection Transformation", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md12", null ]
-        ] ],
-        [ "Primitive (Triangle) Assembly", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md13", [
-          [ "Clipping", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md14", null ],
-          [ "Perspective Divide", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md15", null ],
-          [ "Viewport Transformation", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md16", null ],
-          [ "Face Culling", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md17", null ]
-        ] ]
+    [ "Rendering Architecture & Pipeline", "architecture.html", [
+      [ "Geometry Stage", "architecture.html#geometry_stage", [
+        [ "Vertex Specification", "architecture.html#vertex_spec", null ],
+        [ "Vertex Processing", "architecture.html#vertex_proc", null ],
+        [ "Primitive (Triangle) Assembly", "architecture.html#primitive_assembly", null ]
       ] ],
-      [ "Rasterization / Rendering Stage", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md18", [
-        [ "Triangle Setup / Scan-Line Conversion", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md19", [
-          [ "Defining Spans", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md20", null ],
-          [ "Shading Spans", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md21", null ]
-        ] ],
-        [ "Fragment Processing", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md22", null ],
-        [ "Per-Sample Processing", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md23", [
-          [ "Pixel Ownership Test", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md24", null ],
-          [ "Scissor Test", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md25", null ],
-          [ "Alpha Test", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md26", null ],
-          [ "MSAA (MultiSample AntiAliasing)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md27", null ],
-          [ "Stencil Test", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md28", null ],
-          [ "Depth Test", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md29", null ],
-          [ "Blending", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md30", null ],
-          [ "Dithering", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md31", null ],
-          [ "Logic Operations", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md32", null ],
-          [ "Write Mask", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md33", null ]
-        ] ]
+      [ "Rasterization / Rendering Stage", "architecture.html#raster_stage", [
+        [ "Triangle Setup / Scan-Line Conversion", "architecture.html#triangle_setup", null ],
+        [ "Fragment Processing", "architecture.html#fragment_processing", null ],
+        [ "Per-Sample Processing", "architecture.html#sample_processing", null ]
       ] ],
-      [ "Do’s and don’t’s", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-02-_architecture.html#autotoc_md34", null ]
+      [ "Do’s and don’t’s", "architecture.html#autotoc_md20", null ]
     ] ],
-    [ "Glossary", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html", [
-      [ "Scene", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md36", null ],
-      [ "Rendering", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md37", null ],
-      [ "Pipeline", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md38", null ],
-      [ "Graphics / Rendering Pipeline", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md39", null ],
-      [ "Pixel", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md40", null ],
-      [ "Vertex", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md41", null ],
-      [ "Primitive / Face", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md42", null ],
-      [ "Mesh", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md43", null ],
-      [ "Vertex Shader", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md44", null ],
-      [ "Pixel / Fragment Shader", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md45", null ],
-      [ "Vertex Pipeline / Processor", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md46", null ],
-      [ "Vertex Processing / Shader Unit", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md47", null ],
-      [ "Pixel / Fragment Processor / Pipeline", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md48", null ],
-      [ "Fragment Processing / Shader Unit", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md49", null ],
-      [ "Unified Shader", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md50", null ],
-      [ "Fragment", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md51", null ],
-      [ "Raster Pipeline / ROP / Z-pipe", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md52", null ],
-      [ "Raster Operation Unit", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md53", null ],
-      [ "Fragment Crossbar", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md54", null ],
-      [ "Texel", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md55", null ],
-      [ "Texture", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md56", null ],
-      [ "Texture Unit", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md57", null ],
-      [ "Texture Filtering", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md58", null ],
-      [ "Isotropic Filtering", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md59", null ],
-      [ "Anisotropic Filtering", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md60", null ],
-      [ "MIP mapping", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md61", null ],
-      [ "Multitexturing", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md62", null ],
-      [ "Aliasing", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md63", null ],
-      [ "Antialiasing, AA", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md64", null ],
-      [ "Multisample Antialiasing, MSAA", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md65", [
-        [ "Quincunx Antialiasing (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md66", null ],
-        [ "AccuView Antialiasing (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md67", null ],
-        [ "Transparency Antialiasing (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md68", null ],
-        [ "Coverage Sampling Antialiasing, CSAA (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md69", null ]
-      ] ],
-      [ "Supersampled Antialiasing, SSAA", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md70", null ],
-      [ "Shading", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md71", [
-        [ "Flat Shading", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md72", null ],
-        [ "Gouraud Shading", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md73", null ],
-        [ "Phong Shading", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md74", null ],
-        [ "Dot-product texture blending, DOT3", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md75", null ]
-      ] ],
-      [ "Rendering Pipeline Architecture", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md76", null ],
-      [ "HW T&L - Hardware Transformation and Lighting", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md77", [
-        [ "Pre-Transform (pre-T&L) Cache", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md78", null ],
-        [ "Post-Transform (post-T&L) Cache", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md79", null ]
-      ] ],
-      [ "AGP Fast Writes", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md80", null ],
-      [ "HyperZ (ATi)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md81", [
-        [ "Hierarchical Z, HiZ", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md82", null ],
-        [ "Z Compression", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md83", null ],
-        [ "Fast Z Clear", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md84", null ]
-      ] ],
-      [ "Lightspeed Memory Architecture, LMA (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md85", null ],
-      [ "Nvidia Shading Rasterizer, NSR (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md86", null ],
-      [ "Render to Vertex Buffer, R2VB", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md87", null ],
-      [ "High Dynamic Range Rendering, HDR", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md88", null ],
-      [ "Shadow Buffers (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md89", null ],
-      [ "UltraShadow (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md90", null ],
-      [ "UltraShadow II (nVidia)", "md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-03-_glossary.html#autotoc_md91", null ]
+    [ "Visibility Optimizations", "visibility.html", "visibility" ],
+    [ "Glossary", "glossary.html", null ],
+    [ "Debugging", "debugging.html", [
+      [ "Logging", "debugging.html#logging", null ],
+      [ "Memory Usage", "debugging.html#memory_usage", null ],
+      [ "Manager WriteList()", "debugging.html#manager_write_list", null ],
+      [ "Render Hints", "debugging.html#render_hints", null ],
+      [ "Current Statistics", "debugging.html#current_stats", null ],
+      [ "Last Frame Statistics", "debugging.html#last_frame_stats", null ],
+      [ "Other Statistics", "debugging.html#other_stats", null ],
+      [ "Engine WriteList()", "debugging.html#engine_write_list", null ]
+    ] ],
+    [ "Repositories And Build", "repos_and_build.html", null ],
+    [ "Version History", "version_history.html", [
+      [ "v0.3 - November 1, 2021", "version_history.html#v0_3", null ],
+      [ "v0.2 - March 31, 2021", "version_history.html#v0_2", null ],
+      [ "v0.1 - April 20, 2019", "version_history.html#v0_1", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -144,6 +78,8 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -165,21 +101,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_p_r00_fs_reduced_rendering_engine_8cpp.html",
-"_p_r_r_e_g_lextension_funcs_8cpp.html#a5d7846cb6150d5449c3aaaea2a308da0",
-"_p_r_r_e_g_lextension_funcs_8cpp.html#ad020818088356bdc7710ac9ec8cb771b",
-"_p_r_r_e_g_lextension_funcs_8h.html#a3fc1fa017fa3554705be4f6be0d5b449",
-"_p_r_r_e_g_lextension_funcs_8h.html#aaf6b0d7cf40e824281d58ca35128b28a",
-"_p_r_r_e_i_renderer_8h_source.html",
-"_p_r_r_e_vertex_transfer_mode_8h.html#a9d987113803c0d2b7c547a74cd67373f",
-"class_p_r_r_e_camera.html#af6705c57c4b9b94b05f86490fe9005af",
-"class_p_r_r_e_manager.html#ad5b9c7b124b5a0dd9dd4da34f3e3b061",
-"class_p_r_r_e_mesh3_d_manager.html#a829f620ca53780ed9abdd59401cad9d4",
-"class_p_r_r_e_renderer_s_wincremental_impl.html#a135b2d68bad07381d9d13f8450493a2e",
-"class_p_r_r_e_texture_manager_1_1_p_r_r_e_texture_manager_impl.html#a007ba35637e281381a53d17409f8212a",
-"class_p_r_r_e_window_impl.html#a35621298a3b4822b1d597cc0a010dca3",
-"class_p_r_r_ehw_video_discover_open_g_l__1__2.html#a8d2d953867ce4fe36409acccd4c685c3",
-"class_p_r_r_ehw_video_impl.html#aed872581fd7283b75b0ad546a369c7d6",
-"md__d_____p_r00_f______developing____projects__p_g_e__p_g_e__p_r_r_e_docpages_internal_menu-01-_usage.html"
+"_p_r_r_e_g_lextension_funcs_8cpp.html#a5ace1ca9f0f57c745db86fab4e7fc4c4",
+"_p_r_r_e_g_lextension_funcs_8cpp.html#acca1fc6f62381533391510bf7b809a49",
+"_p_r_r_e_g_lextension_funcs_8h.html#a3cc264b5aa340f29c872938c5acb28d7",
+"_p_r_r_e_g_lextension_funcs_8h.html#aabb614396c78fd45dcb365a5719f5ca3",
+"_p_r_r_e_g_lsafe_funcs_8h_source.html",
+"_p_r_r_e_vector_8h_source.html",
+"class_p_r00_fs_reduced_rendering_engine.html#a518c265489bcbf2e59d8fdfab7c40366",
+"class_p_r_r_e_image_1_1_p_r_r_e_image_impl.html#a2c0cc7bf11b039e5a32d9e093fd2f710",
+"class_p_r_r_e_matrix.html#a21ecf23f49d89b29837ed36aea69740b",
+"class_p_r_r_e_object3_d_1_1_p_r_r_e_object3_d_impl.html#a2f5c07f844e69d742c48c45724672367",
+"class_p_r_r_e_renderer_h_wfixed_pipe_impl_1_1_last_frame_stats.html#a0bd5dd6336e9766c5fd04e9c67cf0eb5",
+"class_p_r_r_e_texture_manager.html#a0904060b0f92f6432374dd5422e9ac2c",
+"class_p_r_r_e_window.html#ad20ca60643b2df09bc04d768b5b1df91",
+"class_p_r_r_ehw_video.html#a4a40950bbb64bf50f7dd91e95d90a7e0",
+"class_p_r_r_ehw_video_impl.html#a67ce4cd52d9413437e7250748b386a28",
+"functions_i.html",
+"usage.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

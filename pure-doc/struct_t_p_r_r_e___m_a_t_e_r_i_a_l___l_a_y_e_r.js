@@ -1,7 +1,7 @@
 var struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r =
 [
-    [ "blendFactorDestination", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a8cb11b29b036832f2a090729889fd78b", null ],
-    [ "blendFactorSource", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a1ef2db35dfddb30262537d66ad24152e", null ],
+    [ "blendFactorDestination", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a41694352cb7e4a5bbdfaa5f8ba797176", null ],
+    [ "blendFactorSource", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a49e21d44866903242818a1041cf673fa", null ],
     [ "clrTexEnv", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a7f7cbaa6cf68034c0ccd4dd13ee16793", null ],
     [ "fTransparancy", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a57643db00a42f1c99aa8caaaff26ab8c", null ],
     [ "nColors_h", "struct_t_p_r_r_e___m_a_t_e_r_i_a_l___l_a_y_e_r.html#a8942e38dae2bbf3fbe07fd933a4fffa9", null ],

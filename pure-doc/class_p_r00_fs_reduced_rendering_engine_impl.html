@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -171,8 +171,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b386e716395598bee65087d07aa2786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f487bf7775afcc7d2b6e6c2aae3b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a29f487bf7775afcc7d2b6e6c2aae3b65">WriteStats</a> () const</td></tr>
 <tr class="separator:a29f487bf7775afcc7d2b6e6c2aae3b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90ec3379a0924c97e6a89aeb31052f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a90ec3379a0924c97e6a89aeb31052f5e">CheckConsistency</a> () const</td></tr>
-<tr class="separator:a90ec3379a0924c97e6a89aeb31052f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26861faa2223d4b9eb7f1c909e270b4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a26861faa2223d4b9eb7f1c909e270b4d">getAutoWriteStatsAtShutdown</a> () const</td></tr>
+<tr class="memdesc:a26861faa2223d4b9eb7f1c909e270b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if invoke of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> would happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>.  <a href="class_p_r00_fs_reduced_rendering_engine_impl.html#a26861faa2223d4b9eb7f1c909e270b4d">More...</a><br /></td></tr>
+<tr class="separator:a26861faa2223d4b9eb7f1c909e270b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f9732819bd5dd68647eee34661547b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#af3f9732819bd5dd68647eee34661547b">SetAutoWriteStatsAtShutdown</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> state)</td></tr>
+<tr class="memdesc:af3f9732819bd5dd68647eee34661547b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if invoke of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> should happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>.  <a href="class_p_r00_fs_reduced_rendering_engine_impl.html#af3f9732819bd5dd68647eee34661547b">More...</a><br /></td></tr>
+<tr class="separator:af3f9732819bd5dd68647eee34661547b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_p_r00_fs_reduced_rendering_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p_r00_fs_reduced_rendering_engine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html">PR00FsReducedRenderingEngine</a></td></tr>
 <tr class="memitem:ab81a13706822f5e94ed2711aed327104 inherit pub_methods_class_p_r00_fs_reduced_rendering_engine"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#ab81a13706822f5e94ed2711aed327104">getConsole</a> () const</td></tr>
 <tr class="memdesc:ab81a13706822f5e94ed2711aed327104 inherit pub_methods_class_p_r00_fs_reduced_rendering_engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns access to console preset with logger module name as this class.  <a href="class_p_r00_fs_reduced_rendering_engine.html#ab81a13706822f5e94ed2711aed327104">More...</a><br /></td></tr>
@@ -181,7 +185,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aed88a8b5d99060d8ec8b67562dc64cd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#aed88a8b5d99060d8ec8b67562dc64cd3">PR00FsReducedRenderingEngineImpl</a> ()</td></tr>
-<tr class="memdesc:aed88a8b5d99060d8ec8b67562dc64cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NULLs members only.  <a href="class_p_r00_fs_reduced_rendering_engine_impl.html#aed88a8b5d99060d8ec8b67562dc64cd3">More...</a><br /></td></tr>
+<tr class="memdesc:aed88a8b5d99060d8ec8b67562dc64cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will invoke <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a29f487bf7775afcc7d2b6e6c2aae3b65">WriteStats()</a> at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>.  <a href="class_p_r00_fs_reduced_rendering_engine_impl.html#aed88a8b5d99060d8ec8b67562dc64cd3">More...</a><br /></td></tr>
 <tr class="separator:aed88a8b5d99060d8ec8b67562dc64cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace42932a76d357294ef7a8bc02ce6ed6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#ace42932a76d357294ef7a8bc02ce6ed6">PR00FsReducedRenderingEngineImpl</a> (const <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html">PR00FsReducedRenderingEngineImpl</a> &amp;)</td></tr>
 <tr class="separator:ace42932a76d357294ef7a8bc02ce6ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +230,8 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0fca9acf9fac9cb7f149474e201f2254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0fca9acf9fac9cb7f149474e201f2254">pRenderer</a></td></tr>
 <tr class="memdesc:a0fca9acf9fac9cb7f149474e201f2254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer, singleton.  <a href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0fca9acf9fac9cb7f149474e201f2254">More...</a><br /></td></tr>
 <tr class="separator:a0fca9acf9fac9cb7f149474e201f2254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63bdad7e341f197b6e107b8084dda2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#aa63bdad7e341f197b6e107b8084dda2d">bAutoWriteStatsAtShutdown</a></td></tr>
+<tr class="separator:aa63bdad7e341f197b6e107b8084dda2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -268,7 +274,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calls <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00100">100</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00102">102</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,9 +301,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>NULLs members only. </p>
+<p>If true, will invoke <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a29f487bf7775afcc7d2b6e6c2aae3b65">WriteStats()</a> at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>. </p>
+<p>NULLs members only.</p>
+<p>Default false. NULLs members only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00647">647</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00740">740</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -325,28 +333,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00661">661</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00755">755</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a90ec3379a0924c97e6a89aeb31052f5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90ec3379a0924c97e6a89aeb31052f5e">&#9670;&nbsp;</a></span>CheckConsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PR00FsReducedRenderingEngineImpl::CheckConsistency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a96dfd158a979aa1d7ad7b307d4ebb524"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96dfd158a979aa1d7ad7b307d4ebb524">&#9670;&nbsp;</a></span>CopyScreenToTexture()</h2>
 
@@ -381,7 +372,40 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a990fa4fcadad444eae011b9839671649">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00601">601</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00694">694</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a26861faa2223d4b9eb7f1c909e270b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26861faa2223d4b9eb7f1c909e270b4d">&#9670;&nbsp;</a></span>getAutoWriteStatsAtShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PR00FsReducedRenderingEngineImpl::getAutoWriteStatsAtShutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if invoke of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> would happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>. </p>
+<p>Default false.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> would be invoked automatically at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a19c185b29605deab35ba3e0cc8b5ff3b">PR00FsReducedRenderingEngine</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00671">671</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a66de6fcc5c547f5ff511ba1513fd4636">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00389">389</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00412">412</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +469,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#ae19c3541a5b5aade148be40f7c39e962">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00328">328</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00351">351</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +501,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a943136e183170a29c878323acfc77eb0">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00339">339</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00362">362</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -509,7 +533,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a3eaf054ac86b516dd9a1ecb432280422">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00361">361</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00384">384</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -540,7 +564,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a518c265489bcbf2e59d8fdfab7c40366">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00367">367</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00390">390</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -572,7 +596,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#add0d53e0a6fcb2825bddcfe116c84f16">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00378">378</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00401">401</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -600,11 +624,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get access to the selected renderer. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to a renderer object implementing <a class="el" href="class_p_r_r_e_i_renderer.html">PRREIRenderer</a> interface if engine is initialized, NULL otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a renderer object implementing <a class="el" href="class_p_r_r_e_i_renderer.html" title="Renderer interface.">PRREIRenderer</a> interface if engine is initialized, NULL otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a6af2d04d7ae96f1d688bb1c568dcc8b6">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00411">411</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00434">434</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -636,7 +660,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a58856ed2810773d9f0772275800a41e2">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00306">306</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00329">329</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -668,7 +692,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a055ecf7a21533e0c8954dc60cda5130c">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00350">350</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00373">373</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -700,7 +724,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#ac749d6d6862d045b97a2285f82f2aa73">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00400">400</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00423">423</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -732,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a7ef524ae2dd542bcc1ee72c3f7053a76">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00317">317</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00340">340</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -839,7 +863,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a8aa24ca347b8e9c71d436fa24e5e3306">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00123">123</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00125">125</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -871,7 +895,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a915c7b749824184dd9fe1aa31679466b">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00295">295</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00318">318</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +923,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00671">671</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00766">766</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +942,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00461">461</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00484">484</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -937,7 +961,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00512">512</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00535">535</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +980,46 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00417">417</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00440">440</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af3f9732819bd5dd68647eee34661547b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f9732819bd5dd68647eee34661547b">&#9670;&nbsp;</a></span>SetAutoWriteStatsAtShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PR00FsReducedRenderingEngineImpl::SetAutoWriteStatsAtShutdown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if invoke of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> should happen at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>. </p>
+<p>Default false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>If true <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> will be invoked automatically at the beginning of <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a8425551bc6503700a746c2ce0f5fa67b" title="This stops the engine.">shutdown()</a>, otherwise it won't be invoked. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#aa3151f947c6db16af7971f72845c72ee">PR00FsReducedRenderingEngine</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00683">683</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1052,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a78373bc3fb5a84b6ff5f8db9517b65e2">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00241">241</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00248">248</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1017,10 +1080,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Invoke <a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html#a0973b0d9158b87ca1f7b5d8e0ee5649d" title="Invoke WriteList() of all children instances.">WriteList()</a> of all children instances. </p>
+<p>This will give you a verbose list of all created/loaded managed and manager instances with information about resource usage. </p>
 
 <p>Implements <a class="el" href="class_p_r00_fs_reduced_rendering_engine.html#a4c2bc4ed20bb57b4e9fd0cc96a82ddb7">PR00FsReducedRenderingEngine</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00566">566</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00606">606</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1062,11 +1126,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00089">89</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00091">91</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa63bdad7e341f197b6e107b8084dda2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63bdad7e341f197b6e107b8084dda2d">&#9670;&nbsp;</a></span>bAutoWriteStatsAtShutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> PR00FsReducedRenderingEngineImpl::bAutoWriteStatsAtShutdown</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00083">83</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a66546c5fc5aa4c2295a23af02e75e4d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66546c5fc5aa4c2295a23af02e75e4d2">&#9670;&nbsp;</a></span>hwInfo</h2>
 
@@ -1089,7 +1177,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hardware infos, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00072">72</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00073">73</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1203,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Camera, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00079">79</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00080">80</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1229,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ImageManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00074">74</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00075">75</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +1255,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>MaterialManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00076">76</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00077">77</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1281,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>MeshManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00077">77</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00078">78</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1307,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ObjectManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00078">78</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00079">79</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1333,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Renderer, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00081">81</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00082">82</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1359,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>TextureManager, at least 1 instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00075">75</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00076">76</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1385,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Our screen, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00073">73</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00074">74</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1323,7 +1411,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Shared settings, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00070">70</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00071">71</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1437,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>UI manager, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00080">80</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00081">81</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1463,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Our window, where we draw to, singleton. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00071">71</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html#l00072">72</a> of file <a class="el" href="_p_r00_fs_reduced_rendering_engine_8cpp_source.html">PR00FsReducedRenderingEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1476,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r00_fs_reduced_rendering_engine_impl.html">PR00FsReducedRenderingEngineImpl</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:35 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:13 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

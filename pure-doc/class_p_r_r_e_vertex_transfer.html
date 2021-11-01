@@ -28,7 +28,7 @@
   <td id="projectlogo"><img alt="Logo" src="still-single-logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PURE API
-   &#160;<span id="projectnumber">0.2</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">PR00F&#39;s Ultimate Rendering Engine full documentation</div>
   </td>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('class_p_r_r_e_vertex_transfer.html',''
 </ul>
 <p>The biggest addition of VertexTransfer to Mesh3D is the wide selection of vertex transfer modes and management of the related OpenGL resources such as vertex buffer objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00175">175</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00174">174</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -158,6 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9fd4ccf6d3c3ab40b5c8e92da52b6a8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#ae9fd4ccf6d3c3ab40b5c8e92da52b6a8">setVertexTransferMode</a> (<a class="el" href="_p_r_r_e_vertex_transfer_mode_8h.html#a7b531d50a2ddd75a58bdda3bb1cc029b">TPRRE_VERTEX_TRANSFER_MODE</a> vtrans)</td></tr>
 <tr class="memdesc:ae9fd4ccf6d3c3ab40b5c8e92da52b6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets vertex transfer mode.  <a href="class_p_r_r_e_vertex_transfer.html#ae9fd4ccf6d3c3ab40b5c8e92da52b6a8">More...</a><br /></td></tr>
 <tr class="separator:ae9fd4ccf6d3c3ab40b5c8e92da52b6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd367d5e162d4fbf6716d742919479fc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#acd367d5e162d4fbf6716d742919479fc">getLastTransferredVertexCount</a> () const</td></tr>
+<tr class="memdesc:acd367d5e162d4fbf6716d742919479fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of vertices sent to graphics pipeline by the last <a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3" title="Sends vertices to the graphics pipeline.">transferVertices()</a> call.  <a href="class_p_r_r_e_vertex_transfer.html#acd367d5e162d4fbf6716d742919479fc">More...</a><br /></td></tr>
+<tr class="separator:acd367d5e162d4fbf6716d742919479fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59bdfa48c69bbc7147885ac908aecf1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#ac59bdfa48c69bbc7147885ac908aecf1">getLastTransferredTriangleCount</a> () const</td></tr>
+<tr class="memdesc:ac59bdfa48c69bbc7147885ac908aecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of triangles sent to graphics pipeline by the last <a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3" title="Sends vertices to the graphics pipeline.">transferVertices()</a> call.  <a href="class_p_r_r_e_vertex_transfer.html#ac59bdfa48c69bbc7147885ac908aecf1">More...</a><br /></td></tr>
+<tr class="separator:ac59bdfa48c69bbc7147885ac908aecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6affa2dc892748ff2d1e82d6421e0a4d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#a6affa2dc892748ff2d1e82d6421e0a4d">getUsedSystemMemory</a> () const</td></tr>
 <tr class="memdesc:a6affa2dc892748ff2d1e82d6421e0a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the amount of allocated system memory.  <a href="class_p_r_r_e_vertex_transfer.html#a6affa2dc892748ff2d1e82d6421e0a4d">More...</a><br /></td></tr>
 <tr class="separator:a6affa2dc892748ff2d1e82d6421e0a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,51 +176,60 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f1fe99afbee425d5f5ef457383daa22 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a6f1fe99afbee425d5f5ef457383daa22">getManagedConsole</a> () const</td></tr>
 <tr class="memdesc:a6f1fe99afbee425d5f5ef457383daa22 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns access to console preset with logger module name as this class.  <a href="class_p_r_r_e_mesh3_d.html#a6f1fe99afbee425d5f5ef457383daa22">More...</a><br /></td></tr>
 <tr class="separator:a6f1fe99afbee425d5f5ef457383daa22 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536f5e396eadc1d6e2390e3a260bf4a4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a536f5e396eadc1d6e2390e3a260bf4a4">isLevel1</a> () const</td></tr>
+<tr class="memitem:a536f5e396eadc1d6e2390e3a260bf4a4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a536f5e396eadc1d6e2390e3a260bf4a4">isLevel1</a> () const</td></tr>
 <tr class="memdesc:a536f5e396eadc1d6e2390e3a260bf4a4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if the mesh is a level-1 parent mesh.  <a href="class_p_r_r_e_mesh3_d.html#a536f5e396eadc1d6e2390e3a260bf4a4">More...</a><br /></td></tr>
 <tr class="separator:a536f5e396eadc1d6e2390e3a260bf4a4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae976111fb7e813892b1b81387af62009 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ae976111fb7e813892b1b81387af62009">isLevel2</a> () const</td></tr>
+<tr class="memitem:ae976111fb7e813892b1b81387af62009 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ae976111fb7e813892b1b81387af62009">isLevel2</a> () const</td></tr>
 <tr class="memdesc:ae976111fb7e813892b1b81387af62009 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if the mesh is a level-2 submesh.  <a href="class_p_r_r_e_mesh3_d.html#ae976111fb7e813892b1b81387af62009">More...</a><br /></td></tr>
 <tr class="separator:ae976111fb7e813892b1b81387af62009 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8067851b07137e9408cf89bab89456 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_e_mesh3_d_manager_8h.html#af5fa6028db2770ac2c2a8cce906be345">TPRRE_PRIMITIVE_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#aff8067851b07137e9408cf89bab89456">getPrimitiveFormat</a> () const</td></tr>
+<tr class="memitem:aff8067851b07137e9408cf89bab89456 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_e_mesh3_d_manager_8h.html#af5fa6028db2770ac2c2a8cce906be345">TPRRE_PRIMITIVE_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#aff8067851b07137e9408cf89bab89456">getPrimitiveFormat</a> () const</td></tr>
 <tr class="memdesc:aff8067851b07137e9408cf89bab89456 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the primitives' format.  <a href="class_p_r_r_e_mesh3_d.html#aff8067851b07137e9408cf89bab89456">More...</a><br /></td></tr>
 <tr class="separator:aff8067851b07137e9408cf89bab89456 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a849b9a459d242c8f5cead8136b727 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a89a849b9a459d242c8f5cead8136b727">getVerticesCount</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
-<tr class="memdesc:a89a849b9a459d242c8f5cead8136b727 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of vertices.  <a href="class_p_r_r_e_mesh3_d.html#a89a849b9a459d242c8f5cead8136b727">More...</a><br /></td></tr>
-<tr class="separator:a89a849b9a459d242c8f5cead8136b727 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486f641036946b7a70fda5fb8cb45260 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_p_r_r_etypes_8h.html#a8a17b35e0a7247a3937719c4aa154989">TXYZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a486f641036946b7a70fda5fb8cb45260">getVertices</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:a683c1ca431b56c882451602f499150cb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a683c1ca431b56c882451602f499150cb">getVerticesCount</a> () const</td></tr>
+<tr class="memdesc:a683c1ca431b56c882451602f499150cb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of total vertices.  <a href="class_p_r_r_e_mesh3_d.html#a683c1ca431b56c882451602f499150cb">More...</a><br /></td></tr>
+<tr class="separator:a683c1ca431b56c882451602f499150cb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486f641036946b7a70fda5fb8cb45260 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="_p_r_r_etypes_8h.html#a8a17b35e0a7247a3937719c4aa154989">TXYZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a486f641036946b7a70fda5fb8cb45260">getVertices</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:a486f641036946b7a70fda5fb8cb45260 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to vertices.  <a href="class_p_r_r_e_mesh3_d.html#a486f641036946b7a70fda5fb8cb45260">More...</a><br /></td></tr>
 <tr class="separator:a486f641036946b7a70fda5fb8cb45260 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a779b790d8042c718e35826c578f0d6eb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a8a17b35e0a7247a3937719c4aa154989">TXYZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a779b790d8042c718e35826c578f0d6eb">getVertices</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true)</td></tr>
+<tr class="memitem:a779b790d8042c718e35826c578f0d6eb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a8a17b35e0a7247a3937719c4aa154989">TXYZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a779b790d8042c718e35826c578f0d6eb">getVertices</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true)</td></tr>
 <tr class="memdesc:a779b790d8042c718e35826c578f0d6eb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to vertices.  <a href="class_p_r_r_e_mesh3_d.html#a779b790d8042c718e35826c578f0d6eb">More...</a><br /></td></tr>
 <tr class="separator:a779b790d8042c718e35826c578f0d6eb inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e6623fe050488b339fb3baf3d86b172 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a0e6623fe050488b339fb3baf3d86b172">getVertexIndicesCount</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
-<tr class="memdesc:a0e6623fe050488b339fb3baf3d86b172 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of vertex indices.  <a href="class_p_r_r_e_mesh3_d.html#a0e6623fe050488b339fb3baf3d86b172">More...</a><br /></td></tr>
-<tr class="separator:a0e6623fe050488b339fb3baf3d86b172 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77b630d3db3aba834e027ca32b2f87e inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ad77b630d3db3aba834e027ca32b2f87e">getVertexIndices</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:ae4f224c5600bc2a247f4da91a4a4af23 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ae4f224c5600bc2a247f4da91a4a4af23">getVertexIndicesCount</a> () const</td></tr>
+<tr class="memdesc:ae4f224c5600bc2a247f4da91a4a4af23 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of total vertex indices.  <a href="class_p_r_r_e_mesh3_d.html#ae4f224c5600bc2a247f4da91a4a4af23">More...</a><br /></td></tr>
+<tr class="separator:ae4f224c5600bc2a247f4da91a4a4af23 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77b630d3db3aba834e027ca32b2f87e inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ad77b630d3db3aba834e027ca32b2f87e">getVertexIndices</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:ad77b630d3db3aba834e027ca32b2f87e inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to vertex indices.  <a href="class_p_r_r_e_mesh3_d.html#ad77b630d3db3aba834e027ca32b2f87e">More...</a><br /></td></tr>
 <tr class="separator:ad77b630d3db3aba834e027ca32b2f87e inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d714daf7b34ca533745204994429c4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a23d714daf7b34ca533745204994429c4">getVertexIndicesType</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:a23d714daf7b34ca533745204994429c4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a23d714daf7b34ca533745204994429c4">getVertexIndicesType</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:a23d714daf7b34ca533745204994429c4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the indices.  <a href="class_p_r_r_e_mesh3_d.html#a23d714daf7b34ca533745204994429c4">More...</a><br /></td></tr>
 <tr class="separator:a23d714daf7b34ca533745204994429c4 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef9c3dd805af3791a65488b44938e2f5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#aef9c3dd805af3791a65488b44938e2f5">getMinVertexIndex</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:aef9c3dd805af3791a65488b44938e2f5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#aef9c3dd805af3791a65488b44938e2f5">getMinVertexIndex</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:aef9c3dd805af3791a65488b44938e2f5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the smallest index in the vertex indices array.  <a href="class_p_r_r_e_mesh3_d.html#aef9c3dd805af3791a65488b44938e2f5">More...</a><br /></td></tr>
 <tr class="separator:aef9c3dd805af3791a65488b44938e2f5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a060b40c4e20b2581156c05999dbb4277 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a060b40c4e20b2581156c05999dbb4277">getMaxVertexIndex</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:a060b40c4e20b2581156c05999dbb4277 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a060b40c4e20b2581156c05999dbb4277">getMaxVertexIndex</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:a060b40c4e20b2581156c05999dbb4277 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the greatest index in the vertex indices array.  <a href="class_p_r_r_e_mesh3_d.html#a060b40c4e20b2581156c05999dbb4277">More...</a><br /></td></tr>
 <tr class="separator:a060b40c4e20b2581156c05999dbb4277 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7760ba8ef5b9e9d612f188eba1b6a3db inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a7760ba8ef5b9e9d612f188eba1b6a3db">getVertexIndex</a> (<a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> index, <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:a7760ba8ef5b9e9d612f188eba1b6a3db inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a7760ba8ef5b9e9d612f188eba1b6a3db">getVertexIndex</a> (<a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> index, <a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:a7760ba8ef5b9e9d612f188eba1b6a3db inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an index value from the vertex indices array.  <a href="class_p_r_r_e_mesh3_d.html#a7760ba8ef5b9e9d612f188eba1b6a3db">More...</a><br /></td></tr>
 <tr class="separator:a7760ba8ef5b9e9d612f188eba1b6a3db inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a584c3ed1a29a0859ac604fc83e5e50b2 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_p_r_r_etypes_8h.html#a8a17b35e0a7247a3937719c4aa154989">TXYZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a584c3ed1a29a0859ac604fc83e5e50b2">getNormals</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
+<tr class="memitem:a584c3ed1a29a0859ac604fc83e5e50b2 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="_p_r_r_etypes_8h.html#a8a17b35e0a7247a3937719c4aa154989">TXYZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a584c3ed1a29a0859ac604fc83e5e50b2">getNormals</a> (<a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a> implicitAccessSubobject=true) const</td></tr>
 <tr class="memdesc:a584c3ed1a29a0859ac604fc83e5e50b2 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to normals.  <a href="class_p_r_r_e_mesh3_d.html#a584c3ed1a29a0859ac604fc83e5e50b2">More...</a><br /></td></tr>
 <tr class="separator:a584c3ed1a29a0859ac604fc83e5e50b2 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32e1bceffa308c28cce30425b951dd0 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ae32e1bceffa308c28cce30425b951dd0">getFaceCount</a> () const</td></tr>
+<tr class="memdesc:ae32e1bceffa308c28cce30425b951dd0 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of faces/polygons formed by the vertices.  <a href="class_p_r_r_e_mesh3_d.html#ae32e1bceffa308c28cce30425b951dd0">More...</a><br /></td></tr>
+<tr class="separator:ae32e1bceffa308c28cce30425b951dd0 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4554845c3b668bc1911369737aacded1 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a4554845c3b668bc1911369737aacded1">getTriangleCount</a> () const</td></tr>
+<tr class="memdesc:a4554845c3b668bc1911369737aacded1 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of triangles formed by the vertices.  <a href="class_p_r_r_e_mesh3_d.html#a4554845c3b668bc1911369737aacded1">More...</a><br /></td></tr>
+<tr class="separator:a4554845c3b668bc1911369737aacded1 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb0725f08e33b488f6f642eb16ccdb1f inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#acb0725f08e33b488f6f642eb16ccdb1f">getPosVec</a> ()</td></tr>
 <tr class="memdesc:acb0725f08e33b488f6f642eb16ccdb1f inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position.  <a href="class_p_r_r_e_mesh3_d.html#acb0725f08e33b488f6f642eb16ccdb1f">More...</a><br /></td></tr>
 <tr class="separator:acb0725f08e33b488f6f642eb16ccdb1f inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa45cdbc5b3b5e602052e42a0b9099b5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#aaa45cdbc5b3b5e602052e42a0b9099b5">getPosVec</a> () const</td></tr>
 <tr class="memdesc:aaa45cdbc5b3b5e602052e42a0b9099b5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position.  <a href="class_p_r_r_e_mesh3_d.html#aaa45cdbc5b3b5e602052e42a0b9099b5">More...</a><br /></td></tr>
 <tr class="separator:aaa45cdbc5b3b5e602052e42a0b9099b5 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5c997ca11c40a8d089c62ba325fe46 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a2c5c997ca11c40a8d089c62ba325fe46">getRelPosVec</a> () const</td></tr>
+<tr class="memdesc:a2c5c997ca11c40a8d089c62ba325fe46 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the mesh-local relative position.  <a href="class_p_r_r_e_mesh3_d.html#a2c5c997ca11c40a8d089c62ba325fe46">More...</a><br /></td></tr>
+<tr class="separator:a2c5c997ca11c40a8d089c62ba325fe46 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d88b09766ce6941fe775450426f711 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_p_r_r_e_vector.html">PRREVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#a96d88b09766ce6941fe775450426f711">getSizeVec</a> () const</td></tr>
 <tr class="memdesc:a96d88b09766ce6941fe775450426f711 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the base sizes.  <a href="class_p_r_r_e_mesh3_d.html#a96d88b09766ce6941fe775450426f711">More...</a><br /></td></tr>
 <tr class="separator:a96d88b09766ce6941fe775450426f711 inherit pub_methods_class_p_r_r_e_mesh3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +261,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb5fc40856e5e8522879627191f1a283 inherit pub_methods_class_p_r_r_e_managed"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_managed.html#afb5fc40856e5e8522879627191f1a283">getManagedConsole</a> () const</td></tr>
 <tr class="memdesc:afb5fc40856e5e8522879627191f1a283 inherit pub_methods_class_p_r_r_e_managed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns access to console preset with logger module name as this class.  <a href="class_p_r_r_e_managed.html#afb5fc40856e5e8522879627191f1a283">More...</a><br /></td></tr>
 <tr class="separator:afb5fc40856e5e8522879627191f1a283 inherit pub_methods_class_p_r_r_e_managed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7a16f92f916e7507351f3dc631fdf0 inherit pub_methods_class_p_r_r_e_managed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_managed.html#a4f7a16f92f916e7507351f3dc631fdf0">getUtiliser</a> () const</td></tr>
+<tr class="memdesc:a4f7a16f92f916e7507351f3dc631fdf0 inherit pub_methods_class_p_r_r_e_managed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the managed that utilizes this managed.  <a href="class_p_r_r_e_managed.html#a4f7a16f92f916e7507351f3dc631fdf0">More...</a><br /></td></tr>
+<tr class="separator:a4f7a16f92f916e7507351f3dc631fdf0 inherit pub_methods_class_p_r_r_e_managed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd5426ba6996820692fcf8276895d06 inherit pub_methods_class_p_r_r_e_managed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_managed.html#a1cd5426ba6996820692fcf8276895d06">getUtiliser</a> ()</td></tr>
+<tr class="memdesc:a1cd5426ba6996820692fcf8276895d06 inherit pub_methods_class_p_r_r_e_managed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the managed that utilizes this managed.  <a href="class_p_r_r_e_managed.html#a1cd5426ba6996820692fcf8276895d06">More...</a><br /></td></tr>
+<tr class="separator:a1cd5426ba6996820692fcf8276895d06 inherit pub_methods_class_p_r_r_e_managed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a6ab3e20c3c43a5ffa7877a2412846 inherit pub_methods_class_p_r_r_e_managed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_managed.html#ab5a6ab3e20c3c43a5ffa7877a2412846">SetUtiliser</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> *pUtiliser)</td></tr>
+<tr class="memdesc:ab5a6ab3e20c3c43a5ffa7877a2412846 inherit pub_methods_class_p_r_r_e_managed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the managed that utilizes this managed.  <a href="class_p_r_r_e_managed.html#ab5a6ab3e20c3c43a5ffa7877a2412846">More...</a><br /></td></tr>
+<tr class="separator:ab5a6ab3e20c3c43a5ffa7877a2412846 inherit pub_methods_class_p_r_r_e_managed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fd3677cf9adad98a868bb876011953 inherit pub_methods_class_p_r_r_e_managed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_managed.html#a54fd3677cf9adad98a868bb876011953">DetachFrom</a> ()</td></tr>
 <tr class="memdesc:a54fd3677cf9adad98a868bb876011953 inherit pub_methods_class_p_r_r_e_managed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the managed from its manager.  <a href="class_p_r_r_e_managed.html#a54fd3677cf9adad98a868bb876011953">More...</a><br /></td></tr>
 <tr class="separator:a54fd3677cf9adad98a868bb876011953 inherit pub_methods_class_p_r_r_e_managed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,7 +300,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2eb12303fe163a2a9819a05f9daf389b inherit pub_methods_class_p_r_r_e_filed_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should create a new managed from the given file.  <a href="class_p_r_r_e_filed_manager.html#a2eb12303fe163a2a9819a05f9daf389b">More...</a><br /></td></tr>
 <tr class="separator:a2eb12303fe163a2a9819a05f9daf389b inherit pub_methods_class_p_r_r_e_filed_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffa971e1ecf4e20b507d3358d1e8b15 inherit pub_methods_class_p_r_r_e_filed_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_filed_manager.html#afffa971e1ecf4e20b507d3358d1e8b15">WriteList</a> () const</td></tr>
-<tr class="memdesc:afffa971e1ecf4e20b507d3358d1e8b15 inherit pub_methods_class_p_r_r_e_filed_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a list of managed objects to the console.  <a href="class_p_r_r_e_filed_manager.html#afffa971e1ecf4e20b507d3358d1e8b15">More...</a><br /></td></tr>
+<tr class="memdesc:afffa971e1ecf4e20b507d3358d1e8b15 inherit pub_methods_class_p_r_r_e_filed_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">From <a class="el" href="class_p_r_r_e_manager.html" title="Ancestor class for manager classes.">PRREManager</a>, adding logging file names.  <a href="class_p_r_r_e_filed_manager.html#afffa971e1ecf4e20b507d3358d1e8b15">More...</a><br /></td></tr>
 <tr class="separator:afffa971e1ecf4e20b507d3358d1e8b15 inherit pub_methods_class_p_r_r_e_filed_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_p_r_r_e_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p_r_r_e_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p_r_r_e_manager.html">PRREManager</a></td></tr>
 <tr class="memitem:ae65a42d38088f63453f8364bb08f9cf9 inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#ae65a42d38088f63453f8364bb08f9cf9">PRREManager</a> ()</td></tr>
@@ -307,10 +331,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afae57294583d6316bd185dd90359d858 inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a9c64f7f757b5d97a526ee118e4ded0a7">TPRREbool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#afae57294583d6316bd185dd90359d858">hasAttached</a> (const <a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m) const</td></tr>
 <tr class="memdesc:afae57294583d6316bd185dd90359d858 inherit pub_methods_class_p_r_r_e_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the given managed is managed by this manager.  <a href="class_p_r_r_e_manager.html#afae57294583d6316bd185dd90359d858">More...</a><br /></td></tr>
 <tr class="separator:afae57294583d6316bd185dd90359d858 inherit pub_methods_class_p_r_r_e_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d62e7fb406653a72bf34e3a863053d3 inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a3d62e7fb406653a72bf34e3a863053d3">Attach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
+<tr class="memitem:a3d62e7fb406653a72bf34e3a863053d3 inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a3d62e7fb406653a72bf34e3a863053d3">Attach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
 <tr class="memdesc:a3d62e7fb406653a72bf34e3a863053d3 inherit pub_methods_class_p_r_r_e_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given managed to the manager, if the managed has no manager yet.  <a href="class_p_r_r_e_manager.html#a3d62e7fb406653a72bf34e3a863053d3">More...</a><br /></td></tr>
 <tr class="separator:a3d62e7fb406653a72bf34e3a863053d3 inherit pub_methods_class_p_r_r_e_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa056e6f36bd5c3aadfccb89d47f87112 inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">Detach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
+<tr class="memitem:aa056e6f36bd5c3aadfccb89d47f87112 inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">Detach</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
 <tr class="memdesc:aa056e6f36bd5c3aadfccb89d47f87112 inherit pub_methods_class_p_r_r_e_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given managed from the manager, so the managed will have no manager.  <a href="class_p_r_r_e_manager.html#aa056e6f36bd5c3aadfccb89d47f87112">More...</a><br /></td></tr>
 <tr class="separator:aa056e6f36bd5c3aadfccb89d47f87112 inherit pub_methods_class_p_r_r_e_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475da34514e0158260c6b625211f669d inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a475da34514e0158260c6b625211f669d">DeleteAttachedInstance</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
@@ -319,6 +343,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a231c18655a1b2e1cd44d6f319e5a1f8f inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#a231c18655a1b2e1cd44d6f319e5a1f8f">DeleteAll</a> ()</td></tr>
 <tr class="memdesc:a231c18655a1b2e1cd44d6f319e5a1f8f inherit pub_methods_class_p_r_r_e_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes and destructs every managed element in the manager.  <a href="class_p_r_r_e_manager.html#a231c18655a1b2e1cd44d6f319e5a1f8f">More...</a><br /></td></tr>
 <tr class="separator:a231c18655a1b2e1cd44d6f319e5a1f8f inherit pub_methods_class_p_r_r_e_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ce45ea15961bc4d026e84910b2915c inherit pub_methods_class_p_r_r_e_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_manager.html#ac0ce45ea15961bc4d026e84910b2915c">HandleManagedPropertyChanged</a> (<a class="el" href="class_p_r_r_e_managed.html">PRREManaged</a> &amp;m)</td></tr>
+<tr class="memdesc:ac0ce45ea15961bc4d026e84910b2915c inherit pub_methods_class_p_r_r_e_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be invoked when a managed's property got changed from a different kind of manager or managed.  <a href="class_p_r_r_e_manager.html#ac0ce45ea15961bc4d026e84910b2915c">More...</a><br /></td></tr>
+<tr class="separator:ac0ce45ea15961bc4d026e84910b2915c inherit pub_methods_class_p_r_r_e_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -372,6 +399,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a704ebbe784434869de1b9cd8e800038d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2725ec2a4258a49dd6876e4788e3c16e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_p_r_r_e_vertex_transfer.html">PRREVertexTransfer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#a2725ec2a4258a49dd6876e4788e3c16e">operator=</a> (const <a class="el" href="class_p_r_r_e_vertex_transfer.html">PRREVertexTransfer</a> &amp;)</td></tr>
 <tr class="separator:a2725ec2a4258a49dd6876e4788e3c16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208a6fb90312aa4ee7cadfea628fb8b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3">transferVertices</a> ()</td></tr>
+<tr class="memdesc:a208a6fb90312aa4ee7cadfea628fb8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends vertices to the graphics pipeline.  <a href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3">More...</a><br /></td></tr>
+<tr class="separator:a208a6fb90312aa4ee7cadfea628fb8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab93000bf25415c2ba74767e71718446"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#aab93000bf25415c2ba74767e71718446">ResetLastTransferredCounts</a> ()</td></tr>
+<tr class="memdesc:aab93000bf25415c2ba74767e71718446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset counters used for measuring number of vertices, triangles, etc.  <a href="class_p_r_r_e_vertex_transfer.html#aab93000bf25415c2ba74767e71718446">More...</a><br /></td></tr>
+<tr class="separator:aab93000bf25415c2ba74767e71718446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_p_r_r_e_mesh3_d"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_p_r_r_e_mesh3_d')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_p_r_r_e_mesh3_d.html">PRREMesh3D</a></td></tr>
 <tr class="memitem:ac55c8978d561493260fea1aea38abfff inherit pro_methods_class_p_r_r_e_mesh3_d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_mesh3_d.html#ac55c8978d561493260fea1aea38abfff">PRREMesh3D</a> (<a class="el" href="_p_r_r_e_mesh3_d_manager_8h.html#af5fa6028db2770ac2c2a8cce906be345">TPRRE_PRIMITIVE_FORMAT</a> prfmt=<a class="el" href="_p_r_r_e_mesh3_d_manager_8h.html#af5fa6028db2770ac2c2a8cce906be345a8c288063d1caebb122a24a2bc9742471">PRRE_PM_TRIANGLES</a>)</td></tr>
 <tr class="memdesc:ac55c8978d561493260fea1aea38abfff inherit pro_methods_class_p_r_r_e_mesh3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only <a class="el" href="class_p_r_r_e_mesh3_d_manager.html" title="3D mesh manager class.">PRREMesh3DManager</a> creates it.  <a href="class_p_r_r_e_mesh3_d.html#ac55c8978d561493260fea1aea38abfff">More...</a><br /></td></tr>
@@ -414,8 +447,6 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a2ed8c4d7e3577b1c34e4ae38535ae914"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#a2ed8c4d7e3577b1c34e4ae38535ae914">PRREObject3D</a></td></tr>
-<tr class="separator:a2ed8c4d7e3577b1c34e4ae38535ae914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13527155d14f8f52cdffed80c6c1c7bf"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_r_r_e_vertex_transfer.html#a13527155d14f8f52cdffed80c6c1c7bf">SampleManagerForDescendantFromVertexTransfer</a></td></tr>
 <tr class="separator:a13527155d14f8f52cdffed80c6c1c7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -443,7 +474,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01015">1015</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01055">1055</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -511,7 +542,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01217">1217</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01282">1282</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -544,7 +575,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01232">1232</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01297">1297</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -572,11 +603,73 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01240">1240</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01305">1305</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac59bdfa48c69bbc7147885ac908aecf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59bdfa48c69bbc7147885ac908aecf1">&#9670;&nbsp;</a></span>getLastTransferredTriangleCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRREVertexTransfer::getLastTransferredTriangleCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the number of triangles sent to graphics pipeline by the last <a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3" title="Sends vertices to the graphics pipeline.">transferVertices()</a> call. </p>
+
+<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#a296a9156fb5fb0f502ea4ba8800db059">PRREObject3D</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01180">1180</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd367d5e162d4fbf6716d742919479fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd367d5e162d4fbf6716d742919479fc">&#9670;&nbsp;</a></span>getLastTransferredVertexCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRREVertexTransfer::getLastTransferredVertexCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the number of vertices sent to graphics pipeline by the last <a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3" title="Sends vertices to the graphics pipeline.">transferVertices()</a> call. </p>
+
+<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#acbec139e0b61fa666c1d1e9a1c81cbcd">PRREObject3D</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01171">1171</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+
+</div>
+</div>
 <a id="afbae98dca3433ccfc29819998f0a7d63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbae98dca3433ccfc29819998f0a7d63">&#9670;&nbsp;</a></span>getLoggerModuleName()</h2>
 
@@ -604,7 +697,7 @@ Friends</h2></td></tr>
 <p>Intentionally not virtual, so derived class should hide this instead of overriding. Not even private, so user can also access this from outside, for any reason like controlling log filtering per logger module name.</p>
 <dl class="section return"><dt>Returns</dt><dd>The logger module name of this class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01041">1041</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01081">1081</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -627,7 +720,7 @@ Friends</h2></td></tr>
 <p>Intentionally not virtual, so the <a class="el" href="class_p_r_r_e_filed_manager.html#ad329cd70b4afe1e335926fa257917f20" title="Returns access to console preset with logger module name as this class.">getConsole()</a> in derived class should hide this instead of overriding.</p>
 <dl class="section return"><dt>Returns</dt><dd>Console instance used by this class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01028">1028</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01068">1068</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -662,7 +755,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#ade5d7f5d9fa2a6d86c065350c59f33e3">PRREObject3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01132">1132</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01192">1192</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -695,7 +788,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#a13279a15409cc8ccec3a483c4e110983">PRREObject3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01157">1157</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01216">1216</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -727,7 +820,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#ac796578d4967cde191492785e31e6b96">PRREObject3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01052">1052</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01092">1092</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -759,7 +852,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#abdfd422be1c8b7118d7a2544da175042">PRREObject3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01076">1076</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01116">1116</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -791,7 +884,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#a2a7e17376f8c509c8251c8ef29bdc94b">PRREObject3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01100">1100</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01140">1140</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -822,7 +915,7 @@ Friends</h2></td></tr>
 <p>Tells whether the given Vertex Transfer Mode means dynamic modifying habit. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the given mode means dynamic modifying habit. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00926">926</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00966">966</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -853,7 +946,7 @@ Friends</h2></td></tr>
 <p>Tells whether the given Vertex Transfer Mode references vertices by indexing. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the given mode references vertices by indexing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00916">916</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00956">956</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -908,7 +1001,7 @@ Friends</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>True if the given transfer mode is available on the current hardware, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00880">880</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00920">920</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -939,7 +1032,7 @@ Friends</h2></td></tr>
 <p>Tells whether the given Vertex Transfer Mode uses VRAM. </p>
 <p>Note that the result does not always tell the truth. For example, we can expect that geometry draw calls stored in an OpenGL display list are cached somehow in video memory or implicitly stored as a static VBO in video memory, but this might not be the case with nowadays old/rare driver-GPU/VPU combo which might not even have enough video memory to store OpenGL display list, or the driver is not prepared for that. </p><dl class="section return"><dt>Returns</dt><dd>True if the given mode means video memory is utilized instead of system memory to store mesh geometry. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00940">940</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00980">980</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -967,7 +1060,40 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01245">1245</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01310">1310</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aab93000bf25415c2ba74767e71718446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab93000bf25415c2ba74767e71718446">&#9670;&nbsp;</a></span>ResetLastTransferredCounts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRREVertexTransfer::ResetLastTransferredCounts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset counters used for measuring number of vertices, triangles, etc. </p>
+<p>sent to the graphics pipeline by the last <a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3" title="Sends vertices to the graphics pipeline.">transferVertices()</a>.</p>
+<p>sent to the graphics pipeline by the last <a class="el" href="class_p_r_r_e_vertex_transfer.html#a208a6fb90312aa4ee7cadfea628fb8b3" title="Sends vertices to the graphics pipeline.">transferVertices()</a>. Derived class can reset the counters when needed. Useful before iterating over its level-2 managed PRREVertexTransfer-derived instances, because they implicitly increase counters in their level-1 parent. </p>
+
+<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#a51973501e1fe653d5b41e50bd479d933">PRREObject3D</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01333">1333</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1141,7 @@ Friends</h2></td></tr>
 <p>The selected mode is compatible with the current hardware and complies with the given arguments. Please note that bForceUseClientMemory = true is considered only if dynamic modifying habit is specified. Specifying static modifying habit will always select a mode which places geometry data into server memory.</p>
 <dl class="section return"><dt>Returns</dt><dd>A suitable vertex transfer mode selected by PPP based on the given arguments and the current hardware capabilities. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00957">957</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l00997">997</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1052,9 +1178,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True on success, false otherwise. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#a51cd3845de95ecf46d6d8fcbc949cd5e">PRREObject3D</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01065">1065</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01105">1105</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1091,9 +1215,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True on success, false otherwise. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#ad1a2a4702ba6123f02bbafbf3a5f8f7d">PRREObject3D</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01089">1089</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01129">1129</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1122,9 +1244,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets vertex transfer mode. </p>
-<p>Vertex transfer mode gets selected automatically by PPP. However, it can be also set manually for custom reasons. The setting does not happen if the selected transfer mode is not available for some reason, for example, if the selected mode is not supported on the current hardware. In such case, the existing vertex transfer mode and HW resources are kept unchanged. If the function encounters issue during allocating needed resources, vertex transfer mode is reset to 0 and HW resources are freed up. It applies to the entire geometry of the mesh, including all of its submeshes. The setting is ignored for level-2 meshes as it is applied to them by their level-1 parent mesh. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Vertex transfer mode gets selected automatically by PPP. However, it can be also set manually for custom reasons. The setting does not happen if the selected transfer mode is not available for some reason, for example, if the selected mode is not supported on the current hardware. In such case, the existing vertex transfer mode and HW resources are kept unchanged. If the function encounters issue during allocating needed resources, vertex transfer mode is reset to 0 and HW resources are freed up. It applies to the entire geometry of the mesh, including all of its submeshes. The setting is ignored for level-2 meshes as it is applied to them by their level-1 parent mesh.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vtrans</td><td>Vertex referencing mode to be set. </td></tr>
+    <tr><td class="paramname">vtrans</td><td>Vertex referencing mode to be set.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1132,13 +1255,12 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_r_r_e_object3_d.html#a1f8b6cbc3822997345aa605b3ccdad18">PRREObject3D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01120">1120</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01162">1162</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a2ed8c4d7e3577b1c34e4ae38535ae914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ed8c4d7e3577b1c34e4ae38535ae914">&#9670;&nbsp;</a></span>PRREObject3D</h2>
+<a id="a208a6fb90312aa4ee7cadfea628fb8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208a6fb90312aa4ee7cadfea628fb8b3">&#9670;&nbsp;</a></span>transferVertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1147,20 +1269,28 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="class_p_r_r_e_object3_d.html">PRREObject3D</a></td>
+          <td class="memname"><a class="el" href="_p_r_r_etypes_8h.html#a1ea19e34fa991c483f54fd53a6161b96">TPRREuint</a> PRREVertexTransfer::transferVertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00237">237</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
+<p>Sends vertices to the graphics pipeline. </p>
+<p>Should be invoked for level-2 submesh, i.e. a <a class="el" href="class_p_r_r_e_vertex_transfer.html" title="VertexTransfer class extends Mesh3D by providing ways to transfer vertices of the mesh over the verte...">PRREVertexTransfer</a> instance having geometry, and having another <a class="el" href="class_p_r_r_e_vertex_transfer.html" title="VertexTransfer class extends Mesh3D by providing ways to transfer vertices of the mesh over the verte...">PRREVertexTransfer</a> as parent.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of vertices sent to the graphics pipeline. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html#l01322">1322</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8cpp_source.html">PRREVertexTransferMode.cpp</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="a13527155d14f8f52cdffed80c6c1c7bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13527155d14f8f52cdffed80c6c1c7bf">&#9670;&nbsp;</a></span>SampleManagerForDescendantFromVertexTransfer</h2>
 
@@ -1181,7 +1311,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00238">238</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00242">242</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1336,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00235">235</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html#l00240">240</a> of file <a class="el" href="_p_r_r_e_vertex_transfer_mode_8h_source.html">PRREVertexTransferMode.h</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1350,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_p_r_r_e_vertex_transfer.html">PRREVertexTransfer</a></li>
-    <li class="footer">Generated on Wed Mar 31 2021 00:12:37 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 1 2021 22:00:14 for PURE API by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
