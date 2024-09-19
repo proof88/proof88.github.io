@@ -162,17 +162,20 @@ $(function(){initNavTree('networking.html',''); initResizable(true); });
   </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="multiplayer_cheating"></a>
+<div class="textblock"><p>PRooFPS-dd uses the networking subsystem of <a href="https://github.com/proof88/PGE" target="_blank">PGE</a>. <br  />
+ This page is basically the continuation of <a href="https://proof88.github.io/pge-doc/networking.html" target="_blank">PGE documentation's Networking page</a>.</p>
+<p>From v0.2.7, <b>packet rate calculations are in the <a href="PRooFPS-dd-Packet-Rates.xlsx" target="_blank">PRooFPS-dd-Packet-Rates Excel workbook</a>!</b></p>
+<h1><a class="anchor" id="multiplayer_cheating"></a>
 Cheating in Multiplayer</h1>
 <p>There are many ways to cheat in multiplayer games, and PGE doesn't provide protection against it. <br  />
  However, a good implementation in application level can overcome some forms of cheating. <br  />
  A common approach is to treat the <b>server as the only authorative instance</b> and make clients show only a replication of server state. <br  />
- My game <a href="https://github.com/proof88/PRooFPS-dd" target="_blank">PRooFPS-dd</a> has such client-server model implemented in it. <br  />
- <b>For example: player movement.</b> When a player presses a button to move, it should send a request/command message to the server about the keypress, and the server calculates the actual movement of the player. <br  />
+ My game <a href="https://github.com/proof88/PRooFPS-dd" target="_blank">PRooFPS-dd</a> has such client-server model implemented in it.</p>
+<p><b>For example: player movement.</b> When a player presses a button to move, it should send a request/command message to the server about the keypress, and the server calculates the actual movement of the player. <br  />
  Then it replies back to the client(s) with the updated position of the player who requested the move, client(s) receive(s) the reply and move(s) the player to the position calculated by the server. <br  />
  Since server takes care of the entire game state, simulate physics, calculate new positions, etc. and replicates game state to clients, it is the only authorative element of the multiplayer game session. <br  />
- This way it is more difficult for clients to do anything from an illegal position, e.g. put themselves out of map bounds intentionally because always the server calculates their position based on client inputs that can be rejected as well. <br  />
- <b>Another example is how the weapons work</b>: when a player pressen a button to shoot, an attack request is sent to the server, and server decides if the player can actually shoot, and if so, it will create a bullet. <br  />
+ This way it is more difficult for clients to do anything from an illegal position, e.g. put themselves out of map bounds intentionally because always the server calculates their position based on client inputs that can be rejected as well.</p>
+<p><b>Another example is how the weapons work</b>: when a player pressen a button to shoot, an attack request is sent to the server, and server decides if the player can actually shoot, and if so, it will create a bullet. <br  />
  Since the server keeps track of the available and current weapons for each player, there is no client-side cheat that will allow the player to use arbitrary weapon, also there is no use of modifying the weapon files on client-side since server is using only the server-side files.</p>
 <h1><a class="anchor" id="implementation_details"></a>
 Implementation Details</h1>
@@ -271,6 +274,9 @@ Old and New Behavior Pseudocode</h2>
  In the comments I mention what kind of messages are generated with approximated rates total PKT rate and per-client PKT rate. <br  />
  <b>We are estimating with an intense situation when 8 players are playing the game, and everyone is moving, shooting, and picking up a weapon item at the same time.</b></p>
 <p>I also mention <b>AP (action point)</b> wherever I think change should be introduced.</p>
+<details >
+<summary >
+<b>Expand/Collapse Pseudocode</b></summary>
 <div class="fragment"><div class="line"><span class="comment">// some constants just for the pkt count calculations in this example</span></div>
 <div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">int</span> nClientsCount = 7;</div>
 <div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">int</span> nPlayerCount = nClientsCount + 1;  <span class="comment">// +1 is the server itself</span></div>
@@ -377,7 +383,8 @@ Old and New Behavior Pseudocode</h2>
 <div class="ttc" id="aclassproofps__dd_1_1_p_roo_f_p_sdd_p_g_e_html_a0192981f3838d0d125a60e2f476296db"><div class="ttname"><a href="classproofps__dd_1_1_p_roo_f_p_sdd_p_g_e.html#a0192981f3838d0d125a60e2f476296db">proofps_dd::PRooFPSddPGE::onGameRunning</a></div><div class="ttdeci">virtual void onGameRunning() override</div><div class="ttdoc">Game logic for each frame.</div><div class="ttdef"><b>Definition</b> <a href="_p_roo_f_p_s-dd-_p_g_e_8cpp_source.html#l00291">PRooFPS-dd-PGE.cpp:291</a></div></div>
 <div class="ttc" id="aclassproofps__dd_1_1_p_roo_f_p_sdd_p_g_e_html_a2aab8352e10108cd6049fd24693373bb"><div class="ttname"><a href="classproofps__dd_1_1_p_roo_f_p_sdd_p_g_e.html#a2aab8352e10108cd6049fd24693373bb">proofps_dd::PRooFPSddPGE::onGameFrameBegin</a></div><div class="ttdeci">virtual void onGameFrameBegin() override</div><div class="ttdoc">Game logic right before the engine would do anything.</div><div class="ttdef"><b>Definition</b> <a href="_p_roo_f_p_s-dd-_p_g_e_8cpp_source.html#l00267">PRooFPS-dd-PGE.cpp:267</a></div></div>
 <div class="ttc" id="aclassproofps__dd_1_1_p_roo_f_p_sdd_p_g_e_html_ae4521ca0f75d626f392bb663269863e7"><div class="ttname"><a href="classproofps__dd_1_1_p_roo_f_p_sdd_p_g_e.html#ae4521ca0f75d626f392bb663269863e7">proofps_dd::PRooFPSddPGE::onPacketReceived</a></div><div class="ttdeci">virtual bool onPacketReceived(const pge_network::PgePacket &amp;pkt) override</div><div class="ttdoc">Called when a new network packet is received.</div><div class="ttdef"><b>Definition</b> <a href="_p_roo_f_p_s-dd-_p_g_e_8cpp_source.html#l00407">PRooFPS-dd-PGE.cpp:407</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="packet_rate"></a>
+</div><!-- fragment --> </details>
+<h2><a class="anchor" id="packet_rate"></a>
 Received Packet Rate and Packet Data Rate</h2>
 <p><b>Rx Packet Rate</b> shows the number of received packets processed per second by server or client. <br  />
  I also calculate the estimated <b>Rx Packet Data Rate</b> based on the received packet rate and size of packets. <br  />
@@ -538,6 +545,9 @@ Client Rx Packet Rate and Packet Data Rate</h3>
 <h3><a class="anchor" id="detailed_packet_rate"></a>
 Detailed Packet Rate per Function</h3>
 <p>The detailed explanation of the packet rates of each function is below:</p>
+<details >
+<summary >
+<b>Expand/Collapse Pseudocode</b></summary>
 <div class="fragment"><div class="line">getNetwork().Update() {</div>
 <div class="line"><span class="comment">// no changes since v0.1.2</span></div>
 <div class="line">  <span class="keywordflow">while</span> (</div>
@@ -717,7 +727,8 @@ Detailed Packet Rate per Function</h3>
 <div class="line">    <span class="comment">//         1*8 * 16 = 128 PKT/s @ 60 FPS total incoming to server (1 will be by the server by injection though),</span></div>
 <div class="line">    <span class="comment">//         that is 1 * 16 = 16 PKT/s @ 60 FPS from a single client.</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="future_plans"></a>
+</div><!-- fragment --> </details>
+<h1><a class="anchor" id="future_plans"></a>
 Future Improvement Plans</h1>
 <h2><a class="anchor" id="future_plans_server"></a>
 Server Future Improvement Plans</h2>
@@ -805,7 +816,7 @@ Counter-Strike 1.6 Rates Explained</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 20 2024 00:47:57 for PRooFPS-dd Dev Doc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Sep 20 2024 01:35:51 for PRooFPS-dd Dev Doc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
