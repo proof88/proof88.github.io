@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['bmaincfginmydocs_0',['bMainCFGinMyDocs',['../class_p_g_ecfg_profiles.html#a05ddd0ceb895e37a19198a10b0c98db7',1,'PGEcfgProfiles']]],
+  ['bullet_1',['Bullet',['../class_bullet.html',1,'Bullet'],['../class_bullet.html#a0e38d292001c6400240b4d6b1481bfdd',1,'Bullet::Bullet(PR00FsUltimateRenderingEngine &amp;gfx, pge_network::PgeNetworkConnectionHandle connHandle, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, TPureBool fragile, int nDamageAp, int nDamageHp, TPureFloat fDamageAreaSize, TPureFloat fDamageAreaPulse)'],['../class_bullet.html#ae8705208da90764818c66d85838b8171',1,'Bullet::Bullet(PR00FsUltimateRenderingEngine &amp;gfx, Bullet::BulletId id, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, int nDamageHp, const TPureFloat &amp;fDamageAreaSize, const TPureFloat &amp;fDamageAreaPulse)'],['../class_bullet.html#a08e8bdfa3fac6c4279bbeeab1fac742f',1,'Bullet::Bullet(const Bullet &amp;other)']]],
+  ['bulletid_2',['BulletId',['../class_bullet.html#a5a167f3c38226d99a917c04dc5c1ffed',1,'Bullet']]]
+];

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['fbasespeedcrouch_0',['fBaseSpeedCrouch',['../classproofps__dd_1_1_player.html#a79b6d037c8e2c55938c25f21cad5991f',1,'proofps_dd::Player']]],
+  ['fbasespeedrun_1',['fBaseSpeedRun',['../classproofps__dd_1_1_player.html#a8e1d035765e9b74e3adc7d0f038f59bf',1,'proofps_dd::Player']]],
+  ['fbasespeedwalk_2',['fBaseSpeedWalk',['../classproofps__dd_1_1_player.html#a8f1c01b3cb27874b7bc830c57aeb6c21',1,'proofps_dd::Player']]],
+  ['fjumpgravitystartfromcrouching_3',['fJumpGravityStartFromCrouching',['../classproofps__dd_1_1_player.html#a05938991ce64c545bee14aca7d4c9f19',1,'proofps_dd::Player']]],
+  ['fjumpgravitystartfromstanding_4',['fJumpGravityStartFromStanding',['../classproofps__dd_1_1_player.html#ab5ba6c790eca1b68bf7c428a92e444bf',1,'proofps_dd::Player']]],
+  ['fmapblocksizedepth_5',['fMapBlockSizeDepth',['../classproofps__dd_1_1_maps.html#a96aeb969a7e7e90a30a5b4340785aa8a',1,'proofps_dd::Maps']]],
+  ['fmapblocksizeheight_6',['fMapBlockSizeHeight',['../classproofps__dd_1_1_maps.html#ae62235d3af17e49c70ebf53c89f90aec',1,'proofps_dd::Maps']]],
+  ['fmapblocksizewidth_7',['fMapBlockSizeWidth',['../classproofps__dd_1_1_maps.html#aaf0bcf25dcd882d912f595821c081863',1,'proofps_dd::Maps']]],
+  ['fobjheightcrouchscaling_8',['fObjHeightCrouchScaling',['../classproofps__dd_1_1_player.html#a7baa64787735d0e7b9d62c83e8161e52',1,'proofps_dd::Player']]],
+  ['fobjheightstanding_9',['fObjHeightStanding',['../classproofps__dd_1_1_player.html#a609150de53e8fc81b721610bee6dc50e',1,'proofps_dd::Player']]],
+  ['fobjwidth_10',['fObjWidth',['../classproofps__dd_1_1_player.html#a804315a68d3fe03662b7eafd15f13e82',1,'proofps_dd::Player']]],
+  ['foregroundblocks_11',['foregroundBlocks',['../classproofps__dd_1_1_maps.html#a8ed420318a444e5b0f6726180452dc4c',1,'proofps_dd::Maps']]],
+  ['fsomersaultgroundimpactforcex_12',['fSomersaultGroundImpactForceX',['../classproofps__dd_1_1_player.html#ac79b040589c62f1bbd745cd5adcc54e2',1,'proofps_dd::Player']]],
+  ['fsomersaultmidairjumpforcemultiplierdef_13',['fSomersaultMidAirJumpForceMultiplierDef',['../classproofps__dd_1_1_player.html#a454fd5c68d8a4e2b2c7609b82b57363a',1,'proofps_dd::Player']]],
+  ['fsomersaultmidairjumpforcemultipliermax_14',['fSomersaultMidAirJumpForceMultiplierMax',['../classproofps__dd_1_1_player.html#a49622db3f2aabfa19369ce2757fe0276',1,'proofps_dd::Player']]],
+  ['fsomersaultmidairjumpforcemultipliermin_15',['fSomersaultMidAirJumpForceMultiplierMin',['../classproofps__dd_1_1_player.html#a07b9ba7b6487b109d3b9644888dc3d17',1,'proofps_dd::Player']]]
+];
