@@ -42,7 +42,7 @@ var searchData=
   ['config_39',['Config',['../classproofps__dd_1_1_config.html#a3ce03c696c2f28489e88e8c7f177dcc1',1,'proofps_dd::Config::Config(PGE &amp;pge, proofps_dd::Maps &amp;maps)'],['../classproofps__dd_1_1_config.html#a420b0c0367cc68da449eedfbd9049cee',1,'proofps_dd::Config::Config(const Config &amp;)=delete'],['../classproofps__dd_1_1_config.html#a777a6f3a89a9b2f7dfa4a81f9bdeb30c',1,'proofps_dd::Config::Config(Config &amp;&amp;)=delete']]],
   ['connect_40',['connect',['../classproofps__dd_1_1_p_roo_f_p_sdd_p_g_e.html#a6b7bc9b080c7200d431b39265f2f80fb',1,'proofps_dd::PRooFPSddPGE']]],
   ['createandgetproofpsddpgeinstance_41',['createAndGetPRooFPSddPGEinstance',['../classproofps__dd_1_1_p_roo_f_p_sdd_p_g_e.html#a49d78628c335450386007f77a11d65ff',1,'proofps_dd::PRooFPSddPGE']]],
-  ['createexplosionclient_42',['createExplosionClient',['../classproofps__dd_1_1_weapon_handling.html#a4cedf1161eb276cae6bd6dd95fc0e298',1,'proofps_dd::WeaponHandling']]],
-  ['createexplosionserver_43',['createExplosionServer',['../classproofps__dd_1_1_weapon_handling.html#a15ee19c1a1a7c4e4952d2babc4a16ca7',1,'proofps_dd::WeaponHandling']]],
+  ['createexplosionclient_42',['createExplosionClient',['../classproofps__dd_1_1_weapon_handling.html#a7fd7fc472b7348ac3742ed87066f38ec',1,'proofps_dd::WeaponHandling']]],
+  ['createexplosionserver_43',['createExplosionServer',['../classproofps__dd_1_1_weapon_handling.html#aa80bf5e91d854193d9034993b797d77a',1,'proofps_dd::WeaponHandling']]],
   ['creategamemode_44',['createGameMode',['../classproofps__dd_1_1_game_mode.html#a25fe566beef209be9c75b8005237921e',1,'proofps_dd::GameMode']]]
 ];

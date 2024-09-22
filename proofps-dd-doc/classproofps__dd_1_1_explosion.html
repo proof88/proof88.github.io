@@ -157,8 +157,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac8fbf643b7ab3ad9b1c6c8c785bf6c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa54ebdf1dd9c95101f089956f97adc73" id="r_aa54ebdf1dd9c95101f089956f97adc73"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54ebdf1dd9c95101f089956f97adc73">getDamageAreaSize</a> () const</td></tr>
 <tr class="separator:aa54ebdf1dd9c95101f089956f97adc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f60f2d59a0bf13048fbd5ab1f5c36b0" id="r_a1f60f2d59a0bf13048fbd5ab1f5c36b0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f60f2d59a0bf13048fbd5ab1f5c36b0">getDamageAtDistance</a> (const float &amp;fDistance, const int &amp;nDamage) const</td></tr>
-<tr class="separator:a1f60f2d59a0bf13048fbd5ab1f5c36b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0c37a322afe7832c9cc3519db7f396" id="r_abe0c37a322afe7832c9cc3519db7f396"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe0c37a322afe7832c9cc3519db7f396">getDamageAtDistance</a> (const float &amp;fDistance, const Bullet::DamageAreaEffect &amp;eDamageAreaEffect, const int &amp;nDamage) const</td></tr>
+<tr class="separator:abe0c37a322afe7832c9cc3519db7f396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346b263b528422d5da35708ad24f22fe" id="r_a346b263b528422d5da35708ad24f22fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346b263b528422d5da35708ad24f22fe">shouldBeDeleted</a> () const</td></tr>
 <tr class="separator:a346b263b528422d5da35708ad24f22fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -420,8 +420,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f60f2d59a0bf13048fbd5ab1f5c36b0" name="a1f60f2d59a0bf13048fbd5ab1f5c36b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f60f2d59a0bf13048fbd5ab1f5c36b0">&#9670;&#160;</a></span>getDamageAtDistance()</h2>
+<a id="abe0c37a322afe7832c9cc3519db7f396" name="abe0c37a322afe7832c9cc3519db7f396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe0c37a322afe7832c9cc3519db7f396">&#9670;&#160;</a></span>getDamageAtDistance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,6 +430,11 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">float proofps_dd::Explosion::getDamageAtDistance </td>
           <td>(</td>
           <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>fDistance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Bullet::DamageAreaEffect &amp;</td>          <td class="paramname"><span class="paramname"><em>eDamageAreaEffect</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -720,7 +725,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8cpp_source.html#l00329">329</a> of file <a class="el" href="_explosion_8cpp_source.html">Explosion.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8cpp_source.html#l00335">335</a> of file <a class="el" href="_explosion_8cpp_source.html">Explosion.cpp</a>.</p>
 
 </div>
 </div>
@@ -767,7 +772,7 @@ Static Private Attributes</h2></td></tr>
 <p>Server should send update to clients about creation of new explosions. </p>
 <p>By default false. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00095">95</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00096">96</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +799,7 @@ Static Private Attributes</h2></td></tr>
 <p>Owner (caused by) of this explosion. </p>
 <p>Used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00088">88</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00089">89</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +826,7 @@ Static Private Attributes</h2></td></tr>
 <p>Originating bullet's fDamageAreaSize. </p>
 <p>Used by PGE server and client instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00089">89</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00090">90</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -847,7 +852,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>To be increased during animation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00093">93</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00094">94</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -873,7 +878,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>To be increased during animation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00094">94</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00095">95</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -897,7 +902,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00087">87</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00088">88</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -924,7 +929,7 @@ Static Private Attributes</h2></td></tr>
 <p>Next unique explosion id for identifying. </p>
 <p>Used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00083">83</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00084">84</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +956,7 @@ Static Private Attributes</h2></td></tr>
 <p>Unique explosion id for identifying. </p>
 <p>Used by PGE server and client instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00086">86</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00087">87</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +983,7 @@ Static Private Attributes</h2></td></tr>
 <p>Associated Primary Pure object to be rendered. </p>
 <p>Used by PGE server and client instances. TODO: shared ptr. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00091">91</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00092">92</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1010,7 @@ Static Private Attributes</h2></td></tr>
 <p>Associated Secondary Pure object to be rendered. </p>
 <p>Used by PGE server and client instances. TODO: shared ptr. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00092">92</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00093">93</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1034,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00084">84</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explosion_8h_source.html#l00085">85</a> of file <a class="el" href="_explosion_8h_source.html">Explosion.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1048,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceproofps__dd.html">proofps_dd</a></li><li class="navelem"><a class="el" href="classproofps__dd_1_1_explosion.html">Explosion</a></li>
-    <li class="footer">Generated on Fri Sep 20 2024 01:53:43 for PRooFPS-dd Dev Doc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Mon Sep 23 2024 00:28:06 for PRooFPS-dd Dev Doc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

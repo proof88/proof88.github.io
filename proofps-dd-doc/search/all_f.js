@@ -28,6 +28,7 @@ var searchData=
   ['fsomersaultmidairjumpforcemultipliermax_25',['fSomersaultMidAirJumpForceMultiplierMax',['../classproofps__dd_1_1_player.html#a49622db3f2aabfa19369ce2757fe0276',1,'proofps_dd::Player']]],
   ['fsomersaultmidairjumpforcemultipliermin_26',['fSomersaultMidAirJumpForceMultiplierMin',['../classproofps__dd_1_1_player.html#a07b9ba7b6487b109d3b9644888dc3d17',1,'proofps_dd::Player']]],
   ['fun_27',['Pump Fun',['../crypto.html#whatbuy_degen_pumpfun',1,'']]],
-  ['function_28',['Detailed Packet Rate per Function',['../networking.html#detailed_packet_rate',1,'']]],
-  ['future_20improvement_20plans_29',['Future Improvement Plans',['../networking.html#future_plans_client',1,'Client Future Improvement Plans'],['../networking.html#future_plans',1,'Future Improvement Plans'],['../networking.html#future_plans_server',1,'Server Future Improvement Plans']]]
+  ['fun_20scams_28',['Pump Fun Scams',['../crypto.html#scams_pumpfun',1,'']]],
+  ['function_29',['Detailed Packet Rate per Function',['../networking.html#detailed_packet_rate',1,'']]],
+  ['future_20improvement_20plans_30',['Future Improvement Plans',['../networking.html#future_plans_client',1,'Client Future Improvement Plans'],['../networking.html#future_plans',1,'Future Improvement Plans'],['../networking.html#future_plans_server',1,'Server Future Improvement Plans']]]
 ];

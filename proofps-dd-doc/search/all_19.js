@@ -53,5 +53,6 @@ var searchData=
   ['pseudocode_50',['Old and New Behavior Pseudocode',['../networking.html#new_behavior_overview',1,'']]],
   ['pump_51',['Sun Pump',['../crypto.html#whatbuy_degen_sunpump',1,'']]],
   ['pump_20fun_52',['Pump Fun',['../crypto.html#whatbuy_degen_pumpfun',1,'']]],
-  ['pump_20signal_53',['Pump Signal',['../crypto.html#scams_pump_signal',1,'']]]
+  ['pump_20fun_20scams_53',['Pump Fun Scams',['../crypto.html#scams_pumpfun',1,'']]],
+  ['pump_20signal_20scam_54',['Pump Signal Scam',['../crypto.html#scams_pump_signal',1,'']]]
 ];

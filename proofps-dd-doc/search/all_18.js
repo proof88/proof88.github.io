@@ -1,7 +1,7 @@
 var searchData=
 [
   ['oct_2013_202023_0',['v0.1.4 Private Beta (Oct 13, 2023)',['../md__c_1_2_____p_r00_f_____2______developing_______2projects_2_p_roo_f_p_s-dd_2_h_i_s_t_o_r_y.html#v014-private-beta-oct-13-2023',1,'']]],
-  ['of_20arbitrage_1',['Alleged Exploit of Arbitrage',['../crypto.html#scams_arbitrage',1,'']]],
+  ['of_20arbitrage_20scam_1',['Alleged Exploit of Arbitrage Scam',['../crypto.html#scams_arbitrage',1,'']]],
   ['old_20and_20new_20behavior_20pseudocode_2',['Old and New Behavior Pseudocode',['../networking.html#new_behavior_overview',1,'']]],
   ['oldnewvaluename_3',['OldNewValueName',['../classproofps__dd_1_1_player.html#a0817eec14b9e1d9998d66dc2930ca9ca',1,'proofps_dd::Player']]],
   ['ongamedestroying_4',['onGameDestroying',['../classproofps__dd_1_1_p_roo_f_p_sdd_p_g_e.html#adea3b4fe7f7560901898f01cda57c363',1,'proofps_dd::PRooFPSddPGE']]],

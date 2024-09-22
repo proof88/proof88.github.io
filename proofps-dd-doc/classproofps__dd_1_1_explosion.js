@@ -7,7 +7,7 @@ var classproofps__dd_1_1_explosion =
     [ "~Explosion", "classproofps__dd_1_1_explosion.html#a73b2cbf98255fee32bc484d7e609a5ac", null ],
     [ "getConsole", "classproofps__dd_1_1_explosion.html#a8bf391f0adae2497d11b82ed653a1537", null ],
     [ "getDamageAreaSize", "classproofps__dd_1_1_explosion.html#aa54ebdf1dd9c95101f089956f97adc73", null ],
-    [ "getDamageAtDistance", "classproofps__dd_1_1_explosion.html#a1f60f2d59a0bf13048fbd5ab1f5c36b0", null ],
+    [ "getDamageAtDistance", "classproofps__dd_1_1_explosion.html#abe0c37a322afe7832c9cc3519db7f396", null ],
     [ "getId", "classproofps__dd_1_1_explosion.html#afeb772f4eddcb1a84e240cc03fdc16f8", null ],
     [ "getOwner", "classproofps__dd_1_1_explosion.html#a9fef1ba9bbf2989430aed12415c57d4f", null ],
     [ "getPrimaryObject3D", "classproofps__dd_1_1_explosion.html#abf07f75f2bdb5f5772ae16e6bae8ec97", null ],

@@ -117,8 +117,8 @@ $(function(){initNavTree('structproofps__dd_1_1_msg_bullet_update_from_server.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab27355e4ed44a46c40ae1c76ee8ac727" id="r_ab27355e4ed44a46c40ae1c76ee8ac727"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab27355e4ed44a46c40ae1c76ee8ac727">initPkt</a> (pge_network::PgePacket &amp;pkt, const pge_network::PgeNetworkConnectionHandle &amp;connHandleServerSide, const Bullet::BulletId bulletId, const TPureFloat px, const TPureFloat py, const TPureFloat pz, const TPureFloat ax, const TPureFloat ay, const TPureFloat az, const TPureFloat sx, const TPureFloat sy, const TPureFloat sz, const TPureFloat speed, const TPureFloat gravity, const TPureFloat drag, const int &amp;nDamageHp, const TPureFloat &amp;damageAreaSize, const TPureFloat &amp;damageAreaPulse)</td></tr>
-<tr class="separator:ab27355e4ed44a46c40ae1c76ee8ac727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b50c8e3968e16c2180f7041eba4b9b" id="r_a98b50c8e3968e16c2180f7041eba4b9b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98b50c8e3968e16c2180f7041eba4b9b">initPkt</a> (pge_network::PgePacket &amp;pkt, const pge_network::PgeNetworkConnectionHandle &amp;connHandleServerSide, const Bullet::BulletId bulletId, const TPureFloat px, const TPureFloat py, const TPureFloat pz, const TPureFloat ax, const TPureFloat ay, const TPureFloat az, const TPureFloat sx, const TPureFloat sy, const TPureFloat sz, const TPureFloat speed, const TPureFloat gravity, const TPureFloat drag, const int &amp;nDamageHp, const TPureFloat &amp;damageAreaSize, const Bullet::DamageAreaEffect &amp;damageAreaEffect, const TPureFloat &amp;damageAreaPulse)</td></tr>
+<tr class="separator:a98b50c8e3968e16c2180f7041eba4b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea81637450e4c7b59a01427e6c451157" id="r_aea81637450e4c7b59a01427e6c451157"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea81637450e4c7b59a01427e6c451157">initPktForDeleting_WithGarbageValues</a> (pge_network::PgePacket &amp;pkt, const pge_network::PgeNetworkConnectionHandle &amp;connHandleServerSide, const Bullet::BulletId bulletId, const TPureFloat px, const TPureFloat py, const TPureFloat pz)</td></tr>
 <tr class="separator:aea81637450e4c7b59a01427e6c451157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5189e5dc275dc6273b87f08ca7955f74" id="r_a5189e5dc275dc6273b87f08ca7955f74"><td class="memItemLeft" align="right" valign="top">static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5189e5dc275dc6273b87f08ca7955f74">getDelete</a> (pge_network::PgePacket &amp;pkt)</td></tr>
@@ -144,6 +144,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9a5d14dd2dc5af68ac7721f2abce0f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8aad27652c7d42fdb6d0d8117fa7baa" id="r_ab8aad27652c7d42fdb6d0d8117fa7baa"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8aad27652c7d42fdb6d0d8117fa7baa">m_fDamageAreaSize</a></td></tr>
 <tr class="separator:ab8aad27652c7d42fdb6d0d8117fa7baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19fb2572b276e1335d0fd41a1d97a1b" id="r_ae19fb2572b276e1335d0fd41a1d97a1b"><td class="memItemLeft" align="right" valign="top">Bullet::DamageAreaEffect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae19fb2572b276e1335d0fd41a1d97a1b">m_eDamageAreaEffect</a></td></tr>
+<tr class="separator:ae19fb2572b276e1335d0fd41a1d97a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1dbacc2c8bc9164481dd373b332a3c9" id="r_af1dbacc2c8bc9164481dd373b332a3c9"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1dbacc2c8bc9164481dd373b332a3c9">m_fDamageAreaPulse</a></td></tr>
 <tr class="separator:af1dbacc2c8bc9164481dd373b332a3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9d27f66e407dd5483daa9c105b3a5c" id="r_a8b9d27f66e407dd5483daa9c105b3a5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9d27f66e407dd5483daa9c105b3a5c">m_bDelete</a></td></tr>
@@ -178,12 +180,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00769">769</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00771">771</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
-<a id="ab27355e4ed44a46c40ae1c76ee8ac727" name="ab27355e4ed44a46c40ae1c76ee8ac727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab27355e4ed44a46c40ae1c76ee8ac727">&#9670;&#160;</a></span>initPkt()</h2>
+<a id="a98b50c8e3968e16c2180f7041eba4b9b" name="a98b50c8e3968e16c2180f7041eba4b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b50c8e3968e16c2180f7041eba4b9b">&#9670;&#160;</a></span>initPkt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,6 +281,11 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const Bullet::DamageAreaEffect &amp;</td>          <td class="paramname"><span class="paramname"><em>damageAreaEffect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const TPureFloat &amp;</td>          <td class="paramname"><span class="paramname"><em>damageAreaPulse</em></span>&#160;)</td>
         </tr>
       </table>
@@ -340,7 +347,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00738">738</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00740">740</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +388,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00778">778</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00780">780</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +404,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00786">786</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00789">789</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +420,23 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00776">776</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00778">778</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+
+</div>
+</div>
+<a id="ae19fb2572b276e1335d0fd41a1d97a1b" name="ae19fb2572b276e1335d0fd41a1d97a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19fb2572b276e1335d0fd41a1d97a1b">&#9670;&#160;</a></span>m_eDamageAreaEffect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bullet::DamageAreaEffect proofps_dd::MsgBulletUpdateFromServer::m_eDamageAreaEffect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00787">787</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +452,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00785">785</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00788">788</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +468,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00784">784</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00786">786</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +484,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00782">782</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00784">784</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +500,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00781">781</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00783">783</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +516,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00780">780</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00782">782</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +532,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00783">783</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00785">785</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -525,7 +548,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00777">777</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00779">779</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +564,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00779">779</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html#l00781">781</a> of file <a class="el" href="_p_roo_f_p_s-dd-packet_8h_source.html">PRooFPS-dd-packet.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +577,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceproofps__dd.html">proofps_dd</a></li><li class="navelem"><a class="el" href="structproofps__dd_1_1_msg_bullet_update_from_server.html">MsgBulletUpdateFromServer</a></li>
-    <li class="footer">Generated on Fri Sep 20 2024 01:53:43 for PRooFPS-dd Dev Doc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Mon Sep 23 2024 00:28:06 for PRooFPS-dd Dev Doc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

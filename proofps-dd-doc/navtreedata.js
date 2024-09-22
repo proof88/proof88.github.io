@@ -84,11 +84,12 @@ var NAVTREE =
         ] ],
         [ "Memes", "crypto.html#memes", null ],
         [ "Scams", "crypto.html#scams", [
-          [ "Copycat", "crypto.html#scams_copycat", null ],
-          [ "Honeypot", "crypto.html#scams_honeypot", null ],
-          [ "Alleged Exploit of Arbitrage", "crypto.html#scams_arbitrage", null ],
-          [ "Bundled Wallets", "crypto.html#scams_pumpfun_bundle", null ],
-          [ "Pump Signal", "crypto.html#scams_pump_signal", null ]
+          [ "Copycat Scam", "crypto.html#scams_copycat", null ],
+          [ "Honeypot Scam", "crypto.html#scams_honeypot", null ],
+          [ "Elon Musk Crypto Giveaway Scam", "crypto.html#scams_elonmuskgiveaway", null ],
+          [ "Pump Fun Scams", "crypto.html#scams_pumpfun", null ],
+          [ "Alleged Exploit of Arbitrage Scam", "crypto.html#scams_arbitrage", null ],
+          [ "Pump Signal Scam", "crypto.html#scams_pump_signal", null ]
         ] ],
         [ "Websites", "crypto.html#websites", null ],
         [ "Videos", "crypto.html#videos", null ],
@@ -158,14 +159,14 @@ var NAVTREEINDEX =
 "_camera_handling_8cpp.html",
 "class_map_item_test.html",
 "classproofps__dd_1_1_camera_handling.html#a324a797c28e820d17d29492763b6f88d",
-"classproofps__dd_1_1_explosion.html#a7c4831f2db234afa394ba99ddf439cc9",
+"classproofps__dd_1_1_explosion.html#a8bf391f0adae2497d11b82ed653a1537",
 "classproofps__dd_1_1_map_item.html",
 "classproofps__dd_1_1_maps.html#a895787d083d5ed0552887d8d870000d0",
 "classproofps__dd_1_1_physics.html#a790339d1697d534c12e5250c4e9542de",
 "classproofps__dd_1_1_player.html#a85f6c535132254cbb51b8e68aa5fc4fa",
 "classproofps__dd_1_1_weapon_handling.html",
-"functions_func_f.html",
-"structproofps__dd_1_1_msg_death_notification_from_server.html"
+"functions_func_e.html",
+"structproofps__dd_1_1_msg_current_wpn_update_from_server.html#a01a9d63bf30ee237b73c109e8cdd15a1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

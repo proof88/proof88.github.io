@@ -39,7 +39,7 @@ var searchData=
   ['hints_36',['Random Hints',['../crypto.html#whatbuy_degen_general',1,'']]],
   ['history_37',['PRooFPS-dd Version History',['../md__c_1_2_____p_r00_f_____2______developing_______2projects_2_p_roo_f_p_s-dd_2_h_i_s_t_o_r_y.html',1,'']]],
   ['history_2emd_38',['HISTORY.md',['../_h_i_s_t_o_r_y_8md.html',1,'']]],
-  ['honeypot_39',['Honeypot',['../crypto.html#scams_honeypot',1,'']]],
+  ['honeypot_20scam_39',['Honeypot Scam',['../crypto.html#scams_honeypot',1,'']]],
   ['horizontal_40',['Horizontal',['../classproofps__dd_1_1_event_lister.html#ac80b69bd73b3f5d4288eacc06e1fa7d8ac1b5fa03ecdb95d4a45dd1c40b02527f',1,'proofps_dd::EventLister']]],
   ['how_20much_20to_20buy_41',['How Much to Buy?',['../crypto.html#howmuch',1,'']]],
   ['how_20to_20get_20a_20crypto_20wallet_42',['How to Get a Crypto Wallet?',['../crypto.html#wallet',1,'']]],

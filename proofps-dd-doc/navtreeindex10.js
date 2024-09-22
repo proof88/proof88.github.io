@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"structproofps__dd_1_1_msg_current_wpn_update_from_server.html#a01a9d63bf30ee237b73c109e8cdd15a1":[5,0,0,17,0],
+"structproofps__dd_1_1_msg_current_wpn_update_from_server.html#a86d63644bf9dcb7f7f035065d6d34607":[4,0,1,17,1],
+"structproofps__dd_1_1_msg_current_wpn_update_from_server.html#a86d63644bf9dcb7f7f035065d6d34607":[5,0,0,17,1],
 "structproofps__dd_1_1_msg_death_notification_from_server.html":[4,0,1,18],
 "structproofps__dd_1_1_msg_death_notification_from_server.html":[5,0,0,18],
 "structproofps__dd_1_1_msg_death_notification_from_server.html#a45c806f698b421471b9111053d161063":[4,0,1,18,0],

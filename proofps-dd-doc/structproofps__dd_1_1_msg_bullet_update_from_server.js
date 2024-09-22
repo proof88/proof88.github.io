@@ -3,6 +3,7 @@ var structproofps__dd_1_1_msg_bullet_update_from_server =
     [ "m_angle", "structproofps__dd_1_1_msg_bullet_update_from_server.html#a219714178ecea7e69f26878a2de074a3", null ],
     [ "m_bDelete", "structproofps__dd_1_1_msg_bullet_update_from_server.html#a8b9d27f66e407dd5483daa9c105b3a5c", null ],
     [ "m_bulletId", "structproofps__dd_1_1_msg_bullet_update_from_server.html#af36d249f6a9a91ba9282bd6ec6d92262", null ],
+    [ "m_eDamageAreaEffect", "structproofps__dd_1_1_msg_bullet_update_from_server.html#ae19fb2572b276e1335d0fd41a1d97a1b", null ],
     [ "m_fDamageAreaPulse", "structproofps__dd_1_1_msg_bullet_update_from_server.html#af1dbacc2c8bc9164481dd373b332a3c9", null ],
     [ "m_fDamageAreaSize", "structproofps__dd_1_1_msg_bullet_update_from_server.html#ab8aad27652c7d42fdb6d0d8117fa7baa", null ],
     [ "m_fDrag", "structproofps__dd_1_1_msg_bullet_update_from_server.html#a2dec1f2a6f028eb2090a41bc319fb7f8", null ],

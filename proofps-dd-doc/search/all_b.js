@@ -26,9 +26,8 @@ var searchData=
   ['bringwindowtofront_23',['bringWindowToFront',['../namespaceinput__sim__test.html#a0f7e3fd2d92bc378af45d5850c7de4c7',1,'input_sim_test']]],
   ['buildplayerobject_24',['BuildPlayerObject',['../classproofps__dd_1_1_player.html#ada110f48c005602128bf071dfd49a8d3',1,'proofps_dd::Player']]],
   ['bulletupdatefromserver_25',['BulletUpdateFromServer',['../namespaceproofps__dd.html#a96a3915146cf62d3074c91a6eae5f880ad514f75efd95927f4893a9c4778f46f0',1,'proofps_dd']]],
-  ['bundled_20wallets_26',['Bundled Wallets',['../crypto.html#scams_pumpfun_bundle',1,'']]],
-  ['but_20where_20can_20i_20buy_20it_27',['I Know which Coin to Buy, but Where can I Buy it?',['../crypto.html#wherecoin',1,'']]],
-  ['buy_28',['Buy',['../crypto.html#howmuch',1,'How Much to Buy?'],['../crypto.html#whatbuy',1,'What to Buy?'],['../crypto.html#whenbuy',1,'When Buy?'],['../crypto.html#wherebuy',1,'Where to Buy?'],['../crypto.html#whybuy',1,'Why Buy?']]],
-  ['buy_20but_20where_20can_20i_20buy_20it_29',['I Know which Coin to Buy, but Where can I Buy it?',['../crypto.html#wherecoin',1,'']]],
-  ['buy_20it_30',['I Know which Coin to Buy, but Where can I Buy it?',['../crypto.html#wherecoin',1,'']]]
+  ['but_20where_20can_20i_20buy_20it_26',['I Know which Coin to Buy, but Where can I Buy it?',['../crypto.html#wherecoin',1,'']]],
+  ['buy_27',['Buy',['../crypto.html#howmuch',1,'How Much to Buy?'],['../crypto.html#whatbuy',1,'What to Buy?'],['../crypto.html#whenbuy',1,'When Buy?'],['../crypto.html#wherebuy',1,'Where to Buy?'],['../crypto.html#whybuy',1,'Why Buy?']]],
+  ['buy_20but_20where_20can_20i_20buy_20it_28',['I Know which Coin to Buy, but Where can I Buy it?',['../crypto.html#wherecoin',1,'']]],
+  ['buy_20it_29',['I Know which Coin to Buy, but Where can I Buy it?',['../crypto.html#wherecoin',1,'']]]
 ];
