@@ -103,6 +103,7 @@ $(function(){initNavTree('class_bullet.html',''); initResizable(true); });
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">Bullet Class Reference</div></div>
@@ -114,32 +115,64 @@ $(function(){initNavTree('class_bullet.html',''); initResizable(true); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> class for PR00F's Game Engine <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> Manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00031">31</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00034">34</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Bullet:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="class_bullet.png" usemap="#Bullet_map" alt=""/>
+  <map id="Bullet_map" name="Bullet_map">
+<area href="class_pooled_bullet.html" title="Pooled Bullet class to be used with PgeObjectPool." alt="PooledBullet" shape="rect" coords="0,56,82,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a315bad3af1d8cf33898ca447f5030186" id="r_a315bad3af1d8cf33898ca447f5030186"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> { <a class="el" href="#a315bad3af1d8cf33898ca447f5030186a71d06e609117b42aee8f2fdae535c1b3">None</a>
+, <a class="el" href="#a315bad3af1d8cf33898ca447f5030186a4304b4be730fe8d9960f501e7676da00">Smoke</a>
+ }</td></tr>
+<tr class="separator:a315bad3af1d8cf33898ca447f5030186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb7c5b2ef0424b11c0837e5102889ac" id="r_a9fb7c5b2ef0424b11c0837e5102889ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> { <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889aca09e6b9c130e6cb4096f87904ce1c690d">Constant</a>
+, <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889aca4488adcc25697499f7b0945c6dd4d23f">Linear</a>
+ }</td></tr>
+<tr class="separator:a9fb7c5b2ef0424b11c0837e5102889ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a167f3c38226d99a917c04dc5c1ffed" id="r_a5a167f3c38226d99a917c04dc5c1ffed"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">BulletId</a></td></tr>
 <tr class="separator:a5a167f3c38226d99a917c04dc5c1ffed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e38d292001c6400240b4d6b1481bfdd" id="r_a0e38d292001c6400240b4d6b1481bfdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e38d292001c6400240b4d6b1481bfdd">Bullet</a> (PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, TPureBool fragile, int nDamageAp, int nDamageHp, TPureFloat fDamageAreaSize, TPureFloat fDamageAreaPulse)</td></tr>
-<tr class="memdesc:a0e38d292001c6400240b4d6b1481bfdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor to be used by PGE server instance: bullet id will be assigned within the ctor.  <br /></td></tr>
-<tr class="separator:a0e38d292001c6400240b4d6b1481bfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8705208da90764818c66d85838b8171" id="r_ae8705208da90764818c66d85838b8171"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8705208da90764818c66d85838b8171">Bullet</a> (PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">Bullet::BulletId</a> id, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, int nDamageHp, const TPureFloat &amp;fDamageAreaSize, const TPureFloat &amp;fDamageAreaPulse)</td></tr>
-<tr class="memdesc:ae8705208da90764818c66d85838b8171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor to be used by PGE client instance: bullet id as received from server.  <br /></td></tr>
-<tr class="separator:ae8705208da90764818c66d85838b8171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ac13f07a67e02c16dbd1e1b37d761c" id="r_ad2ac13f07a67e02c16dbd1e1b37d761c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2ac13f07a67e02c16dbd1e1b37d761c">Bullet</a> (const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;wpnId, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, bool visible, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, TPureBool fragile, TPureFloat fDistMax, const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;particleType, int nDamageAp, int nDamageHp, TPureFloat fDamageAreaSize, const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;eDamageAreaEffect, TPureFloat fDamageAreaPulse)</td></tr>
+<tr class="memdesc:ad2ac13f07a67e02c16dbd1e1b37d761c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor to be used by PGE server instance.  <br /></td></tr>
+<tr class="separator:ad2ac13f07a67e02c16dbd1e1b37d761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc68fbdab35d76f14a3fd24956542ac0" id="r_abc68fbdab35d76f14a3fd24956542ac0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc68fbdab35d76f14a3fd24956542ac0">Bullet</a> (const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;wpnId, PR00FsUltimateRenderingEngine &amp;gfx, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, bool visible, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;particleType, int nDamageHp, const TPureFloat &amp;fDamageAreaSize, const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;eDamageAreaEffect, const TPureFloat &amp;fDamageAreaPulse)</td></tr>
+<tr class="memdesc:abc68fbdab35d76f14a3fd24956542ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor to be used by PGE client instance.  <br /></td></tr>
+<tr class="separator:abc68fbdab35d76f14a3fd24956542ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeb5cb41d7db89f49007b08b41f1bfcf" id="r_aaeb5cb41d7db89f49007b08b41f1bfcf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeb5cb41d7db89f49007b08b41f1bfcf">~Bullet</a> ()</td></tr>
+<tr class="memdesc:aaeb5cb41d7db89f49007b08b41f1bfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">User is expected to explicitly call <a class="el" href="#a45d08fab1affe28a5a77269c88b8f530">Bullet::destroyReferenceObject()</a> after they freed up all <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> instances.  <br /></td></tr>
 <tr class="separator:aaeb5cb41d7db89f49007b08b41f1bfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1d08efc06ace2cde7c7d1f78f47b7e" id="r_aae1d08efc06ace2cde7c7d1f78f47b7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1d08efc06ace2cde7c7d1f78f47b7e">Bullet</a> (const <a class="el" href="class_bullet.html">Bullet</a> &amp;)=delete</td></tr>
+<tr class="separator:aae1d08efc06ace2cde7c7d1f78f47b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0fbdfbbb642f07af917b2822ed7f17" id="r_a0d0fbdfbbb642f07af917b2822ed7f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet.html">Bullet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d0fbdfbbb642f07af917b2822ed7f17">operator=</a> (const <a class="el" href="class_bullet.html">Bullet</a> &amp;)=delete</td></tr>
+<tr class="separator:a0d0fbdfbbb642f07af917b2822ed7f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10e401d2c773a0768dc759387e905e3" id="r_ad10e401d2c773a0768dc759387e905e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad10e401d2c773a0768dc759387e905e3">Bullet</a> (<a class="el" href="class_bullet.html">Bullet</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:ad10e401d2c773a0768dc759387e905e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a44adf054946a83c79089ed7a47812" id="r_a31a44adf054946a83c79089ed7a47812"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet.html">Bullet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31a44adf054946a83c79089ed7a47812">operator=</a> (<a class="el" href="class_bullet.html">Bullet</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a31a44adf054946a83c79089ed7a47812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad81871330a6c04401b79a3a7245c059" id="r_aad81871330a6c04401b79a3a7245c059"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad81871330a6c04401b79a3a7245c059">getConsole</a> () const</td></tr>
 <tr class="memdesc:aad81871330a6c04401b79a3a7245c059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns access to console preset with logger module name as this class.  <br /></td></tr>
 <tr class="separator:aad81871330a6c04401b79a3a7245c059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7d50e040eee9384029f7e7d63ed662" id="r_aaf7d50e040eee9384029f7e7d63ed662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">BulletId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf7d50e040eee9384029f7e7d63ed662">getId</a> () const</td></tr>
 <tr class="separator:aaf7d50e040eee9384029f7e7d63ed662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20c47029c17a7d60f302bfeabb7cf80" id="r_ac20c47029c17a7d60f302bfeabb7cf80"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac20c47029c17a7d60f302bfeabb7cf80">getWeaponId</a> () const</td></tr>
+<tr class="separator:ac20c47029c17a7d60f302bfeabb7cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c5224af4a9eabec994e706dbb80003" id="r_aa8c5224af4a9eabec994e706dbb80003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8c5224af4a9eabec994e706dbb80003">getOwner</a> () const</td></tr>
 <tr class="separator:aa8c5224af4a9eabec994e706dbb80003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166c203fc19cebe10ef3057538a1b686" id="r_a166c203fc19cebe10ef3057538a1b686"><td class="memItemLeft" align="right" valign="top">const PurePosUpTarget &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a166c203fc19cebe10ef3057538a1b686">getPut</a> () const</td></tr>
+<tr class="separator:a166c203fc19cebe10ef3057538a1b686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1e92ca694bcfcd6547670fd74fd31eb" id="r_af1e92ca694bcfcd6547670fd74fd31eb"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1e92ca694bcfcd6547670fd74fd31eb">getSpeed</a> () const</td></tr>
 <tr class="separator:af1e92ca694bcfcd6547670fd74fd31eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57bcab1b246ef0fda8f5e6c5228934bc" id="r_a57bcab1b246ef0fda8f5e6c5228934bc"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57bcab1b246ef0fda8f5e6c5228934bc">getGravity</a> () const</td></tr>
@@ -148,6 +181,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b2979a304e32d1c958021443b35b956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9267921940c264d383a1ad27ba2c3bd8" id="r_a9267921940c264d383a1ad27ba2c3bd8"><td class="memItemLeft" align="right" valign="top">TPureBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9267921940c264d383a1ad27ba2c3bd8">isFragile</a> () const</td></tr>
 <tr class="separator:a9267921940c264d383a1ad27ba2c3bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d6152622bcf99db1fa3c33f7da4d2a" id="r_a18d6152622bcf99db1fa3c33f7da4d2a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18d6152622bcf99db1fa3c33f7da4d2a">getParticleType</a> () const</td></tr>
+<tr class="separator:a18d6152622bcf99db1fa3c33f7da4d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6941486f6d64093e1a69821206715c67" id="r_a6941486f6d64093e1a69821206715c67"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6941486f6d64093e1a69821206715c67">getParticleEmitPerNthPhysicsIterationCntr</a> ()</td></tr>
+<tr class="separator:a6941486f6d64093e1a69821206715c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512b4ed89e6ab42625e62cc28d2d2968" id="r_a512b4ed89e6ab42625e62cc28d2d2968"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a512b4ed89e6ab42625e62cc28d2d2968">getParticleEmitPerNthPhysicsIterationCntr</a> () const</td></tr>
+<tr class="separator:a512b4ed89e6ab42625e62cc28d2d2968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9399505eafa794fd3a1c61cdf394abe8" id="r_a9399505eafa794fd3a1c61cdf394abe8"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9399505eafa794fd3a1c61cdf394abe8">getParticlesEmittedTotal</a> ()</td></tr>
+<tr class="separator:a9399505eafa794fd3a1c61cdf394abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c618dfd5488973c539828f9f9140ba6" id="r_a1c618dfd5488973c539828f9f9140ba6"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c618dfd5488973c539828f9f9140ba6">getParticlesEmittedTotal</a> () const</td></tr>
+<tr class="separator:a1c618dfd5488973c539828f9f9140ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c211f75b984549046f59b2575440f89" id="r_a2c211f75b984549046f59b2575440f89"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c211f75b984549046f59b2575440f89">getTravelDistanceMax</a> () const</td></tr>
+<tr class="separator:a2c211f75b984549046f59b2575440f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fffa63a4b978f871a72556b6b6f532f" id="r_a8fffa63a4b978f871a72556b6b6f532f"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fffa63a4b978f871a72556b6b6f532f">getTravelledDistance</a> () const</td></tr>
+<tr class="separator:a8fffa63a4b978f871a72556b6b6f532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802f5780c8b1ed74d89fd2932581975c" id="r_a802f5780c8b1ed74d89fd2932581975c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a802f5780c8b1ed74d89fd2932581975c">getDamageAp</a> () const</td></tr>
 <tr class="memdesc:a802f5780c8b1ed74d89fd2932581975c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum damage to Player AP this bullet can cause.  <br /></td></tr>
 <tr class="separator:a802f5780c8b1ed74d89fd2932581975c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,20 +203,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a509d613c1170f56b6b62ef0e4ca4525a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6822dced53bbd6ede20c70d8fdf48dbb" id="r_a6822dced53bbd6ede20c70d8fdf48dbb"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6822dced53bbd6ede20c70d8fdf48dbb">getAreaDamageSize</a> () const</td></tr>
 <tr class="separator:a6822dced53bbd6ede20c70d8fdf48dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3964fc1d18195282c5e3eb3168ff432c" id="r_a3964fc1d18195282c5e3eb3168ff432c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3964fc1d18195282c5e3eb3168ff432c">getAreaDamageEffect</a> () const</td></tr>
+<tr class="separator:a3964fc1d18195282c5e3eb3168ff432c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a1906d5307412789d3dc6b0eef1278" id="r_a82a1906d5307412789d3dc6b0eef1278"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82a1906d5307412789d3dc6b0eef1278">getAreaDamagePulse</a> () const</td></tr>
 <tr class="separator:a82a1906d5307412789d3dc6b0eef1278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a638d4513e63b25e30d2715ad91d84816" id="r_a638d4513e63b25e30d2715ad91d84816"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a638d4513e63b25e30d2715ad91d84816">isCreateSentToClients</a> ()</td></tr>
 <tr class="separator:a638d4513e63b25e30d2715ad91d84816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf88d4135ce974b44eff93e8ad32398" id="r_aeaf88d4135ce974b44eff93e8ad32398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaf88d4135ce974b44eff93e8ad32398">init</a> (const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;wpnId, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, bool visible, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, TPureBool fragile, TPureFloat fDistMax, const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;particleType, int nDamageAp, int nDamageHp, TPureFloat fDamageAreaSize, const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;eDamageAreaEffect, TPureFloat fDamageAreaPulse)</td></tr>
+<tr class="memdesc:aeaf88d4135ce974b44eff93e8ad32398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init to be used by PGE server instance.  <br /></td></tr>
+<tr class="separator:aeaf88d4135ce974b44eff93e8ad32398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402034c66d4cbe68db45cd1740db037f" id="r_a402034c66d4cbe68db45cd1740db037f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a402034c66d4cbe68db45cd1740db037f">init</a> (const <a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">BulletId</a> &amp;id, const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;wpnId, PR00FsUltimateRenderingEngine &amp;gfx, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, bool visible, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;particleType, int nDamageHp, TPureFloat fDamageAreaSize, const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;eDamageAreaEffect, TPureFloat fDamageAreaPulse)</td></tr>
+<tr class="memdesc:a402034c66d4cbe68db45cd1740db037f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init to be used by PGE client instance.  <br /></td></tr>
+<tr class="separator:a402034c66d4cbe68db45cd1740db037f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d15f8d39b91fbdf6d9185d7f5d8475f" id="r_a8d15f8d39b91fbdf6d9185d7f5d8475f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d15f8d39b91fbdf6d9185d7f5d8475f">Update</a> (const unsigned int &amp;nFactor)</td></tr>
 <tr class="separator:a8d15f8d39b91fbdf6d9185d7f5d8475f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdb7155d9b1c5fcd67363e3ddf94bf1e" id="r_afdb7155d9b1c5fcd67363e3ddf94bf1e"><td class="memItemLeft" align="right" valign="top">PureObject3D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb7155d9b1c5fcd67363e3ddf94bf1e">getObject3D</a> ()</td></tr>
 <tr class="separator:afdb7155d9b1c5fcd67363e3ddf94bf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f03333671185314dff94cad83dab0e2" id="r_a8f03333671185314dff94cad83dab0e2"><td class="memItemLeft" align="right" valign="top">const PureObject3D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f03333671185314dff94cad83dab0e2">getObject3D</a> () const</td></tr>
 <tr class="separator:a8f03333671185314dff94cad83dab0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e8bdfa3fac6c4279bbeeab1fac742f" id="r_a08e8bdfa3fac6c4279bbeeab1fac742f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08e8bdfa3fac6c4279bbeeab1fac742f">Bullet</a> (const <a class="el" href="class_bullet.html">Bullet</a> &amp;other)</td></tr>
-<tr class="separator:a08e8bdfa3fac6c4279bbeeab1fac742f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64caf96ebfd019a6f3b063a6b929e1ca" id="r_a64caf96ebfd019a6f3b063a6b929e1ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet.html">Bullet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64caf96ebfd019a6f3b063a6b929e1ca">operator=</a> (const <a class="el" href="class_bullet.html">Bullet</a> &amp;other)</td></tr>
-<tr class="separator:a64caf96ebfd019a6f3b063a6b929e1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -180,12 +231,22 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad4643b22ca2167ae8d8da9dd3093e710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee882642e25b5bacc4dc84f99e8333b3" id="r_aee882642e25b5bacc4dc84f99e8333b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee882642e25b5bacc4dc84f99e8333b3">resetGlobalBulletId</a> ()</td></tr>
 <tr class="separator:aee882642e25b5bacc4dc84f99e8333b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d08fab1affe28a5a77269c88b8f530" id="r_a45d08fab1affe28a5a77269c88b8f530"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45d08fab1affe28a5a77269c88b8f530">destroyReferenceObject</a> ()</td></tr>
+<tr class="separator:a45d08fab1affe28a5a77269c88b8f530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af657a4a2ca010a0b1b7e811602f39e31" id="r_af657a4a2ca010a0b1b7e811602f39e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af657a4a2ca010a0b1b7e811602f39e31">build3dObject</a> ()</td></tr>
+<tr class="separator:af657a4a2ca010a0b1b7e811602f39e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2e376ff6cab3bcb0f9d4cc2acdc57ee6" id="r_a2e376ff6cab3bcb0f9d4cc2acdc57ee6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">BulletId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e376ff6cab3bcb0f9d4cc2acdc57ee6">m_id</a></td></tr>
 <tr class="memdesc:a2e376ff6cab3bcb0f9d4cc2acdc57ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique bullet id for identifying.  <br /></td></tr>
 <tr class="separator:a2e376ff6cab3bcb0f9d4cc2acdc57ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d14a33b8f609f3bc061ea0ba04bd6c9" id="r_a4d14a33b8f609f3bc061ea0ba04bd6c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d14a33b8f609f3bc061ea0ba04bd6c9">m_wpnId</a></td></tr>
+<tr class="memdesc:a4d14a33b8f609f3bc061ea0ba04bd6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique weapon id.  <br /></td></tr>
+<tr class="separator:a4d14a33b8f609f3bc061ea0ba04bd6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8680f686149edbca15f1838f9a96fe4" id="r_ae8680f686149edbca15f1838f9a96fe4"><td class="memItemLeft" align="right" valign="top">PR00FsUltimateRenderingEngine &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8680f686149edbca15f1838f9a96fe4">m_gfx</a></td></tr>
 <tr class="separator:ae8680f686149edbca15f1838f9a96fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b3018adb42b6203c24f98c105a71275" id="r_a4b3018adb42b6203c24f98c105a71275"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b3018adb42b6203c24f98c105a71275">m_connHandle</a></td></tr>
@@ -206,6 +267,21 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a28c02a143786d388d7d5f16daa45ed4f" id="r_a28c02a143786d388d7d5f16daa45ed4f"><td class="memItemLeft" align="right" valign="top">TPureBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28c02a143786d388d7d5f16daa45ed4f">m_fragile</a></td></tr>
 <tr class="memdesc:a28c02a143786d388d7d5f16daa45ed4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragile flag as defined by weapon file.  <br /></td></tr>
 <tr class="separator:a28c02a143786d388d7d5f16daa45ed4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df98ddc82772782691bf50d57ecd313" id="r_a6df98ddc82772782691bf50d57ecd313"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df98ddc82772782691bf50d57ecd313">m_fDistMax</a></td></tr>
+<tr class="memdesc:a6df98ddc82772782691bf50d57ecd313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max distance as defined by weapon file.  <br /></td></tr>
+<tr class="separator:a6df98ddc82772782691bf50d57ecd313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c448b6d86670457a53cf9d24193a82e" id="r_a9c448b6d86670457a53cf9d24193a82e"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c448b6d86670457a53cf9d24193a82e">m_fDistTravelled</a></td></tr>
+<tr class="memdesc:a9c448b6d86670457a53cf9d24193a82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance travelled so far.  <br /></td></tr>
+<tr class="separator:a9c448b6d86670457a53cf9d24193a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accbdbbd6532f6433077a373b4a9b73b6" id="r_accbdbbd6532f6433077a373b4a9b73b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accbdbbd6532f6433077a373b4a9b73b6">m_particleType</a></td></tr>
+<tr class="memdesc:accbdbbd6532f6433077a373b4a9b73b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted particle type.  <br /></td></tr>
+<tr class="separator:accbdbbd6532f6433077a373b4a9b73b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a23b5325f185a01f88c7888074854e" id="r_af2a23b5325f185a01f88c7888074854e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a23b5325f185a01f88c7888074854e">m_nParticleEmitPerNthPhysicsIterCntr</a></td></tr>
+<tr class="memdesc:af2a23b5325f185a01f88c7888074854e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter to be used by particle emitter logic.  <br /></td></tr>
+<tr class="separator:af2a23b5325f185a01f88c7888074854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5000849f42d39687c449802607a8529" id="r_af5000849f42d39687c449802607a8529"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5000849f42d39687c449802607a8529">m_nParticlesEmittedCurrent</a></td></tr>
+<tr class="memdesc:af5000849f42d39687c449802607a8529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter to be used by particle emitter logic.  <br /></td></tr>
+<tr class="separator:af5000849f42d39687c449802607a8529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af032c9920a34c3f228c8891c58a57298" id="r_af032c9920a34c3f228c8891c58a57298"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af032c9920a34c3f228c8891c58a57298">m_nDamageAp</a></td></tr>
 <tr class="memdesc:af032c9920a34c3f228c8891c58a57298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damage to AP as defined by weapon file.  <br /></td></tr>
 <tr class="separator:af032c9920a34c3f228c8891c58a57298"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +291,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a322e2b4cba75a8c112020744e903ff64" id="r_a322e2b4cba75a8c112020744e903ff64"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a322e2b4cba75a8c112020744e903ff64">m_fDamageAreaSize</a></td></tr>
 <tr class="memdesc:a322e2b4cba75a8c112020744e903ff64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Area damage size as defined by weapon file.  <br /></td></tr>
 <tr class="separator:a322e2b4cba75a8c112020744e903ff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288a29318d818c09addd86b26d713625" id="r_a288a29318d818c09addd86b26d713625"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a288a29318d818c09addd86b26d713625">m_eDamageAreaEffect</a></td></tr>
+<tr class="memdesc:a288a29318d818c09addd86b26d713625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Area damage effect as defined by weapon file.  <br /></td></tr>
+<tr class="separator:a288a29318d818c09addd86b26d713625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22abf51aac224783858bb80a262e6528" id="r_a22abf51aac224783858bb80a262e6528"><td class="memItemLeft" align="right" valign="top">TPureFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22abf51aac224783858bb80a262e6528">m_fDamageAreaPulse</a></td></tr>
 <tr class="memdesc:a22abf51aac224783858bb80a262e6528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Area damage pulse to HP as defined by weapon file.  <br /></td></tr>
 <tr class="separator:a22abf51aac224783858bb80a262e6528"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +309,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a1d61cd6a2d8c724e6e2444008fc7d3b8" id="r_a1d61cd6a2d8c724e6e2444008fc7d3b8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">BulletId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d61cd6a2d8c724e6e2444008fc7d3b8">m_globalBulletId</a> = 0</td></tr>
 <tr class="memdesc:a1d61cd6a2d8c724e6e2444008fc7d3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next unique bullet id for identifying.  <br /></td></tr>
 <tr class="separator:a1d61cd6a2d8c724e6e2444008fc7d3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0096b1db4793e8b17563d02d3367410" id="r_ad0096b1db4793e8b17563d02d3367410"><td class="memItemLeft" align="right" valign="top">static PureObject3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0096b1db4793e8b17563d02d3367410">m_pObjRef</a> = nullptr</td></tr>
+<tr class="memdesc:ad0096b1db4793e8b17563d02d3367410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference object for cloned bullet objects.  <br /></td></tr>
+<tr class="separator:ad0096b1db4793e8b17563d02d3367410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5a167f3c38226d99a917c04dc5c1ffed" name="a5a167f3c38226d99a917c04dc5c1ffed"></a>
@@ -244,13 +326,54 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00042">42</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00058">58</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a9fb7c5b2ef0424b11c0837e5102889ac" name="a9fb7c5b2ef0424b11c0837e5102889ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb7c5b2ef0424b11c0837e5102889ac">&#9670;&#160;</a></span>DamageAreaEffect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">Bullet::DamageAreaEffect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9fb7c5b2ef0424b11c0837e5102889aca09e6b9c130e6cb4096f87904ce1c690d" name="a9fb7c5b2ef0424b11c0837e5102889aca09e6b9c130e6cb4096f87904ce1c690d"></a>Constant&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9fb7c5b2ef0424b11c0837e5102889aca4488adcc25697499f7b0945c6dd4d23f" name="a9fb7c5b2ef0424b11c0837e5102889aca4488adcc25697499f7b0945c6dd4d23f"></a>Linear&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00047">47</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a315bad3af1d8cf33898ca447f5030186" name="a315bad3af1d8cf33898ca447f5030186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315bad3af1d8cf33898ca447f5030186">&#9670;&#160;</a></span>ParticleType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">Bullet::ParticleType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a315bad3af1d8cf33898ca447f5030186a71d06e609117b42aee8f2fdae535c1b3" name="a315bad3af1d8cf33898ca447f5030186a71d06e609117b42aee8f2fdae535c1b3"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a315bad3af1d8cf33898ca447f5030186a4304b4be730fe8d9960f501e7676da00" name="a315bad3af1d8cf33898ca447f5030186a4304b4be730fe8d9960f501e7676da00"></a>Smoke&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00041">41</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0e38d292001c6400240b4d6b1481bfdd" name="a0e38d292001c6400240b4d6b1481bfdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e38d292001c6400240b4d6b1481bfdd">&#9670;&#160;</a></span>Bullet() <span class="overload">[1/3]</span></h2>
+<a id="ad2ac13f07a67e02c16dbd1e1b37d761c" name="ad2ac13f07a67e02c16dbd1e1b37d761c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ac13f07a67e02c16dbd1e1b37d761c">&#9670;&#160;</a></span>Bullet() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,6 +381,11 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Bullet::Bullet </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wpnId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">PR00FsUltimateRenderingEngine &amp;</td>          <td class="paramname"><span class="paramname"><em>gfx</em></span>, </td>
         </tr>
         <tr>
@@ -298,6 +426,11 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sx</em></span>, </td>
         </tr>
         <tr>
@@ -333,6 +466,16 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDistMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>particleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nDamageAp</em></span>, </td>
         </tr>
         <tr>
@@ -348,19 +491,24 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>eDamageAreaEffect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDamageAreaPulse</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ctor to be used by PGE server instance: bullet id will be assigned within the ctor. </p>
+<p>Ctor to be used by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00040">40</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00053">53</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae8705208da90764818c66d85838b8171" name="ae8705208da90764818c66d85838b8171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8705208da90764818c66d85838b8171">&#9670;&#160;</a></span>Bullet() <span class="overload">[2/3]</span></h2>
+<a id="abc68fbdab35d76f14a3fd24956542ac0" name="abc68fbdab35d76f14a3fd24956542ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc68fbdab35d76f14a3fd24956542ac0">&#9670;&#160;</a></span>Bullet() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,12 +516,12 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Bullet::Bullet </td>
           <td>(</td>
-          <td class="paramtype">PR00FsUltimateRenderingEngine &amp;</td>          <td class="paramname"><span class="paramname"><em>gfx</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wpnId</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">Bullet::BulletId</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+          <td class="paramtype">PR00FsUltimateRenderingEngine &amp;</td>          <td class="paramname"><span class="paramname"><em>gfx</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -408,6 +556,11 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sx</em></span>, </td>
         </tr>
         <tr>
@@ -438,6 +591,11 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>particleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nDamageHp</em></span>, </td>
         </tr>
         <tr>
@@ -448,14 +606,19 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>eDamageAreaEffect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const TPureFloat &amp;</td>          <td class="paramname"><span class="paramname"><em>fDamageAreaPulse</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ctor to be used by PGE client instance: bullet id as received from server. </p>
+<p>Ctor to be used by PGE client instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00094">94</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00096">96</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -482,12 +645,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00127">127</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p>User is expected to explicitly call <a class="el" href="#a45d08fab1affe28a5a77269c88b8f530">Bullet::destroyReferenceObject()</a> after they freed up all <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> instances. </p>
+<p>PGE also calls it when destroying the game, but the game might do it based on their use case. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00134">134</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a08e8bdfa3fac6c4279bbeeab1fac742f" name="a08e8bdfa3fac6c4279bbeeab1fac742f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08e8bdfa3fac6c4279bbeeab1fac742f">&#9670;&#160;</a></span>Bullet() <span class="overload">[3/3]</span></h2>
+<a id="aae1d08efc06ace2cde7c7d1f78f47b7e" name="aae1d08efc06ace2cde7c7d1f78f47b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1d08efc06ace2cde7c7d1f78f47b7e">&#9670;&#160;</a></span>Bullet() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,22 +664,118 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Bullet::Bullet </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_bullet.html">Bullet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_bullet.html">Bullet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00096">96</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+</div>
+</div>
+<a id="ad10e401d2c773a0768dc759387e905e3" name="ad10e401d2c773a0768dc759387e905e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10e401d2c773a0768dc759387e905e3">&#9670;&#160;</a></span>Bullet() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bullet::Bullet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bullet.html">Bullet</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af657a4a2ca010a0b1b7e811602f39e31" name="af657a4a2ca010a0b1b7e811602f39e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af657a4a2ca010a0b1b7e811602f39e31">&#9670;&#160;</a></span>build3dObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bullet::build3dObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00414">414</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a45d08fab1affe28a5a77269c88b8f530" name="a45d08fab1affe28a5a77269c88b8f530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d08fab1affe28a5a77269c88b8f530">&#9670;&#160;</a></span>destroyReferenceObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bullet::destroyReferenceObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00040">40</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3964fc1d18195282c5e3eb3168ff432c" name="a3964fc1d18195282c5e3eb3168ff432c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3964fc1d18195282c5e3eb3168ff432c">&#9670;&#160;</a></span>getAreaDamageEffect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">Bullet::DamageAreaEffect</a> &amp; Bullet::getAreaDamageEffect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00254">254</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a82a1906d5307412789d3dc6b0eef1278" name="a82a1906d5307412789d3dc6b0eef1278"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82a1906d5307412789d3dc6b0eef1278">&#9670;&#160;</a></span>getAreaDamagePulse()</h2>
 
@@ -529,7 +791,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00200">200</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00259">259</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +810,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00195">195</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00249">249</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +831,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Returns access to console preset with logger module name as this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00135">135</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00142">142</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +852,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Maximum damage to Player AP this bullet can cause. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00173">173</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00227">227</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -618,7 +880,7 @@ Static Private Attributes</h2></td></tr>
 <li>if AP is non-0, then it decreases the damage caused to HP. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00190">190</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00244">244</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -637,7 +899,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00160">160</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00177">177</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -683,7 +945,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00155">155</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00172">172</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +964,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00140">140</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00147">147</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -750,7 +1012,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00234">234</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00404">404</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -769,7 +1031,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00239">239</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00409">409</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -788,7 +1050,121 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00145">145</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00157">157</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6941486f6d64093e1a69821206715c67" name="a6941486f6d64093e1a69821206715c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6941486f6d64093e1a69821206715c67">&#9670;&#160;</a></span>getParticleEmitPerNthPhysicsIterationCntr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int &amp; Bullet::getParticleEmitPerNthPhysicsIterationCntr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00192">192</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a512b4ed89e6ab42625e62cc28d2d2968" name="a512b4ed89e6ab42625e62cc28d2d2968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512b4ed89e6ab42625e62cc28d2d2968">&#9670;&#160;</a></span>getParticleEmitPerNthPhysicsIterationCntr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int &amp; Bullet::getParticleEmitPerNthPhysicsIterationCntr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00197">197</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9399505eafa794fd3a1c61cdf394abe8" name="a9399505eafa794fd3a1c61cdf394abe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9399505eafa794fd3a1c61cdf394abe8">&#9670;&#160;</a></span>getParticlesEmittedTotal() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int &amp; Bullet::getParticlesEmittedTotal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00202">202</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c618dfd5488973c539828f9f9140ba6" name="a1c618dfd5488973c539828f9f9140ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c618dfd5488973c539828f9f9140ba6">&#9670;&#160;</a></span>getParticlesEmittedTotal() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int &amp; Bullet::getParticlesEmittedTotal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00208">208</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a18d6152622bcf99db1fa3c33f7da4d2a" name="a18d6152622bcf99db1fa3c33f7da4d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d6152622bcf99db1fa3c33f7da4d2a">&#9670;&#160;</a></span>getParticleType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">Bullet::ParticleType</a> &amp; Bullet::getParticleType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00187">187</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a166c203fc19cebe10ef3057538a1b686" name="a166c203fc19cebe10ef3057538a1b686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166c203fc19cebe10ef3057538a1b686">&#9670;&#160;</a></span>getPut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const PurePosUpTarget &amp; Bullet::getPut </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00162">162</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +1183,321 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00150">150</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00167">167</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c211f75b984549046f59b2575440f89" name="a2c211f75b984549046f59b2575440f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c211f75b984549046f59b2575440f89">&#9670;&#160;</a></span>getTravelDistanceMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TPureFloat Bullet::getTravelDistanceMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00214">214</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8fffa63a4b978f871a72556b6b6f532f" name="a8fffa63a4b978f871a72556b6b6f532f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fffa63a4b978f871a72556b6b6f532f">&#9670;&#160;</a></span>getTravelledDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TPureFloat Bullet::getTravelledDistance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00219">219</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac20c47029c17a7d60f302bfeabb7cf80" name="ac20c47029c17a7d60f302bfeabb7cf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20c47029c17a7d60f302bfeabb7cf80">&#9670;&#160;</a></span>getWeaponId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp; Bullet::getWeaponId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00152">152</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a402034c66d4cbe68db45cd1740db037f" name="a402034c66d4cbe68db45cd1740db037f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402034c66d4cbe68db45cd1740db037f">&#9670;&#160;</a></span>init() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bullet::init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5a167f3c38226d99a917c04dc5c1ffed">BulletId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wpnId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PR00FsUltimateRenderingEngine &amp;</td>          <td class="paramname"><span class="paramname"><em>gfx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_px</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_py</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_pz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_ax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_ay</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_az</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>gravity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>drag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>particleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nDamageHp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDamageAreaSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>eDamageAreaEffect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDamageAreaPulse</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init to be used by PGE client instance. </p>
+<p>This also gets invoked by PgeObjectPool::create() when <a class="el" href="class_pooled_bullet.html" title="Pooled Bullet class to be used with PgeObjectPool.">PooledBullet</a> instances are stored there. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00338">338</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeaf88d4135ce974b44eff93e8ad32398" name="aeaf88d4135ce974b44eff93e8ad32398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf88d4135ce974b44eff93e8ad32398">&#9670;&#160;</a></span>init() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bullet::init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wpnId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PR00FsUltimateRenderingEngine &amp;</td>          <td class="paramname"><span class="paramname"><em>gfx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a></td>          <td class="paramname"><span class="paramname"><em>connHandle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_px</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_py</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_pz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_ax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_ay</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>wpn_az</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>sz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>gravity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>drag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureBool</td>          <td class="paramname"><span class="paramname"><em>fragile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDistMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>particleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nDamageAp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nDamageHp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDamageAreaSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>eDamageAreaEffect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPureFloat</td>          <td class="paramname"><span class="paramname"><em>fDamageAreaPulse</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init to be used by PGE server instance. </p>
+<p>This also gets invoked by PgeObjectPool::create() when <a class="el" href="class_pooled_bullet.html" title="Pooled Bullet class to be used with PgeObjectPool.">PooledBullet</a> instances are stored there. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00269">269</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -826,7 +1516,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00205">205</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00264">264</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -845,12 +1535,12 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00165">165</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00182">182</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a64caf96ebfd019a6f3b063a6b929e1ca" name="a64caf96ebfd019a6f3b063a6b929e1ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64caf96ebfd019a6f3b063a6b929e1ca">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a31a44adf054946a83c79089ed7a47812" name="a31a44adf054946a83c79089ed7a47812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a44adf054946a83c79089ed7a47812">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -861,18 +1551,41 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_bullet.html">Bullet</a> &amp; Bullet::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_bullet.html">Bullet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_bullet.html">Bullet</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00117">117</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+</div>
+</div>
+<a id="a0d0fbdfbbb642f07af917b2822ed7f17" name="a0d0fbdfbbb642f07af917b2822ed7f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0fbdfbbb642f07af917b2822ed7f17">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bullet.html">Bullet</a> &amp; Bullet::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_bullet.html">Bullet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -918,7 +1631,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00210">210</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00376">376</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -944,9 +1657,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Server should send update to clients about creation of new bullets. </p>
-<p>By default false. </p>
+<p>By default false, client ignores. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00163">163</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00262">262</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -973,7 +1686,7 @@ Static Private Attributes</h2></td></tr>
 <p>Owner (shooter) of this bullet. </p>
 <p>Used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00149">149</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00242">242</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1713,34 @@ Static Private Attributes</h2></td></tr>
 <p>Drag as defined by weapon file. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00153">153</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00246">246</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a288a29318d818c09addd86b26d713625" name="a288a29318d818c09addd86b26d713625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288a29318d818c09addd86b26d713625">&#9670;&#160;</a></span>m_eDamageAreaEffect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> Bullet::m_eDamageAreaEffect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Area damage effect as defined by weapon file. </p>
+<p>Used by both PGE client and server instances. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00256">256</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1767,7 @@ Static Private Attributes</h2></td></tr>
 <p>Area damage pulse to HP as defined by weapon file. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00158">158</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00257">257</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1794,61 @@ Static Private Attributes</h2></td></tr>
 <p>Area damage size as defined by weapon file. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00157">157</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00255">255</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a6df98ddc82772782691bf50d57ecd313" name="a6df98ddc82772782691bf50d57ecd313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df98ddc82772782691bf50d57ecd313">&#9670;&#160;</a></span>m_fDistMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TPureFloat Bullet::m_fDistMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Max distance as defined by weapon file. </p>
+<p>Used by PGE server instance only. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00248">248</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a9c448b6d86670457a53cf9d24193a82e" name="a9c448b6d86670457a53cf9d24193a82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c448b6d86670457a53cf9d24193a82e">&#9670;&#160;</a></span>m_fDistTravelled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TPureFloat Bullet::m_fDistTravelled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Distance travelled so far. </p>
+<p>Used by both PGE client and server instances. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00249">249</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1875,7 @@ Static Private Attributes</h2></td></tr>
 <p>Fragile flag as defined by weapon file. </p>
 <p>Used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00154">154</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00247">247</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1899,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00148">148</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00241">241</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1926,7 @@ Static Private Attributes</h2></td></tr>
 <p>Next unique bullet id for identifying. </p>
 <p>Used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00145">145</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00236">236</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1953,7 @@ Static Private Attributes</h2></td></tr>
 <p>Gravity as defined by weapon file. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00152">152</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00245">245</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1980,7 @@ Static Private Attributes</h2></td></tr>
 <p>Unique bullet id for identifying. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00147">147</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00239">239</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1213,7 +2007,7 @@ Static Private Attributes</h2></td></tr>
 <p>Damage to AP as defined by weapon file. </p>
 <p>Used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00155">155</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00253">253</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +2034,61 @@ Static Private Attributes</h2></td></tr>
 <p>Damage to HP as defined by weapon file. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00156">156</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00254">254</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="af2a23b5325f185a01f88c7888074854e" name="af2a23b5325f185a01f88c7888074854e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a23b5325f185a01f88c7888074854e">&#9670;&#160;</a></span>m_nParticleEmitPerNthPhysicsIterCntr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bullet::m_nParticleEmitPerNthPhysicsIterCntr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counter to be used by particle emitter logic. </p>
+<p>Used by both PGE client and server instances. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00251">251</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="af5000849f42d39687c449802607a8529" name="af5000849f42d39687c449802607a8529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5000849f42d39687c449802607a8529">&#9670;&#160;</a></span>m_nParticlesEmittedCurrent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bullet::m_nParticlesEmittedCurrent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counter to be used by particle emitter logic. </p>
+<p>Used by both PGE client and server instances. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00252">252</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +2115,60 @@ Static Private Attributes</h2></td></tr>
 <p>Associated Pure object to be rendered. </p>
 <p>Used by PGE server and client instances. TODO: shared ptr would be better though, so deleting the obj earlier than bullet instance wouldn't be a problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00160">160</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00259">259</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="accbdbbd6532f6433077a373b4a9b73b6" name="accbdbbd6532f6433077a373b4a9b73b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accbdbbd6532f6433077a373b4a9b73b6">&#9670;&#160;</a></span>m_particleType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> Bullet::m_particleType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted particle type. </p>
+<p>Used by both PGE client and server instances. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00250">250</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0096b1db4793e8b17563d02d3367410" name="ad0096b1db4793e8b17563d02d3367410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0096b1db4793e8b17563d02d3367410">&#9670;&#160;</a></span>m_pObjRef</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PureObject3D * Bullet::m_pObjRef = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reference object for cloned bullet objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00237">237</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +2195,7 @@ Static Private Attributes</h2></td></tr>
 <p>PUT to calculate next position. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00150">150</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00243">243</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +2222,34 @@ Static Private Attributes</h2></td></tr>
 <p>Speed as defined by weapon file. </p>
 <p>Used by both PGE client and server instances. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00151">151</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00244">244</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d14a33b8f609f3bc061ea0ba04bd6c9" name="a4d14a33b8f609f3bc061ea0ba04bd6c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d14a33b8f609f3bc061ea0ba04bd6c9">&#9670;&#160;</a></span>m_wpnId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> Bullet::m_wpnId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unique weapon id. </p>
+<p>Used by both PGE client and server instances. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00240">240</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>

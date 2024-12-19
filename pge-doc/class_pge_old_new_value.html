@@ -116,7 +116,7 @@ class PgeOldNewValue&lt; T &gt;</div><p>PR00F's Game Engine old-new variable cla
 <li>sending updates over network: current values are saved at the beginning of a frame, and by end of frame sending any update over network is needed only if the old values are different to the current values. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00029">29</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00030">30</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4785cdc5c7ac7f9e9ce737ad3dc00f5" id="r_af4785cdc5c7ac7f9e9ce737ad3dc00f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4785cdc5c7ac7f9e9ce737ad3dc00f5">set</a> (const T &amp;value)</td></tr>
 <tr class="memdesc:af4785cdc5c7ac7f9e9ce737ad3dc00f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the given value as new value.  <br /></td></tr>
 <tr class="separator:af4785cdc5c7ac7f9e9ce737ad3dc00f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd5ef8ab5915fa89553b8337204302e" id="r_afcd5ef8ab5915fa89553b8337204302e"><td class="memItemLeft" align="right" valign="top">const std::chrono::time_point&lt; std::chrono::steady_clock &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcd5ef8ab5915fa89553b8337204302e">getLastTimeNewValueChanged</a> () const</td></tr>
+<tr class="memdesc:afcd5ef8ab5915fa89553b8337204302e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timestamp recorded when new (current) value was last updated, i.e.  <br /></td></tr>
+<tr class="separator:afcd5ef8ab5915fa89553b8337204302e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ea77070d3592ca1e0df227f3b7b3d07" id="r_a6ea77070d3592ca1e0df227f3b7b3d07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea77070d3592ca1e0df227f3b7b3d07">isDirty</a> () const</td></tr>
 <tr class="memdesc:a6ea77070d3592ca1e0df227f3b7b3d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirty flag.  <br /></td></tr>
 <tr class="separator:a6ea77070d3592ca1e0df227f3b7b3d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +248,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5edf4b3ea3bdb4089f51a1b7b9a0c4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dc8ee4e58d459de6eb1495d4298786e" id="r_a3dc8ee4e58d459de6eb1495d4298786e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dc8ee4e58d459de6eb1495d4298786e">m_oldValue</a></td></tr>
 <tr class="separator:a3dc8ee4e58d459de6eb1495d4298786e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa98959b930fa8ff34795b1328019de7" id="r_afa98959b930fa8ff34795b1328019de7"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa98959b930fa8ff34795b1328019de7">m_timeLastChange</a></td></tr>
+<tr class="separator:afa98959b930fa8ff34795b1328019de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0702e70aa44298d1e74c4a81d51b6cab" name="a0702e70aa44298d1e74c4a81d51b6cab"></a>
@@ -267,7 +272,7 @@ template&lt;typename T &gt; </div>
 <p>Constructs an object with both old and new values initialized to their default values based on their type. </p>
 <p>By default dirty flag is cleared. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00139">139</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00158">158</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +304,7 @@ template&lt;typename T &gt; </div>
 <p>Constructs an object with both old and new values as the given value. </p>
 <p>By default dirty flag is cleared. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00145">145</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00164">164</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -343,8 +348,44 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Saves new value to old value and clears dirty flag. </p>
+<p>Does not alter <a class="el" href="#afcd5ef8ab5915fa89553b8337204302e" title="Returns the timestamp recorded when new (current) value was last updated, i.e.">getLastTimeNewValueChanged()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00210">210</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00238">238</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+
+</div>
+</div>
+<a id="afcd5ef8ab5915fa89553b8337204302e" name="afcd5ef8ab5915fa89553b8337204302e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd5ef8ab5915fa89553b8337204302e">&#9670;&#160;</a></span>getLastTimeNewValueChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::chrono::time_point&lt; std::chrono::steady_clock &gt; &amp; <a class="el" href="class_pge_old_new_value.html">PgeOldNewValue</a>&lt; T &gt;::getLastTimeNewValueChanged </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the timestamp recorded when new (current) value was last updated, i.e. </p>
+<p>when its value was actually changed. Timestamp is recorded only for changes done by <a class="el" href="#af4785cdc5c7ac7f9e9ce737ad3dc00f5" title="Sets the given value as new value.">set()</a> functions, assignment-, increment- and decrement operators.</p>
+<p>Neither <a class="el" href="#a51ec043f01d10c0411ecc11fdc592899" title="Resets new value to be same as old value and clears dirty flag.">revert()</a> nor <a class="el" href="#a6e08b6f476eb2c07b52e8acfe46ba384" title="Saves new value to old value and clears dirty flag.">commit()</a> counts as an actual change to new (current) value. Construction also does not count as an actual change to new (current) value.</p>
+<p>Note that constructing a new <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> instance from an existing also copies this timestamp, so the newly constructed <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> instance will have the same timestamp as the original has.</p>
+<dl class="section return"><dt>Returns</dt><dd>Timestamp when new (current) value was last updated, i.e. when its value was actually changed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00220">220</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +415,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>New (current) value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00157">157</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00176">176</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +445,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Old (previous) value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00151">151</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00170">170</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +477,7 @@ template&lt;typename T &gt; </div>
 <p>Dirty flag. </p>
 <dl class="section return"><dt>Returns</dt><dd>True (dirty flag set) if old value is different to new value, false (dirty flag cleared) otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00198">198</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00226">226</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +509,7 @@ template&lt;typename T &gt; </div>
 <p>Conversion to value-type. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current (new) value of this object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00271">271</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00299">299</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +541,7 @@ template&lt;typename T &gt; </div>
 <p>Not equals to. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if any of our old and current (new) values does not equal to the old and current (new) values of the other given object, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00250">250</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00278">278</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +573,7 @@ template&lt;typename T &gt; </div>
 <p>Not equals to value-type. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if our current (new) value does not equal to the given other value, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00240">240</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00268">268</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +606,7 @@ template&lt;typename T &gt; </div>
 <p>Modulo division.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new values of the 2 <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00459">459</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00487">487</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +639,7 @@ template&lt;typename T &gt; </div>
 <p>Modulo division.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00449">449</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00477">477</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +671,7 @@ template&lt;typename T &gt; </div>
 <p>Modulo division assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new values of this and the other <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00480">480</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00508">508</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -662,7 +703,7 @@ template&lt;typename T &gt; </div>
 <p>Modulo division assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00469">469</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00497">497</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +736,7 @@ template&lt;typename T &gt; </div>
 <p>Multiplication.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new values of the 2 <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00375">375</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00403">403</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +769,7 @@ template&lt;typename T &gt; </div>
 <p>Multiplication.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00365">365</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00393">393</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +801,7 @@ template&lt;typename T &gt; </div>
 <p>Multiplication assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new values of this and the other <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00396">396</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00424">424</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -792,7 +833,7 @@ template&lt;typename T &gt; </div>
 <p>Multiplication assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00385">385</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00413">413</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -824,7 +865,7 @@ template&lt;typename T &gt; </div>
 <p>Addition. </p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new values of the 2 <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00291">291</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00319">319</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +897,7 @@ template&lt;typename T &gt; </div>
 <p>Addition. </p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00281">281</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00309">309</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +929,7 @@ template&lt;typename T &gt; </div>
 <p>Prefix increment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object after the operation, only the new value is incremented. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00491">491</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00519">519</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +961,7 @@ template&lt;typename T &gt; </div>
 <p>Postfix increment. </p>
 <dl class="section return"><dt>Returns</dt><dd>Copy of this object before the operation (new value is incremented only in the original object). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00503">503</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00531">531</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -952,7 +993,7 @@ template&lt;typename T &gt; </div>
 <p>Addition assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new values of this and the other <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00312">312</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00340">340</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1025,7 @@ template&lt;typename T &gt; </div>
 <p>Addition assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00301">301</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00329">329</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1057,7 @@ template&lt;typename T &gt; </div>
 <p>Subtraction. </p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new values of the 2 <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00333">333</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00361">361</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1089,7 @@ template&lt;typename T &gt; </div>
 <p>Subtraction. </p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00323">323</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00351">351</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1121,7 @@ template&lt;typename T &gt; </div>
 <p>Prefix decrement. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object after the operation, only the new value is decremented. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00516">516</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00544">544</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1153,7 @@ template&lt;typename T &gt; </div>
 <p>Postfix decrement. </p>
 <dl class="section return"><dt>Returns</dt><dd>Copy of this object before the operation (new value is decremented only in the original object). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00528">528</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00556">556</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1185,7 @@ template&lt;typename T &gt; </div>
 <p>Subtraction assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new values of this and the other <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00354">354</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00382">382</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1217,7 @@ template&lt;typename T &gt; </div>
 <p>Subtraction assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00343">343</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00371">371</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1250,7 @@ template&lt;typename T &gt; </div>
 <p>Division.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new values of the 2 <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00417">417</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00445">445</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1283,7 @@ template&lt;typename T &gt; </div>
 <p>Division.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> where both old and new value are set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00407">407</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00435">435</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1315,7 @@ template&lt;typename T &gt; </div>
 <p>Division assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new values of this and the other <a class="el" href="class_pge_old_new_value.html" title="PR00F&#39;s Game Engine old-new variable class.">PgeOldNewValue</a> operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00438">438</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00466">466</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1347,7 @@ template&lt;typename T &gt; </div>
 <p>Division assignment. </p>
 <dl class="section return"><dt>Returns</dt><dd>This object where only the new value is set to the result of the operation done on the new value of this and the other operands. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00427">427</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00455">455</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1379,7 @@ template&lt;typename T &gt; </div>
 <p>Equals to. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if both our old and current (new) values equal to the old and current (new) values of the other given object, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00230">230</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00258">258</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1411,7 @@ template&lt;typename T &gt; </div>
 <p>Equals to value-type. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if our current (new) value equals to the given other value, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00220">220</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00248">248</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1392,8 +1433,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Resets new value to be same as old value and clears dirty flag. </p>
+<p>Does not alter <a class="el" href="#afcd5ef8ab5915fa89553b8337204302e" title="Returns the timestamp recorded when new (current) value was last updated, i.e.">getLastTimeNewValueChanged()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00204">204</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00232">232</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1462,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00174">174</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00194">194</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1447,7 +1489,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00185">185</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00206">206</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1513,7 @@ template&lt;typename T &gt; </div>
 <p>Sets the given value as new value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Value of <a class="el" href="#a6ea77070d3592ca1e0df227f3b7b3d07" title="Dirty flag.">isDirty()</a> after setting the new value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00163">163</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00182">182</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1498,7 +1540,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00114">114</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00131">131</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1566,33 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00115">115</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00132">132</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
+
+</div>
+</div>
+<a id="afa98959b930fa8ff34795b1328019de7" name="afa98959b930fa8ff34795b1328019de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa98959b930fa8ff34795b1328019de7">&#9670;&#160;</a></span>m_timeLastChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::time_point&lt;std::chrono::steady_clock&gt; <a class="el" href="class_pge_old_new_value.html">PgeOldNewValue</a>&lt; T &gt;::m_timeLastChange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_pge_old_new_value_8h_source.html#l00134">134</a> of file <a class="el" href="_pge_old_new_value_8h_source.html">PgeOldNewValue.h</a>.</p>
 
 </div>
 </div>

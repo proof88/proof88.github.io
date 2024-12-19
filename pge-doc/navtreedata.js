@@ -96,6 +96,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -106,11 +107,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_p_g_ecfg_file_8cpp.html",
-"class_p_g_ecfg_profiles.html#ae5fb44a1d43cd0b76139b326bef9c0ac",
-"class_pge_old_new_value.html#a4d7abcabb8d1d82d24ebcb480f42764d",
-"classpge__network_1_1_pge_client_stub.html#a9b0c1733496251be2e62a76ddb9e7e29",
-"classpge__network_1_1_pge_server_stub.html#a17a097e856e956e242ced67fe6dc51ff",
-"structpge__network_1_1_pge_packet.html#a7cec64d815efb8cfa36bfbc2646fd1b0"
+"class_p_g_ecfg_profiles.html#a305e5154963854dd43c3ddcf69eb6049",
+"class_pge_network_impl.html#a5ea5ecb824f754079a70d0b94508b22b",
+"classpge__network_1_1_pge_client_stub.html#a0d94f6b3e6d877a70a850f73ee11db2b",
+"classpge__network_1_1_pge_network_stub.html#a53e0b6f46b282ef6ff4a857342684338",
+"structpge__network_1_1_msg_app.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_0',['ZERO',['../structpge__network_1_1_pge_packet.html#a0e8f60048122cd465f9a47140173f060a529e9e0beb5f85d1f132917c1a09860c',1,'pge_network::PgePacket']]]
+  ['ranged_0',['Ranged',['../class_weapon.html#a88bbd12b845ee0a3aedaf48bd0ff9c79aa9237e0f608e2851a5b21e8946349c79',1,'Weapon']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['userconnectedserverself_0',['UserConnectedServerSelf',['../namespacepge__network.html#a9d5cd23323f02c5464b48096e5980956a53b67d2eb987db1bdee3eab79d0579af',1,'pge_network']]],
-  ['userdisconnectedfromserver_1',['UserDisconnectedFromServer',['../namespacepge__network.html#a9d5cd23323f02c5464b48096e5980956a03228e2c87de754aaf9cee7027dc38c4',1,'pge_network']]]
+  ['none_0',['NONE',['../structpge__network_1_1_pge_packet.html#a0e8f60048122cd465f9a47140173f060ab50339a10e1de285ac99d4c3990b8693',1,'pge_network::PgePacket']]],
+  ['none_1',['None',['../class_bullet.html#a315bad3af1d8cf33898ca447f5030186a71d06e609117b42aee8f2fdae535c1b3',1,'Bullet']]]
 ];

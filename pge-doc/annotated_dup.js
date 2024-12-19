@@ -29,6 +29,7 @@ var annotated_dup =
     [ "PgeNetworkImpl", "class_pge_network_impl.html", "class_pge_network_impl" ],
     [ "PgeOldNewValue", "class_pge_old_new_value.html", "class_pge_old_new_value" ],
     [ "PgeServerImpl", "class_pge_server_impl.html", "class_pge_server_impl" ],
+    [ "PooledBullet", "class_pooled_bullet.html", "class_pooled_bullet" ],
     [ "Weapon", "class_weapon.html", "class_weapon" ],
     [ "WeaponManager", "class_weapon_manager.html", "class_weapon_manager" ]
 ];

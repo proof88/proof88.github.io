@@ -4,6 +4,7 @@ var class_pge_old_new_value =
     [ "PgeOldNewValue", "class_pge_old_new_value.html#a42dff63b97ad1cfff771bd70a47cce24", null ],
     [ "PgeOldNewValue", "class_pge_old_new_value.html#ae23254af60f9ca6e1921437b3689ea78", null ],
     [ "commit", "class_pge_old_new_value.html#a6e08b6f476eb2c07b52e8acfe46ba384", null ],
+    [ "getLastTimeNewValueChanged", "class_pge_old_new_value.html#afcd5ef8ab5915fa89553b8337204302e", null ],
     [ "getNew", "class_pge_old_new_value.html#ac9ec9c6ceb954220b1dd6638b5336445", null ],
     [ "getOld", "class_pge_old_new_value.html#a394f8e05d7eb5b815ceec96e9e997164", null ],
     [ "isDirty", "class_pge_old_new_value.html#a6ea77070d3592ca1e0df227f3b7b3d07", null ],
@@ -41,5 +42,6 @@ var class_pge_old_new_value =
     [ "set", "class_pge_old_new_value.html#a2bc32b2f961cf681a7d4b9bdf6803219", null ],
     [ "set", "class_pge_old_new_value.html#af4785cdc5c7ac7f9e9ce737ad3dc00f5", null ],
     [ "m_newValue", "class_pge_old_new_value.html#a5edf4b3ea3bdb4089f51a1b7b9a0c4f3", null ],
-    [ "m_oldValue", "class_pge_old_new_value.html#a3dc8ee4e58d459de6eb1495d4298786e", null ]
+    [ "m_oldValue", "class_pge_old_new_value.html#a3dc8ee4e58d459de6eb1495d4298786e", null ],
+    [ "m_timeLastChange", "class_pge_old_new_value.html#afa98959b930fa8ff34795b1328019de7", null ]
 ];

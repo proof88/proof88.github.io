@@ -115,8 +115,13 @@ $(function(){initNavTree('class_weapon_manager.html',''); initResizable(true); }
  <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>PR00F's Game Engine <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> Manager. </p>
+<p>The idea is that <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> instances are created and stored by this manager. Each player has a different instance of <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> Manager. Thus, for each player, <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> instances also need to be created. This way, each player can utilize convenient manager functions, such as:</p><ul>
+<li><a class="el" href="#aa0f3faa840f76bb08d295a0d82ec7ed0" title="Sets the current weapon.">setCurrentWeapon()</a></li>
+<li><a class="el" href="#aacc6b40e5055544d8fb77224ff4b52fe" title="Gets the next best available weapon.">getNextBestAvailableWeapon()</a></li>
+<li>etc. </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00372">372</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00550">550</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -127,8 +132,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3984135ccaad2678a611c6beb3739a1" id="r_ae3984135ccaad2678a611c6beb3739a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3984135ccaad2678a611c6beb3739a1">WeaponManager</a> (pge_audio::PgeAudio &amp;audio, <a class="el" href="class_p_g_ecfg_profiles.html">PGEcfgProfiles</a> &amp;cfgProfiles, PR00FsUltimateRenderingEngine &amp;gfx, std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;bullets)</td></tr>
-<tr class="separator:ae3984135ccaad2678a611c6beb3739a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fc14333ecfd55b571221a179d4c607" id="r_ac8fc14333ecfd55b571221a179d4c607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8fc14333ecfd55b571221a179d4c607">WeaponManager</a> (pge_audio::PgeAudio &amp;audio, <a class="el" href="class_p_g_ecfg_profiles.html">PGEcfgProfiles</a> &amp;cfgProfiles, PR00FsUltimateRenderingEngine &amp;gfx, PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;bullets)</td></tr>
+<tr class="separator:ac8fc14333ecfd55b571221a179d4c607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a240f037e5294e11081ca3cce1ab4651e" id="r_a240f037e5294e11081ca3cce1ab4651e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a240f037e5294e11081ca3cce1ab4651e">~WeaponManager</a> ()</td></tr>
 <tr class="separator:a240f037e5294e11081ca3cce1ab4651e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a90dfdc9bcd09f36f2ee9b7c39c763" id="r_a24a90dfdc9bcd09f36f2ee9b7c39c763"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24a90dfdc9bcd09f36f2ee9b7c39c763">getConsole</a> () const</td></tr>
@@ -139,6 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af22c3199bfa86e83e13f1aa7535f6acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16fdfd9b5250c64c491ba5ae8ab18c91" id="r_a16fdfd9b5250c64c491ba5ae8ab18c91"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="class_weapon.html">Weapon</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16fdfd9b5250c64c491ba5ae8ab18c91">getWeapons</a> () const</td></tr>
 <tr class="separator:a16fdfd9b5250c64c491ba5ae8ab18c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66c486f0f11b9e342f52e02d3506e01" id="r_ae66c486f0f11b9e342f52e02d3506e01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_weapon.html">Weapon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66c486f0f11b9e342f52e02d3506e01">getWeaponById</a> (const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;id)</td></tr>
+<tr class="separator:ae66c486f0f11b9e342f52e02d3506e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b48f05b4018528e05a18dc4e0e5606" id="r_a47b48f05b4018528e05a18dc4e0e5606"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_weapon.html">Weapon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b48f05b4018528e05a18dc4e0e5606">getWeaponById</a> (const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;id) const</td></tr>
+<tr class="separator:a47b48f05b4018528e05a18dc4e0e5606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e4e85db83fcda92648cad1ac504059e" id="r_a9e4e85db83fcda92648cad1ac504059e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_weapon.html">Weapon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e4e85db83fcda92648cad1ac504059e">getWeaponByFilename</a> (const std::string &amp;wpnName)</td></tr>
 <tr class="separator:a9e4e85db83fcda92648cad1ac504059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926a38e63ac31a90a9da9017c49ab0f6" id="r_a926a38e63ac31a90a9da9017c49ab0f6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_weapon.html">Weapon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a926a38e63ac31a90a9da9017c49ab0f6">getWeaponByFilename</a> (const std::string &amp;wpnName) const</td></tr>
@@ -180,8 +189,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f4c188a3d0504d4be309d5ba87999ed" id="r_a5f4c188a3d0504d4be309d5ba87999ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f4c188a3d0504d4be309d5ba87999ed">Clear</a> ()</td></tr>
 <tr class="memdesc:a5f4c188a3d0504d4be309d5ba87999ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all loaded weapons, sets current weapon to null and clears default available weapon and last weapon switch timestamp.  <br /></td></tr>
 <tr class="separator:a5f4c188a3d0504d4be309d5ba87999ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf12d9ea40e962d6710f2cf06d41c9db" id="r_adf12d9ea40e962d6710f2cf06d41c9db"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf12d9ea40e962d6710f2cf06d41c9db">getBullets</a> ()</td></tr>
-<tr class="separator:adf12d9ea40e962d6710f2cf06d41c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01a4c0999403ab0b8ada25422d9ec1f" id="r_aa01a4c0999403ab0b8ada25422d9ec1f"><td class="memItemLeft" align="right" valign="top">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01a4c0999403ab0b8ada25422d9ec1f">getBullets</a> ()</td></tr>
+<tr class="separator:aa01a4c0999403ab0b8ada25422d9ec1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -218,8 +227,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1f6d4221ec6f2ac2a1a5318f9f01e2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd2f6b7c82ad52418531c822089a471" id="r_a4dd2f6b7c82ad52418531c822089a471"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dd2f6b7c82ad52418531c822089a471">m_timeLastWeaponSwitch</a></td></tr>
 <tr class="separator:a4dd2f6b7c82ad52418531c822089a471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a869afb27e66f72257f0f9f44ec8714" id="r_a2a869afb27e66f72257f0f9f44ec8714"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a869afb27e66f72257f0f9f44ec8714">m_bullets</a></td></tr>
-<tr class="separator:a2a869afb27e66f72257f0f9f44ec8714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc5b86d520828cbde85c1fbec79081e" id="r_a7dc5b86d520828cbde85c1fbec79081e"><td class="memItemLeft" align="right" valign="top">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dc5b86d520828cbde85c1fbec79081e">m_bullets</a></td></tr>
+<tr class="separator:a7dc5b86d520828cbde85c1fbec79081e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731600cd29fd598a92ad27ae6b93c7fb" id="r_a731600cd29fd598a92ad27ae6b93c7fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a731600cd29fd598a92ad27ae6b93c7fb">m_sDefaultAvailableWeapon</a></td></tr>
 <tr class="separator:a731600cd29fd598a92ad27ae6b93c7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -241,13 +250,13 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00379">379</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00557">557</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae3984135ccaad2678a611c6beb3739a1" name="ae3984135ccaad2678a611c6beb3739a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3984135ccaad2678a611c6beb3739a1">&#9670;&#160;</a></span>WeaponManager() <span class="overload">[1/3]</span></h2>
+<a id="ac8fc14333ecfd55b571221a179d4c607" name="ac8fc14333ecfd55b571221a179d4c607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8fc14333ecfd55b571221a179d4c607">&#9670;&#160;</a></span>WeaponManager() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,12 +279,18 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bullets</em></span>&#160;)</td>
+          <td class="paramtype">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bullets</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bullets</td><td>A bullet pool for storing the bullets that are fired by <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> instances created by this <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> instance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01363">1363</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01718">1718</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +317,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01377">1377</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01732">1732</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +344,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00425">425</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00606">606</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -376,18 +391,18 @@ Static Private Attributes</h2></td></tr>
 
 <p>Deletes all loaded weapons, sets current weapon to null and clears default available weapon and last weapon switch timestamp. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01847">1847</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02235">2235</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="adf12d9ea40e962d6710f2cf06d41c9db" name="adf12d9ea40e962d6710f2cf06d41c9db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf12d9ea40e962d6710f2cf06d41c9db">&#9670;&#160;</a></span>getBullets()</h2>
+<a id="aa01a4c0999403ab0b8ada25422d9ec1f" name="aa01a4c0999403ab0b8ada25422d9ec1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01a4c0999403ab0b8ada25422d9ec1f">&#9670;&#160;</a></span>getBullets()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp; WeaponManager::getBullets </td>
+          <td class="memname">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp; WeaponManager::getBullets </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -396,7 +411,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Reference to the list storing bullets created by firing any weapon managed by this <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> instance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01862">1862</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02250">2250</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +432,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Returns access to console preset with logger module name as this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01382">1382</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01737">1737</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +455,7 @@ Static Private Attributes</h2></td></tr>
 <p>Useful for a player object for tracking player's current weapon. Note that <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> doesn't know about any player entity, you need to connect this logic with your player entity.</p>
 <dl class="section return"><dt>Returns</dt><dd>Current weapon. Can be null if <a class="el" href="#aa0f3faa840f76bb08d295a0d82ec7ed0" title="Sets the current weapon.">setCurrentWeapon()</a> was not yet called. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01498">1498</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01886">1886</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -463,7 +478,7 @@ Static Private Attributes</h2></td></tr>
 <p>Useful for a player object for tracking player's current weapon. Note that <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> doesn't know about any player entity, you need to connect this logic with your player entity.</p>
 <dl class="section return"><dt>Returns</dt><dd>Current weapon. Can be null if <a class="el" href="#aa0f3faa840f76bb08d295a0d82ec7ed0" title="Sets the current weapon.">setCurrentWeapon()</a> was not yet called. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01486">1486</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01874">1874</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +498,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Default available weapon that was previously set by <a class="el" href="#ac3e74c39e78c6199e27b88af594b7641" title="Sets default available weapon that should be by default available for any new/respawning player.">setDefaultAvailableWeaponByFilename()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01458">1458</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01846">1846</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -513,7 +528,7 @@ Static Private Attributes</h2></td></tr>
 <p>Returns the only instance of KeypressToWeaponMap. </p>
 <p>This map allows the user to define keyboard key mapping to weapons. Currently it is still the user's responsibility to handle these keypresses in game code, however this map is also used by <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>'s getPrev/NextWeapon() functions since this map defines the desired logical order of the weapons. Note that this logical order is independent from the power order which is based on the DPFR value of weapons. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01400">1400</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01755">1755</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -542,7 +557,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Returns the logger module name of this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01387">1387</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01742">1742</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -571,7 +586,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The next available weapon based on logical order defined by KeypressToWeaponMap. Nullptr if there is no current weapon set or the file name of the current weapon is not present in KeypressToWeaponMap. Same weapon as current weapon if we could not find another available weapon. Note that owner of weapon is not taken into consideration, because the idea is that each player entity has their own <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>, storing only their owned weapons. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01663">1663</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02051">2051</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -600,7 +615,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The next available weapon based on logical order defined by KeypressToWeaponMap. Nullptr if there is no current weapon set or the file name of the current weapon is not present in KeypressToWeaponMap. Same weapon as current weapon if we could not find another available weapon. Note that owner of weapon is not taken into consideration, because the idea is that each player entity has their own <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>, storing only their owned weapons. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01682">1682</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02070">2070</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -634,7 +649,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The next best available weapon based on power order defined by DPSR value of weapons. Nullptr if there is no current weapon set or the file name of the next best available weapon is not present in KeypressToWeaponMap. Same weapon as current weapon if we could not find a best next available weapon. Note that owner of weapon is not taken into consideration, because the idea is that each player entity has their own <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>, storing only their owned weapons. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01758">1758</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02146">2146</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -668,7 +683,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The next best available weapon based on power order defined by DPSR value of weapons. Nullptr if there is no current weapon set or the file name of the next best available weapon is not present in KeypressToWeaponMap. Same weapon as current weapon if we could not find a best next available weapon. Note that owner of weapon is not taken into consideration, because the idea is that each player entity has their own <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>, storing only their owned weapons. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01781">1781</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02169">2169</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +712,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The previous available weapon based on logical order defined by KeypressToWeaponMap. Nullptr if there is no current weapon set or the file name of the current weapon is not present in KeypressToWeaponMap. Same weapon as current weapon if we could not find another available weapon. Note that owner of weapon is not taken into consideration, because the idea is that each player entity has their own <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>, storing only their owned weapons. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01569">1569</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01957">1957</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +741,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The previous available weapon based on logical order defined by KeypressToWeaponMap. Nullptr if there is no current weapon set or the file name of the current weapon is not present in KeypressToWeaponMap. Same weapon as current weapon if we could not find another available weapon. Note that owner of weapon is not taken into consideration, because the idea is that each player entity has their own <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a>, storing only their owned weapons. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01588">1588</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01976">1976</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -746,7 +761,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Timestamp of last successful <a class="el" href="#aa0f3faa840f76bb08d295a0d82ec7ed0" title="Sets the current weapon.">setCurrentWeapon()</a> with bRecordSwitchTime as true. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01839">1839</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l02227">2227</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -765,7 +780,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01439">1439</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01827">1827</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -784,7 +799,45 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01444">1444</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01832">1832</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae66c486f0f11b9e342f52e02d3506e01" name="ae66c486f0f11b9e342f52e02d3506e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66c486f0f11b9e342f52e02d3506e01">&#9670;&#160;</a></span>getWeaponById() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_weapon.html">Weapon</a> * WeaponManager::getWeaponById </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01811">1811</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47b48f05b4018528e05a18dc4e0e5606" name="a47b48f05b4018528e05a18dc4e0e5606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b48f05b4018528e05a18dc4e0e5606">&#9670;&#160;</a></span>getWeaponById() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_weapon.html">Weapon</a> * WeaponManager::getWeaponById </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01816">1816</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -803,7 +856,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01434">1434</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01806">1806</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -836,7 +889,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Nullptr on error loading the file, otherwise pointer to the created <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> instance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01413">1413</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01768">1768</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -863,7 +916,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00433">433</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00614">614</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -903,7 +956,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if current weapon has been set to the given weapon, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01516">1516</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01904">1904</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -925,7 +978,7 @@ Static Private Attributes</h2></td></tr>
 <p>Sets default available weapon that should be by default available for any new/respawning player. </p>
 <p>Note that <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> doesn't know about any player entity, you need to connect this logic with your player entity. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01467">1467</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01855">1855</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -950,12 +1003,12 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00441">441</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00622">622</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
-<a id="a2a869afb27e66f72257f0f9f44ec8714" name="a2a869afb27e66f72257f0f9f44ec8714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a869afb27e66f72257f0f9f44ec8714">&#9670;&#160;</a></span>m_bullets</h2>
+<a id="a7dc5b86d520828cbde85c1fbec79081e" name="a7dc5b86d520828cbde85c1fbec79081e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc5b86d520828cbde85c1fbec79081e">&#9670;&#160;</a></span>m_bullets</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -964,7 +1017,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="class_bullet.html">Bullet</a>&gt;&amp; WeaponManager::m_bullets</td>
+          <td class="memname">PgeObjectPool&lt;<a class="el" href="class_pooled_bullet.html">PooledBullet</a>&gt;&amp; WeaponManager::m_bullets</td>
         </tr>
       </table>
   </td>
@@ -974,7 +1027,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00447">447</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00628">628</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1051,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00442">442</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00623">623</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1075,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00443">443</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00624">624</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1099,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00439">439</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00620">620</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1123,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00445">445</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00626">626</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1147,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00448">448</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00629">629</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1171,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00446">446</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00627">627</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1195,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00444">444</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00625">625</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>

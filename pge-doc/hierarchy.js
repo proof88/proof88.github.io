@@ -1,6 +1,8 @@
 var hierarchy =
 [
-    [ "Bullet", "class_bullet.html", null ],
+    [ "Bullet", "class_bullet.html", [
+      [ "PooledBullet", "class_pooled_bullet.html", null ]
+    ] ],
     [ "pge_network::MsgApp", "structpge__network_1_1_msg_app.html", null ],
     [ "pge_network::MsgAppArea", "structpge__network_1_1_msg_app_area.html", null ],
     [ "pge_network::MsgClientAppVersionFromClient", "structpge__network_1_1_msg_client_app_version_from_client.html", null ],
@@ -38,6 +40,9 @@ var hierarchy =
     [ "PgeOldNewValue< T >", "class_pge_old_new_value.html", null ],
     [ "PgeOldNewValue< State >", "class_pge_old_new_value.html", null ],
     [ "pge_network::PgePacket", "structpge__network_1_1_pge_packet.html", null ],
+    [ "PgePooledObject", null, [
+      [ "PooledBullet", "class_pooled_bullet.html", null ]
+    ] ],
     [ "PgeGnsServer::TClient", "struct_pge_gns_server_1_1_t_client.html", null ],
     [ "WeaponManager", "class_weapon_manager.html", null ]
 ];

@@ -13,6 +13,7 @@ var searchData=
   ['_7epgenetworkstub_10',['~PgeNetworkStub',['../classpge__network_1_1_pge_network_stub.html#ab0e7e902495cd92d5f6d3e03b52817cc',1,'pge_network::PgeNetworkStub']]],
   ['_7epgeserverimpl_11',['~PgeServerImpl',['../class_pge_server_impl.html#ae4cea02f017fd4fbdc1eda55af3beafb',1,'PgeServerImpl']]],
   ['_7epgeserverstub_12',['~PgeServerStub',['../classpge__network_1_1_pge_server_stub.html#a2d89fd75c43104a7f73107aa35512ddb',1,'pge_network::PgeServerStub']]],
-  ['_7eweapon_13',['~Weapon',['../class_weapon.html#a420e7ba3d2017e6de3e93eb579cfd3fa',1,'Weapon']]],
-  ['_7eweaponmanager_14',['~WeaponManager',['../class_weapon_manager.html#a240f037e5294e11081ca3cce1ab4651e',1,'WeaponManager']]]
+  ['_7epooledbullet_13',['~PooledBullet',['../class_pooled_bullet.html#a2fc1c221a4c3442f6d62c6171028863a',1,'PooledBullet']]],
+  ['_7eweapon_14',['~Weapon',['../class_weapon.html#a420e7ba3d2017e6de3e93eb579cfd3fa',1,'Weapon']]],
+  ['_7eweaponmanager_15',['~WeaponManager',['../class_weapon_manager.html#a240f037e5294e11081ca3cce1ab4651e',1,'WeaponManager']]]
 ];

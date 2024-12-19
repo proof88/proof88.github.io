@@ -100,8 +100,10 @@ var menudata={children:[
 {text:"p",url:"globals.html#index_p"},
 {text:"s",url:"globals.html#index_s"},
 {text:"t",url:"globals.html#index_t"},
+{text:"w",url:"globals.html#index_w"},
 {text:"x",url:"globals.html#index_x"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"o",url:"globals_func.html#index_o"}]},
+{text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Macros",url:"globals_defs.html"}]}]}]}

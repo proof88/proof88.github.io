@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['wpn_5ffm_5fauto_0',['WPN_FM_AUTO',['../class_weapon.html#ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c',1,'Weapon']]],
-  ['wpn_5ffm_5fburst_1',['WPN_FM_BURST',['../class_weapon.html#ad49e01a26726a92fa5af06211f954453a993fcedadc4218635a4e846ea81f7c31',1,'Weapon']]],
-  ['wpn_5ffm_5fproj_2',['WPN_FM_PROJ',['../class_weapon.html#ad49e01a26726a92fa5af06211f954453ad02c7aa9a694bdc770b1546e8fe15997',1,'Weapon']]],
-  ['wpn_5ffm_5fsemi_3',['WPN_FM_SEMI',['../class_weapon.html#ad49e01a26726a92fa5af06211f954453a31326f945b5699708706586774639fad',1,'Weapon']]],
-  ['wpn_5fready_4',['WPN_READY',['../class_weapon.html#aff042e8435ebd5c50f89fa2768fced5ba1d550e6e32d16de1e1c9da18630495a0',1,'Weapon']]],
-  ['wpn_5freloading_5',['WPN_RELOADING',['../class_weapon.html#aff042e8435ebd5c50f89fa2768fced5babb52fbc28e993d504b34374458c8bc36',1,'Weapon']]],
-  ['wpn_5fshooting_6',['WPN_SHOOTING',['../class_weapon.html#aff042e8435ebd5c50f89fa2768fced5bac6a64f1492a987917d08379f88fb9ac2',1,'Weapon']]]
+  ['pge_5fcvar_5fbool_0',['PGE_CVAR_BOOL',['../_p_g_ecfg_variable_8h.html#a1d524592cb24bd5a231051b7a91a7ea1a5c957b9a6f5666db349a0b05f8936d5c',1,'PGEcfgVariable.h']]],
+  ['pge_5fcvar_5ffloat_1',['PGE_CVAR_FLOAT',['../_p_g_ecfg_variable_8h.html#a1d524592cb24bd5a231051b7a91a7ea1a51a9a2947d56a0c919258da255dbf9ac',1,'PGEcfgVariable.h']]],
+  ['pge_5fcvar_5fint_2',['PGE_CVAR_INT',['../_p_g_ecfg_variable_8h.html#a1d524592cb24bd5a231051b7a91a7ea1a69f14b2bd29356e11c3072f514a8ebfb',1,'PGEcfgVariable.h']]],
+  ['pge_5fcvar_5fstring_3',['PGE_CVAR_STRING',['../_p_g_ecfg_variable_8h.html#a1d524592cb24bd5a231051b7a91a7ea1af37e652f7fd1d49436bc388b540fb462',1,'PGEcfgVariable.h']]],
+  ['pge_5fcvar_5fuint_4',['PGE_CVAR_UINT',['../_p_g_ecfg_variable_8h.html#a1d524592cb24bd5a231051b7a91a7ea1aec26ef8c8429ccfaf96f2771a4efdc34',1,'PGEcfgVariable.h']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firingmode_0',['FiringMode',['../class_weapon.html#ad49e01a26726a92fa5af06211f954453',1,'Weapon']]]
+  ['damageareaeffect_0',['DamageAreaEffect',['../class_bullet.html#a9fb7c5b2ef0424b11c0837e5102889ac',1,'Bullet']]]
 ];

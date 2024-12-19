@@ -117,7 +117,7 @@ $(function(){initNavTree('class_weapon.html',''); initResizable(true); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> class for PR00F's Game Engine <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> Manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00172">172</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00323">323</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -145,16 +145,25 @@ Public Types</h2></td></tr>
 , <a class="el" href="#ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c">WPN_FM_AUTO</a>
  }</td></tr>
 <tr class="separator:ad49e01a26726a92fa5af06211f954453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bbd12b845ee0a3aedaf48bd0ff9c79" id="r_a88bbd12b845ee0a3aedaf48bd0ff9c79"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">Type</a> { <a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79aa9237e0f608e2851a5b21e8946349c79">Ranged</a>
+, <a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79a760230a3824f9fefe55a5ddec6eb79ba">Melee</a>
+, <a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79aa664484cc3b8fa6b301c2429b5a47d98">Throwable</a>
+ }</td></tr>
+<tr class="separator:a88bbd12b845ee0a3aedaf48bd0ff9c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6456b57c640ab074cea7a7ba921a2e4e" id="r_a6456b57c640ab074cea7a7ba921a2e4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6456b57c640ab074cea7a7ba921a2e4e">Weapon</a> (const char *fname, std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;bullets, pge_audio::PgeAudio &amp;audio, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle)</td></tr>
-<tr class="separator:a6456b57c640ab074cea7a7ba921a2e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e04b36140f65ec8641376e2c924009" id="r_a52e04b36140f65ec8641376e2c924009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e04b36140f65ec8641376e2c924009">Weapon</a> (const char *fname, PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;bullets, pge_audio::PgeAudio &amp;audio, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle)</td></tr>
+<tr class="separator:a52e04b36140f65ec8641376e2c924009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420e7ba3d2017e6de3e93eb579cfd3fa" id="r_a420e7ba3d2017e6de3e93eb579cfd3fa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a420e7ba3d2017e6de3e93eb579cfd3fa">~Weapon</a> ()</td></tr>
 <tr class="separator:a420e7ba3d2017e6de3e93eb579cfd3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9615fcded20a928eec2c183b3f834c24" id="r_a9615fcded20a928eec2c183b3f834c24"><td class="memItemLeft" align="right" valign="top">CConsole &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9615fcded20a928eec2c183b3f834c24">getConsole</a> () const</td></tr>
 <tr class="memdesc:a9615fcded20a928eec2c183b3f834c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns access to console preset with logger module name as this class.  <br /></td></tr>
 <tr class="separator:a9615fcded20a928eec2c183b3f834c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93c01a4c6fabac96a152cf9197f3a59" id="r_ae93c01a4c6fabac96a152cf9197f3a59"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93c01a4c6fabac96a152cf9197f3a59">getUniqueId</a> () const</td></tr>
+<tr class="separator:ae93c01a4c6fabac96a152cf9197f3a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77913e3203fcf28d9ac988adbe125e0" id="r_aa77913e3203fcf28d9ac988adbe125e0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">Type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa77913e3203fcf28d9ac988adbe125e0">getType</a> () const</td></tr>
+<tr class="separator:aa77913e3203fcf28d9ac988adbe125e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5837b315d3dd36c2d1fcc9490c0654fc" id="r_a5837b315d3dd36c2d1fcc9490c0654fc"><td class="memItemLeft" align="right" valign="top">PureObject3D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5837b315d3dd36c2d1fcc9490c0654fc">getObject3D</a> ()</td></tr>
 <tr class="memdesc:a5837b315d3dd36c2d1fcc9490c0654fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the graphical object entity associated to this weapon object.  <br /></td></tr>
 <tr class="separator:a5837b315d3dd36c2d1fcc9490c0654fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +240,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6196b72bc4e3d755b80e9106dc5d9109" id="r_a6196b72bc4e3d755b80e9106dc5d9109"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6196b72bc4e3d755b80e9106dc5d9109">getDamagePerFireRating</a> () const</td></tr>
 <tr class="memdesc:a6196b72bc4e3d755b80e9106dc5d9109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a calculated rating of damage caused by a single shot fired.  <br /></td></tr>
 <tr class="separator:a6196b72bc4e3d755b80e9106dc5d9109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a399e271c4da7a8fc6236f81ed69e3" id="r_ae4a399e271c4da7a8fc6236f81ed69e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4a399e271c4da7a8fc6236f81ed69e3">getFiringRate</a> () const</td></tr>
+<tr class="memdesc:ae4a399e271c4da7a8fc6236f81ed69e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a calculated firing rate per 1 second.  <br /></td></tr>
+<tr class="separator:ae4a399e271c4da7a8fc6236f81ed69e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fe7adc4b56b517b417b4c368d114d69" id="r_a3fe7adc4b56b517b417b4c368d114d69"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fe7adc4b56b517b417b4c368d114d69">getDamagePerSecondRating</a> () const</td></tr>
 <tr class="memdesc:a3fe7adc4b56b517b417b4c368d114d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a calculated rating of total damage per 1 second.  <br /></td></tr>
 <tr class="separator:a3fe7adc4b56b517b417b4c368d114d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,6 +275,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c0671d6c63d553dca318ef824bde184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51af9e34b11dc964a105237eb0d750db" id="r_a51af9e34b11dc964a105237eb0d750db"><td class="memItemLeft" align="right" valign="top">SoLoud::Wav &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51af9e34b11dc964a105237eb0d750db">getReloadEndSound</a> ()</td></tr>
 <tr class="separator:a51af9e34b11dc964a105237eb0d750db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5696eb8f54cc2929ae8bdf87bfb1a57" id="r_ab5696eb8f54cc2929ae8bdf87bfb1a57"><td class="memItemLeft" align="right" valign="top">SoLoud::Wav &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5696eb8f54cc2929ae8bdf87bfb1a57">getPlayerHitSound</a> ()</td></tr>
+<tr class="separator:ab5696eb8f54cc2929ae8bdf87bfb1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b495a5a8e3de4b1eef4e381632a8725" id="r_a2b495a5a8e3de4b1eef4e381632a8725"><td class="memItemLeft" align="right" valign="top">SoLoud::Wav &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b495a5a8e3de4b1eef4e381632a8725">getWallHitSound</a> ()</td></tr>
+<tr class="separator:a2b495a5a8e3de4b1eef4e381632a8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c75166822c7694cb0410b80a58d475" id="r_ac0c75166822c7694cb0410b80a58d475"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c75166822c7694cb0410b80a58d475">Weapon</a> (const <a class="el" href="class_weapon.html">Weapon</a> &amp;other)</td></tr>
 <tr class="separator:ac0c75166822c7694cb0410b80a58d475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f51ebd5789763dc5e9746ecccd4e34c" id="r_a8f51ebd5789763dc5e9746ecccd4e34c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_weapon.html">Weapon</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f51ebd5789763dc5e9746ecccd4e34c">operator=</a> (const <a class="el" href="class_weapon.html">Weapon</a> &amp;other)</td></tr>
@@ -339,8 +355,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a020862134bb39d77b8c10a72be3e1665" id="r_a020862134bb39d77b8c10a72be3e1665"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a020862134bb39d77b8c10a72be3e1665">m_bullets</a></td></tr>
-<tr class="separator:a020862134bb39d77b8c10a72be3e1665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfeb1580422bdb4ea55102530ffbfaa" id="r_a8dfeb1580422bdb4ea55102530ffbfaa"><td class="memItemLeft" align="right" valign="top">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dfeb1580422bdb4ea55102530ffbfaa">m_bullets</a></td></tr>
+<tr class="separator:a8dfeb1580422bdb4ea55102530ffbfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e50b009491f64048b38efbe61d9dfa" id="r_a57e50b009491f64048b38efbe61d9dfa"><td class="memItemLeft" align="right" valign="top">pge_audio::PgeAudio &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e50b009491f64048b38efbe61d9dfa">m_audio</a></td></tr>
 <tr class="separator:a57e50b009491f64048b38efbe61d9dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84393e825c9ce14ef41d5b32d08ae222" id="r_a84393e825c9ce14ef41d5b32d08ae222"><td class="memItemLeft" align="right" valign="top">PR00FsUltimateRenderingEngine &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84393e825c9ce14ef41d5b32d08ae222">m_gfx</a></td></tr>
@@ -350,6 +366,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ace96846a46dc4eeca204ce59598bff7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa769be257863cc95b067e5e991ad0728" id="r_aa769be257863cc95b067e5e991ad0728"><td class="memItemLeft" align="right" valign="top">PureObject3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa769be257863cc95b067e5e991ad0728">m_obj</a></td></tr>
 <tr class="separator:aa769be257863cc95b067e5e991ad0728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41583e231af94405daa69b929ee1f391" id="r_a41583e231af94405daa69b929ee1f391"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41583e231af94405daa69b929ee1f391">m_id</a> {}</td></tr>
+<tr class="memdesc:a41583e231af94405daa69b929ee1f391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID, filled by ctor.  <br /></td></tr>
+<tr class="separator:a41583e231af94405daa69b929ee1f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793ac754f349f7a32122cbd61e9e3635" id="r_a793ac754f349f7a32122cbd61e9e3635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a793ac754f349f7a32122cbd61e9e3635">m_type</a> {}</td></tr>
+<tr class="memdesc:a793ac754f349f7a32122cbd61e9e3635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of weapon, filled by ctor.  <br /></td></tr>
+<tr class="separator:a793ac754f349f7a32122cbd61e9e3635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca71be7e93f3ddfce7e8c5d78004e02b" id="r_aca71be7e93f3ddfce7e8c5d78004e02b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pge_old_new_value.html">PgeOldNewValue</a>&lt; <a class="el" href="#aff042e8435ebd5c50f89fa2768fced5b">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca71be7e93f3ddfce7e8c5d78004e02b">m_state</a></td></tr>
 <tr class="memdesc:aca71be7e93f3ddfce7e8c5d78004e02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">State as calculated and updated by PGE server instance.  <br /></td></tr>
 <tr class="separator:aca71be7e93f3ddfce7e8c5d78004e02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,6 +407,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a78e5642d750039702be3080bf91ce01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b57666fed45def643fc33e4d39ee4fc" id="r_a3b57666fed45def643fc33e4d39ee4fc"><td class="memItemLeft" align="right" valign="top">SoLoud::Wav&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b57666fed45def643fc33e4d39ee4fc">m_sndReloadEnd</a></td></tr>
 <tr class="separator:a3b57666fed45def643fc33e4d39ee4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e95d0d242922b16bd9720d69731b76" id="r_aa3e95d0d242922b16bd9720d69731b76"><td class="memItemLeft" align="right" valign="top">SoLoud::Wav&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e95d0d242922b16bd9720d69731b76">m_sndDamageWall</a></td></tr>
+<tr class="separator:aa3e95d0d242922b16bd9720d69731b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd08a81f036466660662d88000ca9ff5" id="r_abd08a81f036466660662d88000ca9ff5"><td class="memItemLeft" align="right" valign="top">SoLoud::Wav&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd08a81f036466660662d88000ca9ff5">m_sndDamagePlayer</a></td></tr>
+<tr class="separator:abd08a81f036466660662d88000ca9ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -432,7 +458,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00335">335</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00503">503</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +486,7 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00186">186</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00337">337</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -481,13 +507,34 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="aff042e8435ebd5c50f89fa2768fced5bac6a64f1492a987917d08379f88fb9ac2" name="aff042e8435ebd5c50f89fa2768fced5bac6a64f1492a987917d08379f88fb9ac2"></a>WPN_SHOOTING&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00179">179</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00330">330</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a88bbd12b845ee0a3aedaf48bd0ff9c79" name="a88bbd12b845ee0a3aedaf48bd0ff9c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">Weapon::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a88bbd12b845ee0a3aedaf48bd0ff9c79aa9237e0f608e2851a5b21e8946349c79" name="a88bbd12b845ee0a3aedaf48bd0ff9c79aa9237e0f608e2851a5b21e8946349c79"></a>Ranged&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a88bbd12b845ee0a3aedaf48bd0ff9c79a760230a3824f9fefe55a5ddec6eb79ba" name="a88bbd12b845ee0a3aedaf48bd0ff9c79a760230a3824f9fefe55a5ddec6eb79ba"></a>Melee&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a88bbd12b845ee0a3aedaf48bd0ff9c79aa664484cc3b8fa6b301c2429b5a47d98" name="a88bbd12b845ee0a3aedaf48bd0ff9c79aa664484cc3b8fa6b301c2429b5a47d98"></a>Throwable&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00345">345</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6456b57c640ab074cea7a7ba921a2e4e" name="a6456b57c640ab074cea7a7ba921a2e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6456b57c640ab074cea7a7ba921a2e4e">&#9670;&#160;</a></span>Weapon() <span class="overload">[1/3]</span></h2>
+<a id="a52e04b36140f65ec8641376e2c924009" name="a52e04b36140f65ec8641376e2c924009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e04b36140f65ec8641376e2c924009">&#9670;&#160;</a></span>Weapon() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,7 +547,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bullets</em></span>, </td>
+          <td class="paramtype">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bullets</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -519,8 +566,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Path and filename of the <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> file to be loaded. </td></tr>
+    <tr><td class="paramname">bullets</td><td>A bullet pool for storing the bullets that are fired by <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> instances created by this <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> instance. Remember, the pool needs to be properly initialized with non-zero capacity, otherwise bullets cannot be fired. </td></tr>
+    <tr><td class="paramname">audio</td><td>The engine's audio subsystem instance. </td></tr>
+    <tr><td class="paramname">gfx</td><td>The engine's graphics subsystem instance. </td></tr>
+    <tr><td class="paramname">connHandle</td><td>Connection handle of the player owning this <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> instance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00263">263</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00457">457</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -547,7 +604,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00545">545</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00844">844</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +631,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00267">267</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00431">431</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +658,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01336">1336</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01688">1688</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -626,7 +683,7 @@ Additional Inherited Members</h2></td></tr>
 <p>if we can pick up more bullets for this weapon. Useful if we are touching bullet pack for this weapon and want to check if we can pick that up, or we are actually full. Basically this depends on the "unmag" or "mag" bullet count compared to <a class="el" href="class_p_g_ecfg_file.html#afac9ff31d33f7e402c64cf41a7ff1959">getVars()</a>["cap_max"], depending on if the weapon is reloadable or not.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if we can still add more bullets for this weapon, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00782">782</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01091">1091</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +702,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00917">917</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01226">1226</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -686,7 +743,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Calculated accuracy based on player's pose. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01166">1166</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01508">1508</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -707,7 +764,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns access to console preset with logger module name as this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00556">556</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00855">855</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -730,7 +787,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is something between getVars("firing_mode_def") and getVars("firing_mode_max").</p>
 <dl class="section return"><dt>Returns</dt><dd>Current firing mode of the weapon. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00705">705</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01014">1014</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +811,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is a positive number usually in range [0.01, 100], rarely even bigger.</p>
 <dl class="section return"><dt>Returns</dt><dd>DPFR (Damage per Fire Rating) caused by a single shot fired, calculated as: damage_hp * damage_ap / 100.f. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01125">1125</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01450">1450</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -778,7 +835,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is used by <a class="el" href="class_weapon_manager.html" title="PR00F&#39;s Game Engine Weapon Manager.">WeaponManager</a> to put Weapons into order based on their power. Always positive.</p>
 <dl class="section return"><dt>Returns</dt><dd>DPSR (Damage per Second Rating), calculated as: (1000.f/firing_cooldown * DPFR)^2. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01145">1145</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01487">1487</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -797,7 +854,31 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01303">1303</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01645">1645</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4a399e271c4da7a8fc6236f81ed69e3" name="ae4a399e271c4da7a8fc6236f81ed69e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a399e271c4da7a8fc6236f81ed69e3">&#9670;&#160;</a></span>getFiringRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Weapon::getFiringRate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a calculated firing rate per 1 second. </p>
+<p>Currently it takes the firing cooldown into account, not considering magazine size and reload time. So this is perfect only for those weapons which cannot be emptied within 1 second with continuous firing. If a weapon can be emptied within 1 second and reload is needed to continue firing, this function returns imprecise value.</p>
+<p>Also, this function does not consider weapon with different firing modes yet.</p>
+<dl class="section return"><dt>Returns</dt><dd>Firing rate per second i.e. how many bullets this weapon can fire within 1 second. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01473">1473</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -816,7 +897,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01298">1298</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01640">1640</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -845,7 +926,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the logger module name of this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00561">561</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00870">870</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -869,7 +950,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Note: I use the term "weapon accuracy" interchangeably with "aim".</p>
 <dl class="section return"><dt>Returns</dt><dd>The lowest possible accuracy (aim) of this weapon, based only on player's pose </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01184">1184</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01526">1526</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -894,7 +975,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Note: I use the term "weapon accuracy" interchangeably with "aim".</p>
 <dl class="section return"><dt>Returns</dt><dd>A positive relative bullet angle representing the lowest possible accuracy (aim) with this weapon. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01271">1271</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01613">1613</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -917,7 +998,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is the number of bullets already loaded into the weapon. A weapon can be fired only if it has positive "mag" bullet count. "Mag" is short for "magazine", even though not all weapons have "magazines", we always refer to "mag" bullet count to know how many bullets are ready to be fired from the weapon without the need of reload. This also means that not reloadable weapons have all their bullets counted as "mag" bullet count.</p>
 <dl class="section return"><dt>Returns</dt><dd>"Mag" bullet count i.e. number of bullets already loaded into the weapon. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00747">747</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01056">1056</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -940,7 +1021,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is basically value of CVAR recoil_m. The minimum recoil multiplier is always 1.f for any weapon.</p>
 <dl class="section return"><dt>Returns</dt><dd>The maximum recoil multiplier for this weapon. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01239">1239</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01581">1581</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1066,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The calculated momentary accuracy (aim) based on all factors. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01258">1258</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01600">1600</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1089,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The momentary recoil multiplier is always between 1.0 and CVAR recoil_m. When a shot is fired, the momentary recoil multiplier is set to CVAR recoil_m, and then is it linear decreased to 1.0 over the duration of CVAR recoil_cooldown. This causes rapid firing less accurate than moderate firing with the same weapon. Note that CVAR recoil_m set to 1.0 means no recoil i.e. weapon accuracy (aim) is not affected by recoil.</p>
 <dl class="section return"><dt>Returns</dt><dd>The momentary recoil multiplier. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01199">1199</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01541">1541</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1110,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the graphical object entity associated to this weapon object. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00584">584</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00893">893</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1131,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the graphical object entity associated to this weapon object. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00592">592</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00901">901</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1154,26 @@ Additional Inherited Members</h2></td></tr>
 <p>This is the player specified originally in the constructor of this <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> object, or another player set using <a class="el" href="#a81ab6400b19dee5d251dad6e77d92010" title="Sets the player associated with this weapon.">SetOwner()</a>. Players are identified by their connection handle.</p>
 <dl class="section return"><dt>Returns</dt><dd>Connection handle of player associated with this <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00820">820</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01129">1129</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5696eb8f54cc2929ae8bdf87bfb1a57" name="ab5696eb8f54cc2929ae8bdf87bfb1a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5696eb8f54cc2929ae8bdf87bfb1a57">&#9670;&#160;</a></span>getPlayerHitSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoLoud::Wav &amp; Weapon::getPlayerHitSound </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01660">1660</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1215,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A random relative Z angle for a newborn bullet, in the [-<a class="el" href="#a9cc8f54fafb5e2b81090ed17e2779e7a" title="Returns the calculated momentary accuracy based on all factors.">getMomentaryAccuracy()</a>, <a class="el" href="#a9cc8f54fafb5e2b81090ed17e2779e7a" title="Returns the calculated momentary accuracy based on all factors.">getMomentaryAccuracy()</a>] range. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01289">1289</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01631">1631</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1134,7 +1234,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01313">1313</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01655">1655</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1253,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01308">1308</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01650">1650</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1276,45 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> state can be updated by functions like <a class="el" href="#a282936bcae57a75c0ad690f29466ea9b" title="Pulls the trigger of the weapon, which might result in shooting the weapon.">pullTrigger()</a>, <a class="el" href="#afbb52a69ab5159805dbcd2f3634deabc" title="Reloads the weapon i.e.">reload()</a>, <a class="el" href="#a2d1e26d1e3456711aefa434938b831f9" title="Updates the weapon based on the time elapsed since last call to this function.">update()</a>, etc. <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> state is totally independent of the state of trigger, see: <a class="el" href="#a2286ddf5b54eb927a27ce1602df1efb8" title="Returns the state of the trigger.">isTriggerReleased()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>Current state of the weapon. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00912">912</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01221">1221</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa77913e3203fcf28d9ac988adbe125e0" name="aa77913e3203fcf28d9ac988adbe125e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77913e3203fcf28d9ac988adbe125e0">&#9670;&#160;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">Weapon::Type</a> &amp; Weapon::getType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00865">865</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae93c01a4c6fabac96a152cf9197f3a59" name="ae93c01a4c6fabac96a152cf9197f3a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93c01a4c6fabac96a152cf9197f3a59">&#9670;&#160;</a></span>getUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp; Weapon::getUniqueId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00860">860</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1337,26 @@ Additional Inherited Members</h2></td></tr>
 <p>This is the number of bullets with the player not loaded into the weapon. To fire these bullets, they first need to be loaded into the weapon using <a class="el" href="#afbb52a69ab5159805dbcd2f3634deabc" title="Reloads the weapon i.e.">reload()</a>. Only reloadable weapons can have positive number of "unmag" bullets.</p>
 <dl class="section return"><dt>Returns</dt><dd>"Unmag" bullet count i.e. number of bullets with the player not loaded into the weapon. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00718">718</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01027">1027</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2b495a5a8e3de4b1eef4e381632a8725" name="a2b495a5a8e3de4b1eef4e381632a8725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b495a5a8e3de4b1eef4e381632a8725">&#9670;&#160;</a></span>getWallHitSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoLoud::Wav &amp; Weapon::getWallHitSound </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01665">1665</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1384,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00800">800</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01109">1109</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1407,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The player is that client whose connection handle was specified in the constructor of this <a class="el" href="class_weapon.html" title="Weapon class for PR00F&#39;s Game Engine Weapon Manager.">Weapon</a> object.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if this weapon is available for the player, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01106">1106</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01431">1431</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1433,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>True if the trigger is in released position, false if it is pulled. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01063">1063</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01388">1388</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1460,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00298">298</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00464">464</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1333,6 +1490,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pulls the trigger of the weapon, which might result in shooting the weapon. </p>
 <p>Firing an actual shot depends on different things like current state of the weapon, firing mode, etc. If a shot was actually fired, at least one new bullet is placed in 'bullets' specified in the constructor of this weapon.</p>
+<p>Similar to ranged weapons, for melee type weapons as well, this is the attack function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bMoving</td><td>Same as for <a class="el" href="#a39196f7b688730ce342d0d12cea1bc8d" title="Returns a calculated accuracy based on player&#39;s pose.">getAccuracyByPose()</a>. </td></tr>
@@ -1343,7 +1501,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if a shot was actually triggered, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00990">990</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01301">1301</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1365,7 +1523,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Releases the trigger of the weapon. </p>
 <p>It is important to invoke this function whenever the player's input imply it. Some firing modes require repeated pull-and-release of the trigger, see FiringMode for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01049">1049</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01374">1374</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1389,7 +1547,7 @@ Additional Inherited Members</h2></td></tr>
 <p>moves some "unmag" bullets into "mag" bullet count. See the return value of the function if you are interested in if the reloading is actually triggered by this call. It can happen that the reloading process is not initiated by this call, e.g. reloading has been already initiated previously, or the magazine is already full, etc.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if reload has been actually initiated by this call, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00938">938</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01247">1247</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1569,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Resets properties of the weapon to its initial values like when it was just loaded from file. </p>
 <p>Useful when the player respawns and we need to reset all of their weapons. The availability for the player is also being reset to false. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01073">1073</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01398">1398</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1590,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Changes the availability of this weapon for the player. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01114">1114</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01439">1439</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1460,7 +1618,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00760">760</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01069">1069</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1640,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Sets the player associated with this weapon. </p>
 <p>Players are identified by their connection handle. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00829">829</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01138">1138</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1510,7 +1668,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00729">729</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01038">1038</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1537,7 +1695,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00566">566</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00875">875</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1560,7 +1718,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This function is recommended to be invoked by the game as often as possible, since it is time-dependent. Calling this function takes care of the state transition and other property updates of the weapon, initiated by a trigger pull or reload.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if the mag- or unmag bullet count changed, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00842">842</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01151">1151</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1587,7 +1745,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01349">1349</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01701">1701</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1764,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00923">923</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l01232">1232</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1632,7 +1790,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Updates the graphical object entity associated to this weapon object. </p>
 <p>Only the position is updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00601">601</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00910">910</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1816,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Updates the graphical object entity associated to this weapon object. </p>
 <p>The position and angles are updated. The angles are updated to point to the specified targetPos2D value. This function can be used to update our weapon on our side. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00626">626</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00935">935</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1689,7 +1847,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Updates the graphical object entity associated to this weapon object. </p>
 <p>The position and angles are updated to the specified values. This function can be used to update the weapon of other clients on our side. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00614">614</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8cpp_source.html#l00923">923</a> of file <a class="el" href="_weapon_manager_8cpp_source.html">WeaponManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1872,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00342">342</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00510">510</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1741,7 +1899,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Flag for the game, e.g. </p>
 <p>if true then the player has this weapon. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00353">353</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00523">523</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1768,12 +1926,12 @@ Additional Inherited Members</h2></td></tr>
 <p>True if trigger is released, false when being pulled. </p>
 <p>True by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00354">354</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00524">524</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
-<a id="a020862134bb39d77b8c10a72be3e1665" name="a020862134bb39d77b8c10a72be3e1665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a020862134bb39d77b8c10a72be3e1665">&#9670;&#160;</a></span>m_bullets</h2>
+<a id="a8dfeb1580422bdb4ea55102530ffbfaa" name="a8dfeb1580422bdb4ea55102530ffbfaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dfeb1580422bdb4ea55102530ffbfaa">&#9670;&#160;</a></span>m_bullets</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1782,7 +1940,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="class_bullet.html">Bullet</a>&gt;&amp; Weapon::m_bullets</td>
+          <td class="memname">PgeObjectPool&lt;<a class="el" href="class_pooled_bullet.html">PooledBullet</a>&gt;&amp; Weapon::m_bullets</td>
         </tr>
       </table>
   </td>
@@ -1792,7 +1950,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00341">341</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00509">509</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1977,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Owner (shooter) of this weapon. </p>
 <p>Should be used by PGE server instance only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00344">344</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00512">512</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +2003,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Current firing mode, something between getVars("firing_mode_def") and getVars("firing_mode_max"). </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00347">347</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00517">517</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +2027,33 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00343">343</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00511">511</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a41583e231af94405daa69b929ee1f391" name="a41583e231af94405daa69b929ee1f391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41583e231af94405daa69b929ee1f391">&#9670;&#160;</a></span>m_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> Weapon::m_id {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unique ID, filled by ctor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00514">514</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1896,7 +2080,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Only updated during <a class="el" href="#afbb52a69ab5159805dbcd2f3634deabc" title="Reloads the weapon i.e.">reload()</a> / Update(). </p>
 <p>Should be managed by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00350">350</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00520">520</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1923,7 +2107,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Bullets loaded into weapon. </p>
 <p>Even if weapon is not reloadable. Should be managed by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00349">349</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00519">519</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1950,7 +2134,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Spare bullets not loaded into weapon. </p>
 <p>Should be managed by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00348">348</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00518">518</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1974,7 +2158,55 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00345">345</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00513">513</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="abd08a81f036466660662d88000ca9ff5" name="abd08a81f036466660662d88000ca9ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd08a81f036466660662d88000ca9ff5">&#9670;&#160;</a></span>m_sndDamagePlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoLoud::Wav Weapon::m_sndDamagePlayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00530">530</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="aa3e95d0d242922b16bd9720d69731b76" name="aa3e95d0d242922b16bd9720d69731b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e95d0d242922b16bd9720d69731b76">&#9670;&#160;</a></span>m_sndDamageWall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoLoud::Wav Weapon::m_sndDamageWall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00529">529</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -1998,7 +2230,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00358">358</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00528">528</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2022,7 +2254,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00357">357</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00527">527</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2046,7 +2278,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00355">355</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00525">525</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2070,7 +2302,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00356">356</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00526">526</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2096,7 +2328,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>State as calculated and updated by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00346">346</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00516">516</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2355,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Only updated during <a class="el" href="#a282936bcae57a75c0ad690f29466ea9b" title="Pulls the trigger of the weapon, which might result in shooting the weapon.">pullTrigger()</a> / Update(). </p>
 <p>Should be managed by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00352">352</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00522">522</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2150,7 +2382,33 @@ Additional Inherited Members</h2></td></tr>
 <p>Only updated during <a class="el" href="#afbb52a69ab5159805dbcd2f3634deabc" title="Reloads the weapon i.e.">reload()</a> / Update(). </p>
 <p>Should be managed by PGE server instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00351">351</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00521">521</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+
+</div>
+</div>
+<a id="a793ac754f349f7a32122cbd61e9e3635" name="a793ac754f349f7a32122cbd61e9e3635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793ac754f349f7a32122cbd61e9e3635">&#9670;&#160;</a></span>m_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a88bbd12b845ee0a3aedaf48bd0ff9c79">Type</a> Weapon::m_type {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Type of weapon, filled by ctor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00515">515</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2180,12 +2438,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">    {<a class="code hl_enumvalue" href="#ad49e01a26726a92fa5af06211f954453ad02c7aa9a694bdc770b1546e8fe15997">WPN_FM_PROJ</a>, <span class="stringliteral">&quot;proj&quot;</span>},</div>
 <div class="line">    {<a class="code hl_enumvalue" href="#ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c">WPN_FM_AUTO</a>, <span class="stringliteral">&quot;auto&quot;</span>}</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453a31326f945b5699708706586774639fad"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453a31326f945b5699708706586774639fad">Weapon::WPN_FM_SEMI</a></div><div class="ttdeci">@ WPN_FM_SEMI</div><div class="ttdoc">Semi-automatic: trigger needs to be pulled-and-released as many times as many bullets we want to fire...</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00188">WeaponManager.h:188</a></div></div>
-<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453a993fcedadc4218635a4e846ea81f7c31"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453a993fcedadc4218635a4e846ea81f7c31">Weapon::WPN_FM_BURST</a></div><div class="ttdeci">@ WPN_FM_BURST</div><div class="ttdoc">Similar to semi, but 1 trigger pull shots some (limited amount) bullets after each other.</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00189">WeaponManager.h:189</a></div></div>
-<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453ad02c7aa9a694bdc770b1546e8fe15997"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453ad02c7aa9a694bdc770b1546e8fe15997">Weapon::WPN_FM_PROJ</a></div><div class="ttdeci">@ WPN_FM_PROJ</div><div class="ttdoc">Similar to burst, but 1 trigger pull shots some (limited amount) of projectiles AT ONCE,...</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00190">WeaponManager.h:190</a></div></div>
-<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c">Weapon::WPN_FM_AUTO</a></div><div class="ttdeci">@ WPN_FM_AUTO</div><div class="ttdoc">Trigger needs to be pulled only once to fire continuously until we have bullet.</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00192">WeaponManager.h:191</a></div></div>
+<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453a31326f945b5699708706586774639fad"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453a31326f945b5699708706586774639fad">Weapon::WPN_FM_SEMI</a></div><div class="ttdeci">@ WPN_FM_SEMI</div><div class="ttdoc">Semi-automatic: trigger needs to be pulled-and-released as many times as many bullets we want to fire...</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00339">WeaponManager.h:339</a></div></div>
+<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453a993fcedadc4218635a4e846ea81f7c31"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453a993fcedadc4218635a4e846ea81f7c31">Weapon::WPN_FM_BURST</a></div><div class="ttdeci">@ WPN_FM_BURST</div><div class="ttdoc">Similar to semi, but 1 trigger pull shots some (limited amount) bullets after each other.</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00340">WeaponManager.h:340</a></div></div>
+<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453ad02c7aa9a694bdc770b1546e8fe15997"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453ad02c7aa9a694bdc770b1546e8fe15997">Weapon::WPN_FM_PROJ</a></div><div class="ttdeci">@ WPN_FM_PROJ</div><div class="ttdoc">Similar to burst, but 1 trigger pull shots some (limited amount) of projectiles AT ONCE,...</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00341">WeaponManager.h:341</a></div></div>
+<div class="ttc" id="aclass_weapon_html_ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c"><div class="ttname"><a href="#ad49e01a26726a92fa5af06211f954453ad5ebaba714621ecffa93699d030e468c">Weapon::WPN_FM_AUTO</a></div><div class="ttdeci">@ WPN_FM_AUTO</div><div class="ttdoc">Trigger needs to be pulled only once to fire continuously until we have bullet.</div><div class="ttdef"><b>Definition</b> <a href="_weapon_manager_8h_source.html#l00343">WeaponManager.h:342</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l01325">1325</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l01677">1677</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2209,7 +2467,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00339">339</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00507">507</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
@@ -2233,7 +2491,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00194">194</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00352">352</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 
 </div>
 </div>
