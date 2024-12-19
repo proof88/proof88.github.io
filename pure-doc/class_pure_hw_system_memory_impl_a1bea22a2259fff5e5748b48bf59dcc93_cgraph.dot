@@ -1,0 +1,12 @@
+digraph "PureHwSystemMemoryImpl::WriteStats"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureHwSystemMemoryImpl\l::WriteStats",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Writes statistics to the console."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwSystemMemoryImpl\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_system_memory_impl.html#ab37a110a9e545b5b7a84711e8129989b",tooltip="Returns access to console preset with logger module name as this class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwSystemMemoryImpl\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_system_memory_impl.html#a231785e9bb98a268816b66e81cbe0245",tooltip="Returns the logger module name of this class."];
+}

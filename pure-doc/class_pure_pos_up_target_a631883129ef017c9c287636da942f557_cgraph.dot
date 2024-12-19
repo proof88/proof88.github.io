@@ -1,0 +1,22 @@
+digraph "PurePosUpTarget::SetRotation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PurePosUpTarget::SetRotation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets direction."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureVector::Normalize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a011fd4f34f4a288519986fe51219c245",tooltip="Normalizes the coordinates."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureVector::getLength",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#ab46a1c67a233f83d514d96194481f747",tooltip="Gets the length."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureTransformMatrix\l::SetRotationX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_transform_matrix.html#a9742dfd1d6adb35fccdf2b172ee3fe14",tooltip="Sets the matrix to a rotation matrix around X-axis."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureMatrix::SetZero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_matrix.html#a313d17b13f39ef09b0bab77c5b3d513a",tooltip="Sets the matrix to zero matrix."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureTransformMatrix\l::SetRotationY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_transform_matrix.html#a23bd9cc9c00c2697dee0b0befdb83235",tooltip="Sets the matrix to a rotation matrix around Y-axis."];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureTransformMatrix\l::SetRotationZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_transform_matrix.html#adf77487c30c63f4cfb99baf6cb29664d",tooltip="Sets the matrix to a rotation matrix around Z-axis."];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,10 @@
+digraph "PureObject3D::getManagedConsole"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureObject3D::getManaged\lConsole",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Returns access to console preset with logger module name as this class."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureObject3D::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#af4467df0003fd4ba737dbc2dec365257",tooltip="Returns the logger module name of this class."];
+}

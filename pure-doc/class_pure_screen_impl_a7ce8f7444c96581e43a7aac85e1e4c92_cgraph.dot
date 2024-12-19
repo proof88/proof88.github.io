@@ -1,0 +1,18 @@
+digraph "PureScreenImpl::setVSyncEnabled"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureScreenImpl::setVSync\lEnabled",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets the state of VSync."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureSharedSettings::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_shared_settings.html#a74854b471a19dcddf5fad7663e63fb04",tooltip="Gets the specified shared setting."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureSharedSettings\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_shared_settings.html#ab956bb8d55ea1b5d1cdb03d86db5bd0b",tooltip="Returns access to console preset with logger module name as this class."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureSharedSettings\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_shared_settings.html#ae97a4ddb9604a9a4ebbcc868c2095449",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureScreenImpl::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_screen_impl.html#af61e5e4ab6ab4eb7cb8f0e246b7d6485",tooltip="Returns access to console preset with logger module name as this class."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureScreenImpl::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_screen_impl.html#aca75838dda7e3c717a8ea2d6b9934b5d",tooltip="Returns the logger module name of this class."];
+}

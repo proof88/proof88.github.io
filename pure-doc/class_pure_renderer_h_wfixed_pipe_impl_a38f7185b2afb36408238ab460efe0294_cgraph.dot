@@ -1,0 +1,12 @@
+digraph "PureRendererHWfixedPipeImpl::LogFullRenderHints"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureRendererHWfixedPipeImpl\l::LogFullRenderHints",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Logs given render hints with full descriptive text."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureRendererHWfixedPipe\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_h_wfixed_pipe.html#afefeadb4d229d83d09fc0f6ec875e48d",tooltip="Returns access to console preset with logger module name as this class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureRendererHWfixedPipe\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_h_wfixed_pipe.html#ac1cf5676887440d49a380e1359edd222",tooltip="Returns the logger module name of this class."];
+}

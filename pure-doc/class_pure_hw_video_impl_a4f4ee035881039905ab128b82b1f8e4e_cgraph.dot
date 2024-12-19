@@ -1,0 +1,15 @@
+digraph "PureHwVideoImpl::PreInitialize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureHwVideoImpl::PreInitialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Preinitializes members."];
+  Node1 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureSharedSettings::Set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_shared_settings.html#a993e7203ed94e39e00debaf6a9383681",tooltip="Sets the specified shared setting."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureSharedSettings\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_shared_settings.html#ab956bb8d55ea1b5d1cdb03d86db5bd0b",tooltip="Returns access to console preset with logger module name as this class."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureSharedSettings\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_shared_settings.html#ae97a4ddb9604a9a4ebbcc868c2095449",tooltip="Returns the logger module name of this class."];
+}

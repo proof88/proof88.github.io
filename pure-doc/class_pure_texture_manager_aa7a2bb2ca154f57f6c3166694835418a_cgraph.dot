@@ -1,0 +1,12 @@
+digraph "PureTextureManager::getMaximumAnisoFiltering"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureTextureManager\l::getMaximumAnisoFiltering",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the maximum level of anisotropic filtering."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureTextureManager\l::PureTextureManagerImpl\l::getMaximumAnisoFiltering",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager_1_1_pure_texture_manager_impl.html#a8156f8b18a340aa1a9794b5f67afc03e",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureTextureManager\l::getPureanisoTexFiltering\lNameFromFloat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager.html#a0825556ac17914c21d025098aaa5151b",tooltip="Gets the Pure aniso texture filtering value that corresponds to the given floating point value."];
+}

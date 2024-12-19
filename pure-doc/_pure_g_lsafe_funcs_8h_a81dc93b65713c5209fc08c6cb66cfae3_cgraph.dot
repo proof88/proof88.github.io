@@ -1,0 +1,16 @@
+digraph "pglBindTexture"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pglBindTexture",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureGLsnippets::ClearGLError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a861a8137e889cc2e6dd0b81eee84a6c3",tooltip="Clears GL error state."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureGLsnippets::getGLError\lTextFromEnum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#ac9c5e3570d082ea2c1f51b185e238641",tooltip="Gets the string representation of the given GL error."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureGLsnippets::getLastSaved\lGLError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a65daf410252a99c8a322fea26bd4caf1",tooltip="Gets the last saved GL error."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureGLsnippets::isGLError\lPresent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a9901675747b09835eb82ddbad3a91fa5",tooltip="Gets whether there is an error in OpenGL or not."];
+}

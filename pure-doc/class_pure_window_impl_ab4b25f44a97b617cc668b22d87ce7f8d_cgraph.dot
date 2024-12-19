@@ -1,0 +1,16 @@
+digraph "PureWindowImpl::onMouseMove"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureWindowImpl::onMouseMove",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureWindowImpl::getSideFrame\lWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_window_impl.html#a8066211a2a75a46294c5cfd3784ea5f2",tooltip="Gets window side frame width."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureWindowImpl::getTitle\lBarHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_window_impl.html#ae46ddf78e026f7fede8596466faf6c0a",tooltip="Gets window title bar height."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureWindowImpl::getX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_window_impl.html#a4fcdb6f99f4726cd951dcf723f103b4c",tooltip="Gets window X-coordinate."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureWindowImpl::getY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_window_impl.html#a86a0969c17436265ed26b9013d424249",tooltip="Gets window Y-coordinate."];
+}

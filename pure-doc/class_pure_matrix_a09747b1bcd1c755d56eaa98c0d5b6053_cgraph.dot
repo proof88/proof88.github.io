@@ -1,0 +1,15 @@
+digraph "PureMatrix::operator*"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureMatrix::operator*",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Multiplication by vector operator."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureVector::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#ac7bb7cc0604ec45b6c4371c3be9c2cb2",tooltip="Gets the value at the given index."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureVector::correctIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a3a76805b3935eadb52ac7cf41dfd981b",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureVector::Set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a7a06ddc19979aa3bbe17514071ed66c8",tooltip="Sets the value at the given index."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

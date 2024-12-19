@@ -1,0 +1,28 @@
+digraph "C:/__PR00F__/___developing___/projects/PGE/PGE/PURE/include/internal"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_ccce2d9ae343f825e3dbbdb591871300 {
+    graph [ bgcolor="#e3e5eb", pencolor="grey50", style="filled,dashed,", label="include", fontname="Helvetica", fontsize="10", URL="dir_ccce2d9ae343f825e3dbbdb591871300.html"]
+  dir_084c3372eb33ddff2f732c4dd4944db2 [shape=box, label="external", style="filled,", fillcolor="#7d86a3", color="red", URL="dir_084c3372eb33ddff2f732c4dd4944db2.html"];
+  subgraph clusterdir_6b2e83f7bfb6188e7f08cd730fe93308 {
+    graph [ bgcolor="#e3e5eb", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_6b2e83f7bfb6188e7f08cd730fe93308.html"]
+    dir_6b2e83f7bfb6188e7f08cd730fe93308 [shape=plaintext, label="internal"];
+  dir_0f8a2f1af7c0e25609717397ea9a801f [shape=box, label="Display", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_0f8a2f1af7c0e25609717397ea9a801f.html"];
+  dir_fa29004a924801c5ee737826c3a1d10a [shape=box, label="Hardware", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_fa29004a924801c5ee737826c3a1d10a.html"];
+  dir_e86c0314d839ced5b73bd757c9b262ba [shape=box, label="Material", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_e86c0314d839ced5b73bd757c9b262ba.html"];
+  dir_86c4a60fe385a7e8285aa60502137a9b [shape=box, label="Math", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_86c4a60fe385a7e8285aa60502137a9b.html"];
+  dir_712aa44a0d0e356543cf6aa5940c5bce [shape=box, label="Object3D", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_712aa44a0d0e356543cf6aa5940c5bce.html"];
+  dir_85d24591d11318ba9345524b1b0e4a8a [shape=box, label="SpatialStructures", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_85d24591d11318ba9345524b1b0e4a8a.html"];
+  }
+  }
+  dir_6b2e83f7bfb6188e7f08cd730fe93308->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="51", labeldistance=1.5 headhref="dir_000012_000004.html"];
+  dir_0f8a2f1af7c0e25609717397ea9a801f->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="1", labeldistance=1.5 headhref="dir_000001_000004.html"];
+  dir_fa29004a924801c5ee737826c3a1d10a->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="17", labeldistance=1.5 headhref="dir_000007_000004.html"];
+  dir_e86c0314d839ced5b73bd757c9b262ba->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="6", labeldistance=1.5 headhref="dir_000014_000004.html"];
+  dir_86c4a60fe385a7e8285aa60502137a9b->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="1", labeldistance=1.5 headhref="dir_000017_000004.html"];
+  dir_712aa44a0d0e356543cf6aa5940c5bce->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="9", labeldistance=1.5 headhref="dir_000020_000004.html"];
+  dir_85d24591d11318ba9345524b1b0e4a8a->dir_084c3372eb33ddff2f732c4dd4944db2 [headlabel="3", labeldistance=1.5 headhref="dir_000026_000004.html"];
+}

@@ -1,0 +1,25 @@
+var class_pure_manager =
+[
+    [ "PureManagerImpl", "class_pure_manager_1_1_pure_manager_impl.html", "class_pure_manager_1_1_pure_manager_impl" ],
+    [ "PureManager", "class_pure_manager.html#a138a5e14034e44bb9d7be272437a22bd", null ],
+    [ "~PureManager", "class_pure_manager.html#a449f97ea3a62f4c438d3abf364e411da", null ],
+    [ "PureManager", "class_pure_manager.html#a4527bdaef7ba130dce31dfcf3b742c20", null ],
+    [ "Attach", "class_pure_manager.html#a50eec0d2d6863b43f1e8b6220d280a1e", null ],
+    [ "DeleteAll", "class_pure_manager.html#aa2dce679e42e1f662eca20f94d708c16", null ],
+    [ "DeleteAttachedInstance", "class_pure_manager.html#a275085df6568bf80db54f6dabe7c039d", null ],
+    [ "Detach", "class_pure_manager.html#ab483ee524198e14fc8fc163c3bddfa34", null ],
+    [ "getAttachedAt", "class_pure_manager.html#a9dc649f2708925167bec9d35c5cd1dac", null ],
+    [ "getAttachedIndex", "class_pure_manager.html#a3ce534bd915aaeafbd3ec289fb030292", null ],
+    [ "getConsole", "class_pure_manager.html#a6903c85a1a34bf5f1c0e68514270ed3b", null ],
+    [ "getCount", "class_pure_manager.html#a00243cdb714c13e7a80ad2b4d2640d72", null ],
+    [ "getSize", "class_pure_manager.html#ab0e16425f31ab0363649bfacdecec94d", null ],
+    [ "getUsedSystemMemory", "class_pure_manager.html#a5dab602841941076717e001ec875b5a0", null ],
+    [ "HandleManagedPropertyChanged", "class_pure_manager.html#acd081e84411f4a1c02f0adc12832bd23", null ],
+    [ "hasAttached", "class_pure_manager.html#af16a0bcbd83f08697ffeb9e52bf1e644", null ],
+    [ "isEmpty", "class_pure_manager.html#a5a40bb17c20655a922f13e5065276b5a", null ],
+    [ "operator=", "class_pure_manager.html#a0796153f88948d71ad00a4c592e39c2e", null ],
+    [ "PreAlloc", "class_pure_manager.html#aaf84ba80d20032e78c00c1211b6c2472", null ],
+    [ "WriteList", "class_pure_manager.html#aab35440bcfe298e92684cf1eb08d14c6", null ],
+    [ "WriteListCallback", "class_pure_manager.html#a2f012333e195f609bf263ee38fcac33c", null ],
+    [ "pImpl", "class_pure_manager.html#a15ccc22dfac2d20a7c7e31f02f1c7273", null ]
+];

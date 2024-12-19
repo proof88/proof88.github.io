@@ -1,0 +1,20 @@
+digraph "PureImage::PureImageImpl::setPixel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureImage::PureImageImpl\l::setPixel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureColor::getAlpha",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_color.html#a148fcb5182671c5f4c6240e28d44f92c",tooltip="Gets alpha component."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureColor::getBlue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_color.html#a9193a213fc8bd16091fb415f7138cc47",tooltip="Gets blue component."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureColor::getGreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_color.html#aa959cebaa77e7054982fb713835090d9",tooltip="Gets green component."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureColor::getRed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_color.html#ad6bf028ebc738488e1edc45081823e20",tooltip="Gets red component."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureImage::setPixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image.html#a5c4fda9e5966cbaa1601ca9387a6cea4",tooltip="Sets the color of the pixel at the given (x,y) coordinate."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureImage::PureImageImpl\l::setPixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image_1_1_pure_image_impl.html#aaa16b03776e81f2ba3bf55a0a523f729",tooltip=" "];
+}

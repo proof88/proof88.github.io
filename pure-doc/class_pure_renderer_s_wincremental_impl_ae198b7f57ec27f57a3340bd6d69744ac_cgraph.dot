@@ -1,0 +1,20 @@
+digraph "PureRendererSWincrementalImpl::~PureRendererSWincrementalImpl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureRendererSWincremental\lImpl::~PureRendererSWincrementalImpl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calls shutdown()."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureRendererSWincremental\lImpl::shutdown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_s_wincremental_impl.html#ac9dfeb5732f74222995db64042ce9ebe",tooltip="This stops the renderer."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureWindow::Deinitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_window.html#a7d8914f933169c9053561f72fcb219b5",tooltip="This deletes the window, then initialize() can be called again later."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwInfo::Deinitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#ae804908d8165b712ceb48d58598d0f96",tooltip="Deinitializes the singleton instance."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureRendererSWincremental\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_s_wincremental.html#acea21e565743526b85cd03e5571c3010",tooltip="Returns access to console preset with logger module name as this class."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureRendererSWincremental\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_s_wincremental.html#a71cc5be78aa684df73628ecc6f9570b0",tooltip="Returns the logger module name of this class."];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureScreen::ResetDisplay\lSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_screen.html#a23c2e1349518c27ae174f32fd539b024",tooltip="Resets the original display settings."];
+}

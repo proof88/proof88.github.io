@@ -1,0 +1,29 @@
+digraph "PureUiManagerImpl::Initialize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureUiManagerImpl::\lInitialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets members to real values within the singleton instance."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ImGui::CreateContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_im_gui.html#a22f09dfd10b174a8e841c834faf64aec",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureUiManagerImpl::\lDeinitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_ui_manager_impl.html#a2f351c46658b031a90f285105f4b9b28",tooltip="This deletes all UI elements and allocated resources, Initialize() can be called again later."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ImGui::DestroyContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_im_gui.html#a1376d580c364fb64264c7a16538a8dfb",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureUiManager::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_ui_manager.html#a15492feec32afcd6b3c0c27fe80a91f9",tooltip="Returns access to console preset with logger module name as this class."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureUiManager::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_ui_manager.html#a9bb3bc209c163d824574cbd744a68a78",tooltip="Returns the logger module name of this class."];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ImGui::GetCurrentContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_im_gui.html#a3a3cb12a2e8fead9d14876bdeedcb945",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ImGui::GetIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_im_gui.html#a8a958f989d5d1618cb1a4070f2a9f96d",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ImGui::StyleColorsDark",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_im_gui.html#aedb28c515ed45e5d8b5a3bf4bcf663d8",tooltip=" "];
+}

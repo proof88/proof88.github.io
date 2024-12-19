@@ -1,0 +1,38 @@
+digraph "PureTexture::PureTextureImpl::actualUploadProc"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureTexture::PureTexture\lImpl::actualUploadProc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This contains the actual pixel upload code."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwInfo::getVideo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#ae5af3af096158489b5c4e4354c64a336",tooltip="Gives access to PureHwVideo instance."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureHwVideo::isAccelerator\lDetected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video.html#a6cd7cf3802726ff025caed0128047983",tooltip="Gets whether video accelerator is detected or not."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureTextureManager\l::isHardwareMipMapGeneration\lEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager.html#a80ee15d0ba3216e54e843245f2792995",tooltip="Gets whether HW MIP map generation is enabled or not."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureTextureManager\l::PureTextureManagerImpl\l::isHardwareMipMapGenerationEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager_1_1_pure_texture_manager_impl.html#a5d42e8406c17c24f3377836542855656",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureHwVideo::isHardwareMip\lMapGenerationSupported",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video.html#a078471f10a0fb4585c2cd7f1317e7700",tooltip="Gets whether HW MIP map generation is supported or not."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="pglTexImage2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_g_lsafe_funcs_8cpp.html#a059920f1b45b3ddb7599fa94bcc5c003",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureGLsnippets::ClearGLError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a861a8137e889cc2e6dd0b81eee84a6c3",tooltip="Clears GL error state."];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PureGLsnippets::getGLError\lTextFromEnum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#ac9c5e3570d082ea2c1f51b185e238641",tooltip="Gets the string representation of the given GL error."];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PureGLsnippets::getLastSaved\lGLError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a65daf410252a99c8a322fea26bd4caf1",tooltip="Gets the last saved GL error."];
+  Node9 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PureGLsnippets::isGLError\lPresent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a9901675747b09835eb82ddbad3a91fa5",tooltip="Gets whether there is an error in OpenGL or not."];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="pglTexParameteri",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_g_lsafe_funcs_8cpp.html#aad495152c9a97080f402540bfc18c591",tooltip=" "];
+  Node14 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

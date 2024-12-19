@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['version_20history_4739',['Version History',['../version_history.html',1,'']]],
-  ['visibility_20optimizations_4740',['Visibility Optimizations',['../visibility.html',1,'']]]
+  ['glossary_0',['Glossary',['../glossary.html',1,'']]],
+  ['gui_1',['Gui',['../gui.html',1,'']]]
 ];

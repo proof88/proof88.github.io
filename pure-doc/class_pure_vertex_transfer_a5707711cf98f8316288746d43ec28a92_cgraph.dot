@@ -1,0 +1,18 @@
+digraph "PureVertexTransfer::transferVertices"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureVertexTransfer\l::transferVertices",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sends vertices to the graphics pipeline."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureVertexTransfer\l::PureVertexTransferImpl\l::transferVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer_1_1_pure_vertex_transfer_impl.html#aece39fb5975c7ad7981159ba94e9ebbe",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureVertexTransfer\l::getVertexTransferMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer.html#ac8d8a6a5d03525627a3a70e3985b5f76",tooltip="Gets vertex transfer mode."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureVertexTransfer\l::PureVertexTransferImpl\l::getVertexTransferMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer_1_1_pure_vertex_transfer_impl.html#a666e2912bce208573b0e0ede5b22e7be",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureVertexTransfer\l::isVertexModifyingDynamic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer.html#af9acfaa370fc1f08a2ed9881e630f318",tooltip="Tells whether the given Vertex Transfer Mode means dynamic modifying habit."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureVertexTransfer\l::isVertexReferencingIndexed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer.html#adb937021312b8528a943af6395d40c5b",tooltip="Tells whether the given Vertex Transfer Mode references vertices by indexing."];
+}

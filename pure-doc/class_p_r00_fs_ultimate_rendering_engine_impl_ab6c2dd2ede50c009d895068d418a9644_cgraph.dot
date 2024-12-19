@@ -1,0 +1,40 @@
+digraph "PR00FsUltimateRenderingEngineImpl::PrintMaterialsUnusedByObjects"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PR00FsUltimateRenderingEngine\lImpl::PrintMaterialsUnusedByObjects",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureManager::getAttachedAt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html#a9dc649f2708925167bec9d35c5cd1dac",tooltip="Gets the pointer to the managed at the given index."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureObject3D::getBounding\lBoxObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#a0d36d0595c3c0974542d8320b04f988a",tooltip="Gets the bounding box object used for occlusion tests."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureObject3D::PureObject3\lDImpl::getBoundingBoxObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d_1_1_pure_object3_d_impl.html#a115f9aeb18e8796570c6ff232e6c59cf",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PR00FsUltimateRenderingEngine\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_r00_fs_ultimate_rendering_engine.html#a5bcf1d9cc74a732a647fa4138f74f476",tooltip="Returns access to console preset with logger module name as this class."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PR00FsUltimateRenderingEngine\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_r00_fs_ultimate_rendering_engine.html#a95bc1e80a8e0a3fbdc0d0b57cd7197a6",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureManager::getCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html#a00243cdb714c13e7a80ad2b4d2640d72",tooltip="Gets the number of managed objects."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureMesh3D::getMaterial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html#a5a24f2851af802c62d43f211828302ce",tooltip="Gets the material."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureMesh3D::PureMesh3DImpl\l::getMaterial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#aee17b7f49111f4bb38ae444338ae445f",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureMesh3D::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html#a5994d09a83ab409a273eeffff3d6b105",tooltip="Tells if the mesh is a level-1 parent mesh."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PureMesh3D::PureMesh3DImpl\l::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#affd18ce4e5530fc032f1eb2d5c03c689",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PR00FsUltimateRenderingEngine\lImpl::getMaterialManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_r00_fs_ultimate_rendering_engine_impl.html#a505a8e844b86a454aee09979647e00db",tooltip="Get access to material handler functions."];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PureManaged::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_managed.html#a74b5976e4f3d08a276624c1068d3b6e4",tooltip="Gets the name."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PureManaged::PureManaged\lImpl::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_managed_1_1_pure_managed_impl.html#a9e209d31fd238c35a1b0648acb20d188",tooltip="Gets the name."];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PR00FsUltimateRenderingEngine\lImpl::getObject3DManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_r00_fs_ultimate_rendering_engine_impl.html#ae2fbde96c3793f18116b5e77a345a9a8",tooltip="Get access to Object3D handler functions."];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PR00FsUltimateRenderingEngine\lImpl::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_r00_fs_ultimate_rendering_engine_impl.html#aee0addbb450f00c2dc8c57530cac7b8c",tooltip="Gets the state of the engine."];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PureIRenderer::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_i_renderer.html#ad241be1a3da0de7abb0655f5aa39e21f",tooltip="Gets the state of the renderer."];
+}

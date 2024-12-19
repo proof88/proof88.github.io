@@ -1,0 +1,20 @@
+digraph "PureTexture::PureTextureImpl::getTransformedSourceFormat"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureTexture::PureTexture\lImpl::getTransformedSourceFormat",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Transforms to a proper pixel component order and returns the source format."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwInfo::getVideo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#ae5af3af096158489b5c4e4354c64a336",tooltip="Gives access to PureHwVideo instance."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureHwVideo::isNativeDIBFormat\lSupported",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video.html#ab4891f7c13730cb8472022e967c81edd",tooltip="Gets whether uploading of native DIBs (BGRA) is supported or not."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureTextureManager\l::isNativeDIBFormatSupport\lEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager.html#ad6a0ab2ba317eac4f2e37b68ec18f040",tooltip="Gets whether direct upload of BGRA-format images is enabled or not."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureTextureManager\l::PureTextureManagerImpl\l::isNativeDIBFormatSupportEnabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager_1_1_pure_texture_manager_impl.html#a08132fd9ede0dbc3f3065354e712b0ab",tooltip=" "];
+}

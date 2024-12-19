@@ -1,0 +1,12 @@
+digraph "PureScreenImpl::ResetDisplaySettings"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureScreenImpl::ResetDisplay\lSettings",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Resets the original display settings."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureScreenImpl::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_screen_impl.html#af61e5e4ab6ab4eb7cb8f0e246b7d6485",tooltip="Returns access to console preset with logger module name as this class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureScreenImpl::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_screen_impl.html#aca75838dda7e3c717a8ea2d6b9934b5d",tooltip="Returns the logger module name of this class."];
+}

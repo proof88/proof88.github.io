@@ -1,0 +1,46 @@
+digraph "PureObject3D::PureObject3DImpl::draw_OcclusionQuery_Start"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureObject3D::PureObject3\lDImpl::draw_OcclusionQuery_Start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Starts occlusion query for this object if it has a query id and query should be started."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureManager::getAttachedAt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html#a9dc649f2708925167bec9d35c5cd1dac",tooltip="Gets the pointer to the managed at the given index."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureFiledManager::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_filed_manager.html#a81d0ce6d98ee94f91598d294b550fc8a",tooltip="Returns access to console preset with logger module name as this class."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureFiledManager::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_filed_manager.html#af2c265356ee813c96db23297c11158ea",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureManager::getCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html#a00243cdb714c13e7a80ad2b4d2640d72",tooltip="Gets the number of managed objects."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureObject3D::PureObject3\lDImpl::getReferredObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d_1_1_pure_object3_d_impl.html#a40d9f6688f4f5c505ca45cb476c36eec",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureObject3D::PureObject3\lDImpl::glBeginOcclusionQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d_1_1_pure_object3_d_impl.html#a8e3e68d6eaeb43732777d11bc79a2927",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureObject3D::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#aa46f669965a0b3ec379252b424ddd725",tooltip="Tells if the mesh is a level-1 parent mesh."];
+  Node10 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PureMesh3D::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html#a5994d09a83ab409a273eeffff3d6b105",tooltip="Tells if the mesh is a level-1 parent mesh."];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PureMesh3D::PureMesh3DImpl\l::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#affd18ce4e5530fc032f1eb2d5c03c689",tooltip=" "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PureObject3D::PureObject3\lDImpl::glEndOcclusionQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d_1_1_pure_object3_d_impl.html#ab1b98ba908508973957a36a07d5e50e5",tooltip=" "];
+  Node13 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PureObject3D::ResetLastTransferred\lCounts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#a5e7230a4c812ea9a724e5a1068ca07db",tooltip="Reset counters used for measuring number of vertices, triangles, etc."];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PureObject3D::getReferred\lObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#a979da053558b48e335f9a897f58c86b5",tooltip="Gets the original object which was cloned to create this object."];
+  Node15 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PureVertexTransfer\l::ResetLastTransferredCounts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer.html#a3e6d459b99011e97b09f1d5e5266d400",tooltip="Reset counters used for measuring number of vertices, triangles, etc."];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PureVertexTransfer\l::PureVertexTransferImpl\l::ResetLastTransferredCounts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer_1_1_pure_vertex_transfer_impl.html#ae9b6ecd1b9478d9db202bc4b67965e7f",tooltip=" "];
+}

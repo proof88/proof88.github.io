@@ -1,0 +1,40 @@
+digraph "C:/__PR00F__/___developing___/projects/PGE/PGE/PURE/include/internal/PureUiFontWin.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/internal/PureUiFontWin.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/internal/PureUiText.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_ui_text_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/PureUiManager.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_ui_manager_8h.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/PR00FsUltimateRendering\lEngine.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_r00_fs_ultimate_rendering_engine_8h.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/PR00FsUltimateRenderingEngine.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_r00_fs_ultimate_rendering_engine_8cpp.html",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/Render/PureIIncremental\lRenderPipeline.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_i_incremental_render_pipeline_8h.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Render/PureRendererSWincremental.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_renderer_s_wincremental_8cpp.html",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/Render/PureIRenderer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_i_renderer_8h.html",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/Render/PureIRenderable.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_i_renderable_8h.html",tooltip=" "];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/Render/PureRenderer\lHWfixedPipe.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_renderer_h_wfixed_pipe_8h.html",tooltip=" "];
+  Node10 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Render/PureRendererHWfixed\lPipe.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_renderer_h_wfixed_pipe_8cpp.html",tooltip=" "];
+  Node8 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/external/Render/PureRenderer\lSWincremental.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_renderer_s_wincremental_8h.html",tooltip=" "];
+  Node12 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/PureUiManager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_ui_manager_8cpp.html",tooltip=" "];
+  Node2 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/PureUiText.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_ui_text_8cpp.html",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/PureUiFontWin.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_ui_font_win_8cpp.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

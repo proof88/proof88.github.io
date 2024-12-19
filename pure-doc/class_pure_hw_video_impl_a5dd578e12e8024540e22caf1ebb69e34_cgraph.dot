@@ -1,0 +1,12 @@
+digraph "PureHwVideoImpl::isNVVertexArrayRangeSupported"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureHwVideoImpl::isNVVertex\lArrayRangeSupported",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets whether the nVidia-specific Vertex Array Range is supported."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwBase::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base.html#a9b43b708c80cc54e9b14328f7ec8f783",tooltip="Returns whether the instance is successfully initialized."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwBase::PurehwBaseImpl\l::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base_1_1_purehw_base_impl.html#a4bc9a5eb138fb0708fbaaa8b09ffc52a",tooltip="Returns whether the instance is successfully initialized."];
+}

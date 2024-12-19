@@ -1,0 +1,10 @@
+digraph "PureManaged::getName"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureManaged::getName",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the name."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureManaged::PureManaged\lImpl::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_managed_1_1_pure_managed_impl.html#a9e209d31fd238c35a1b0648acb20d188",tooltip="Gets the name."];
+}

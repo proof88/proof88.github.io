@@ -1,0 +1,14 @@
+digraph "PureHwVideoImpl::DiscoverATIElementArrayAvailability"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureHwVideoImpl::Discover\lATIElementArrayAvailability",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Query ATI element array availability."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwVideoImpl::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_impl.html#a7802e0a390c5e5141f29d7501443c4c0",tooltip="Returns access to console preset with logger module name as this class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwVideoImpl::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_impl.html#a5bcc6bdf054e4c31881ba937f6c908f2",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwVideoDiscoverOpenGLbase\l::isExtensionSupported",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_discover_open_g_lbase.html#a67f0959c377517a38b9a4b94416ff3a2",tooltip="Is the given extension supported?"];
+}

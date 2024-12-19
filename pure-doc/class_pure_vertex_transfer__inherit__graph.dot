@@ -1,0 +1,19 @@
+digraph "PureVertexTransfer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PureVertexTransfer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="VertexTransfer class extends Mesh3D by providing ways to transfer vertices of the mesh over the verte..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureMesh3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html",tooltip="3D Mesh class."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureFiledManaged",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_filed_managed.html",tooltip="Managed loaded from / saved to a file."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureManaged",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_managed.html",tooltip="Ancestor class for managed classes."];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureFiledManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_filed_manager.html",tooltip="Manager loading from / saving to a file."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html",tooltip="Ancestor class for manager classes."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureObject3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html",tooltip="3D object class."];
+}

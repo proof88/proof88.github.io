@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['order_4518',['Order',['../struct_compare_by_zdistance.html#a158f9874e3c370134f825f0614ca0fec',1,'CompareByZdistance']]]
+  ['nodetype_0',['NodeType',['../class_pure_octree.html#a8bd91eccd507b5998414f28c125ef19c',1,'PureOctree']]]
 ];

@@ -1,0 +1,16 @@
+digraph "PureImageManager::PureImageManagerImpl::loadBMP"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureImageManager::PureImage\lManagerImpl::loadBMP",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This loads BMP files, handles the actual file operations, and creates the Image object."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureImage::getPixelsSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image.html#a267cae0d088ce362f0b46c0f0ac2a1ac",tooltip="Gets the size of the array of pixels."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureImage::PureImageImpl\l::getPixelsSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image_1_1_pure_image_impl.html#a863b2b8d26b9d859fa1775f0b8dea50c",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureImage::PureImageImpl\l::initMembers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image_1_1_pure_image_impl.html#a3ba1c13479e5392dcea39ccb3410e275",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureImage::PureImageImpl\l::readBMPpixels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image_1_1_pure_image_impl.html#aa67bf29da47b57e74fc80b6b0e2212cc",tooltip="Reads pixels into memory in correct format."];
+}

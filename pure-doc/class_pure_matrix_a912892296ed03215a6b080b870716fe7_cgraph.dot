@@ -1,0 +1,12 @@
+digraph "PureMatrix::getInverse"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureMatrix::getInverse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Returns the matrix array in its inverted form without actually modifying the matrix."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureMatrix::invertArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_matrix.html#a73f4f8de4e43730af599a5f3c1eae1f3",tooltip="Treats the given array as a matrix and inverts it."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureMatrix::ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_matrix.html#aeb96ec1d85ab4cfa73e308badf95591a",tooltip="Returns index of cell in given row and column."];
+}

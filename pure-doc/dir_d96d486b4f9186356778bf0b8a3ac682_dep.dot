@@ -1,0 +1,17 @@
+digraph "C:/__PR00F__/___developing___/projects/PGE/PGE/PURE/include/external/Render"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_084c3372eb33ddff2f732c4dd4944db2 {
+    graph [ bgcolor="#e3e5eb", pencolor="grey50", style="filled,dashed,", label="external", fontname="Helvetica", fontsize="10", URL="dir_084c3372eb33ddff2f732c4dd4944db2.html"]
+  dir_9079d014ff5bd045c6dc02ba0f396e83 [shape=box, label="Object3D", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_9079d014ff5bd045c6dc02ba0f396e83.html"];
+  dir_e6a3a631516a4d5f5bf716ea38e9a275 [shape=box, label="Hardware", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_e6a3a631516a4d5f5bf716ea38e9a275.html"];
+  dir_e19ca5a0405391bc0dd9fe26b683430a [shape=box, label="Display", style="filled,", fillcolor="#7d86a3", color="grey25", URL="dir_e19ca5a0405391bc0dd9fe26b683430a.html"];
+  dir_d96d486b4f9186356778bf0b8a3ac682 [shape=box, label="Render", style="filled,bold,", fillcolor="#e3e5eb", color="grey25", URL="dir_d96d486b4f9186356778bf0b8a3ac682.html"];
+  }
+  dir_d96d486b4f9186356778bf0b8a3ac682->dir_9079d014ff5bd045c6dc02ba0f396e83 [headlabel="1", labeldistance=1.5 headhref="dir_000023_000019.html"];
+  dir_d96d486b4f9186356778bf0b8a3ac682->dir_e19ca5a0405391bc0dd9fe26b683430a [headlabel="4", labeldistance=1.5 headhref="dir_000023_000000.html"];
+  dir_d96d486b4f9186356778bf0b8a3ac682->dir_e6a3a631516a4d5f5bf716ea38e9a275 [headlabel="2", labeldistance=1.5 headhref="dir_000023_000006.html"];
+}

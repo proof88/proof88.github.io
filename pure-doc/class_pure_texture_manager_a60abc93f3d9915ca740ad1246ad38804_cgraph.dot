@@ -1,0 +1,14 @@
+digraph "PureTextureManager::getUsedTextureMemory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureTextureManager\l::getUsedTextureMemory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the total amount of allocated VRAM by all of the textures."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureTextureManager\l::PureTextureManagerImpl\l::getUsedTextureMemory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_manager_1_1_pure_texture_manager_impl.html#ab4a35cb4e3ca0602056b2276018f843e",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureTexture::getUsedTexture\lMemory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture.html#a15b638cb6f14feb642202c97a3baa57e",tooltip="Gets the amount of VRAM allocated (considering compression, MIP mapping, etc...)."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureTexture::PureTexture\lImpl::getUsedTextureMemory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_texture_1_1_pure_texture_impl.html#abfa9e8c011b79b813367d9eada0020e1",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+digraph "PureOctree::calculateIndex"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureOctree::calculateIndex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates child node index for the given position in the current node."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureVector::getX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a1671b6f7232f6cacd5b25e2e0078caa8",tooltip="Gets the X-coordinate."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureVector::getY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#ad3f280e052c74e30635f16def6f3fdff",tooltip="Gets the Y-coordinate."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureVector::getZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a0c7e17a5a9297eeefe11ac08611f4339",tooltip="Gets the Z-coordinate."];
+}

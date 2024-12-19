@@ -1,0 +1,24 @@
+digraph "CompareByZdistance::operator()"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CompareByZdistance\l::operator()",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureVector::getDotProduct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a79ba1a06c4f660efb0ec99719521b182",tooltip="Dot product."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureManaged::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_managed.html#a74b5976e4f3d08a276624c1068d3b6e4",tooltip="Gets the name."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureManaged::PureManaged\lImpl::getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_managed_1_1_pure_managed_impl.html#a9e209d31fd238c35a1b0648acb20d188",tooltip="Gets the name."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureMesh3D::getPosVec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html#a6a0d521719d2afacba9fe360df5ff670",tooltip="Gets the position."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureMesh3D::PureMesh3DImpl\l::getPosVec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#a6179ac01bfe066184922eaeec0a59a5a",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureVector::getX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a1671b6f7232f6cacd5b25e2e0078caa8",tooltip="Gets the X-coordinate."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureVector::getY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#ad3f280e052c74e30635f16def6f3fdff",tooltip="Gets the Y-coordinate."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureVector::getZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a0c7e17a5a9297eeefe11ac08611f4339",tooltip="Gets the Z-coordinate."];
+}

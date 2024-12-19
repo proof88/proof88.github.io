@@ -1,0 +1,41 @@
+digraph "PureGLsnippets::SetZPassRendering"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureGLsnippets::SetZPass\lRendering",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureGLsnippets::glLoadTextures\lAndSetBlendState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#af3373ec54d0856b9ea89a3c1b277f6aa",tooltip="Loads all textures into texture mapping units and sets blending if needed for single-pass multitextur..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureMaterial::getDestination\lBlendFunc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#a6da69b985d3b4aaa53e1fd09e60a0cf3",tooltip="Gets the destination blend factor on the specified level."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureMaterial::PureMaterial\lImpl::getDestinationBlendFunc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#a27ebedf739437582388bcf695952a905",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureGLsnippets::getGLBlend\lFromPureBlend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#ae569eaca49e2b7b99dedaa0250e021be",tooltip="Gets the appropriate GL enum for the given Pure blend factor."];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureMaterial::getSourceBlendFunc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#ae232adc941aec0ffbe7533c28ec58546",tooltip="Gets the source blend factor on the specified level."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureMaterial::PureMaterial\lImpl::getSourceBlendFunc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#abf42ebc8a2be9ca0558c18856d756244",tooltip=" "];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureMaterial::getTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#aac639580d21c36bce9a095a0a15ce074",tooltip="Gets the texture of the material on the specified level."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PureMaterial::PureMaterial\lImpl::getTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#a2938b62292a5e989159eb403b65648bb",tooltip=" "];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PureGLsnippets::glLoadTexture\lIntoTMU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#abf470a0dd0c951d820fee3f6dcf48a39",tooltip="Loads the given texture into the texture mapping unit."];
+  Node12 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PureMaterial::isBlendFunc\lReallyBlending",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#a6d975b46498ae73a8bf69e774123c271",tooltip="Gets whether the given source and destination factors really mean blending or not."];
+  Node2 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PureMaterial::isMultiTextured",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#a52e0a9ed8c232e1d2a0124337e4df67c",tooltip="Gets whether the material has at least 2 textured layers."];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PureMaterial::PureMaterial\lImpl::isMultiTextured",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#a79c53753d37610b5e594fef9068c0c95",tooltip=" "];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PureMaterial::getTexture\lCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#ab817ea8a9b5c097ae3edc0ea05a7b7ab",tooltip="Gets the number of textures assigned to this material."];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PureMaterial::PureMaterial\lImpl::getTextureCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#a692996ba68d7e5dc66a5b65e57bffad5",tooltip=" "];
+}

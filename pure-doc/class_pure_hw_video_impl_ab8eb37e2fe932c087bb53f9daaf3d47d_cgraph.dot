@@ -1,0 +1,18 @@
+digraph "PureHwVideoImpl::DiscoverViewportAvailability"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureHwVideoImpl::Discover\lViewportAvailability",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Query viewport details."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwVideoDiscoverOpenGLbase\l::CheckAgainstStandardMinValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_discover_open_g_lbase.html#a3246dee68bcc5b5084b6095c3365864a",tooltip="Checks given value against given standard value."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwVideoDiscoverOpenGLbase\l::CheckAgainstStandardRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_discover_open_g_lbase.html#ab7890ed1168f0cf55420b9a578580faf",tooltip="Checks given range against given standard range."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureGLsnippets::ClearGLError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_g_lsnippets.html#a861a8137e889cc2e6dd0b81eee84a6c3",tooltip="Clears GL error state."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureHwVideoImpl::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_impl.html#a7802e0a390c5e5141f29d7501443c4c0",tooltip="Returns access to console preset with logger module name as this class."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureHwVideoImpl::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_impl.html#a5bcc6bdf054e4c31881ba937f6c908f2",tooltip="Returns the logger module name of this class."];
+}

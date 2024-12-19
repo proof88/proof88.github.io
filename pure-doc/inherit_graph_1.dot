@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="DDPIXELFORMAT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_d_p_i_x_e_l_f_o_r_m_a_t.html",tooltip=" "];
+}

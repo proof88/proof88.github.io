@@ -1,0 +1,36 @@
+digraph "PureRendererHWfixedPipeImpl::SetRenderHints"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureRendererHWfixedPipeImpl\l::SetRenderHints",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Set current render hints."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureObject3D::ForceFinish\lOcclusionTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#a282b9cfcb8cc97e12dce75f72332a6cf",tooltip="Waits for any pending occlusion test to be finished and reset occluded state."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureObject3D::PureObject3\lDImpl::ForceFinishOcclusionTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d_1_1_pure_object3_d_impl.html#a8c995a3e9b95f4e352a0444252dc2852",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureObject3D::getManaged\lConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#a5c34510d710a5528c1ba7c37252f8625",tooltip="Returns access to console preset with logger module name as this class."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureObject3D::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#af4467df0003fd4ba737dbc2dec365257",tooltip="Returns the logger module name of this class."];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureObject3D::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d.html#aa46f669965a0b3ec379252b424ddd725",tooltip="Tells if the mesh is a level-1 parent mesh."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureObject3D::PureObject3\lDImpl::getReferredObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_object3_d_1_1_pure_object3_d_impl.html#a40d9f6688f4f5c505ca45cb476c36eec",tooltip=" "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureMesh3D::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html#a5994d09a83ab409a273eeffff3d6b105",tooltip="Tells if the mesh is a level-1 parent mesh."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PureMesh3D::PureMesh3DImpl\l::isLevel1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#affd18ce4e5530fc032f1eb2d5c03c689",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PureManager::getAttachedAt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html#a9dc649f2708925167bec9d35c5cd1dac",tooltip="Gets the pointer to the managed at the given index."];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PureRendererHWfixedPipe\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_h_wfixed_pipe.html#afefeadb4d229d83d09fc0f6ec875e48d",tooltip="Returns access to console preset with logger module name as this class."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PureRendererHWfixedPipe\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_h_wfixed_pipe.html#ac1cf5676887440d49a380e1359edd222",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PureManager::getSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_manager.html#ab0e16425f31ab0363649bfacdecec94d",tooltip="Gets the number of allocated slots for managed objects; getSize() >= getCount()."];
+}

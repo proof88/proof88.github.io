@@ -1,0 +1,10 @@
+digraph "PureMaterialManager::getMaximumLayerCount"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureMaterialManager\l::getMaximumLayerCount",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Tells maximum number of layers allowed per material."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureMaterialManager\l::PureMaterialManagerImpl\l::getMaximumLayerCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_manager_1_1_pure_material_manager_impl.html#a73aaeda17c5a71e2277f0d46acfa2605",tooltip=" "];
+}

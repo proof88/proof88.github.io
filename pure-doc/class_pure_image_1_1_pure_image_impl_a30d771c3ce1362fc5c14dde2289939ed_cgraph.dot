@@ -1,0 +1,10 @@
+digraph "PureImage::PureImageImpl::setPixelComponentOrder"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureImage::PureImageImpl\l::setPixelComponentOrder",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureImageManager::getColor\lConversionSwapCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_image_manager.html#a23cce974a8350cb491d8cd6eb68cba08",tooltip="Calculates the number of swaps needed from the given color component order to the other."];
+}

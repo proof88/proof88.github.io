@@ -1,0 +1,10 @@
+digraph "PureVertexTransfer::getLastTransferredTriangleCount"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureVertexTransfer\l::getLastTransferredTriangle\lCount",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the number of triangles sent to graphics pipeline by the last transferVertices() call."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureVertexTransfer\l::PureVertexTransferImpl\l::getLastTransferredTriangleCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vertex_transfer_1_1_pure_vertex_transfer_impl.html#a8abd46b6818113d9c0f8f3dcb5c855fa",tooltip=" "];
+}

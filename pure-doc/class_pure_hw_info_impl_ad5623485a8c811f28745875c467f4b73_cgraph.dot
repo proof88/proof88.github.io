@@ -1,0 +1,30 @@
+digraph "PureHwInfoImpl::Initialize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureHwInfoImpl::Initialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets members to real values within the singleton instance."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwInfoImpl::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a9a76078c4ffa06d7641af9c2fc0ed014",tooltip="Returns access to console preset with logger module name as this class."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwInfoImpl::getLogger\lModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a6281ca9a77ccf51f09f6918e3f4943b5",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureHwBase::Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base.html#aaa153188cadcdba270ebf5a01c46f338",tooltip="Initializes the instance."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureHwBase::PurehwBaseImpl\l::Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base_1_1_purehw_base_impl.html#a69a5c31c50b1baeb545379c348af272c",tooltip="Initializes the instance."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureHwVideo::Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video.html#aea26fe72b3ffaafb3f1441996b6a6dd1",tooltip="Sets members to real values within the singleton instance."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureHwBase::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base.html#a9b43b708c80cc54e9b14328f7ec8f783",tooltip="Returns whether the instance is successfully initialized."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureHwBase::PurehwBaseImpl\l::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base_1_1_purehw_base_impl.html#a4bc9a5eb138fb0708fbaaa8b09ffc52a",tooltip="Returns whether the instance is successfully initialized."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureHwInfoImpl::PreInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a03485b2bf9c64d1b0113143679be79e8",tooltip="Preinitializes members."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureHwInfoImpl::WriteStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#aad6c958ccb82ae60f69303c06301f5ae",tooltip="Writes statistics to the console."];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PureHwInfoImpl::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a252f2cf58737ac044690078fc0dd4e41",tooltip="Returns whether the singleton instance is successfully initialized."];
+}

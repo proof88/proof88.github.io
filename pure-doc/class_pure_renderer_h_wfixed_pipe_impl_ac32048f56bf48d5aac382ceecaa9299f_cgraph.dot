@@ -1,0 +1,12 @@
+digraph "PureRendererHWfixedPipeImpl::SwitchToOrtographicProjection"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureRendererHWfixedPipeImpl\l::SwitchToOrtographicProjection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets orthographic projection."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureCamera::getViewport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_camera.html#a165e80e61119139c31f6bbd3dccf8ce4",tooltip="Gets camera viewport."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureCamera::PureCameraImpl\l::getViewport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_camera_1_1_pure_camera_impl.html#a5724f8f555758426f37e0a0983593215",tooltip=" "];
+}

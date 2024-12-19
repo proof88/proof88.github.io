@@ -1,0 +1,20 @@
+digraph "PureMaterial::PureMaterialImpl::copyFromMaterial"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureMaterial::PureMaterial\lImpl::copyFromMaterial",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureMaterial::getIndices\lCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#ab563819c3f99273189080d1adbfa3b6a",tooltip="Gets the number of indices."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureMaterial::PureMaterial\lImpl::getIndicesCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#a4e5772270dc4802365c60ea2b9ec87b1",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureMaterial::getTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#aac639580d21c36bce9a095a0a15ce074",tooltip="Gets the texture of the material on the specified level."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureMaterial::PureMaterial\lImpl::getTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#a2938b62292a5e989159eb403b65648bb",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureMaterial::setTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material.html#a88159b821988d83aeb7610bbf7fdad80",tooltip="Sets the texture of the material on the specified level."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureMaterial::PureMaterial\lImpl::setTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_1_1_pure_material_impl.html#ad16f75a0f304868dbd8b89a873fd6d2a",tooltip=" "];
+}

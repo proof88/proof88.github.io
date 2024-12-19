@@ -1,0 +1,9 @@
+digraph "PureBoundingVolumeHierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PureBoundingVolumeHierarchy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="BVH: Bounding Volume Hierarchy class."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureOctree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_octree.html",tooltip="Octree: a tree data structure in which each node has either 0 or exactly 8 children nodes which parti..."];
+}

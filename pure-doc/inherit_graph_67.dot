@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="PureIIncrementalRenderPipeline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_i_incremental_render_pipeline.html",tooltip="Incremental renderer pipeline interface."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PureRendererSWincrementalImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_s_wincremental_impl.html",tooltip=" "];
+  Node3 [label="PureIRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_i_renderer.html",tooltip="Renderer interface."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureRendererHWfixedPipe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_h_wfixed_pipe.html",tooltip="Incremental fixed-function hardware renderer path."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureRendererHWfixedPipeImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_h_wfixed_pipe_impl.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureRendererSWincremental",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_renderer_s_wincremental.html",tooltip="Incremental software renderer path."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

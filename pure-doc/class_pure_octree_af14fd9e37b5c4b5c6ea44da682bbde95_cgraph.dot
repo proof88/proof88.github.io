@@ -1,0 +1,29 @@
+digraph "PureOctree::insertObject"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureOctree::insertObject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Inserts the given object in the octree."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureOctree::calculateIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_octree.html#a3dcf3842d9c20a6dff31aa97b821d317",tooltip="Calculates child node index for the given position in the current node."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureVector::getX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a1671b6f7232f6cacd5b25e2e0078caa8",tooltip="Gets the X-coordinate."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureVector::getY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#ad3f280e052c74e30635f16def6f3fdff",tooltip="Gets the Y-coordinate."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureVector::getZ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_vector.html#a0c7e17a5a9297eeefe11ac08611f4339",tooltip="Gets the Z-coordinate."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureOctree::getNodeType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_octree.html#a08fbbc54ca6ffefce0710cb03b054303",tooltip="Gets the type of the octree node which depends on if the node has any objects or children nodes."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureMesh3D::getPosVec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d.html#a6a0d521719d2afacba9fe360df5ff670",tooltip="Gets the position."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureMesh3D::PureMesh3DImpl\l::getPosVec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#a6179ac01bfe066184922eaeec0a59a5a",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PureOctree::subdivide",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_octree.html#ab51b1d706e6653eae47012194ef2006a",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PureOctree::PureOctree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_octree.html#a20433115b8cf0ef0aea1362a1cbafdcd",tooltip=" "];
+}

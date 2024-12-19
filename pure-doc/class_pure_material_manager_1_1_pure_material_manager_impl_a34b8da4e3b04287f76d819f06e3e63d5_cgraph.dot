@@ -1,0 +1,22 @@
+digraph "PureMaterialManager::PureMaterialManagerImpl::PureMaterialManagerImpl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PureMaterialManager\l::PureMaterialManagerImpl\l::PureMaterialManagerImpl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PureHwInfo::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#a5d801d548489e9f6c9a3485b8979af3f",tooltip="Gets the singleton instance."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PureHwInfoImpl::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info_impl.html#a54faedd6ce3a5750139d457f4a8a22f2",tooltip="Gets the singleton instance."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PureMaterialManager\l::getConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_manager.html#ab868c432979889479466704cf2a71848",tooltip="Returns access to console preset with logger module name as this class."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PureMaterialManager\l::getLoggerModuleName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_material_manager.html#ac8b77a8b8e68b438773d6e7db2ba670a",tooltip="Returns the logger module name of this class."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PureHwInfo::getVideo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_info.html#ae5af3af096158489b5c4e4354c64a336",tooltip="Gives access to PureHwVideo instance."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PureHwBase::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base.html#a9b43b708c80cc54e9b14328f7ec8f783",tooltip="Returns whether the instance is successfully initialized."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PureHwBase::PurehwBaseImpl\l::isInitialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_base_1_1_purehw_base_impl.html#a4bc9a5eb138fb0708fbaaa8b09ffc52a",tooltip="Returns whether the instance is successfully initialized."];
+}

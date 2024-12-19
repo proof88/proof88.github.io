@@ -1,0 +1,21 @@
+digraph "C:/__PR00F__/___developing___/projects/PGE/PGE/PURE/include/internal/PureGLsafeFuncs.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/include/internal/PureGLsafeFuncs.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Material/PureTexture.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_texture_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Material/PureTextureManager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_texture_manager_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Object3D/PureObject3D.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_object3_d_8cpp.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Object3D/PureObject3DManager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_object3_d_manager_8cpp.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Object3D/PureVertexTransfer\lMode.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_vertex_transfer_mode_8cpp.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/PureGLsafeFuncs.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_g_lsafe_funcs_8cpp.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="C:/__PR00F__/___developing\l___/projects/PGE/PGE/PURE\l/source/Render/PureRendererHWfixed\lPipe.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_pure_renderer_h_wfixed_pipe_8cpp.html",tooltip=" "];
+}
