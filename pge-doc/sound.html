@@ -113,30 +113,35 @@ $(function(){initNavTree('sound.html',''); initResizable(true); });
 </div>
 <div class="textblock"><h1><a class="anchor" id="sound_intro"></a>
 Intro</h1>
-<p>PGE uses <b>SoLoud</b> sound library. <br  />
- The following requirements I had during the choice:</p><ul>
-<li>free;</li>
-<li>should be cross-platform, preferably with Android-support as well;</li>
+<p>PGE uses the <a href="https://github.com/jarikomppa/soloud" target="_blank">SoLoud</a> sound library. <br  />
+ Before selecting it, I spent some time with discovering about sounds libraries. <br  />
+ The following requirements I had towards the sound library during the study:</p><ul>
+<li>shall be free;</li>
+<li>shall be cross-platform, preferably with Android-support as well;</li>
 <li>preferably with C++ API;</li>
-<li>should be able to play a few popular sound formats that games usually use;</li>
+<li>shall be able to play a few popular sound formats that games usually use;</li>
 <li>3D audio support;</li>
-<li>should have some development or maintenance support still nowadays, to make sure it will be compatible with future platforms;</li>
-<li>easy to compile, should not have many dependencies;</li>
+<li>shall have some development or maintenance support still nowadays, to make sure it will be compatible with future platforms;</li>
+<li>easy to compile, shall not have many dependencies;</li>
 <li>easy to integrate into PGE.</li>
 </ul>
 <h1><a class="anchor" id="sound_libs"></a>
 Sound Libraries</h1>
-<p>I made some browsing and study instead of just going straight with the nice and popular FMOD library. Big lists of sound libraries can be found at these places:</p><ul>
+<p>I made some browsing and study instead of just going straight with the nice and popular <a href="https://www.fmod.com/" target="_blank">FMOD library</a> which is non-free nowadays. <br  />
+ Big lists of sound libraries can be found at these places:</p><ul>
 <li><a href="https://www.reddit.com/r/gamedev/comments/4wlp2n/whats_the_best_crossplatform_audio_lib_these_days/">https://www.reddit.com/r/gamedev/comments/4wlp2n/whats_the_best_crossplatform_audio_lib_these_days/</a></li>
 <li><a href="http://kktechkaizen.blogspot.com/2015/12/cross-platform-audio-libraries.html">http://kktechkaizen.blogspot.com/2015/12/cross-platform-audio-libraries.html</a></li>
 </ul>
-<p>Unfortunately, most of them doesn't have out-of-the-box 3D-audio support (I'm not talking about they don't support multiple channels e.g. 5.1, I'm saying that they don't support spatial positioning of 3D Audio and play them according to a listener position).</p>
+<p>Unfortunately, most of them doesn't have out-of-the-box 3D-audio support (I'm not talking about multiple channels support e.g. 5.1, I'm saying that they don't support spatial positioning of 3D Audio and play them according to a listener position). <br  />
+ If you already use <a href="https://github.com/libsdl-org/SDL" target="_blank">SDL</a> then it might be a good idea to go with it for audio support as well (I think it also supports 3D positional audio).</p>
 <p>For me, it boiled down to the following 3 libraries:</p><ul>
 <li><b>SoLoud</b>: <a href="https://github.com/jarikomppa/soloud">https://github.com/jarikomppa/soloud</a></li>
 <li><b>JUCE</b>: <a href="https://github.com/juce-framework/JUCE">https://github.com/juce-framework/JUCE</a></li>
 <li><b>OpenAL Soft</b>: <a href="https://github.com/kcat/openal-soft">https://github.com/kcat/openal-soft</a></li>
 </ul>
-<p>I chose <b>SoLoud</b> because it has a nice C++ interface and documentation. By the time I'm writing this wiki, the last release of the lib was in 2020, which I agree was 2 years ago, but since then still lots of commits have been done to the lib. <b>JUCE</b> is still maintained but it is a bigger framework not only for audio but for other stuff like graphics. <b>OpenAL Soft</b> has pure C interface as I can see it, and I didn't like how the source code of example programs looked like. </p>
+<p>I chose <b>SoLoud</b> because it has a nice C++ interface and documentation. By the time I'm writing this wiki, the last release of the lib was in 2020, which I agree was 2 years ago, but since then still lots of commits have been done to the lib. <br  />
+ <b>JUCE</b> is still maintained but it is a bigger framework not only for audio but for other stuff as well like graphics. <br  />
+ <b>OpenAL Soft</b> has pure C interface as I can see it, and I didn't like how the source code of example programs looked like. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

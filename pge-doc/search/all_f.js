@@ -1,7 +1,7 @@
 var searchData=
 [
   ['packets_20and_20messages_0',['Packets and Messages',['../networking.html#pge_network_packets',1,'']]],
-  ['pages_20of_20this_20topic_1',['Pages of this Topic',['../input.html#input_pages',1,'Pages of this Topic'],['../display.html#display_pages',1,'Pages of this Topic']]],
+  ['pages_20of_20this_20topic_1',['Pages of this Topic',['../input.html#input_pages',1,'']]],
   ['particletype_2',['ParticleType',['../class_bullet.html#a315bad3af1d8cf33898ca447f5030186',1,'Bullet']]],
   ['paste_3',['Copy &amp; Paste',['../index.html#autotoc_md2',1,'']]],
   ['path2_4',['PATH2',['../_pge_gns_wrapper_8h.html#a749dfa6294498a4ca0363cccda64ada6',1,'PgeGnsWrapper.h']]],

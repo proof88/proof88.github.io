@@ -151,7 +151,6 @@ var NAVTREEINDEX4 =
 "dir_894de4897dae893eb9d15381d999f0a0.html":[11,0,0],
 "dir_a86259847659d41e31fc517b099e4d91.html":[11,0,1],
 "display.html":[3],
-"display.html#display_pages":[3,0],
 "files.html":[11,0],
 "functions.html":[10,3,0],
 "functions.html":[10,3,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "struct_pge_gns_server_1_1_t_client.html#a276256e2542ce680be371ac3086c8134":[10,0,7,0,1],
 "struct_pge_gns_server_1_1_t_client.html#a98a9eb14d0d42757553748111677e52d":[10,0,7,0,0],
 "struct_pge_gns_server_1_1_t_client.html#abec9c6aa0774bbab8882995e955ede3d":[10,0,7,0,2],
-"structpge__network_1_1_msg_app.html":[9,0,0,0]
+"structpge__network_1_1_msg_app.html":[9,0,0,0],
+"structpge__network_1_1_msg_app.html":[10,0,0,0]
 };

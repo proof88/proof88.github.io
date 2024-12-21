@@ -38,9 +38,7 @@ var NAVTREE =
     [ "Input", "input.html", [
       [ "Pages of this Topic", "input.html#input_pages", null ]
     ] ],
-    [ "Display", "display.html", [
-      [ "Pages of this Topic", "display.html#display_pages", null ]
-    ] ],
+    [ "Display", "display.html", null ],
     [ "Networking", "networking.html", [
       [ "Intro", "networking.html#networking_intro", null ],
       [ "Networking Libraries", "networking.html#networking_libs", null ],
@@ -111,7 +109,7 @@ var NAVTREEINDEX =
 "class_pge_network_impl.html#a5ea5ecb824f754079a70d0b94508b22b",
 "classpge__network_1_1_pge_client_stub.html#a0d94f6b3e6d877a70a850f73ee11db2b",
 "classpge__network_1_1_pge_network_stub.html#a53e0b6f46b282ef6ff4a857342684338",
-"structpge__network_1_1_msg_app.html"
+"structpge__network_1_1_msg_app.html#a03522826e003c923d90eeffdcaf26ef0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
