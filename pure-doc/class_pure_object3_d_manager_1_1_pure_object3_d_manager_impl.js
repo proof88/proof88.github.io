@@ -1,0 +1,28 @@
+var class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl =
+[
+    [ "~PureObject3DManagerImpl", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#ad53994d3ad6b16fc17719569ff4c05f6", null ],
+    [ "PureObject3DManagerImpl", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a04b1d33e33b180cd87c0b09e91d6a3ab", null ],
+    [ "PureObject3DManagerImpl", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#abad6bd9d38c98d15e647e63885d764a9", null ],
+    [ "PureObject3DManagerImpl", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#aaad151479519a66f4798cf363d694657", null ],
+    [ "get2dBlendedOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a0b72d5603bfea8c89c7097a71568eceb", null ],
+    [ "get2dBlendedOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a22550d36e28b07e0be26981fc119e953", null ],
+    [ "get2dOpaqueOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#aecd4a730a4d5f6c967733875e6bfffe0", null ],
+    [ "get2dOpaqueOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a59dd90b1fe6695b666e4efc471d656c5", null ],
+    [ "get3dBlendedOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a211c07d8529d3092091cbfd04640f3a6", null ],
+    [ "get3dBlendedOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a10c9c2e814e26d3d545cdd197bf15fba", null ],
+    [ "get3dOpaqueOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#aad18da93cf0450105a3370adf9d6f3e4", null ],
+    [ "get3dOpaqueOccludees", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#ac5d5a8fe17250c2fc17a8cf4cc566568", null ],
+    [ "getOccluders", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a1ced804e2fb80af9e2feaeb327e9a5ad", null ],
+    [ "getOccluders", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a0f997b00dbad8335d0998876b85ba56d", null ],
+    [ "isInitialized", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a4740f60d9892ee3709c6df6b854f7a18", null ],
+    [ "operator=", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a273cab3f76c25af6c971b6718247fc32", null ],
+    [ "PureObject3DManager", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#aff51db5af9a0d5c5cedb177bea99fcf7", null ],
+    [ "_pOwner", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a91af25d4272e109b259e36d2199b1d13", null ],
+    [ "bInited", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a82cc73f6592f2222d472625a95a896e9", null ],
+    [ "bMinimalIndexStorage", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a8aadf6cef7bc89893f2b7f903c860209", null ],
+    [ "fOccluderSelectionBias", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#aea71c37bf360bed57e877d86baa20abf", null ],
+    [ "materialMgr", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#ad6de186400b3ee5aa2e95df47d3f5bcf", null ],
+    [ "nMaxOccluderCount", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#a2e88b9b212338110ae67a8400ef3690b", null ],
+    [ "nRunningCounter", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#aab782fc89a5dec15cbbca0c691f785c9", null ],
+    [ "textureMgr", "class_pure_object3_d_manager_1_1_pure_object3_d_manager_impl.html#ad901b4c501be2a9248b50dfcfb1b3f8f", null ]
+];

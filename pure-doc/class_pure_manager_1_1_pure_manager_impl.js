@@ -1,0 +1,27 @@
+var class_pure_manager_1_1_pure_manager_impl =
+[
+    [ "~PureManagerImpl", "class_pure_manager_1_1_pure_manager_impl.html#a3bd63bf41f3ee13e25423f24c3e4cfd6", null ],
+    [ "PureManagerImpl", "class_pure_manager_1_1_pure_manager_impl.html#aae2040458236a8a7a01d32e8178ae5b3", null ],
+    [ "PureManagerImpl", "class_pure_manager_1_1_pure_manager_impl.html#a46ffdab2aae03bc58eade344487f0dfc", null ],
+    [ "Attach", "class_pure_manager_1_1_pure_manager_impl.html#a64b6e2e8be16ae6b858bcb5e0465fb3d", null ],
+    [ "createManaged", "class_pure_manager_1_1_pure_manager_impl.html#a5a83470ffda03ec7ced6937d9135f248", null ],
+    [ "DeleteAll", "class_pure_manager_1_1_pure_manager_impl.html#a1945c309617a974f09b5a530694a8a10", null ],
+    [ "DeleteAttachedInstance", "class_pure_manager_1_1_pure_manager_impl.html#a271fa187ca4b8c71d248a60bfc15b9e8", null ],
+    [ "Detach", "class_pure_manager_1_1_pure_manager_impl.html#aee965becbe3289f2c9d0479e41f27a80", null ],
+    [ "Detach", "class_pure_manager_1_1_pure_manager_impl.html#ac6c4136d1448749270c28ef4058a6f80", null ],
+    [ "getAttachedAt", "class_pure_manager_1_1_pure_manager_impl.html#a80a1c183a5741c32165133a18657c036", null ],
+    [ "getAttachedIndex", "class_pure_manager_1_1_pure_manager_impl.html#ad5cd66c064c44276d5d6c25b6c28dc94", null ],
+    [ "getCount", "class_pure_manager_1_1_pure_manager_impl.html#a00c74adc7c047757c972f04ae54268ee", null ],
+    [ "getSize", "class_pure_manager_1_1_pure_manager_impl.html#a38f2a836c16926f8740da59e4503539d", null ],
+    [ "getUsedSystemMemory", "class_pure_manager_1_1_pure_manager_impl.html#aa966794a1d5177cbc980cfb2a8638ee1", null ],
+    [ "hasAttached", "class_pure_manager_1_1_pure_manager_impl.html#ae12852dad0f5ff300d1af66bf74695cb", null ],
+    [ "isEmpty", "class_pure_manager_1_1_pure_manager_impl.html#ad0de0b88c8330ad33ecca5f28227bb66", null ],
+    [ "operator=", "class_pure_manager_1_1_pure_manager_impl.html#a8358707bc87c9f1b62138c7e8f7d0346", null ],
+    [ "PreAlloc", "class_pure_manager_1_1_pure_manager_impl.html#aa3060923b5e217430c6d10d49626227e", null ],
+    [ "preAlloc", "class_pure_manager_1_1_pure_manager_impl.html#a4c6f201226793f9113e35c4f5df9b316", null ],
+    [ "PureManager", "class_pure_manager_1_1_pure_manager_impl.html#acccf68e03ff7137aeb7ba0c96fa599f7", null ],
+    [ "_pOwner", "class_pure_manager_1_1_pure_manager_impl.html#a9293692edeb3d3ff68e20a2e5b18896f", null ],
+    [ "nManagedAllocated", "class_pure_manager_1_1_pure_manager_impl.html#a2e5a267fa3c03b440aec46f2af049f79", null ],
+    [ "nManagedCount", "class_pure_manager_1_1_pure_manager_impl.html#aca22bce9ef97aabc9b555dc4fa26cd3c", null ],
+    [ "pManageds", "class_pure_manager_1_1_pure_manager_impl.html#a37fea1a4b0258f88b7ffbc6632fb3f17", null ]
+];

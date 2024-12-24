@@ -1,0 +1,36 @@
+var _pure_types_8h =
+[
+    [ "TPURE_XY", "struct_t_p_u_r_e___x_y.html", "struct_t_p_u_r_e___x_y" ],
+    [ "TPURE_SIZE_XY", "struct_t_p_u_r_e___s_i_z_e___x_y.html", "struct_t_p_u_r_e___s_i_z_e___x_y" ],
+    [ "TPURE_XYZ", "struct_t_p_u_r_e___x_y_z.html", "struct_t_p_u_r_e___x_y_z" ],
+    [ "TPURE_XYZW", "struct_t_p_u_r_e___x_y_z_w.html", "struct_t_p_u_r_e___x_y_z_w" ],
+    [ "TPURE_RGB_FLOAT", "struct_t_p_u_r_e___r_g_b___f_l_o_a_t.html", "struct_t_p_u_r_e___r_g_b___f_l_o_a_t" ],
+    [ "TPURE_RGB_UBYTE", "struct_t_p_u_r_e___r_g_b___u_b_y_t_e.html", "struct_t_p_u_r_e___r_g_b___u_b_y_t_e" ],
+    [ "TPURE_RGBA_FLOAT", "struct_t_p_u_r_e___r_g_b_a___f_l_o_a_t.html", "struct_t_p_u_r_e___r_g_b_a___f_l_o_a_t" ],
+    [ "TPURE_RGBA_UBYTE", "struct_t_p_u_r_e___r_g_b_a___u_b_y_t_e.html", "struct_t_p_u_r_e___r_g_b_a___u_b_y_t_e" ],
+    [ "TPURE_RECT_FLOAT", "struct_t_p_u_r_e___r_e_c_t___f_l_o_a_t.html", "struct_t_p_u_r_e___r_e_c_t___f_l_o_a_t" ],
+    [ "PGENULL", "_pure_types_8h.html#afd1a1ae362877b98f2bdd1adc0f7a916", null ],
+    [ "TPureBool", "_pure_types_8h.html#abb242efbf5f099e21c07c01e37419b23", null ],
+    [ "TPureByte", "_pure_types_8h.html#a55e33564c719c7099b01aab3e1aa3320", null ],
+    [ "TPureFloat", "_pure_types_8h.html#ad979989e961015fed55f6499bf5851ef", null ],
+    [ "TPureInt", "_pure_types_8h.html#aa6776fb1c63e6660fc8708e001367fbc", null ],
+    [ "TPureLong", "_pure_types_8h.html#a29a997d0e219616f51a63f61fa256974", null ],
+    [ "TPureShort", "_pure_types_8h.html#a5909c0673eb712cd61f4ed6c44483b0b", null ],
+    [ "TPureUByte", "_pure_types_8h.html#a15e83465cb3a36c05d6f43df89baf1c0", null ],
+    [ "TPureUInt", "_pure_types_8h.html#a1ec60ce3f51bc02a02ce69bce573120e", null ],
+    [ "TPureULong", "_pure_types_8h.html#aa495f3edf9e026cb3e2997c535047285", null ],
+    [ "TPureUShort", "_pure_types_8h.html#a8c5da1b5cdff3f1be1826e289fbbc2cf", null ],
+    [ "TRECT", "_pure_types_8h.html#a065923933e390e30bf8a64b266a4136d", null ],
+    [ "TRGBAFLOAT", "_pure_types_8h.html#ac3eb908ae9e7c8be2a1b703c53f8c39b", null ],
+    [ "TRGBAUBYTE", "_pure_types_8h.html#a4a7780c45b30a7cc810a4bd6b6f34a37", null ],
+    [ "TRGBFLOAT", "_pure_types_8h.html#a3db8aff300f5089d7675036033450601", null ],
+    [ "TRGBUBYTE", "_pure_types_8h.html#a052ac4806ed1aa3f2c4301a17463a578", null ],
+    [ "TSXY", "_pure_types_8h.html#a7ecffb88f557b9052cfaf1c89f4bb9e9", null ],
+    [ "TXY", "_pure_types_8h.html#a610729b67bdb8ff262da79ab4708e882", null ],
+    [ "TXYZ", "_pure_types_8h.html#a509ec693ef7a10dc3fbf667a404ebdf4", null ],
+    [ "TXYZW", "_pure_types_8h.html#af830b3deebd192a8eee643c93c717934", null ],
+    [ "TPURE_DISPLAY_MODES", "_pure_types_8h.html#a6f36f2e11cea19a0d91c539c7a144605", [
+      [ "PURE_FULLSCREEN", "_pure_types_8h.html#a6f36f2e11cea19a0d91c539c7a144605ac53ea5542d53137b2601def9399903d1", null ],
+      [ "PURE_WINDOWED", "_pure_types_8h.html#a6f36f2e11cea19a0d91c539c7a144605a3e5528883a908afbeec173ac1ce4289e", null ]
+    ] ]
+];
