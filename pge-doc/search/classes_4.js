@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['weapon_0',['Weapon',['../class_weapon.html',1,'']]],
-  ['weaponmanager_1',['WeaponManager',['../class_weapon_manager.html',1,'']]]
+  ['tclient_0',['TClient',['../struct_pge_gns_server_1_1_t_client.html',1,'PgeGnsServer']]]
 ];

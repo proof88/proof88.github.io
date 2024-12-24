@@ -105,10 +105,10 @@ $(function(){initNavTree('class_pooled_bullet.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 
-<p>Pooled <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> class to be used with PgeObjectPool.  
+<p>Pooled <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> class to be used with <a class="el" href="class_pge_object_pool.html" title="PR00F&#39;s Game Engine object pool for permanently allocating fixed number of game objects.">PgeObjectPool</a>.  
  <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Pooled <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> class to be used with PgeObjectPool. </p>
+<div class="textblock"><p>Pooled <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> class to be used with <a class="el" href="class_pge_object_pool.html" title="PR00F&#39;s Game Engine object pool for permanently allocating fixed number of game objects.">PgeObjectPool</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00273">273</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 </div>
@@ -122,12 +122,13 @@ $(function(){initNavTree('class_pooled_bullet.html',''); initResizable(true); })
   <img src="class_pooled_bullet.png" usemap="#PooledBullet_map" alt=""/>
   <map id="PooledBullet_map" name="PooledBullet_map">
 <area href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager." alt="Bullet" shape="rect" coords="0,0,110,24"/>
+<area href="class_pge_pooled_object.html" title="Only classes derived from PgePooledObject can be stored in PgeObjectPool." alt="PgePooledObject" shape="rect" coords="120,0,230,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab681dcdd11920fc34e209d65197debd4" id="r_ab681dcdd11920fc34e209d65197debd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab681dcdd11920fc34e209d65197debd4">PooledBullet</a> (PgeObjectPoolBase &amp;parentPool, PR00FsUltimateRenderingEngine &amp;gfx)</td></tr>
+<tr class="memitem:ab681dcdd11920fc34e209d65197debd4" id="r_ab681dcdd11920fc34e209d65197debd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab681dcdd11920fc34e209d65197debd4">PooledBullet</a> (<a class="el" href="class_pge_object_pool_base.html">PgeObjectPoolBase</a> &amp;parentPool, PR00FsUltimateRenderingEngine &amp;gfx)</td></tr>
 <tr class="memdesc:ab681dcdd11920fc34e209d65197debd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Most of the parameters required by <a class="el" href="class_bullet.html" title="Bullet class for PR00F&#39;s Game Engine Weapon Manager.">Bullet</a> ctor are NOT available when we create the pool, for those we are passing some default values.  <br /></td></tr>
 <tr class="separator:ab681dcdd11920fc34e209d65197debd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc1c221a4c3442f6d62c6171028863a" id="r_a2fc1c221a4c3442f6d62c6171028863a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc1c221a4c3442f6d62c6171028863a">~PooledBullet</a> ()=default</td></tr>
@@ -141,6 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52f2ed70dd2728733b4bae9bf594d864" id="r_a52f2ed70dd2728733b4bae9bf594d864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pooled_bullet.html">PooledBullet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52f2ed70dd2728733b4bae9bf594d864">operator=</a> (<a class="el" href="class_pooled_bullet.html">PooledBullet</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a52f2ed70dd2728733b4bae9bf594d864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af76011bbf283d47832dee0b17557ca75" id="r_af76011bbf283d47832dee0b17557ca75"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af76011bbf283d47832dee0b17557ca75">onSetUsed</a> () override</td></tr>
+<tr class="memdesc:af76011bbf283d47832dee0b17557ca75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets invoked by <a class="el" href="class_pge_pooled_object.html#a3c24b73e5593813040bf010b1f5cfb74">setUsed()</a>.  <br /></td></tr>
 <tr class="separator:af76011bbf283d47832dee0b17557ca75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_bullet"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_bullet')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_bullet.html">Bullet</a></td></tr>
 <tr class="memitem:ad2ac13f07a67e02c16dbd1e1b37d761c inherit pub_methods_class_bullet" id="r_ad2ac13f07a67e02c16dbd1e1b37d761c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bullet.html#ad2ac13f07a67e02c16dbd1e1b37d761c">Bullet</a> (const <a class="el" href="_weapon_manager_8h.html#af533c7dcecf0bea4fe42f17ead32ca32">WeaponId</a> &amp;wpnId, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle, TPureFloat wpn_px, TPureFloat wpn_py, TPureFloat wpn_pz, TPureFloat wpn_ax, TPureFloat wpn_ay, TPureFloat wpn_az, bool visible, TPureFloat sx, TPureFloat sy, TPureFloat sz, TPureFloat speed, TPureFloat gravity, TPureFloat drag, TPureBool fragile, TPureFloat fDistMax, const <a class="el" href="class_bullet.html#a315bad3af1d8cf33898ca447f5030186">ParticleType</a> &amp;particleType, int nDamageAp, int nDamageHp, TPureFloat fDamageAreaSize, const <a class="el" href="class_bullet.html#a9fb7c5b2ef0424b11c0837e5102889ac">DamageAreaEffect</a> &amp;eDamageAreaEffect, TPureFloat fDamageAreaPulse)</td></tr>
@@ -219,6 +221,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdb7155d9b1c5fcd67363e3ddf94bf1e inherit pub_methods_class_bullet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f03333671185314dff94cad83dab0e2 inherit pub_methods_class_bullet" id="r_a8f03333671185314dff94cad83dab0e2"><td class="memItemLeft" align="right" valign="top">const PureObject3D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bullet.html#a8f03333671185314dff94cad83dab0e2">getObject3D</a> () const</td></tr>
 <tr class="separator:a8f03333671185314dff94cad83dab0e2 inherit pub_methods_class_bullet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_pge_pooled_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_pge_pooled_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_pge_pooled_object.html">PgePooledObject</a></td></tr>
+<tr class="memitem:ae098378edd08dcda84b5b07c95fd902e inherit pub_methods_class_pge_pooled_object" id="r_ae098378edd08dcda84b5b07c95fd902e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#ae098378edd08dcda84b5b07c95fd902e">~PgePooledObject</a> ()=default</td></tr>
+<tr class="separator:ae098378edd08dcda84b5b07c95fd902e inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2550e8eceee86876639df4e37386053b inherit pub_methods_class_pge_pooled_object" id="r_a2550e8eceee86876639df4e37386053b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a2550e8eceee86876639df4e37386053b">PgePooledObject</a> (const <a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> &amp;)=default</td></tr>
+<tr class="separator:a2550e8eceee86876639df4e37386053b inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6aa7a7d1446eb79518456b882e1218 inherit pub_methods_class_pge_pooled_object" id="r_a8c6aa7a7d1446eb79518456b882e1218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a8c6aa7a7d1446eb79518456b882e1218">operator=</a> (const <a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> &amp;)=default</td></tr>
+<tr class="separator:a8c6aa7a7d1446eb79518456b882e1218 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4228f62c909578bcda56df9f16323f5d inherit pub_methods_class_pge_pooled_object" id="r_a4228f62c909578bcda56df9f16323f5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a4228f62c909578bcda56df9f16323f5d">PgePooledObject</a> (<a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a4228f62c909578bcda56df9f16323f5d inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492aa8eed055d8e00750c088c9de7a99 inherit pub_methods_class_pge_pooled_object" id="r_a492aa8eed055d8e00750c088c9de7a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a492aa8eed055d8e00750c088c9de7a99">operator=</a> (<a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a492aa8eed055d8e00750c088c9de7a99 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5017d3077c65ac0bc2eedf1261ff22a0 inherit pub_methods_class_pge_pooled_object" id="r_a5017d3077c65ac0bc2eedf1261ff22a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pge_object_pool_base.html">PgeObjectPoolBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a5017d3077c65ac0bc2eedf1261ff22a0">getParentPool</a> ()</td></tr>
+<tr class="separator:a5017d3077c65ac0bc2eedf1261ff22a0 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff5305b5d5ff0b9bbe645ca73232b5e inherit pub_methods_class_pge_pooled_object" id="r_a4ff5305b5d5ff0b9bbe645ca73232b5e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_pge_object_pool_base.html">PgeObjectPoolBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a4ff5305b5d5ff0b9bbe645ca73232b5e">getParentPool</a> () const</td></tr>
+<tr class="separator:a4ff5305b5d5ff0b9bbe645ca73232b5e inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4b495268992491b5f655649d5e3cc5 inherit pub_methods_class_pge_pooled_object" id="r_a0b4b495268992491b5f655649d5e3cc5"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a0b4b495268992491b5f655649d5e3cc5">used</a> () const</td></tr>
+<tr class="separator:a0b4b495268992491b5f655649d5e3cc5 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d8fe67f7200ef3703cda1183bda1e5 inherit pub_methods_class_pge_pooled_object" id="r_a50d8fe67f7200ef3703cda1183bda1e5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a50d8fe67f7200ef3703cda1183bda1e5">next</a> () const</td></tr>
+<tr class="separator:a50d8fe67f7200ef3703cda1183bda1e5 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963c8e193b2646cd3db5fddc021137b3 inherit pub_methods_class_pge_pooled_object" id="r_a963c8e193b2646cd3db5fddc021137b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pge_pooled_object.html">PgePooledObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a963c8e193b2646cd3db5fddc021137b3">next</a> ()</td></tr>
+<tr class="separator:a963c8e193b2646cd3db5fddc021137b3 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99ca04e6dbc11748a411b23df4ce455 inherit pub_methods_class_pge_pooled_object" id="r_ab99ca04e6dbc11748a411b23df4ce455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#ab99ca04e6dbc11748a411b23df4ce455">remove</a> ()</td></tr>
+<tr class="memdesc:ab99ca04e6dbc11748a411b23df4ce455 inherit pub_methods_class_pge_pooled_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function.  <br /></td></tr>
+<tr class="separator:ab99ca04e6dbc11748a411b23df4ce455 inherit pub_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -243,6 +269,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aee882642e25b5bacc4dc84f99e8333b3 inherit pub_static_methods_class_bullet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d08fab1affe28a5a77269c88b8f530 inherit pub_static_methods_class_bullet" id="r_a45d08fab1affe28a5a77269c88b8f530"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bullet.html#a45d08fab1affe28a5a77269c88b8f530">destroyReferenceObject</a> ()</td></tr>
 <tr class="separator:a45d08fab1affe28a5a77269c88b8f530 inherit pub_static_methods_class_bullet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_pge_pooled_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_pge_pooled_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_pge_pooled_object.html">PgePooledObject</a></td></tr>
+<tr class="memitem:a64c626fb58871712228c9cbcdd73b189 inherit pro_methods_class_pge_pooled_object" id="r_a64c626fb58871712228c9cbcdd73b189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pge_pooled_object.html#a64c626fb58871712228c9cbcdd73b189">PgePooledObject</a> (<a class="el" href="class_pge_object_pool_base.html">PgeObjectPoolBase</a> &amp;parentPool)</td></tr>
+<tr class="separator:a64c626fb58871712228c9cbcdd73b189 inherit pro_methods_class_pge_pooled_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab681dcdd11920fc34e209d65197debd4" name="ab681dcdd11920fc34e209d65197debd4"></a>
@@ -257,7 +286,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">PooledBullet::PooledBullet </td>
           <td>(</td>
-          <td class="paramtype">PgeObjectPoolBase &amp;</td>          <td class="paramname"><span class="paramname"><em>parentPool</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_pge_object_pool_base.html">PgeObjectPoolBase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parentPool</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -377,6 +406,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets invoked by <a class="el" href="class_pge_pooled_object.html#a3c24b73e5593813040bf010b1f5cfb74">setUsed()</a>. </p>
+<p>Derived class can override this to take action whenever the object's used state changes. </p>
+
+<p>Reimplemented from <a class="el" href="class_pge_pooled_object.html#a00c9728d01f5a2ac10aabb036b4b6c3c">PgePooledObject</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_weapon_manager_8h_source.html#l00311">311</a> of file <a class="el" href="_weapon_manager_8h_source.html">WeaponManager.h</a>.</p>
 

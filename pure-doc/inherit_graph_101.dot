@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="TPURE_RGB_UBYTE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_t_p_u_r_e___r_g_b___u_b_y_t_e.html",tooltip="Simple RGB color [0-255]."];
-}

@@ -153,7 +153,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52e04b36140f65ec8641376e2c924009" id="r_a52e04b36140f65ec8641376e2c924009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e04b36140f65ec8641376e2c924009">Weapon</a> (const char *fname, PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;bullets, pge_audio::PgeAudio &amp;audio, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle)</td></tr>
+<tr class="memitem:a52e04b36140f65ec8641376e2c924009" id="r_a52e04b36140f65ec8641376e2c924009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e04b36140f65ec8641376e2c924009">Weapon</a> (const char *fname, <a class="el" href="class_pge_object_pool.html">PgeObjectPool</a>&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;bullets, <a class="el" href="classpge__audio_1_1_pge_audio.html">pge_audio::PgeAudio</a> &amp;audio, PR00FsUltimateRenderingEngine &amp;gfx, <a class="el" href="namespacepge__network.html#a14dea25e0505dae0486013e4048bda54">pge_network::PgeNetworkConnectionHandle</a> connHandle)</td></tr>
 <tr class="separator:a52e04b36140f65ec8641376e2c924009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420e7ba3d2017e6de3e93eb579cfd3fa" id="r_a420e7ba3d2017e6de3e93eb579cfd3fa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a420e7ba3d2017e6de3e93eb579cfd3fa">~Weapon</a> ()</td></tr>
 <tr class="separator:a420e7ba3d2017e6de3e93eb579cfd3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,9 +355,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8dfeb1580422bdb4ea55102530ffbfaa" id="r_a8dfeb1580422bdb4ea55102530ffbfaa"><td class="memItemLeft" align="right" valign="top">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dfeb1580422bdb4ea55102530ffbfaa">m_bullets</a></td></tr>
+<tr class="memitem:a8dfeb1580422bdb4ea55102530ffbfaa" id="r_a8dfeb1580422bdb4ea55102530ffbfaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pge_object_pool.html">PgeObjectPool</a>&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dfeb1580422bdb4ea55102530ffbfaa">m_bullets</a></td></tr>
 <tr class="separator:a8dfeb1580422bdb4ea55102530ffbfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57e50b009491f64048b38efbe61d9dfa" id="r_a57e50b009491f64048b38efbe61d9dfa"><td class="memItemLeft" align="right" valign="top">pge_audio::PgeAudio &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e50b009491f64048b38efbe61d9dfa">m_audio</a></td></tr>
+<tr class="memitem:a57e50b009491f64048b38efbe61d9dfa" id="r_a57e50b009491f64048b38efbe61d9dfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpge__audio_1_1_pge_audio.html">pge_audio::PgeAudio</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e50b009491f64048b38efbe61d9dfa">m_audio</a></td></tr>
 <tr class="separator:a57e50b009491f64048b38efbe61d9dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84393e825c9ce14ef41d5b32d08ae222" id="r_a84393e825c9ce14ef41d5b32d08ae222"><td class="memItemLeft" align="right" valign="top">PR00FsUltimateRenderingEngine &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84393e825c9ce14ef41d5b32d08ae222">m_gfx</a></td></tr>
 <tr class="separator:a84393e825c9ce14ef41d5b32d08ae222"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -547,12 +547,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">PgeObjectPool&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bullets</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_pge_object_pool.html">PgeObjectPool</a>&lt; <a class="el" href="class_pooled_bullet.html">PooledBullet</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bullets</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pge_audio::PgeAudio &amp;</td>          <td class="paramname"><span class="paramname"><em>audio</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classpge__audio_1_1_pge_audio.html">pge_audio::PgeAudio</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>audio</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1862,7 +1862,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pge_audio::PgeAudio&amp; Weapon::m_audio</td>
+          <td class="memname"><a class="el" href="classpge__audio_1_1_pge_audio.html">pge_audio::PgeAudio</a>&amp; Weapon::m_audio</td>
         </tr>
       </table>
   </td>
@@ -1940,7 +1940,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PgeObjectPool&lt;<a class="el" href="class_pooled_bullet.html">PooledBullet</a>&gt;&amp; Weapon::m_bullets</td>
+          <td class="memname"><a class="el" href="class_pge_object_pool.html">PgeObjectPool</a>&lt;<a class="el" href="class_pooled_bullet.html">PooledBullet</a>&gt;&amp; Weapon::m_bullets</td>
         </tr>
       </table>
   </td>

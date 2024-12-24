@@ -1,9 +1,0 @@
-digraph "PureHwVideoDiscoverOpenGL_3_1"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="PureHwVideoDiscoverOpenGL_3_1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Pure OpenGL 3.1 capabilities class."];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="PureHwVideoDiscoverOpenGLbase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pure_hw_video_discover_open_g_lbase.html",tooltip="Pure OpenGL capabilities base class."];
-}
