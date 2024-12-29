@@ -105,10 +105,21 @@ $(function(){initNavTree('pure_used_libs.html',''); initResizable(true); });
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
+    <a href="#pure_used_libs_gui">GUI</a>
+  </li>
+  <li class="level1">
     <a href="#pure_used_libs_windowing">Windowing</a>
   </li>
   <li class="level1">
-    <a href="#pure_used_libs_hw_detect_ogl_extensions">HW Detection, Part 1: Rendering</a>
+    <a href="#pure_used_libs_hw_detect_renderer">HW Detection, Part 1: Renderer</a>
+    <ul>
+      <li class="level2">
+        <a href="#pure_used_libs_hw_detect_renderer_ogl_extensions">Rendering HW Features, OpenGL Extensions</a>
+      </li>
+      <li class="level2">
+        <a href="#pure_used_libs_hw_detect_renderer_vidmem">Video Memory</a>
+      </li>
+    </ul>
   </li>
   <li class="level1">
     <a href="#pure_used_libs_hw_detect_other">HW Detection, Part 2: CPU, RAM, etc.</a>
@@ -118,12 +129,29 @@ $(function(){initNavTree('pure_used_libs.html',''); initResizable(true); });
   </li>
   <li class="level1">
     <a href="#pure_used_libs_models">Model File Loading</a>
+    <ul>
+      <li class="level2">
+        <a href="#pure_used_libs_models_obj_mtl">OBJ and MTL</a>
+      </li>
+      <li class="level2">
+        <a href="#pure_used_libs_models_fbx_gltf">FBX and glTF</a>
+      </li>
+    </ul>
+  </li>
+  <li class="level1">
+    <a href="#pure_used_libs_lightmaps">Lightmaps</a>
+  </li>
+  <li class="level1">
+    <a href="#pure_used_libs_shaders">Shaders</a>
+  </li>
+  <li class="level1">
+    <a href="#pure_used_libs_state_cache">OpenGL State Caching</a>
   </li>
 </ul>
 </div>
 <div class="textblock"><p>This page lists the 3rd party libraries used primarily by PURE. <br  />
  Additional 3rd party libraries used primarily by PGE are listed in <a href="https://proof88.github.io/pge-doc/index.html" target="_blank">PGE's own documentation</a>.</p>
-<p>When choosing a 3rd party library to be used in my project, there are some general factors that must be satisfied by the lib:</p><ul>
+<p>When choosing a 3rd party library to be used in my project, there are some <b>general requirements that must be satisfied by the lib</b>:</p><ul>
 <li>it shall be cross-platform, including Android (because I have plans for releasing to Android phones);</li>
 <li>its license shall allow me to use it with my GPL-3.0/LGPL-3.0 software;</li>
 <li>it shall be still maintained, so that at least severe security issues get fixed over time, and also I can apply stricter compiler warning/error settings when building the lib with recent C++ compilers;</li>
@@ -132,14 +160,37 @@ $(function(){initNavTree('pure_used_libs.html',''); initResizable(true); });
 <li>C++ interface is highly appreciated over C.</li>
 </ul>
 <p>So, for example, if there is a nice image loading library, working fine but not updated since 2004, then sorry but it is a no-go for me.</p>
+<h1><a class="anchor" id="pure_used_libs_gui"></a>
+GUI</h1>
+<p>Under GUI, I mean the HW-accelerated 2D graphical user interface in the rendering area, the usual elements like text, combo box, list box, buttons, etc. <br  />
+ I don't discuss the platform windowing here because that is elaborated in the next section. <br  />
+ GUI has its own <a class="el" href="gui.html">sub-page within PURE documentation where I also cover the chosen library</a>.</p>
+<p>Note: GUI and windowing libs need to be compatible with each other because windowing libraries provide platform-independent input handling as well, and the GUI elements managed by the GUI libs take input from the windowing library's input handling. <br  />
+ Therefore, it is recommended to select a windowing library which is supported by your selected GUI lib, or vice versa.</p>
 <h1><a class="anchor" id="pure_used_libs_windowing"></a>
 Windowing</h1>
 <p>To render something, PURE requires a window. <br  />
  To be more detailed, a window is required by PURE not only for rendering, but also by PGE to handle user input. <br  />
- Before v0.5, <code><a class="el" href="class_pure_window.html" title="Our main window, this is where we render to.">PureWindow</a></code> had WinAPI-based implementation to create and manage such window. <br  />
+ Before v0.5, <code><a class="el" href="class_pure_window.html" title="Our main window, this is where we render to.">PureWindow</a></code> had WinAPI-based implementation to create and manage such window, and using this, <code>PGEInputHandler</code> handled keyboard- and mouse input. <br  />
  This was not platform-independent, so I decided to find a better solution.</p>
-<p>TODO: add sequence of selecting display mode and creating window, with extra step when MSAA is requested! TODO: add what commands I use for beginning a frame and ending a frame, including swapbuffers, glflush.</p>
-<p>My requirements for windowing libraries:</p><ul>
+<p>Note: a small reminder on PURE's internal behavior on initializing OpenGL: </p><table class="doxtable">
+<tr>
+<td><a href="pure-window-screen-opengl-init-msaa.png" target="_blank"><div class="image">
+<img src="pure-window-screen-opengl-init-msaa-thumb.png" alt=""/>
+</div>
+     </a> </td></tr>
+</table>
+<p>If we want MSAA, we need to select an advanced pixel format using WGL functionality. WGL functions are required to list and select advanced pixel formats which support MSAA. <br  />
+ However, WGL functionality is available only after we initialize OpenGL! <br  />
+ So in any case, first we do the following sequence of actions:</p><ul>
+<li><code><a class="el" href="class_pure_window.html#a7874282b11dd8f3678750ae41f09e612" title="This creates the window actually.">PureWindow::initialize()</a></code>: create a window, to have a <a href="https://www.khronos.org/opengl/wiki/Creating_an_OpenGL_Context_(WGL)" target="_blank">DC (Device Context)</a>,</li>
+<li><code><a class="el" href="class_pure_screen.html#a9bca6c8c3f4ac31017204f3c5a3d8642" title="Applies the set settings and the appropriate pixel format for the given HDC.">PureScreen::applyDisplaySettings()</a></code>: apply selected display settings and for the DC we also select a regular pixel format first, or an advanced pixel format if MSAA is requested AND we have WGL functions pointers already,</li>
+<li><code><a class="el" href="class_pure_renderer_h_wfixed_pipe_impl.html#ad65bee838123d9bd693d18dbdc806e15" title="Initializes OpenGL.">PureRendererHWfixedPipeImpl::initializeOpenGL()</a></code>: with the DC we can create an <a href="https://www.khronos.org/opengl/wiki/Creating_an_OpenGL_Context_(WGL)" target="_blank">OpenGL RC (Rendering Context)</a> and query for some specific function pointers, including pointers to WGL functions.</li>
+</ul>
+<p>So at this point, if MSAA was originally requested, we do a shutdown (destroy RC, DC and window), and do the previous sequence again, but this time, we can use WGL functionality to select and apply an advanced pixel format. <br  />
+ Selecting and applying pixel format always happens in <code><a class="el" href="class_pure_screen.html#a9bca6c8c3f4ac31017204f3c5a3d8642" title="Applies the set settings and the appropriate pixel format for the given HDC.">PureScreen::applyDisplaySettings()</a></code>, but only in 2nd iteration we have access to WGL and can select an MSAA-compliant pixel format.</p>
+<p>This explained behavior is also not platform-independent due to WinAPI usage in <code><a class="el" href="class_pure_window.html" title="Our main window, this is where we render to.">PureWindow</a></code> and <code><a class="el" href="class_pure_screen.html" title="Screen handler class.">PureScreen</a></code>, this shall be also handled by my selected 3rd party lib.</p>
+<p><b>My requirements for windowing libraries:</b></p><ul>
 <li>shall support <b>creating window for 3D-acceleration</b> (e.g. on Windows, the selected <a href="https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor#members" target="_blank">pixel format shall have PFD_GENERIC_ACCELERATED, PFD_SUPPORT_OPENGL and PFD_DOUBLEBUFFER flags</a>) which implies it shall support selecting proper pixel format as well;</li>
 <li>shall support pixel format supporting <b>MSAA</b>, implying that <a href="https://registry.khronos.org/OpenGL/extensions/ARB/WGL_ARB_pixel_format.txt" target="_blank">WGL pixel format</a> can be also selected;</li>
 <li>shall support <b>setting display mode</b> including screen resolution, screen refresh rate, color depth, z-buffer depth, stencil buffer depth;</li>
@@ -151,47 +202,70 @@ Windowing</h1>
 <p>I don't care about <b>"fullscreen exclusive mode"</b> <a href="https://www.gamedeveloper.com/programming/fullscreen-exclusive-is-a-lie-sort-of-" target="_blank">because it is not an explicit thing</a>, and also from Windows 10, it is automatic: <br  />
  <em>"we enhanced the DWM to recognize when a game is running in a borderless full screen window with no other applications on the screen. In this circumstance, the DWM gives control of the display and almost all the CPU/GPU power to the game. Which in turn allows equivalent performance to running a game in FSE. Fullscreen Optimizations is essentially FSE with the flexibility to go back to DWM composition in a simple manner".</em> <br  />
  <a href="https://devblogs.microsoft.com/directx/demystifying-full-screen-optimizations/" target="_blank">[link to source]</a></p>
-<p>I considered these libs:</p><ul>
+<p><b>I considered these libs:</b></p><ul>
 <li><a href="https://github.com/libsdl-org/SDL" target="_blank">SDL</a></li>
 <li><a href="https://github.com/SFML/SFML" target="_blank">SFML</a></li>
 <li><a href="https://github.com/glfw/glfw" target="_blank">GLFW</a></li>
 </ul>
-<p>TODO: raw mouse input? TODO: DPI ? TODO: resolution? TODO: vsync?</p>
 <p>All of them are cross-platform, widely used, and still maintained. <br  />
  SDL and SFML provide much more: image file loading, audio support, networking, etc. <br  />
  If you do not use any libs yet for these purposes, I recommend selecting either SDL or SFML so later you can benefit from other features too. <br  />
  Otherwise GLFW might be just fine for you.</p>
-<p>Android is currently NOT officially supported by GLFW (<a href="https://github.com/glfw/glfw/issues/1726" target="_blank">but some work is already being done</a>).</p>
-<h1><a class="anchor" id="pure_used_libs_hw_detect_ogl_extensions"></a>
-HW Detection, Part 1: Rendering</h1>
-<p>Properly detecting the rendering hardware is important because based on that the engine can decide what rendering feature it can use. <br  />
- <b>Features detection</b> in OpenGL is done by parsing OpenGL extensions. <br  />
+<p>As of December 2024, all 3 libs meet the abovementioned requirements. <br  />
+ Some of them might not be as good as the other from screen DPI handling perspective though but at least some support is there anyway. <br  />
+ A small note: <a href="https://tgui.eu/tutorials/latest-stable/dpi-scaling/" target="_blank">TGUI coincidentally also compares these 3 libs in the context of DPI awareness and MSAA</a>.</p>
+<p>My selected GUI library <a class="el" href="gui.html">is Dear ImGui</a>, it officially has support for SDL and GLFW, but not for SFML. <br  />
+ There is an <a href="https://github.com/SFML/imgui-sfml" target="_blank">unofficial repo adding SFML support to Dear ImGui though</a>. <br  />
+ Note: if you use <a href="https://github.com/texus/TGUI/" target="_blank">TGUI</a> then it has support for all 3 windowing libraries though. <br  />
+ Android is currently NOT officially supported by GLFW (<a href="https://github.com/glfw/glfw/issues/1726" target="_blank">but some work is already being done</a>).</p>
+<p><b>So, from all the officially supported features, SDL seems to be the winner (for me), however I might come back to this topic in 2025 when I finally start using one of them.</b></p>
+<h1><a class="anchor" id="pure_used_libs_hw_detect_renderer"></a>
+HW Detection, Part 1: Renderer</h1>
+<h2><a class="anchor" id="pure_used_libs_hw_detect_renderer_ogl_extensions"></a>
+Rendering HW Features, OpenGL Extensions</h2>
+<p>Properly detecting the rendering hardware is important because based on that the engine can decide what rendering features it can use. <br  />
+ <b>Features detection</b> in OpenGL is done by <b>parsing OpenGL extensions</b>. <br  />
  PURE v0.4 parses the supported extensions and also does an extensive per-version and per-feature check, so the user can use the <code><a class="el" href="class_pure_hw_video.html" title="Pure video capabilities class.">PureHwVideo</a></code> class to understand the capabilities of the current rendering hardware. <br  />
  PURE does this by not only expecting the presence of specific extensions strings but also expecting the related function pointers and in some cases it also compares some queried values to an expected range. <br  />
- Since I'm proud of it and did not see anything else similar with this level of verification, I want to keep this behavior. <br  />
- TODO: check gpu-z! <br  />
- BUT getting the function pointers for the extension-specific functions might need to be done in different way on desktop Linux and on mobile devices with OpenGL ES. <br  />
- To avoid doing too much unnecessary work, I'm planning to use a 3rd party lib for extension handling, and <code><a class="el" href="class_pure_hw_video.html" title="Pure video capabilities class.">PureHwVideo</a></code> will also rely on that lib and on my existing per-feature checking implementation. <br  />
- I have not yet done too much study on this but <a href="https://github.com/nigels-com/glew" target="_blank">GLEW</a> and <a href="https://github.com/Dav1dde/glad" target="_blank">Glad</a> came into scope so far. <br  />
- PRooFPS-dd has 2 tickets that will need to be closed once this work is done: <a href="https://github.com/proof88/PRooFPS-dd/issues/28" target="_blank">ticket 1</a>, <a href="https://github.com/proof88/PRooFPS-dd/issues/30" target="_blank">ticket 2</a>.</p>
+ Since I'm proud of this and did not see anything else similar with this level of verification (except probably <a href="https://github.com/nigels-com/glew" target="_blank">GLEW</a>), I want to keep this behavior. <br  />
+ BUT getting the function pointers for the extension-specific functions might need to be done in different way on desktop Windows than on Linux and on mobile devices with OpenGL ES. <br  />
+ For this, <b>I also need a platform-independent solution in the form of a 3rd party lib for extension handling</b>, and <code><a class="el" href="class_pure_hw_video.html" title="Pure video capabilities class.">PureHwVideo</a></code> will also rely on that lib and on my existing per-feature checking implementation. <br  />
+ I have not yet done too much study on this but the following libs came into scope so far:</p><ul>
+<li><a href="https://github.com/nigels-com/glew" target="_blank">GLEW</a></li>
+<li><a href="https://github.com/Dav1dde/glad" target="_blank">Glad</a></li>
+<li><a href="https://github.com/anholt/libepoxy" target="_blank">libepoxy</a></li>
+<li><a href="https://github.com/cginternals/glbinding" target="_blank">glbinding</a></li>
+</ul>
+<p><a href="https://sourceforge.net/projects/glee/" target="_blank">GLEE</a> is not really maintained anymore. Might be good short-term but long-term might not be enough.</p>
+<p>PRooFPS-dd has 2 tickets that will need to be closed once this work is done: <a href="https://github.com/proof88/PRooFPS-dd/issues/28" target="_blank">ticket 1</a>, <a href="https://github.com/proof88/PRooFPS-dd/issues/30" target="_blank">ticket 2</a>.</p>
+<p><b>TODO: conclude on the libs.</b></p>
+<h2><a class="anchor" id="pure_used_libs_hw_detect_renderer_vidmem"></a>
+Video Memory</h2>
 <p>The other topic that is also related to rendering hardware, is the <b>amount of video memory</b>. <br  />
  Based on this, a renderer might not use some features and can also recommend automatic downsizing of textures. <br  />
- For decades, querying the total amount and the free available video memory was not possible to be done in a standard way. <br  />
+ For decades, querying the <b>total amount</b> and the <b>free available video memory</b> was not possible to be done in a standard way. <br  />
  DirectX has implementation for it, but OpenGL does not have. <br  />
  Would be nice to find some cross-platform solution for this.</p>
 <h1><a class="anchor" id="pure_used_libs_hw_detect_other"></a>
 HW Detection, Part 2: CPU, RAM, etc.</h1>
 <p>When generating logs for troubleshooting, it would be nice to better understand the client's (customer) hardware setup. <br  />
  PURE v0.4 has some classes for that but these are unfinished and NOT cross-platform: <code><a class="el" href="class_pure_hw_audio.html" title="Pure audio capabilities class.">PureHwAudio</a></code>, <code><a class="el" href="class_pure_hw_central_processor.html" title="Pure central processor capabilities class.">PureHwCentralProcessor</a></code>, <code><a class="el" href="class_pure_hw_system_memory.html" title="Pure system memory info class.">PureHwSystemMemory</a></code>. <br  />
- Will need to do more research on this.</p>
+ I found the following libs in this topic:</p><ul>
+<li><a href="https://github.com/TheTumultuousUnicornOfDarkness/CPU-X" target="_blank">CPU-X</a></li>
+<li><a href="https://github.com/lpereira/hardinfo" target="_blank">hardinfo</a></li>
+<li><a href="https://github.com/Dr-Noob/cpufetch" target="_blank">cpufetch</a></li>
+<li><a href="https://github.com/openSUSE/hwinfo" target="_blank">hwinfo</a></li>
+</ul>
+<p>Will need to do more research on this.</p>
+<p><b>TODO: conclude on the libs.</b></p>
 <h1><a class="anchor" id="pure_used_libs_images"></a>
 Image File Loading</h1>
-<p>Requirements for image handling libraries:</p><ul>
+<p><b>Requirements for image handling libraries:</b></p><ul>
 <li>shall support images with <b>transparency</b> so that I can utilize alpha values for <a href="https://www.khronos.org/opengl/wiki/blending" target="_blank">blending</a>;</li>
 <li>shall support <b>animated</b> images (e.g. GIF) so that I can easily load sequence of frames for animation purpose;</li>
-<li>shall support <b>DDS format</b> <a href="https://en.wikipedia.org/wiki/DirectDraw_Surface" target="_blank">[link]</a> because that is king for textures;</li>
+<li>shall support <b>DDS format</b> <a href="https://en.wikipedia.org/wiki/DirectDraw_Surface" target="_blank">[link to DDS]</a>, <a href="https://en.wikipedia.org/wiki/S3_Texture_Compression" target="_blank">[link to S3TC]</a>, because that is king for textures;</li>
 <li>shall support <b>resizing</b> because I want image resolution downscaling option before uploading to video memory, based on user's video settings, for slower hardware;</li>
-<li>shall <b>not force me to use its own texture class</b> as I want to use my own texture class with the decoded image data provided by the library.</li>
+<li>shall <b>not force me to use its own texture class</b> as I want to use my own existing texture class with the decoded image data provided by the library.</li>
 </ul>
 <p>The <a href="https://github.com/HappySeaFox/sail?tab=readme-ov-file#competitors" target="_blank">SAIL lib lists a few competitor libs</a>. <br  />
  From this list:</p><ul>
@@ -200,16 +274,40 @@ Image File Loading</h1>
 <li>I skipped <a href="https://www.boost.org/doc/libs/1_68_0/libs/gil/doc/html/index.html" target="_blank">Boost.GIL</a> for unknown reason, somehow I feel like I will never start using Boost even though I know it is very good;</li>
 <li>the rest was not updated for many years.</li>
 </ul>
-<p>So it boiled down to the following list:</p><ul>
-<li><a href="https://github.com/SFML/SFML" target="_blank">SFML</a>, considered also in the <a class="el" href="#pure_used_libs_windowing">Windowing libraries section</a>;</li>
-<li><a href="https://github.com/libsdl-org/SDL" target="_blank">SDL</a>, considered also in the <a class="el" href="#pure_used_libs_windowing">Windowing libraries section</a>;</li>
-<li><a href="https://github.com/HappySeaFox/sail" target="_blank">SAIL</a>.</li>
+<p><b>So it boiled down to the following list:</b></p><ul>
+<li><a href="https://github.com/SFML/SFML" target="_blank">SFML</a>, considered also in the <a class="el" href="#pure_used_libs_windowing">Windowing libraries section</a>, note it does NOT support DDS;</li>
+<li><a href="https://github.com/libsdl-org/SDL" target="_blank">SDL</a>, considered also in the <a class="el" href="#pure_used_libs_windowing">Windowing libraries section</a>, note it does NOT support DDS either;</li>
+<li><a href="https://github.com/HappySeaFox/sail" target="_blank">SAIL</a>, note it does NOT support DDS either.</li>
 </ul>
-<p>TODO: conclude, but first finish the windowing section!</p>
+<p><b>TODO: conclude!</b></p>
+<p>It is interesting to see <b>none of them support DDS or KTX either</b> (DevIL and stb support DDS but they failed on some other requirement). <br  />
+ For DDS support, it is ok if a given lib does not support resizing because DDS stores different MIP map levels, so downscaling can be done by simply selecting a specific MIP map level as base texture, instead of actually resizing. <br  />
+ For a DDS-only lib, either I can use <a href="https://github.com/redorav/ddspp" target="_blank">DDS++</a>, or worst-case I can use my own implementation I made around 2008.</p>
+<p>Another thing to mention is <b>ETC</b> format <a href="https://github.com/Ericsson/ETCPACK" target="_blank">[link to ETCPACK]</a>, which reminds me to the DXT compressions used in DDS files. <br  />
+ If this one is widely supported on OpenGL ES devices and even more preferred than DXT compressions I might need to support this as well.</p>
+<p><b>TODO: conclude, but first finish the windowing section!</b></p>
 <h1><a class="anchor" id="pure_used_libs_models"></a>
 Model File Loading</h1>
+<h2><a class="anchor" id="pure_used_libs_models_obj_mtl"></a>
+OBJ and MTL</h2>
+<p>PURE v0.4 has its own OBJ model file parser implementation, however it still does NOT support MTL file format which is a very fundamental addition to OBJ, since OBJ can reference MTL file to describe material data. <br  />
+ To add MTL support, I think <a href="https://github.com/StefanJohnsen/WavefrontMTL" target="_blank">Stefan Johnsen's library</a> is a good idea. <br  />
+ Later in the future I can also use <a href="https://github.com/StefanJohnsen/WavefrontOBJ" target="_blank">his OBJ parser lib as well</a>.</p>
+<h2><a class="anchor" id="pure_used_libs_models_fbx_gltf"></a>
+FBX and glTF</h2>
+<p>Since OBJ format does not store model animation, in the future I need to support another 3D model file format as well with animation. <br  />
+ <a href="https://en.wikipedia.org/wiki/FBX" target="_blank">FBX</a> and <a href="https://www.khronos.org/Gltf" target="_blank">glTF</a> formats both support model animation and lots of other features, while they also get more and more popular nowadays. <br  />
+ The plan is to include parser libs for these as well in the future.</p>
+<p><b>TODO: conclude on the libs.</b></p>
+<h1><a class="anchor" id="pure_used_libs_lightmaps"></a>
+Lightmaps</h1>
 <p>TODO</p>
-<p><a href="https://github.com/StefanJohnsen/WavefrontMTL?tab=readme-ov-file">https://github.com/StefanJohnsen/WavefrontMTL?tab=readme-ov-file</a> </p>
+<h1><a class="anchor" id="pure_used_libs_shaders"></a>
+Shaders</h1>
+<p>TODO</p>
+<h1><a class="anchor" id="pure_used_libs_state_cache"></a>
+OpenGL State Caching</h1>
+<p>TODO </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

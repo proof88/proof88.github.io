@@ -38,7 +38,7 @@ var searchData=
   ['detach_35',['Detach',['../class_pure_object3_d_manager.html#a991edfaea4d3e1afaeb361b8aaaa76af',1,'PureObject3DManager::Detach()'],['../class_pure_manager.html#ab483ee524198e14fc8fc163c3bddfa34',1,'PureManager::Detach()'],['../class_pure_manager_1_1_pure_manager_impl.html#aee965becbe3289f2c9d0479e41f27a80',1,'PureManager::PureManagerImpl::Detach(PureManaged &amp;m)'],['../class_pure_manager_1_1_pure_manager_impl.html#ac6c4136d1448749270c28ef4058a6f80',1,'PureManager::PureManagerImpl::Detach(TPureInt ind)']]],
   ['detachfrom_36',['DetachFrom',['../class_pure_managed.html#ac4fc582eec03c92d43c661995a21f56e',1,'PureManaged::DetachFrom()'],['../class_pure_managed_1_1_pure_managed_impl.html#a5d0685ab0969f451730a97821e0c525e',1,'PureManaged::PureManagedImpl::DetachFrom()']]],
   ['detail_37',['LOD: Level of Detail',['../visibility.html#lod',1,'']]],
-  ['detection_20part_201_3a_20rendering_38',['HW Detection, Part 1: Rendering',['../pure_used_libs.html#pure_used_libs_hw_detect_ogl_extensions',1,'']]],
+  ['detection_20part_201_3a_20renderer_38',['HW Detection, Part 1: Renderer',['../pure_used_libs.html#pure_used_libs_hw_detect_renderer',1,'']]],
   ['detection_20part_202_3a_20cpu_20ram_20etc_39',['HW Detection, Part 2: CPU, RAM, etc.',['../pure_used_libs.html#pure_used_libs_hw_detect_other',1,'']]],
   ['dirtylookuptables_40',['DirtyLookupTables',['../struct_im_font.html#a3858e851f69b3abbbefad76030a546ff',1,'ImFont']]],
   ['disabledalpha_41',['DisabledAlpha',['../struct_im_gui_style.html#ac497d4a539ff1daf63a8e6a23bd23b0e',1,'ImGuiStyle']]],

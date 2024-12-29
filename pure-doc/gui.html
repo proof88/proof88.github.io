@@ -115,16 +115,17 @@ $(function(){initNavTree('gui.html',''); initResizable(true); });
 <div class="textblock"><h1><a class="anchor" id="gui_intro"></a>
 Intro</h1>
 <p>I have found the following web page that has a comprehensive list of GUI libraries for C++: <a href="https://philippegroarke.com/posts/2018/c++_ui_solutions/">https://philippegroarke.com/posts/2018/c++_ui_solutions/</a></p>
-<p>From the list, I revised the following 4 libraries that are suitable for OpenGL and have hardly any dependencies:</p><ul>
+<p>From the list, in 2024 <b>I revised the following 4 libraries</b> that are suitable for OpenGL and have hardly any dependencies:</p><ul>
 <li>GiGi: <a href="http://gigi.sourceforge.net/index.php">http://gigi.sourceforge.net/index.php</a></li>
 <li>Turbo Badger: <a href="https://github.com/fruxo/turbobadger">https://github.com/fruxo/turbobadger</a></li>
 <li>Nuklear: <a href="https://github.com/Immediate-Mode-UI/Nuklear">https://github.com/Immediate-Mode-UI/Nuklear</a></li>
 <li>Dear <a class="el" href="namespace_im_gui.html">ImGui</a>: <a href="https://github.com/ocornut/imgui">https://github.com/ocornut/imgui</a></li>
 </ul>
-<p>The first 2 are not maintaned anymore, the third is pure C, so I have opted for the last one: Dear <a class="el" href="namespace_im_gui.html">ImGui</a>.</p>
+<p>The first 2 are not maintaned anymore, the third is pure C, so <b>I have opted for the last one: Dear <a class="el" href="namespace_im_gui.html">ImGui</a></b>. <br  />
+ Note: later I noticed the <a href="https://github.com/texus/TGUI/" target="_blank">existence of TGUI</a>, which seems to meet all the requirements as well, including my general requirements for 3rd party libraries that I listed at <a class="el" href="pure_used_libs.html">the 3rd Party libs page</a>.</p>
 <h1><a class="anchor" id="gui_usage"></a>
 Usage</h1>
-<p>For a real-world example on how to use Dear <a class="el" href="namespace_im_gui.html">ImGui</a> with PURE, check the <a href="https://github.com/proof88/PRooFPS-dd/" target="_blank">PRooFPS-dd project</a> which has a menu and also in-game HUD elements utilizing Dear <a class="el" href="namespace_im_gui.html">ImGui</a>. <br  />
+<p>For a real-world example on <b>how to use Dear <a class="el" href="namespace_im_gui.html">ImGui</a> with PURE</b>, check the <a href="https://github.com/proof88/PRooFPS-dd/" target="_blank">PRooFPS-dd project</a> which has a menu and also in-game HUD elements utilizing Dear <a class="el" href="namespace_im_gui.html">ImGui</a>. <br  />
  Basically, PURE takes care of initializing and destroying Dear <a class="el" href="namespace_im_gui.html">ImGui</a> when needed, you can simply concentrate on calling the GUI drawing functions of Dear <a class="el" href="namespace_im_gui.html">ImGui</a> without any hassle. <br  />
  There is a single callback function in PRooFPS-dd called <a href="https://github.com/search?q=repo%3Aproof88/PRooFPS-dd%20proofps_dd%3A%3AGUI%3A%3AdrawDearImGuiCb&amp;type=code" target="_blank">drawDearImGuiCb()</a> which is invoked by PURE in every frame. <br  />
  Then <a href="https://github.com/search?q=repo%3Aproof88/PRooFPS-dd%20proofps_dd%3A%3AGUI%3A%3AdrawDearImGuiCb&amp;type=code" target="_blank">drawDearImGuiCb()</a> decides exactly what to render, based on the current game state. </p>

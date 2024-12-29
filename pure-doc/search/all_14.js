@@ -4,7 +4,7 @@ var searchData=
   ['packidmousecursors_1',['PackIdMouseCursors',['../struct_im_font_atlas.html#afc92fd54d52cab4fe787e364e7e4f652',1,'ImFontAtlas']]],
   ['parent_2',['Parent',['../class_pure_octree.html#a8bd91eccd507b5998414f28c125ef19cac125fec72a9b5d1709c1a4af83440339',1,'PureOctree']]],
   ['parent_3',['parent',['../class_pure_octree.html#a18973f325781721d5cddd584a1738502',1,'PureOctree']]],
-  ['part_201_3a_20rendering_4',['HW Detection, Part 1: Rendering',['../pure_used_libs.html#pure_used_libs_hw_detect_ogl_extensions',1,'']]],
+  ['part_201_3a_20renderer_4',['HW Detection, Part 1: Renderer',['../pure_used_libs.html#pure_used_libs_hw_detect_renderer',1,'']]],
   ['part_202_3a_20cpu_20ram_20etc_5',['HW Detection, Part 2: CPU, RAM, etc.',['../pure_used_libs.html#pure_used_libs_hw_detect_other',1,'']]],
   ['partitioning_6',['BSP: Binary Space Partitioning',['../visibility.html#bsp',1,'']]],
   ['party_20libraries_7',['Used 3rd Party Libraries',['../pure_used_libs.html',1,'']]],

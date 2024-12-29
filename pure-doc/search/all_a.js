@@ -39,5 +39,6 @@ var searchData=
   ['eventkey_36',['EventKey',['../struct_im_gui_input_text_callback_data.html#a2db52e1da5e8109d4eeb5b0ab22200a9',1,'ImGuiInputTextCallbackData']]],
   ['exploiting_20temporal_20coherence_37',['Solving Stalls by Exploiting Temporal Coherence',['../occlusion_culling.html#occlusion_temporal_coherence',1,'']]],
   ['extendby_38',['ExtendBy',['../class_pure_axis_aligned_bounding_box.html#a77927492e545611e491c4e90b0800b2b',1,'PureAxisAlignedBoundingBox::ExtendBy(const PureVector &amp;p)'],['../class_pure_axis_aligned_bounding_box.html#a9579b83fec4a26b01a87ecf55103b64b',1,'PureAxisAlignedBoundingBox::ExtendBy(const PureAxisAlignedBoundingBox &amp;aabb)']]],
-  ['extensions_20for_20hw_20occlusion_20culling_20support_39',['OpenGL Extensions for HW Occlusion Culling Support',['../occlusion_culling.html#occlusion_extensions',1,'']]]
+  ['extensions_39',['Rendering HW Features, OpenGL Extensions',['../pure_used_libs.html#pure_used_libs_hw_detect_renderer_ogl_extensions',1,'']]],
+  ['extensions_20for_20hw_20occlusion_20culling_20support_40',['OpenGL Extensions for HW Occlusion Culling Support',['../occlusion_culling.html#occlusion_extensions',1,'']]]
 ];

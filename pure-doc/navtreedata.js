@@ -67,11 +67,21 @@ var NAVTREE =
       [ "Engine WriteList()", "debugging.html#engine_write_list", null ]
     ] ],
     [ "Used 3rd Party Libraries", "pure_used_libs.html", [
+      [ "GUI", "pure_used_libs.html#pure_used_libs_gui", null ],
       [ "Windowing", "pure_used_libs.html#pure_used_libs_windowing", null ],
-      [ "HW Detection, Part 1: Rendering", "pure_used_libs.html#pure_used_libs_hw_detect_ogl_extensions", null ],
+      [ "HW Detection, Part 1: Renderer", "pure_used_libs.html#pure_used_libs_hw_detect_renderer", [
+        [ "Rendering HW Features, OpenGL Extensions", "pure_used_libs.html#pure_used_libs_hw_detect_renderer_ogl_extensions", null ],
+        [ "Video Memory", "pure_used_libs.html#pure_used_libs_hw_detect_renderer_vidmem", null ]
+      ] ],
       [ "HW Detection, Part 2: CPU, RAM, etc.", "pure_used_libs.html#pure_used_libs_hw_detect_other", null ],
       [ "Image File Loading", "pure_used_libs.html#pure_used_libs_images", null ],
-      [ "Model File Loading", "pure_used_libs.html#pure_used_libs_models", null ]
+      [ "Model File Loading", "pure_used_libs.html#pure_used_libs_models", [
+        [ "OBJ and MTL", "pure_used_libs.html#pure_used_libs_models_obj_mtl", null ],
+        [ "FBX and glTF", "pure_used_libs.html#pure_used_libs_models_fbx_gltf", null ]
+      ] ],
+      [ "Lightmaps", "pure_used_libs.html#pure_used_libs_lightmaps", null ],
+      [ "Shaders", "pure_used_libs.html#pure_used_libs_shaders", null ],
+      [ "OpenGL State Caching", "pure_used_libs.html#pure_used_libs_state_cache", null ]
     ] ],
     [ "Glossary", "glossary.html", null ],
     [ "Repositories And Build", "repos_and_build.html", null ],
@@ -142,9 +152,9 @@ var NAVTREEINDEX =
 "imgui_8h.html#ad2afd5a59df2ef70ff03f4a851168814aa01369e3ded011e87385c6156244e469",
 "namespace_im_gui.html#a1b0d79efa1241aef9f0f4ddc5247c8e2",
 "namespace_im_gui.html#ac5c3f2ab95803c9bd31f2c9cb7b0e647",
-"struct_im_draw_list.html#a3077411eec2c525e23f3a54ffa7121a1",
-"struct_im_gui_i_o.html#a458e4ca98d896adb16e3a41ec6d2b811",
-"struct_im_gui_text_filter_1_1_im_gui_text_range.html#aa522cbb493ad3e02646938661c37ec0e"
+"struct_im_draw_list.html#a16d26579a7e5079a507bfcb7471f97c2",
+"struct_im_gui_i_o.html#a23c9c6c48a51774fee36b7f0bb75d331",
+"struct_im_gui_text_filter.html#ac0f9318d9f62b63aa4d881ae03d1f910"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,13 @@
 var NAVTREEINDEX25 =
 {
+"struct_im_gui_text_filter.html#ac0f9318d9f62b63aa4d881ae03d1f910":[11,0,31,1],
+"struct_im_gui_text_filter.html#ac31839c319fe4211c21fc143b7249f86":[11,0,31,7],
+"struct_im_gui_text_filter.html#ad070acb1038199dd4e8f5d010c5cb5ba":[11,0,31,9],
+"struct_im_gui_text_filter_1_1_im_gui_text_range.html":[11,0,31,0],
+"struct_im_gui_text_filter_1_1_im_gui_text_range.html#a1861f25905e1f19f979998faf5349b5a":[11,0,31,0,2],
+"struct_im_gui_text_filter_1_1_im_gui_text_range.html#a18a2df587336eecc6ba62c4275a4b7c8":[11,0,31,0,4],
+"struct_im_gui_text_filter_1_1_im_gui_text_range.html#a39c1ebebef36566bfec95d2cc4fccc4c":[11,0,31,0,0],
+"struct_im_gui_text_filter_1_1_im_gui_text_range.html#a9f15432fa8cff793a5dc960867cb8689":[11,0,31,0,3],
 "struct_im_gui_text_filter_1_1_im_gui_text_range.html#aa522cbb493ad3e02646938661c37ec0e":[11,0,31,0,5],
 "struct_im_gui_text_filter_1_1_im_gui_text_range.html#aa6912a579ec0907976635b89a9a23da0":[11,0,31,0,1],
 "struct_im_gui_viewport.html":[11,0,32],
