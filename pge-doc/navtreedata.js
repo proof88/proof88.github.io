@@ -67,7 +67,9 @@ var NAVTREE =
     [ "Physics", "physics.html", null ],
     [ "Cross Platform", "crossplatform.html", null ],
     [ "Used 3rd Party Libraries", "pge_used_libs.html", [
-      [ "Memory - blIteratorAPI", "pge_used_libs.html#pge_used_libs_blIteratorAPI", null ]
+      [ "Memory", "pge_used_libs.html#pge_used_libs_memory", null ],
+      [ "Audio", "pge_used_libs.html#pge_used_libs_audio", null ],
+      [ "Networking", "pge_used_libs.html#pge_used_libs_networking", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -116,7 +118,7 @@ var NAVTREEINDEX =
 "classbl_iterator_a_p_i_1_1bl_raw_iterator.html#ae0488ff067b3a674dd80c407090fa2b5",
 "classpge__network_1_1_pge_client_stub.html#acb737a21663728c7d4c797a4a3a0c785",
 "classpge__network_1_1_pge_server_stub.html#a46a5fab69cd55150a7bd767b84ac7472",
-"structpge__network_1_1_msg_user_connected_server_self.html#a12cebbeeaab1c938be4a11519eac4589"
+"structpge__network_1_1_msg_user_connected_server_self.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

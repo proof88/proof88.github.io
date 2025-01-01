@@ -52,6 +52,10 @@ var NAVTREE =
       [ "Do’s and don’t’s", "architecture.html#autotoc_md20", null ]
     ] ],
     [ "Visibility Optimizations", "visibility.html", "visibility" ],
+    [ "Benchmarks & Samples", "benchmarks_samples.html", [
+      [ "Benchmarks", "benchmarks_samples.html#benchmarks_intro", null ],
+      [ "Samples", "benchmarks_samples.html#samples_intro", null ]
+    ] ],
     [ "GUI", "gui.html", [
       [ "Intro", "gui.html#gui_intro", null ],
       [ "Usage", "gui.html#gui_usage", null ]
@@ -136,25 +140,25 @@ var NAVTREEINDEX =
 "_pure_g_lextension_funcs_8h.html#a9b26ebdd3d34282f32ffee5d4ef6893c",
 "_pure_g_lsafe_funcs_8h.html#a059920f1b45b3ddb7599fa94bcc5c003",
 "_pure_screen_8cpp_source.html",
-"class_p_r00_fs_ultimate_rendering_engine.html#abbb1f0045851488877262f88741a0e95",
-"class_pure_hw_info.html#ae804908d8165b712ceb48d58598d0f96",
-"class_pure_hw_video_discover_open_g_lbase.html#a29adfda3b524c247a5cd7a1979f35df5",
-"class_pure_managed_1_1_pure_managed_impl.html#ae2855a53774f5cdee5d72db025ed14a3",
-"class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#a82b5caef4ede1c99465fa162f4f982f7",
-"class_pure_object3_d_manager.html#a616f718beef10dc4659a9ffe0f2d1247",
-"class_pure_screen.html#a4a110e2b17244986bd5ce4fabd0d6256",
-"class_pure_texture_manager_1_1_pure_texture_manager_impl.html#afcb277d7463a2ea69f51136be565e353",
-"class_pure_vertex_transfer_1_1_pure_vertex_transfer_impl.html#ac85519251695f3f23366e22eb9010e14",
-"functions_enum.html",
-"imgui_8h.html#a236e39dbeeb9fc4e48ce19259bd6a27e",
-"imgui_8h.html#a683cc5d09c63d74035a98ac3b0dec545a05467aac64c5cd254c154ab3a7f99971",
-"imgui_8h.html#a8bf62aa65d40f17d5b8d8d8fb67d970b",
-"imgui_8h.html#ad2afd5a59df2ef70ff03f4a851168814aa01369e3ded011e87385c6156244e469",
-"namespace_im_gui.html#a1b0d79efa1241aef9f0f4ddc5247c8e2",
-"namespace_im_gui.html#ac5c3f2ab95803c9bd31f2c9cb7b0e647",
-"struct_im_draw_list.html#a16d26579a7e5079a507bfcb7471f97c2",
-"struct_im_gui_i_o.html#a23c9c6c48a51774fee36b7f0bb75d331",
-"struct_im_gui_text_filter.html#ac0f9318d9f62b63aa4d881ae03d1f910"
+"class_p_r00_fs_ultimate_rendering_engine.html#aa787782f12a38f8ca769a34577caf096",
+"class_pure_hw_info.html#acc350d0226bd0deb30eaa6f4e83ccb4e",
+"class_pure_hw_video_discover_open_g_lbase.html",
+"class_pure_managed_1_1_pure_managed_impl.html#ac5e57a685d4c10c5853cb73a658d2d5a",
+"class_pure_mesh3_d_1_1_pure_mesh3_d_impl.html#a68485e3c01bf37f28d23fd5647ea29bf",
+"class_pure_object3_d_manager.html#a4c01dd63f80c2ad5273f0d09d1c9b4ad",
+"class_pure_screen.html#a2cc6f94fe0e9e6f7905bfbb2653ec9e9",
+"class_pure_texture_manager_1_1_pure_texture_manager_impl.html#ae8813a4eecdb78c0b8fce3c1fd42ad90",
+"class_pure_vertex_transfer_1_1_pure_vertex_transfer_impl.html#aac9b02081cdee3fca4e774e396685f84",
+"functions_c.html",
+"imgui_8h.html#a22c633861b96e82d1fe5fbd3054e0ed5",
+"imgui_8h.html#a683cc5d09c63d74035a98ac3b0dec545a0198d71ee58f9dc80efac621a24ad2ec",
+"imgui_8h.html#a8a36fce0bcf122748aa92354604e93b0",
+"imgui_8h.html#ad2afd5a59df2ef70ff03f4a851168814a88cc81f6155a06d8fcc0821fb490301e",
+"namespace_im_gui.html#a1922d9954452606eb356d887d7ca47d5",
+"namespace_im_gui.html#ac42125a6d7ff91d17ca30dac04e0e1bd",
+"struct_im_draw_list.html#a09e0f9faa0fece730a7fd17b37b444ca",
+"struct_im_gui_i_o.html#a1ee9c0763df33f7f3a9819235ce85078",
+"struct_im_gui_text_filter.html#a9043c1f0c33d29e6fc9b75ae81f9705a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

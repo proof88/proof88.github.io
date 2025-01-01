@@ -187,7 +187,9 @@ var NAVTREEINDEX7 =
 "networking.html#pge_network_packets":[4,4],
 "pages.html":[],
 "pge_used_libs.html":[9],
-"pge_used_libs.html#pge_used_libs_blIteratorAPI":[9,0],
+"pge_used_libs.html#pge_used_libs_audio":[9,1],
+"pge_used_libs.html#pge_used_libs_memory":[9,0],
+"pge_used_libs.html#pge_used_libs_networking":[9,2],
 "physics.html":[7],
 "sound.html":[5],
 "sound.html#sound_intro":[5,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "structpge__network_1_1_msg_client_app_version_from_client.html":[10,0,2,2],
 "structpge__network_1_1_msg_client_app_version_from_client.html":[11,0,2,2],
 "structpge__network_1_1_msg_client_app_version_from_client.html#a09b0dcec767239c933feaa799e635a3f":[10,0,2,2,0],
-"structpge__network_1_1_msg_client_app_version_from_client.html#a09b0dcec767239c933feaa799e635a3f":[11,0,2,2,0],
-"structpge__network_1_1_msg_user_connected_server_self.html":[10,0,2,3],
-"structpge__network_1_1_msg_user_connected_server_self.html":[11,0,2,3]
+"structpge__network_1_1_msg_client_app_version_from_client.html#a09b0dcec767239c933feaa799e635a3f":[11,0,2,2,0]
 };

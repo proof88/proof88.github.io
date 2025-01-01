@@ -34,7 +34,7 @@ var searchData=
   ['bliterator_3c_20blcontainertype_2c_20bladvancelinearly_2c_20blcbeginend_20_3e_31',['blIterator&lt; blContainerType, blAdvanceLinearly, blcBeginEnd &gt;',['../classbl_iterator_a_p_i_1_1bl_iterator.html',1,'blIteratorAPI']]],
   ['bliterator_3c_20blcontainertype_2c_20bladvancelinearly_2c_20blcrbeginend_20_3e_32',['blIterator&lt; blContainerType, blAdvanceLinearly, blcrBeginEnd &gt;',['../classbl_iterator_a_p_i_1_1bl_iterator.html',1,'blIteratorAPI']]],
   ['bliterator_3c_20blcontainertype_2c_20bladvancelinearly_2c_20blrbeginend_20_3e_33',['blIterator&lt; blContainerType, blAdvanceLinearly, blrBeginEnd &gt;',['../classbl_iterator_a_p_i_1_1bl_iterator.html',1,'blIteratorAPI']]],
-  ['bliteratorapi_34',['blIteratorAPI',['../namespacebl_iterator_a_p_i.html',1,'blIteratorAPI'],['../pge_used_libs.html#pge_used_libs_blIteratorAPI',1,'Memory - blIteratorAPI']]],
+  ['bliteratorapi_34',['blIteratorAPI',['../namespacebl_iterator_a_p_i.html',1,'']]],
   ['bliteratorapi_2ehpp_35',['blIteratorAPI.hpp',['../bl_iterator_a_p_i_8hpp.html',1,'']]],
   ['bliteratorfunctors_2ehpp_36',['blIteratorFunctors.hpp',['../bl_iterator_functors_8hpp.html',1,'']]],
   ['bllinearconstiterator_37',['blLinearConstIterator',['../classbl_iterator_a_p_i_1_1bl_linear_const_iterator.html',1,'blIteratorAPI']]],

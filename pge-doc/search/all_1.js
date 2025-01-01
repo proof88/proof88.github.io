@@ -9,5 +9,6 @@ var searchData=
   ['api_6',['PGE API',['../index.html',1,'']]],
   ['application_7',['Application',['../namespacepge__network.html#a9d5cd23323f02c5464b48096e5980956ae498749f3c42246d50b15c81c101d988',1,'pge_network']]],
   ['areprofilesinmydocs_8',['areProfilesInMyDocs',['../class_p_g_ecfg_profiles.html#a754781fd47243a4468f7e393edfeb218',1,'PGEcfgProfiles']]],
-  ['autofill_9',['AutoFill',['../structpge__network_1_1_pge_packet.html#a0e8f60048122cd465f9a47140173f060',1,'pge_network::PgePacket']]]
+  ['audio_9',['Audio',['../pge_used_libs.html#pge_used_libs_audio',1,'']]],
+  ['autofill_10',['AutoFill',['../structpge__network_1_1_pge_packet.html#a0e8f60048122cd465f9a47140173f060',1,'pge_network::PgePacket']]]
 ];

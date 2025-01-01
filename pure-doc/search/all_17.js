@@ -3,7 +3,7 @@ var searchData=
   ['sameline_0',['SameLine',['../namespace_im_gui.html#ab89ccf41b51f8d6577f419643f3df988',1,'ImGui']]],
   ['sample_20processing_1',['Per-Sample Processing',['../architecture.html#sample_processing',1,'']]],
   ['samplemanagerfordescendantfromvertextransfer_2',['SampleManagerForDescendantFromVertexTransfer',['../class_pure_mesh3_d.html#a13527155d14f8f52cdffed80c6c1c7bf',1,'PureMesh3D::SampleManagerForDescendantFromVertexTransfer'],['../class_pure_mesh3_d_manager.html#a13527155d14f8f52cdffed80c6c1c7bf',1,'PureMesh3DManager::SampleManagerForDescendantFromVertexTransfer'],['../class_pure_vertex_transfer.html#a13527155d14f8f52cdffed80c6c1c7bf',1,'PureVertexTransfer::SampleManagerForDescendantFromVertexTransfer']]],
-  ['samples_3',['Samples',['../usage.html#samples',1,'']]],
+  ['samples_3',['Samples',['../benchmarks_samples.html',1,'Benchmarks &amp; Samples'],['../usage.html#samples',1,'Samples'],['../benchmarks_samples.html#samples_intro',1,'Samples']]],
   ['sampling_20antialiasing_20csaa_20nvidia_4',['Coverage Sampling Antialiasing, CSAA (nVidia)',['../glossary.html#autotoc_md56',1,'']]],
   ['saveinisettingstodisk_5',['SaveIniSettingsToDisk',['../namespace_im_gui.html#af05498d0494669e643829b72511ab391',1,'ImGui']]],
   ['saveinisettingstomemory_6',['SaveIniSettingsToMemory',['../namespace_im_gui.html#ad46eaf8bfbfa028a321719bb93dbdbe8',1,'ImGui']]],

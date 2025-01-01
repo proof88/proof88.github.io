@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"structpge__network_1_1_msg_user_connected_server_self.html":[10,0,2,3],
+"structpge__network_1_1_msg_user_connected_server_self.html":[11,0,2,3],
 "structpge__network_1_1_msg_user_connected_server_self.html#a12cebbeeaab1c938be4a11519eac4589":[10,0,2,3,1],
 "structpge__network_1_1_msg_user_connected_server_self.html#a12cebbeeaab1c938be4a11519eac4589":[11,0,2,3,1],
 "structpge__network_1_1_msg_user_connected_server_self.html#ab6a7ebdbcc5704473e1a7103c9884722":[10,0,2,3,0],

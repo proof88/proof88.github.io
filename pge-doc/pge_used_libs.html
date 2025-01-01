@@ -104,13 +104,19 @@ $(function(){initNavTree('pge_used_libs.html',''); initResizable(true); });
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#pge_used_libs_blIteratorAPI">Memory - blIteratorAPI</a>
+    <a href="#pge_used_libs_memory">Memory</a>
+  </li>
+  <li class="level1">
+    <a href="#pge_used_libs_audio">Audio</a>
+  </li>
+  <li class="level1">
+    <a href="#pge_used_libs_networking">Networking</a>
   </li>
 </ul>
 </div>
 <div class="textblock"><p>This page lists the 3rd party libraries used primarily by PGE, excluding those used by PURE. <br  />
  3rd party libraries used primarily by PURE are listed in <a href="https://proof88.github.io/pure-doc/index.html" target="_blank">PURE's own documentation</a>.</p>
-<p>When choosing a 3rd party library to be used in my project, there are some general factors that must be satisfied by the lib:</p><ul>
+<p>When choosing a 3rd party library to be used in my project, there are some <b>general requirements that must be satisfied by the lib</b>:</p><ul>
 <li>it shall be cross-platform, including Android (because I have plans for releasing to Android phones);</li>
 <li>its license shall allow me to use it with my GPL-3.0/LGPL-3.0 software;</li>
 <li>it shall be still maintained, so that at least severe security issues get fixed over time, and also I can apply stricter compiler warning/error settings when building the lib with recent C++ compilers;</li>
@@ -119,10 +125,16 @@ $(function(){initNavTree('pge_used_libs.html',''); initResizable(true); });
 <li>C++ interface is highly appreciated over C.</li>
 </ul>
 <p>So, for example, if there is a nice image loading library, working fine but not updated since 2004, then sorry but it is a no-go for me.</p>
-<h1><a class="anchor" id="pge_used_libs_blIteratorAPI"></a>
-Memory - blIteratorAPI</h1>
+<h1><a class="anchor" id="pge_used_libs_memory"></a>
+Memory</h1>
 <p>Vincenzo Barbato's <a href="https://github.com/navyenzo/blIteratorAPI" target="_blank">blIteratorAPI</a> is used to easily add STD-style iterators to my custom containers like <code><a class="el" href="class_pge_object_pool.html" title="PR00F&#39;s Game Engine object pool for permanently allocating fixed number of game objects.">PgeObjectPool</a></code>. <br  />
- Note that I cannot enable all functionality due to the compiler warnings with recent VC++ compiler, in the future I need to look into this. </p>
+ Note that I cannot enable all functionality due to the compiler warnings with recent VC++ compiler, in the future I need to look into this.</p>
+<h1><a class="anchor" id="pge_used_libs_audio"></a>
+Audio</h1>
+<p>The selected 3rd party library is elaborated on <a class="el" href="sound.html">this sub-page</a>.</p>
+<h1><a class="anchor" id="pge_used_libs_networking"></a>
+Networking</h1>
+<p>The selected 3rd party library is elaborated on <a class="el" href="networking.html">this sub-page</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

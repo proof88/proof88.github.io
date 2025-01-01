@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "filnp",
   9: "ps",
   10: "_ipw",
-  11: "3abcdeghlopruv"
+  11: "3abcdeghloprsuv"
 };
 
 var indexSectionNames =

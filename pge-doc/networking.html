@@ -136,7 +136,8 @@ $(function(){initNavTree('networking.html',''); initResizable(true); });
 </div>
 <div class="textblock"><h1><a class="anchor" id="networking_intro"></a>
 Intro</h1>
-<p>When it was time to add multiplayer support to my game engine, I browsed the internet for already existing solutions I could integrate, because the networking topic itself on its own contains lots of challenges. <br  />
+<p>PGE uses the <a href="https://github.com/ValveSoftware/GameNetworkingSockets" target="_blank">Valve's GameNetworkingSockets</a> networking library. <br  />
+ When it was time to add multiplayer support to my game engine, I browsed the internet for already existing solutions I could integrate, because the networking topic itself on its own contains lots of challenges. <br  />
  I didn't want to reinvent the wheel, for me it was enough to read about the problems and possible solutions in this area, and to use an existing solution instead of implementing my own. <br  />
  Establishing communication between computers behind NAT devices, handling different endianness of computers, or lag compensation are just a few examples of the challenges in this area.</p>
 <h1><a class="anchor" id="networking_libs"></a>
@@ -146,7 +147,7 @@ Networking Libraries</h1>
 <li><a href="https://www.reddit.com/r/gamedev/comments/93kr9h/recommended_c_udp_networking_library/">https://www.reddit.com/r/gamedev/comments/93kr9h/recommended_c_udp_networking_library/</a></li>
 <li><a href="https://github.com/MFatihMAR/Game-Networking-Resources">https://github.com/MFatihMAR/Game-Networking-Resources</a></li>
 </ul>
-<p>During my research, I checked the following 3 popular libraries from a closer perspective:</p><ul>
+<p>During my research, <b>I checked the following 3</b> popular libraries from a closer perspective:</p><ul>
 <li><b>yojimbo</b>: <a href="https://github.com/networkprotocol/yojimbo">https://github.com/networkprotocol/yojimbo</a><ul>
 <li><a href="https://github.com/networkprotocol/yojimbo/issues/25">https://github.com/networkprotocol/yojimbo/issues/25</a></li>
 <li><a href="https://www.gamedev.net/forums/topic/697635-is-anyone-using-yojimbo-for-networking/">https://www.gamedev.net/forums/topic/697635-is-anyone-using-yojimbo-for-networking/</a></li>

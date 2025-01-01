@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['usage_0',['Engine Usage',['../usage.html',1,'']]],
-  ['used_203rd_20party_20libraries_1',['Used 3rd Party Libraries',['../pure_used_libs.html',1,'']]]
+  ['samples_0',['Benchmarks &amp; Samples',['../benchmarks_samples.html',1,'']]]
 ];

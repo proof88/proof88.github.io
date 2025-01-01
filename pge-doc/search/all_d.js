@@ -3,7 +3,7 @@ var searchData=
   ['nactiveprofile_0',['nActiveProfile',['../class_p_g_ecfg_profiles.html#a7741d4900a4324ecdc2a0a2d81473701',1,'PGEcfgProfiles']]],
   ['name_1',['name',['../class_pge_object_pool.html#a7f4b610874a5f5ca6edd2407f0c19eee',1,'PgeObjectPool']]],
   ['nappversionmaxlength_2',['nAppVersionMaxLength',['../structpge__network_1_1_msg_client_app_version_from_client.html#af785a565bdd87caa6912d414271140f6',1,'pge_network::MsgClientAppVersionFromClient']]],
-  ['networking_3',['Networking',['../networking.html',1,'']]],
+  ['networking_3',['Networking',['../networking.html',1,'Networking'],['../pge_used_libs.html#pge_used_libs_networking',1,'Networking']]],
   ['networking_20functionality_4',['Access to Networking Functionality',['../networking.html#pge_network_access',1,'']]],
   ['networking_20libraries_5',['Networking Libraries',['../networking.html#networking_libs',1,'']]],
   ['networking_20reading_20materials_6',['Networking Reading Materials',['../networking.html#networking_pages',1,'']]],
